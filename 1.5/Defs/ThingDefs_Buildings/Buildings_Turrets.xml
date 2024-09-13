@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<Defs>
+
+<!-- UA12 pulse sentry -->
+
+<ThingDef ParentName="AutocannonTurret">
+    <defName>pphhyy_UA12_PulseSentry</defName>
+    <label>UA12 pulse sentry</label>
+    <description>Unlike its cousins the pulse sentry is capable of friendly fire, but what it lacks in IFF tracking it makes up for in suppressive fire. While not accurate it lays down a dizzying 24 pulse rounds in a single burst meant to suppress an enemy making them vulnerable to more accurate weapons or explosives.</description>
+    <uiIconPath>Building/Turrets/UA12PulseSentryBase</uiIconPath>
+    <statBases>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <graphicData>
+        <texPath>Building/Turrets/UA12PulseSentryBase</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(3,3)</drawSize>
+      </graphicData>
+    <costList>
+      <Steel>175</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <turretGunDef>pphhyy_Gun_UA12PulseSentry</turretGunDef>
+      <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>pphhyy_URMCBasicTurrets</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>pphhyy_Gun_UA12PulseSentry</defName>
+    <label>UA12 pulse sentry</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <graphicData>
+      <texPath>Building/Turrets/UA12PulseSentry</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.28</AccuracyTouch>
+      <AccuracyShort>0.30</AccuracyShort>
+      <AccuracyMedium>0.23</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_Minigun</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>28.9</range>
+        <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
+        <burstShotCount>24</burstShotCount>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <!-- UA12 Scorcher Sentry -->
+
+  <ThingDef ParentName="AutocannonTurret">
+    <defName>pphhyy_UA12_ScorcherSentry</defName>
+    <label>UA12 scorcher sentry</label>
+    <description>The Scorcher comes with no IFF tracking since its a flame thrower, no marine should be Infront of it save for marine in breacher armor. Shooting lit chem fuel into hostile targets, its a favorite of the URMC fighting on fringe worlds against the insectoid menace.</description>
+    <uiIconPath>Building/Turrets/UA12ScorcherSentry</uiIconPath>
+    <statBases>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+      <Flammability>0</Flammability>
+    </statBases>
+    <graphicData>
+        <texPath>Building/Turrets/UA12ScorcherSentryBase</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(3,3)</drawSize>
+      </graphicData>
+    <costList>
+      <Steel>175</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Chemfuel>80</Chemfuel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <building>
+      <turretGunDef>pphhyy_Gun_UA12ScorcherSentry</turretGunDef>
+      <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
+    </building>
+    <researchPrerequisites>
+      <li>pphhyy_URMCBasicTurrets</li>
+    </researchPrerequisites>
+    <placeWorkers Inherit="False">
+      <li>PlaceWorker_TurretTop</li>
+    </placeWorkers>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>pphhyy_Gun_UA12ScorcherSentry</defName>
+    <label>UA12 scorcher sentry</label>
+    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <graphicData>
+      <texPath>Building/Turrets/UA12ScorcherSentry</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.48</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.26</AccuracyLong>
+      <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>  
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>40</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_SpewFire</verbClass>
+        <warmupTime>0</warmupTime>
+        <minRange>4</minRange>
+        <range>14</range>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <soundCast>Shot_MiniFlameblaster</soundCast>
+        <muzzleFlashScale>5</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <!-- M34 Thumper Mortar -->
+
+  <ThingDef ParentName="BaseArtilleryBuilding">
+    <defName>pphhyy_M34ThumperMortar</defName>
+    <label>M34 thumper mortar</label>
+    <description>Single man operated mortar system intended to rain down explosive goodness on anything it's aimed at. Shoots multiple mortars almost like a cluster bomb.</description>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Stunnable">
+        <affectedDamageDefs>
+          <li>Stun</li>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <graphicData>
+      <texPath>Building/Turrets/M34ThumperMortarBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costListForDifficulty>
+      <difficultyVar>classicMortars</difficultyVar>
+      <invert>true</invert>
+      <costList>
+        <ComponentIndustrial>6</ComponentIndustrial>
+        <ReinforcedBarrel>1</ReinforcedBarrel>
+      </costList>
+      <costStuffCount>50</costStuffCount>
+    </costListForDifficulty>
+    <designationHotKey>Misc4</designationHotKey>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <building>
+      <turretGunDef>Artillery_Mortar</turretGunDef>
+      <buildingTags>
+        <li>Artillery_BaseDestroyer</li>
+        <li>Artillery_MannedMortar</li>
+      </buildingTags>
+    </building>
+  <uiIconPath>Building/Turrets/M34ThumperMortarBase</uiIconPath>
+  <uiIconScale>0.9</uiIconScale>
+  <researchPrerequisites>
+    <li>pphhyy_URMCBasicTurrets</li>
+  </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseArtilleryWeapon">
+    <defName>pphhyy_Gun_M34ThumperMortar</defName>
+    <label>M34 thumper mortar</label>
+    <description>Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged.</description>
+    <recoilPower>3</recoilPower>
+    <graphicData>
+      <texPath>Building/Turrets/M34ThumperMortar</texPath>
+    </graphicData>
+    <weaponTags>
+      <li>Artillery_BaseDestroyer</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+        <warmupTime>4.0</warmupTime>
+        <forcedMissRadius>9</forcedMissRadius>
+        <forcedMissRadiusClassicMortars>13</forcedMissRadiusClassicMortars>
+        <isMortar>true</isMortar>
+        <requireLineOfSight>false</requireLineOfSight>
+        <minRange>29.9</minRange>
+        <range>500</range>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>Mortar_LaunchA</soundCast>
+        <muzzleFlashScale>16</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_ChangeableProjectile" />
+    </comps>
+    <building>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>MortarShells</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <filter>
+          <categories>
+            <li>MortarShells</li>
+          </categories>
+          <disallowedThingDefs>
+            <li>Shell_Firefoam</li>
+            <li>Shell_AntigrainWarhead</li>
+          </disallowedThingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+  </ThingDef>
+
+</Defs>
