@@ -16,6 +16,7 @@
         <graphicData>
           <texPath>Armor/ColonialFatigues/ColonialFatigues</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <costStuffCount>45</costStuffCount>
         <stuffCategories>
@@ -78,6 +79,7 @@
         <graphicData>
           <texPath>Armor/M1Flak/M1Flak</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
           <drawSize>0.90</drawSize>
         </graphicData>
         <statBases>
@@ -159,6 +161,7 @@
         <graphicData>
           <texPath>Armor/M2Recon/M2Recon</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <generateCommonality>2</generateCommonality>
         <tradeTags>
@@ -254,6 +257,7 @@
         <graphicData>
           <texPath>Armor/M3Medic/M3Medic</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <generateCommonality>2</generateCommonality>
         <statBases>
@@ -385,6 +389,7 @@
         <graphicData>
           <texPath>Armor/M3Armor/M3Armor</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <generateCommonality>2</generateCommonality>
           <verbs>
@@ -512,6 +517,7 @@
         <graphicData>
           <texPath>Armor/M3Officer/M3Officer</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <generateCommonality>2</generateCommonality>
           <verbs>
@@ -639,6 +645,7 @@
         <graphicData>
           <texPath>Armor/M4Goliath/M4Goliath</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <generateCommonality>2</generateCommonality>
@@ -757,6 +764,7 @@
         <graphicData>
           <texPath>Armor/M3Vet/M3Veteran</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <generateCommonality>2</generateCommonality>
         <smeltable>false</smeltable>

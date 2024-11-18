@@ -123,7 +123,7 @@
           <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-          <explosionRadius>1.9</explosionRadius >
+          <explosionRadius>1.9</explosionRadius>
           <damageDef>Flame</damageDef>
           <!-- Use default damage from explosion def -->
           <explosionDelay>100</explosionDelay>
@@ -172,7 +172,7 @@
         <smeltable>true</smeltable>
         <comps>
             <li Class="CompProperties_Explosive">
-                <explosiveRadius>9.9</explosiveRadius>
+                <explosiveRadius>10.9</explosiveRadius>
                 <explosiveDamageType>Extinguish</explosiveDamageType>
                 <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
                 <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
@@ -195,7 +195,7 @@
           <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-          <explosionRadius>1.9</explosionRadius >
+          <explosionRadius>2.5</explosionRadius >
           <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
           <damageDef>Extinguish</damageDef>
           <explosionDelay>100</explosionDelay>

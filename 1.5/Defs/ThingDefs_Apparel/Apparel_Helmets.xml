@@ -20,6 +20,7 @@
         <graphicData>
           <texPath>HelmetsAndHats/M8Flak/M8Flak</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <uiIconScale>1.4</uiIconScale>
         <statBases>
@@ -101,6 +102,7 @@
         <graphicData>
           <texPath>HelmetsAndHats/M9Recon/M9Recon</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
           <drawSize>(0.9, 0.9)</drawSize>
         </graphicData>
         <tradeTags>
@@ -185,6 +187,7 @@
         <graphicData>
           <texPath>HelmetsAndHats/M10/M10</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <tradeTags>
@@ -278,6 +281,7 @@
         <graphicData>
           <texPath>HelmetsAndHats/M10Medic/M10Medic</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <tradeTags>
@@ -371,6 +375,7 @@
         <graphicData>
           <texPath>HelmetsAndHats/M10Officer/M10Officer</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <tradeTags>
@@ -464,6 +469,7 @@
       <graphicData>
         <texPath>HelmetsAndHats/M12/M12</texPath>
         <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>CutoutComplex</shaderType>
         <drawSize>(0.9, 0.9)</drawSize>
       </graphicData>
       <tradeTags>
@@ -550,6 +556,7 @@
         <graphicData>
           <texPath>HelmetsAndHats/M10/M10</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <tradeTags>
