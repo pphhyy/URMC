@@ -16,7 +16,6 @@
     <graphicData>
         <texPath>Building/Turrets/UA12PulseSentryBase</texPath>
         <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>(1, 1)</drawSize>
       </graphicData>
     <costList>
       <Steel>175</Steel>
@@ -29,7 +28,7 @@
       <li Class="CompProperties_Breakdownable"/>
     </comps>
     <building>
-      <turretTopDrawSize>1</turretTopDrawSize>
+      <turretTopDrawSize>2</turretTopDrawSize>
       <turretGunDef>pphhyy_Gun_UA12PulseSentry</turretGunDef>
       <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
     </building>
@@ -46,7 +45,6 @@
     <graphicData Inherit="false">
       <texPath>Building/Turrets/UA12PulseSentry</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1, 1)</drawSize>
     </graphicData>
     <statBases>
       <AccuracyTouch>0.28</AccuracyTouch>
@@ -88,7 +86,6 @@
     <graphicData>
         <texPath>Building/Turrets/UA12ScorcherSentryBase</texPath>
         <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>(1, 1)</drawSize>
       </graphicData>
     <costList>
       <Steel>175</Steel>
@@ -102,7 +99,7 @@
       <li Class="CompProperties_Breakdownable"/>
     </comps>
     <building>
-      <turretTopDrawSize>1</turretTopDrawSize>
+      <turretTopDrawSize>2</turretTopDrawSize>
       <turretGunDef>pphhyy_Gun_UA12ScorcherSentry</turretGunDef>
       <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
     </building>
@@ -119,10 +116,9 @@
     <defName>pphhyy_Gun_UA12ScorcherSentry</defName>
     <label>UA12 scorcher sentry</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>
-    <graphicData Inherit="false">
+    <graphicData>
       <texPath>Building/Turrets/UA12ScorcherSentry</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1, 1)</drawSize>
     </graphicData>
     <statBases>
       <AccuracyTouch>0.40</AccuracyTouch>
@@ -167,25 +163,26 @@
         </affectedDamageDefs>
       </li>
     </comps>
-    <size>(1,1)</size>
+    <size>(2,2)</size>
     <graphicData>
       <texPath>Building/Turrets/M34ThumperMortarBase</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(150, 150, 150)</color>
       <drawSize>(2, 2)</drawSize>
     </graphicData>
-    <costListForDifficulty>
+    <costListForDifficulty Inherit= "false">
       <difficultyVar>classicMortars</difficultyVar>
       <invert>true</invert>
       <costList>
         <ComponentIndustrial>6</ComponentIndustrial>
         <ReinforcedBarrel>1</ReinforcedBarrel>
+        <Steel>50</Steel>
       </costList>
-      <costStuffCount>50</costStuffCount>
     </costListForDifficulty>
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <building>
-      <turretTopDrawSize>1</turretTopDrawSize>
+      <turretTopDrawSize>2</turretTopDrawSize>
       <turretGunDef>pphhyy_Gun_M34ThumperMortar</turretGunDef>
       <buildingTags>
         <li>Artillery_BaseDestroyer</li>
@@ -196,6 +193,7 @@
   <uiIconScale>0.9</uiIconScale>
   <researchPrerequisites>
     <li>pphhyy_URMCBasicTurrets</li>
+    <li>Mortars</li>
   </researchPrerequisites>
   </ThingDef>
 
@@ -204,10 +202,10 @@
     <label>M34 thumper mortar</label>
     <description>Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged.</description>
     <recoilPower>3</recoilPower>
-    <graphicData Inherit="false">
+    <graphicData>
       <texPath>Building/Turrets/M34ThumperMortar</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1, 1)</drawSize>
+      <drawSize>(2, 2)</drawSize>
     </graphicData>
     <weaponTags>
       <li>Artillery_BaseDestroyer</li>
