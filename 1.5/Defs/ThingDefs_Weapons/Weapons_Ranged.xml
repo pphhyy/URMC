@@ -45,7 +45,7 @@
             <range>30.9</range>
             <burstShotCount>3</burstShotCount>
             <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-            <soundCast>Shot_AssaultRifle</soundCast>
+            <soundCast>pphhyy_PulseRifleSound</soundCast>
             <soundCastTail>GunTail_Medium</soundCastTail>
             <muzzleFlashScale>9</muzzleFlashScale>
           </li>
@@ -110,7 +110,6 @@
         <iconPath>Resources/Grenade/Grenade_a</iconPath>
         <aiCanUse>true</aiCanUse>
         <ai_IsIncendiary>false</ai_IsIncendiary>
-        <warmupStartSound>FireSpew_Warmup</warmupStartSound>
         <showOnCharacterCard>false</showOnCharacterCard>
         <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
         <statBases>
@@ -125,7 +124,7 @@
             <warmupTime>2.5</warmupTime>
             <noiseRadius>4</noiseRadius>
             <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-            <soundCast>Shot_IncendiaryLauncher</soundCast>
+            <soundCast>ThrowGrenade</soundCast>
             <soundCastTail>GunTail_Medium</soundCastTail>
             <muzzleFlashScale>14</muzzleFlashScale>
             <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
@@ -215,6 +214,11 @@
       <cooldownTime>2</cooldownTime>
     </li>
   </tools>
+  <modExtensions>
+    <li Class="VFECore.ThingDefExtension">
+      <usableWithShields>true</usableWithShields>
+    </li>
+  </modExtensions>
 </ThingDef>
 
 
@@ -357,6 +361,29 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       </skillRequirements>
       <displayPriority>420</displayPriority>
     </recipeMaker>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+        <weaponDraftedDrawOffsets>
+          <north>
+            <drawOffset>(0.15,0.0,0.20)</drawOffset>
+            <angleOffset>10</angleOffset>
+          </north>
+          <east>
+            <drawOffset>(0.10,0.2,0.10)</drawOffset>
+            <angleOffset>-45</angleOffset>
+          </east>
+          <south>
+            <drawOffset>(0.1,0.00,0.15)</drawOffset>  <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+            <angleOffset>10</angleOffset>
+          </south>
+          <west>
+            <drawOffset>(-0.10,0.0,0.20)</drawOffset>
+            <angleOffset>55</angleOffset>
+          </west>
+        </weaponDraftedDrawOffsets>
+      </li>
+    </modExtensions>
   </ThingDef>
 
 
@@ -370,7 +397,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
     <graphicData>
       <texPath>Weapon/M44FImmolator</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.7</drawSize>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <equippedAngleOffset>-30</equippedAngleOffset>
@@ -400,12 +427,16 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         <verbClass>Verb_SpewFire</verbClass>
         <warmupTime>0</warmupTime>
         <minRange>2</minRange>
+        <hasStandardCommand>true</hasStandardCommand>
         <range>14</range>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <burstShotCount>10</burstShotCount>
         <soundCast>Shot_MiniFlameblaster</soundCast>
         <muzzleFlashScale>5</muzzleFlashScale>
         <beamWidth>3</beamWidth>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
       </li>
     </verbs>
     <weaponTags>
@@ -443,7 +474,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   <graphicData>
     <texPath>Weapon/M80GLMachine</texPath>
     <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>1.7</drawSize>
+    <drawSize>1.5</drawSize>
   </graphicData>
   <uiIconScale>1.5</uiIconScale>
   <soundInteract>Interact_Autopistol</soundInteract>
@@ -465,8 +496,8 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   <statBases>
     <WorkToMake>5000</WorkToMake>
     <Mass>1.2</Mass>
-    <AccuracyTouch>0.88</AccuracyTouch>
-    <AccuracyShort>0.77</AccuracyShort>
+    <AccuracyTouch>0.66</AccuracyTouch>
+    <AccuracyShort>0.55</AccuracyShort>
     <AccuracyMedium>0.44</AccuracyMedium>
     <AccuracyLong>0.33</AccuracyLong>
     <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
@@ -483,12 +514,12 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <hasStandardCommand>true</hasStandardCommand>
       <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
       <burstShotCount>3</burstShotCount>
-      <range>12.9</range>
-      <forcedMissRadius>1.9</forcedMissRadius>
+      <range>24.9</range>
+      <forcedMissRadius>2.9</forcedMissRadius>
       <warmupTime>3</warmupTime>
       <noiseRadius>4</noiseRadius>
       <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      <soundCast>ThrowGrenade</soundCast>
       <soundCastTail>GunTail_Medium</soundCastTail>
       <muzzleFlashScale>14</muzzleFlashScale>
       <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
@@ -530,7 +561,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   <graphicData>
     <texPath>Weapon/M50XReconRifle</texPath>
     <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>1.7</drawSize>
+    <drawSize>1.5</drawSize>
   </graphicData>
   <soundInteract>Interact_Rifle</soundInteract>
   <equippedAngleOffset>-30</equippedAngleOffset>
@@ -621,7 +652,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   <graphicData>
     <texPath>Weapon/M52HBreachingShotgun</texPath>
     <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>1.7</drawSize>
+    <drawSize>1.5</drawSize>
   </graphicData>
   <soundInteract>Interact_Shotgun</soundInteract>
   <equippedAngleOffset>-30</equippedAngleOffset>
@@ -697,7 +728,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   <graphicData>
     <texPath>Weapon/M10RLSadar</texPath>
     <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>1.9</drawSize>
+    <drawSize>1.7</drawSize>
   </graphicData>
   <equippedAngleOffset>-30</equippedAngleOffset>
   <recipeMaker>

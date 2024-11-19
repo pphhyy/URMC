@@ -565,6 +565,7 @@
           <ComponentSpacer>4</ComponentSpacer>
           <Plasteel>100</Plasteel>
           <Uranium>20</Uranium>
+          <Gold>5</Gold>
         </costList>
         <apparel>
           <bodyPartGroups>

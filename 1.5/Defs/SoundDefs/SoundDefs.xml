@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<Defs>
+
+    <SoundDef>
+        <defName>pphhyy_PulseRifleSound</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>WeaponSounds/pphhyy_PulseRifleSound</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>40~65</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+
+</Defs>

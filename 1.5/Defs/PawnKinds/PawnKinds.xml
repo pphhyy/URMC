@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+
+<Defs>
+
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>pphhyy_Officer</defName>
+        <label>URMC officer</label>
+        <defaultFactionType>pphhyy_URMC_Outpost</defaultFactionType>
+        <apparelRequired>
+            <li>pphhyy_M3Officer</li>
+            <li>pphhyy_M10PatternOfficerHelmet</li>
+          </apparelRequired>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>350~600</apparelMoney>
+        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+        <techHediffsMoney>50~800</techHediffsMoney>
+        <initialResistanceRange>13~21</initialResistanceRange>
+      </PawnKindDef>
+
+      <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>pphhyy_Medic</defName>
+        <label>URMC medic</label>
+        <defaultFactionType>pphhyy_URMC_Outpost</defaultFactionType>
+        <apparelRequired>
+            <li>pphhyy_M3Medic</li>
+            <li>pphhyy_M10PatternMedicHelmet</li>
+          </apparelRequired>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>350~600</apparelMoney>
+        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+        <techHediffsMoney>50~800</techHediffsMoney>
+        <initialResistanceRange>13~21</initialResistanceRange>
+      </PawnKindDef>
+
+      <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>pphhyy_Marine</defName>
+        <label>URMC marine</label>
+        <defaultFactionType>pphhyy_URMC_Outpost</defaultFactionType>
+        <apparelRequired>
+            <li>pphhyy_M3Armor</li>
+            <li>pphhyy_M10PatternMarineHelmet</li>
+          </apparelRequired>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>350~600</apparelMoney>
+        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+        <techHediffsMoney>50~800</techHediffsMoney>
+        <initialResistanceRange>13~21</initialResistanceRange>
+      </PawnKindDef>
+
+      <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>pphhyy_Veteran</defName>
+        <label>URMC veteran</label>
+        <defaultFactionType>pphhyy_URMC_SoleSurvivor</defaultFactionType>
+        <apparelRequired>
+            <li>pphhyy_M3Veteran</li>
+            <li>pphhyy_M10VeteranHelmet</li>
+            <li>pphhyy_ColonialFatigue</li>
+          </apparelRequired>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>350~600</apparelMoney>
+        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+        <techHediffsMoney>50~800</techHediffsMoney>
+        <initialResistanceRange>13~21</initialResistanceRange>
+      </PawnKindDef>
+
+
+</Defs>

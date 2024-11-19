@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <!-- URMC Banner -->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>pphhyy_URMCBanner</defName>
+        <label>URMC banner</label>
+        <description>URMC Banner meant to be installed in key locations to inspire the United Rimwrold Marine Core.</description>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <selectable>true</selectable>
+        <fillPercent>0.20</fillPercent>
+        <pathCost>14</pathCost>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <designationCategory>Furniture</designationCategory>
+        <rotatable>true</rotatable>
+        <size>(1,1)</size>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Building/Flags/URMCBanner</texPath>
+          <drawSize>(2.9,2.9)</drawSize>
+          <drawOffset>(0,0,0.7)</drawOffset>
+        </graphicData>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+          <li>BuildingsFurniture</li>
+        </thingCategories>
+        <statBases>
+          <MaxHitPoints>50</MaxHitPoints>
+          <Flammability>0.5</Flammability>
+          <Mass>3</Mass>
+          <Beauty>8</Beauty>
+        </statBases>
+        <uiIconScale>0.4</uiIconScale>
+        <costList>
+          <Steel>60</Steel>
+          <Gold>5</Gold>
+          <Cloth>60</Cloth>
+        </costList>
+      </ThingDef>
+
+      <!-- URMC Standard -->
+
+      <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>pphhyy_URMCStandard</defName>
+        <label>URMC standard</label>
+        <description>URMC handheld colors to be taken into combat to inspire the United Rimwrold Marine Core.</description>
+		<burnableByRecipe>true</burnableByRecipe>
+		<smeltable>false</smeltable>
+		<techLevel>Spacer</techLevel>
+		<thingCategories Inherit="False">
+			<li>VFEC_Shields</li>
+		</thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Building/Flags/URMCStandard</texPath>
+            <drawSize>1.5</drawSize>
+          </graphicData>
+	   <recipeMaker>
+        <skillRequirements>
+          <Crafting>6</Crafting>
+        </skillRequirements>
+        <displayPriority>445</displayPriority>
+       </recipeMaker>
+       <costList>
+        <Cloth>60</Cloth>
+        <Steel>60</Steel>
+      </costList>
+		<equipmentType>None</equipmentType>
+		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<statBases>
+			<Mass>3</Mass>
+			<WorkToMake>6000</WorkToMake>
+			<MarketValue>300</MarketValue>
+			<Flammability>0.4</Flammability>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<bodyPartGroups>
+				<li>LeftHand</li>
+			</bodyPartGroups>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		<comps>
+			<li Class="VFECore.CompProperties_Shield">
+				<useDeflectMetalEffect>false</useDeflectMetalEffect>
+				<coveredBodyPartGroups>
+					<li>Arms</li>
+					<li>Hands</li>
+				</coveredBodyPartGroups>
+				<offHandGraphicData>
+					<texPath>Building/Flags/URMCStandard</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+				</offHandGraphicData>
+				<offHandHoldOffset>
+					<northDefault>
+						<offset>(-0.2, 0, 0.60)</offset>
+						<behind>true</behind>
+					</northDefault>
+					<east>
+						<offset>(0.15, 0, 0.35)</offset>
+						<behind>true</behind>
+					</east>
+					<south>
+						<offset>(0.35, -0.047, 0.65)</offset>
+					</south>
+					<west>
+						<offset>(-0.15, -0.05, 0.35)</offset> <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+						<behind>true</behind>
+					</west>
+				</offHandHoldOffset>
+			</li>
+		</comps>
+		<equippedAngleOffset>0</equippedAngleOffset> <!-- was -30 -->
+		<tools>
+			<li>
+				<label>base</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>centre</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="VFECore.ThingDefExtension">
+				<useFactionColourForPawnKinds>
+
+				</useFactionColourForPawnKinds>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

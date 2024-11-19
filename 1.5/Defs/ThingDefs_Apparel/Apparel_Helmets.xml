@@ -401,6 +401,7 @@
         <costList>
           <ComponentSpacer>1</ComponentSpacer>
           <Plasteel>40</Plasteel>
+          <Gold>5</Gold>
         </costList>
         <apparel>
           <bodyPartGroups>
