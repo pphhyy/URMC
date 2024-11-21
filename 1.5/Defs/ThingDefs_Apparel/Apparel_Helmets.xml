@@ -460,7 +460,7 @@
       <techLevel>Spacer</techLevel>
       <recipeMaker>
         <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-        <researchPrerequisite>CataphractArmor</researchPrerequisite>
+        <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
         <skillRequirements>
           <Crafting>8</Crafting>
         </skillRequirements>
