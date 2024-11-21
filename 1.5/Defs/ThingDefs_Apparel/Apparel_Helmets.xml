@@ -21,8 +21,8 @@
           <texPath>HelmetsAndHats/M8Flak/M8Flak</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <uiIconScale>1.4</uiIconScale>
         <statBases>
           <WorkToMake>8000</WorkToMake>
           <MaxHitPoints>120</MaxHitPoints>
@@ -55,6 +55,7 @@
           <defaultOutfitTags>
             <li>Soldier</li>
           </defaultOutfitTags>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -103,12 +104,11 @@
           <texPath>HelmetsAndHats/M9Recon/M9Recon</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
-          <drawSize>(0.9, 0.9)</drawSize>
+          <drawSize>1.5</drawSize>
         </graphicData>
         <tradeTags>
           <li>HiTechArmor</li>
         </tradeTags>
-        <generateCommonality>2</generateCommonality>
         <statBases>
           <WorkToMake>15750</WorkToMake>
           <MaxHitPoints>120</MaxHitPoints>
@@ -137,6 +137,7 @@
             <li>Soldier</li>
           </defaultOutfitTags>
           <useDeflectMetalEffect>true</useDeflectMetalEffect>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -188,13 +189,12 @@
           <texPath>HelmetsAndHats/M10/M10</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <tradeTags>
           <li>HiTechArmor</li>
           <li>Armor</li>
         </tradeTags>
-        <generateCommonality>2</generateCommonality>
         <statBases>
           <WorkToMake>21000</WorkToMake>
           <MaxHitPoints>150</MaxHitPoints>
@@ -231,6 +231,7 @@
             <li>2</li>
             <li>3</li>
           </forceEyesVisibleForRotations>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -282,13 +283,12 @@
           <texPath>HelmetsAndHats/M10Medic/M10Medic</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <tradeTags>
           <li>HiTechArmor</li>
           <li>Armor</li>
         </tradeTags>
-        <generateCommonality>2</generateCommonality>
         <statBases>
           <WorkToMake>21000</WorkToMake>
           <MaxHitPoints>150</MaxHitPoints>
@@ -325,6 +325,7 @@
             <li>2</li>
             <li>3</li>
           </forceEyesVisibleForRotations>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -376,13 +377,12 @@
           <texPath>HelmetsAndHats/M10Officer/M10Officer</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <tradeTags>
           <li>HiTechArmor</li>
           <li>Armor</li>
         </tradeTags>
-        <generateCommonality>2</generateCommonality>
         <statBases>
           <WorkToMake>21000</WorkToMake>
           <MaxHitPoints>150</MaxHitPoints>
@@ -420,6 +420,7 @@
             <li>2</li>
             <li>3</li>
           </forceEyesVisibleForRotations>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -471,13 +472,12 @@
         <texPath>HelmetsAndHats/M12/M12</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>CutoutComplex</shaderType>
-        <drawSize>(0.9, 0.9)</drawSize>
+        <drawSize>1.5</drawSize>
       </graphicData>
       <tradeTags>
         <li>HiTechArmor</li>
         <li>Armor</li>
       </tradeTags>
-      <generateCommonality>2</generateCommonality>
       <statBases>
         <WorkToMake>26250</WorkToMake>
         <MaxHitPoints>180</MaxHitPoints>
@@ -506,6 +506,7 @@
           <li>Soldier</li>
         </defaultOutfitTags>
         <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <useWornGraphicMask>true</useWornGraphicMask>
       </apparel>
       <colorGenerator Class="ColorGenerator_Options">
         <options>
@@ -558,13 +559,12 @@
           <texPath>HelmetsAndHats/M10/M10</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <tradeTags>
           <li>HiTechArmor</li>
           <li>Armor</li>
         </tradeTags>
-        <generateCommonality>2</generateCommonality>
         <statBases>
           <WorkToMake>21000</WorkToMake>
           <MaxHitPoints>150</MaxHitPoints>
@@ -597,6 +597,7 @@
             <li>2</li>
             <li>3</li>
           </forceEyesVisibleForRotations>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>

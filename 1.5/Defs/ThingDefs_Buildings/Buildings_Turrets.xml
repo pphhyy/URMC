@@ -16,6 +16,8 @@
     <graphicData>
         <texPath>Building/Turrets/UA12PulseSentryBase</texPath>
         <graphicClass>Graphic_Single</graphicClass>
+        <shadowData IsNull= "true">
+        </shadowData>
       </graphicData>
     <costList>
       <Steel>175</Steel>
@@ -86,6 +88,8 @@
     <graphicData>
         <texPath>Building/Turrets/UA12ScorcherSentryBase</texPath>
         <graphicClass>Graphic_Single</graphicClass>
+        <shadowData IsNull= "true">
+        </shadowData>
       </graphicData>
     <costList>
       <Steel>175</Steel>
@@ -170,7 +174,7 @@
       <color>(150, 150, 150)</color>
       <drawSize>(2, 2)</drawSize>
     </graphicData>
-    <costListForDifficulty Inherit= "false">
+    <costListForDifficulty>
       <difficultyVar>classicMortars</difficultyVar>
       <invert>true</invert>
       <costList>
