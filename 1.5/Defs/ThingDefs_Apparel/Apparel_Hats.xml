@@ -17,7 +17,7 @@
           <texPath>HelmetsAndHats/ColonialBeret/ColonialBeret</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
-          <drawSize>(0.9, 0.9)</drawSize>
+          <drawSize>1.5</drawSize>
         </graphicData>
         <costStuffCount>25</costStuffCount>
         <stuffCategories>
@@ -50,6 +50,7 @@
           <defaultOutfitTags>
             <li>Worker</li>
           </defaultOutfitTags>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -88,7 +89,7 @@
           <texPath>HelmetsAndHats/OfficerBeret/OfficerBeret</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
-          <drawSize>(0.9, 0.9)</drawSize>
+          <drawSize>1.5</drawSize>
         </graphicData>
         <costStuffCount>25</costStuffCount>
         <stuffCategories>
@@ -121,6 +122,7 @@
           <defaultOutfitTags>
             <li>Worker</li>
           </defaultOutfitTags>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -158,7 +160,7 @@
         <texPath>HelmetsAndHats/UtilityCover/UtilityCover</texPath>
         <graphicClass>Graphic_Single</graphicClass>
         <shaderType>CutoutComplex</shaderType>
-        <drawSize>(0.9, 0.9)</drawSize>
+        <drawSize>1.5</drawSize>
       </graphicData>
       <costStuffCount>25</costStuffCount>
       <stuffCategories>
@@ -191,6 +193,7 @@
         <defaultOutfitTags>
           <li>Worker</li>
         </defaultOutfitTags>
+        <useWornGraphicMask>true</useWornGraphicMask>
       </apparel>
       <colorGenerator Class="ColorGenerator_Options">
         <options>

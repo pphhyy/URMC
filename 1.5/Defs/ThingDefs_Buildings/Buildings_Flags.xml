@@ -8,7 +8,7 @@
         <defName>pphhyy_URMCBanner</defName>
         <label>URMC banner</label>
         <description>URMC Banner meant to be installed in key locations to inspire the United Rimwrold Marine Core.</description>
-        <altitudeLayer>Building</altitudeLayer>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <selectable>true</selectable>
         <fillPercent>0.20</fillPercent>
@@ -18,7 +18,7 @@
         <rotatable>true</rotatable>
         <size>(1,1)</size>
         <graphicData>
-            <graphicClass>Graphic_Multi</graphicClass>
+          <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Building/Flags/URMCBanner</texPath>
           <drawSize>(2.9,2.9)</drawSize>
           <drawOffset>(0,0,0.7)</drawOffset>
@@ -33,6 +33,9 @@
           <Mass>3</Mass>
           <Beauty>8</Beauty>
         </statBases>
+        <researchPrerequisites>
+            <li>pphhyy_URMCBasic</li>
+          </researchPrerequisites>
         <uiIconScale>0.4</uiIconScale>
         <costList>
           <Steel>60</Steel>
@@ -58,7 +61,11 @@
             <texPath>Building/Flags/URMCStandard</texPath>
             <drawSize>1.5</drawSize>
           </graphicData>
+          <equippedStatOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+          </equippedStatOffsets>
 	   <recipeMaker>
+        <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
         <skillRequirements>
           <Crafting>6</Crafting>
         </skillRequirements>
@@ -108,39 +115,20 @@
 						<behind>true</behind>
 					</northDefault>
 					<east>
-						<offset>(0.15, 0, 0.35)</offset>
+						<offset>(0.15, 0, 0.65)</offset>
 						<behind>true</behind>
 					</east>
 					<south>
-						<offset>(0.35, -0.047, 0.65)</offset>
+						<offset>(0.25, -0.047, 0.65)</offset>
 					</south>
 					<west>
-						<offset>(-0.15, -0.05, 0.35)</offset> <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+						<offset>(-0.15, -0.05, 0.65)</offset> <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
 						<behind>true</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>
 		</comps>
 		<equippedAngleOffset>0</equippedAngleOffset> <!-- was -30 -->
-		<tools>
-			<li>
-				<label>base</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>centre</label>
-				<labelUsedInLogging>false</labelUsedInLogging>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
 		<modExtensions>
 			<li Class="VFECore.ThingDefExtension">
 				<useFactionColourForPawnKinds>

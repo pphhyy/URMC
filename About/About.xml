@@ -8,18 +8,8 @@
 	</supportedVersions>
 	<description>URMC - United Rimworld Marine Corp.
 	</description>
-	<!-- <modDependencies>
-      <li>
-        <packageId>UnlimitedHugs.HugsLib</packageId>
-        <displayName>HugsLib</displayName>
-        <steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
-      </li>
-      <li>
-        <packageId>Dylan.AnimalGear</packageId>
-        <displayName>Animal Gear</displayName>
-        <steamWorkshopUrl>steam://url/CommunityFilePage/1541438907</steamWorkshopUrl>
-      </li>
-      		<li>
+	<modDependencies>
+    <li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
 			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
@@ -27,13 +17,9 @@
 		</li>
     </modDependencies>
     <loadAfter>
-        <li>brrainz.harmony</li>
         <li>Ludeon.RimWorld</li>
-        <li>Ludeon.RimWorld.Ideology</li>
-        <li>Ludeon.RimWorld.Royalty</li>
-        <li>UnlimitedHugs.HugsLib</li>
-        <li>Dylan.AnimalGear</li>
-        <li>roolo.giddyupcore</li>
-    </loadAfter> -->
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    </loadAfter>
 
 </ModMetaData>

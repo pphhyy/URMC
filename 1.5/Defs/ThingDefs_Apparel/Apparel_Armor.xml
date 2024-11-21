@@ -17,6 +17,7 @@
           <texPath>Armor/ColonialFatigues/ColonialFatigues</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
         <costStuffCount>45</costStuffCount>
         <stuffCategories>
@@ -53,6 +54,7 @@
             <li>Worker</li>
             <li>Soldier</li>
           </defaultOutfitTags>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_StandardApparel" />
         <tradeTags>
@@ -80,7 +82,7 @@
           <texPath>Armor/M1Flak/M1Flak</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
-          <drawSize>0.90</drawSize>
+          <drawSize>1.5</drawSize>
         </graphicData>
         <statBases>
           <WorkToMake>9000</WorkToMake>
@@ -120,6 +122,7 @@
           <defaultOutfitTags>
             <li>Soldier</li>
           </defaultOutfitTags>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -162,8 +165,8 @@
           <texPath>Armor/M2Recon/M2Recon</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <generateCommonality>2</generateCommonality>
         <tradeTags>
           <li>HiTechArmor</li>
           <li>Armor</li>
@@ -206,6 +209,7 @@
           <useDeflectMetalEffect>true</useDeflectMetalEffect>
           <soundWear>Wear_PowerArmor</soundWear>
           <soundRemove>Remove_PowerArmor</soundRemove>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -258,8 +262,8 @@
           <texPath>Armor/M3Medic/M3Medic</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <generateCommonality>2</generateCommonality>
         <statBases>
           <WorkToMake>60000</WorkToMake>
           <MaxHitPoints>340</MaxHitPoints>
@@ -286,7 +290,7 @@
               <warmupTime>1.5</warmupTime>
               <noiseRadius>4</noiseRadius>
               <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-              <soundCast>Shot_IncendiaryLauncher</soundCast>
+              <soundCast>ThrowGrenade</soundCast>
               <soundCastTail>GunTail_Medium</soundCastTail>
               <muzzleFlashScale>14</muzzleFlashScale>
               <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
@@ -325,6 +329,7 @@
           <useDeflectMetalEffect>true</useDeflectMetalEffect>
           <soundWear>Wear_PowerArmor</soundWear>
           <soundRemove>Remove_PowerArmor</soundRemove>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -390,8 +395,8 @@
           <texPath>Armor/M3Armor/M3Armor</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <generateCommonality>2</generateCommonality>
           <verbs>
             <li>
               <label>throw frag grenade</label>
@@ -403,7 +408,7 @@
               <warmupTime>1.5</warmupTime>
               <noiseRadius>4</noiseRadius>
               <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-              <soundCast>Shot_IncendiaryLauncher</soundCast>
+              <soundCast>ThrowGrenade</soundCast>
               <soundCastTail>GunTail_Medium</soundCastTail>
               <muzzleFlashScale>14</muzzleFlashScale>
               <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
@@ -457,6 +462,7 @@
           <useDeflectMetalEffect>true</useDeflectMetalEffect>
           <soundWear>Wear_PowerArmor</soundWear>
           <soundRemove>Remove_PowerArmor</soundRemove>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -518,8 +524,8 @@
           <texPath>Armor/M3Officer/M3Officer</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <generateCommonality>2</generateCommonality>
           <verbs>
             <li>
               <label>throw incendiary grenade</label>
@@ -531,7 +537,7 @@
               <warmupTime>1.5</warmupTime>
               <noiseRadius>4</noiseRadius>
               <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-              <soundCast>Shot_IncendiaryLauncher</soundCast>
+              <soundCast>ThrowGrenade</soundCast>
               <soundCastTail>GunTail_Medium</soundCastTail>
               <muzzleFlashScale>14</muzzleFlashScale>
               <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
@@ -586,6 +592,7 @@
           <useDeflectMetalEffect>true</useDeflectMetalEffect>
           <soundWear>Wear_PowerArmor</soundWear>
           <soundRemove>Remove_PowerArmor</soundRemove>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -647,9 +654,8 @@
           <texPath>Armor/M4Goliath/M4Goliath</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
-        <generateCommonality>2</generateCommonality>
         <statBases>
           <WorkToMake>75000</WorkToMake>
           <MaxHitPoints>400</MaxHitPoints>
@@ -673,7 +679,7 @@
               <warmupTime>1.5</warmupTime>
               <noiseRadius>4</noiseRadius>
               <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-              <soundCast>Shot_IncendiaryLauncher</soundCast>
+              <soundCast>ThrowGrenade</soundCast>
               <soundCastTail>GunTail_Medium</soundCastTail>
               <muzzleFlashScale>14</muzzleFlashScale>
               <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
@@ -714,6 +720,7 @@
           <useDeflectMetalEffect>true</useDeflectMetalEffect>
           <soundWear>Wear_PowerArmor</soundWear>
           <soundRemove>Remove_PowerArmor</soundRemove>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
@@ -766,8 +773,8 @@
           <texPath>Armor/M3Vet/M3Veteran</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
+          <drawSize>1.5</drawSize>
         </graphicData>
-        <generateCommonality>2</generateCommonality>
         <smeltable>false</smeltable>
         <recipeMaker IsNull="true">
         </recipeMaker>
@@ -782,7 +789,7 @@
               <warmupTime>1.5</warmupTime>
               <noiseRadius>4</noiseRadius>
               <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-              <soundCast>Shot_IncendiaryLauncher</soundCast>
+              <soundCast>ThrowGrenade</soundCast>
               <soundCastTail>GunTail_Medium</soundCastTail>
               <muzzleFlashScale>14</muzzleFlashScale>
               <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
@@ -831,6 +838,7 @@
           <useDeflectMetalEffect>true</useDeflectMetalEffect>
           <soundWear>Wear_PowerArmor</soundWear>
           <soundRemove>Remove_PowerArmor</soundRemove>
+          <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
           <options>
