@@ -142,7 +142,7 @@
         <range>14</range>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <burstShotCount>10</burstShotCount>
-        <soundCast>Shot_MiniFlameblaster</soundCast>
+        <soundCast>pphhyy_ImmolatorSound</soundCast>
         <muzzleFlashScale>5</muzzleFlashScale>
       </li>
     </verbs>
@@ -168,21 +168,18 @@
       </li>
     </comps>
     <size>(2,2)</size>
+    <stuffCategories IsNull= "true">
+    </stuffCategories>
     <graphicData>
       <texPath>Building/Turrets/M34ThumperMortarBase</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <color>(150, 150, 150)</color>
       <drawSize>(2, 2)</drawSize>
     </graphicData>
-    <costListForDifficulty>
-      <difficultyVar>classicMortars</difficultyVar>
-      <invert>true</invert>
       <costList>
         <ComponentIndustrial>6</ComponentIndustrial>
         <ReinforcedBarrel>1</ReinforcedBarrel>
         <Steel>50</Steel>
       </costList>
-    </costListForDifficulty>
     <designationHotKey>Misc4</designationHotKey>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <building>

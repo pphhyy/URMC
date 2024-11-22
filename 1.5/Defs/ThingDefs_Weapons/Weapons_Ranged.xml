@@ -313,7 +313,7 @@
         <range>25.9</range>
         <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
         <burstShotCount>12</burstShotCount>
-        <soundCast>Shot_Minigun</soundCast>
+        <soundCast>pphhyy_PulseRifleSound</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -475,7 +475,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         <range>14</range>
         <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
         <burstShotCount>10</burstShotCount>
-        <soundCast>Shot_MiniFlameblaster</soundCast>
+        <soundCast>pphhyy_ImmolatorSound</soundCast>
         <muzzleFlashScale>5</muzzleFlashScale>
         <beamWidth>3</beamWidth>
         <targetParams>
@@ -639,7 +639,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <defaultProjectile>pphhyy_Bullet_SniperRifle</defaultProjectile>
       <warmupTime>3.5</warmupTime>
       <range>44.9</range>
-      <soundCast>Shot_SniperRifle</soundCast>
+      <soundCast>pphhyy_ReconRifleSound</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
     </li>
@@ -753,7 +753,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <defaultProjectile>Bullet_Shotgun</defaultProjectile>
       <warmupTime>0.9</warmupTime>
       <range>15.9</range>
-      <soundCast>Shot_Shotgun</soundCast>
+      <soundCast>pphhyy_BreachingShotgunSound</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
     </li>
@@ -784,7 +784,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
 
 <ThingDef ParentName="BaseHumanMakeableGun">
   <defName>pphhyy_M10RLSadar</defName>
-  <label>M10 Rl Sadar</label>
+  <label>M10 RL Sadar</label>
   <description>A reloadable, single shot RPG. This premier anti-armor weapon carries the most powerful ordnance available to marine infantry, man-portable anti-tank, the launcher itself can be unwieldy to deploy and take a few seconds to be ready to fire from a resting position. It requires a highly trained specialist to avoid unnecessary casualties, it is designed to use a variety of customizable rockets.</description>
   <tickerType>Normal</tickerType>
   <smeltable>false</smeltable>
@@ -837,7 +837,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <range>35.9</range>
       <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
       <burstShotCount>1</burstShotCount>
-      <soundCast>InfernoCannon_Fire</soundCast>
+      <soundCast>pphhyy_RLSadarSound</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <onlyManualCast>true</onlyManualCast>
       <stopBurstWithoutLos>false</stopBurstWithoutLos>
@@ -868,7 +868,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
           <angleOffset>-30</angleOffset>
         </north>
         <east>
-          <drawOffset>(0.10,0.2,0.05)</drawOffset>
+          <drawOffset>(0.10,0.2,0.15)</drawOffset>
           <angleOffset>-45</angleOffset>
         </east>
         <south>
@@ -876,7 +876,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
           <angleOffset>-20</angleOffset>
         </south>
         <west>
-          <drawOffset>(-0.10,0.0,0.05)</drawOffset>
+          <drawOffset>(-0.10,0.0,0.15)</drawOffset>
           <angleOffset>45</angleOffset>
         </west>
       </weaponDraftedDrawOffsets>

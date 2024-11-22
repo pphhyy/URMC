@@ -556,7 +556,7 @@
         </recipeMaker>
         <smeltable>false</smeltable>
         <graphicData>
-          <texPath>HelmetsAndHats/M10/M10</texPath>
+          <texPath>HelmetsAndHats/M10Veteran/M10Veteran</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
           <drawSize>1.5</drawSize>
@@ -584,7 +584,7 @@
           <bodyPartGroups>
             <li>FullHead</li>
           </bodyPartGroups>
-          <wornGraphicPath>HelmetsAndHats/M10/M10</wornGraphicPath>
+          <wornGraphicPath>HelmetsAndHats/M10Veteran/M10Veteran</wornGraphicPath>
           <layers>
             <li>Overhead</li>
           </layers>
