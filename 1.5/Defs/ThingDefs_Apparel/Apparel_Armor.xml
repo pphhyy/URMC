@@ -67,7 +67,7 @@
 
       <ThingDef ParentName="ArmorMachineableBase">
         <defName>pphhyy_M1Flak</defName>
-        <label>M3-L Pattern Light Armor</label>
+        <label>M3-L pattern light armor</label>
         <description>A lighter, cut down version of the standard M3 pattern armor. It sacrifices protection for more speed.</description>
         <techLevel>Industrial</techLevel>
         <recipeMaker>
@@ -148,7 +148,7 @@
 
       <ThingDef ParentName="ArmorMachineableBase">
         <defName>pphhyy_M2Recon</defName>
-        <label>M3-S Light Armor</label>
+        <label>M3-S light armor</label>
         <description>A custom modified set of M3 Armor designed for recon missions. Allows more mobility for the wearer.</description>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
@@ -245,7 +245,7 @@
 
       <ThingDef ParentName="ArmorMachineableBase">
         <defName>pphhyy_M3Medic</defName>
-        <label>M3 Pattern Medic Armor</label>
+        <label>M3 pattern medic armor</label>
         <description>Standard Issue Armor used by Medics, provides modest protection from bullet and melee attacks, an all rounder in terms of protection. Boosts Medical Skill.</description>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
@@ -378,7 +378,7 @@
 
     <ThingDef ParentName="ArmorMachineableBase">
         <defName>pphhyy_M3Armor</defName>
-        <label>M3 Pattern Personal Armor</label>
+        <label>M3 pattern personal armor</label>
         <description>Standard Issue Armor, provides modest protection from bullet and melee attacks, an all rounder. Comes with Frag Grenades to assist in tactical situations.</description>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
@@ -507,7 +507,7 @@
 
       <ThingDef ParentName="ArmorMachineableBase">
         <defName>pphhyy_M3Officer</defName>
-        <label>M3 Pattern Officer Armor</label>
+        <label>M3 pattern officer armor</label>
         <description>A well-crafted suit of M3 Pattern Armor typically found in the hands of higher-ranking officers. Useful for letting your men know who is in charge when taking to the field. Comes with Foam grenades to put out the fire on some eager marines.</description>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
@@ -637,7 +637,7 @@
 
       <ThingDef ParentName="ArmorMachineableBase">
         <defName>pphhyy_M4Goliath</defName>
-        <label>M3-G4 Grenadier Armor</label>
+        <label>M3-G4 grenadier armor</label>
         <description>A custom set of M3 armour packed to the brim with padding, plating, and every other form of ballistic protection under the sun. Being much heavier than the other armour types. Equipped with 2 Frag Grenades and 2 Incendiary Grenades.</description>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
@@ -766,7 +766,7 @@
 
     <ThingDef ParentName="ArmorMachineableBase">
         <defName>pphhyy_M3Veteran</defName>
-        <label>M3 Veteran</label>
+        <label>M3 veteran armor</label>
         <description>A custom set of M3 armour customized by the veteran using it, provides modest protection from bullet and melee attacks, an all rounder. Comes with Frag Grenades to assist in tactical situations. Thanks to its extensive customization it no longer slows the wearer down.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
