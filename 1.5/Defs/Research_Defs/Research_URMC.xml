@@ -6,13 +6,13 @@
         <defName>pphhyy_URMC</defName>
         <label>URMC</label>
         <generalTitle>URMC research</generalTitle>
-        <generalDescription>PLACEHOLDER</generalDescription>
+        <generalDescription>Everything the URMC needs to spread peace and prosperity to the galaxy is in this research tab.</generalDescription>
     </ResearchTabDef>
 
     <ResearchProjectDef>
         <defName>pphhyy_URMCBasic</defName>
         <label>URMC basic</label>
-        <description>PLACEHOLDER</description>
+        <description>Basic Marine gear, enough destruction to level villages.</description>
         <baseCost>1000</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>pphhyy_URMC</tab>
@@ -26,7 +26,7 @@
     <ResearchProjectDef>
         <defName>pphhyy_URMCRecon</defName>
         <label>URMC recon</label>
-        <description>PLACEHOLDER</description>
+        <description>Marine Recon gear, when you need specialized tools and wepaons.</description>
         <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>pphhyy_URMC</tab>
@@ -40,7 +40,7 @@
     <ResearchProjectDef>
         <defName>pphhyy_URMCMarine</defName>
         <label>URMC marine</label>
-        <description>PLACEHOLDER</description>
+        <description>Mainstay of the URMC, providing all the standard protection of the core. As well as some nice heavy gear for dealing with hard targets.</description>
         <baseCost>6000</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>pphhyy_URMC</tab>
@@ -55,7 +55,7 @@
     <ResearchProjectDef>
         <defName>pphhyy_URMCHeavy</defName>
         <label>URMC heavy</label>
-        <description>PLACEHOLDER</description>
+        <description>When city's need to be leveled, hopefully bug city's.</description>
         <baseCost>6000</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>pphhyy_URMC</tab>
@@ -69,7 +69,7 @@
     <ResearchProjectDef>
         <defName>pphhyy_URMCBasicTurrets</defName>
         <label>URMC basic turrets</label>
-        <description>PLACEHOLDER</description>
+        <description>When marines need to sleep soundly they employ the URMC turrets</description>
         <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>pphhyy_URMC</tab>

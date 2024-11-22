@@ -18,5 +18,67 @@
         </subSounds>
     </SoundDef>
 
+    <SoundDef>
+        <defName>pphhyy_ReconRifleSound</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>WeaponSounds/pphhyy_ReconRifleSound</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>40~65</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 
+    <SoundDef>
+        <defName>pphhyy_ImmolatorSound</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>WeaponSounds/pphhyy_ImmolatorSound</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>40~65</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>pphhyy_BreachingShotgunSound</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>WeaponSounds/pphhyy_BreachingShotgunSound</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>40~65</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>pphhyy_RLSadarSound</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>WeaponSounds/pphhyy_RLSadarSound</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>40~65</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
 </Defs>

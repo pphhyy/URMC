@@ -66,6 +66,13 @@
 
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
+          <thingDef>pphhyy_ColonialFatigue</thingDef>
+          <stuff>Cloth</stuff>
+          <count>6</count>
+        </li>
+
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
           <thingDef>pphhyy_M10PatternMarineHelmet</thingDef>
           <count>4</count>
         </li>
@@ -221,6 +228,7 @@
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>pphhyy_ColonialFatigue</thingDef>
+          <stuff>Cloth</stuff>
         </li>
 
         <!-- Game start dialog -->
