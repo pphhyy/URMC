@@ -55,7 +55,7 @@
     <ResearchProjectDef>
         <defName>pphhyy_URMCHeavy</defName>
         <label>URMC heavy</label>
-        <description>When city's need to be leveled, hopefully bug city's.</description>
+        <description>When cities need to be leveled, hopefully bug cities.</description>
         <baseCost>6000</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>pphhyy_URMC</tab>

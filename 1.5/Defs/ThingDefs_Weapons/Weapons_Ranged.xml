@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>  
+<?xml version="1.0" encoding="UTF-8"?>
 
 <Defs>
 
   <ThingDef Name= "pphhyy_RangedWeapons" ParentName="BaseHumanMakeableGun" Abstract= "true">
+    <weaponTags>
+      <li>URMC_Weapons</li>
+    </weaponTags>
     <modExtensions>
       <li Class="VFECore.ThingDefExtension">
         <weaponDraftedDrawOffsets>
@@ -15,7 +18,7 @@
             <angleOffset>-45</angleOffset>
           </east>
           <south>
-            <drawOffset>(0,0,0)</drawOffset>  <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+            <drawOffset>(0,0,0)</drawOffset>            <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
             <angleOffset>-30</angleOffset>
           </south>
           <west>
@@ -28,223 +31,225 @@
   </ThingDef>
 
 
+  <!-- M43 Pulse Rifle Mk2 -->
 
-<!-- M43 Pulse Rifle Mk2 -->
+  <ThingDef ParentName="pphhyy_RangedWeapons">
+    <defName>pphhyy_M43PulseRifle</defName>
+    <label>M43 pulse rifle Mk2</label>
+    <description>This is the standard issue pulse rifle used by the United Rimworld Marine Corp. A reliable, robust, and overall effective standard issue weapon, the M43 must be held in two hands to accurately fire. The M43 MK2 has 6-round burstfire as well as a Grenade launcher underbarrel That can be loaded with normal grenades. Despite its 6 round burst it is quite accurate.</description>
+    <graphicData>
+      <texPath>Weapon/M43PulseRifleMk2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.66</AccuracyTouch>
+      <AccuracyShort>0.77</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.61</AccuracyLong>
+      <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>pphhyy_Bullet_M43PulseRifle</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>pphhyy_PulseRifleSound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <comps Inherit="False">
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_EquippableAbilityReloadable">
+        <abilityDef>PulseRifleGrenade</abilityDef>
+        <maxCharges>2</maxCharges>
+        <soundReload>Standard_Reload</soundReload>
+        <chargeNoun>grenade</chargeNoun>
+        <ammoDef>pphhyy_GrenadeFrag</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
+        <baseReloadTicks>60</baseReloadTicks>
+      </li>
+    </comps>
+  </ThingDef>
 
-    <ThingDef ParentName="pphhyy_RangedWeapons">
-        <defName>pphhyy_M43PulseRifle</defName>
-        <label>M43 pulse rifle Mk2</label>
-        <description>This is the standard issue pulse rifle used by the United Rimworld Marine Corp. A reliable, robust, and overall effective standard issue weapon, the M43 must be held in two hands to accurately fire. The M43 MK2 has 6-round burstfire as well as a Grenade launcher underbarrel That can be loaded with normal grenades. Despite its 6 round burst it is quite accurate.</description>
-        <graphicData>
-          <texPath>Weapon/M43PulseRifleMk2</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>1.4</drawSize>
-        </graphicData>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <recipeMaker>
-          <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
-          <skillRequirements>
-            <Crafting>6</Crafting>
-          </skillRequirements>
-          <displayPriority>420</displayPriority>
-        </recipeMaker>
-        <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-        <statBases>
-          <WorkToMake>40000</WorkToMake>
-          <Mass>3.5</Mass>
-          <AccuracyTouch>0.66</AccuracyTouch>
-          <AccuracyShort>0.77</AccuracyShort>
-          <AccuracyMedium>0.72</AccuracyMedium>
-          <AccuracyLong>0.61</AccuracyLong>
-          <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
-        </statBases>
-        <costList>
-          <Steel>60</Steel>
-          <ComponentIndustrial>7</ComponentIndustrial>
-        </costList>
-        <verbs>
-          <li>
-            <verbClass>Verb_Shoot</verbClass>
-            <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>pphhyy_Bullet_M43PulseRifle</defaultProjectile>
-            <warmupTime>1.0</warmupTime>
-            <range>30.9</range>
-            <burstShotCount>3</burstShotCount>
-            <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-            <soundCast>pphhyy_PulseRifleSound</soundCast>
-            <soundCastTail>GunTail_Medium</soundCastTail>
-            <muzzleFlashScale>9</muzzleFlashScale>
-          </li>
-        </verbs>
-        <weaponTags>
-          <li>IndustrialGunAdvanced</li>
-          <li>AssaultRifle</li>
-        </weaponTags>
-        <tools>
-          <li>
-            <label>stock</label>
-            <capacities>
-              <li>Blunt</li>
-            </capacities>
-            <power>9</power>
-            <cooldownTime>2</cooldownTime>
-          </li>
-          <li>
-            <label>barrel</label>
-            <capacities>
-              <li>Blunt</li>
-              <li>Poke</li>
-            </capacities>
-            <power>9</power>
-            <cooldownTime>2</cooldownTime>
-          </li>
-        </tools>
-        <comps Inherit="False">
-          <li>
-            <compClass>CompQuality</compClass>
-          </li>
-          <li Class="CompProperties_Styleable"/>
-            <li Class="CompProperties_Forbiddable"/>
-            <li Class="CompProperties_EquippableAbilityReloadable">
-                <abilityDef>PulseRifleGrenade</abilityDef>
-                <maxCharges>2</maxCharges>
-                <soundReload>Standard_Reload</soundReload>
-                <chargeNoun>grenade</chargeNoun>
-                <ammoDef>pphhyy_GrenadeFrag</ammoDef>
-                <ammoCountPerCharge>1</ammoCountPerCharge>
-                <baseReloadTicks>60</baseReloadTicks>
-              </li>
-        </comps>
-      </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>pphhyy_Bullet_M43PulseRifle</defName>
+    <label>M4 3Pulse Rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <speed>70</speed>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
 
-      <ThingDef ParentName="BaseBullet">
-        <defName>pphhyy_Bullet_M43PulseRifle</defName>
-        <label>M4 3Pulse Rifle bullet</label>
-        <graphicData>
-          <texPath>Things/Projectile/Bullet_Small</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-          <damageDef>Bullet</damageDef>
-          <damageAmountBase>15</damageAmountBase>
-          <speed>70</speed>
-          <armorPenetrationBase>0.35</armorPenetrationBase>
-        </projectile>
-      </ThingDef>
-
-      <AbilityDef>
-        <defName>PulseRifleGrenade</defName>
-        <label>grenade barrel</label>
-        <description>PLACEHOLDER</description>
-        <iconPath>Resources/Grenade/Grenade_a</iconPath>
-        <aiCanUse>true</aiCanUse>
-        <ai_IsIncendiary>false</ai_IsIncendiary>
-        <showOnCharacterCard>false</showOnCharacterCard>
-        <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
-        <statBases>
-          <Ability_EffectRadius>1.9</Ability_EffectRadius>
-        </statBases>
-        <verbProperties>
-            <label>throw frag grenade</label>
-            <verbClass>Verb_CastAbility</verbClass>
-            <hasStandardCommand>true</hasStandardCommand>
-            <onlyManualCast>True</onlyManualCast>
-            <range>12.9</range>
-            <warmupTime>2.5</warmupTime>
-            <noiseRadius>4</noiseRadius>
-            <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-            <soundCast>Shot_IncendiaryLauncher</soundCast>
-            <soundCastTail>GunTail_Medium</soundCastTail>
-            <muzzleFlashScale>14</muzzleFlashScale>
-            <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
-            <targetParams>
-              <canTargetLocations>true</canTargetLocations>
-            </targetParams>
-            <defaultProjectile>pphhyy_GrenadeFragProjectile</defaultProjectile>
-            <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-        </verbProperties>
-        <comps>
-         <li Class="CompProperties_AbilityLaunchProjectile">
-          <projectileDef>pphhyy_GrenadeFragProjectile</projectileDef>
-        </li>  
-        </comps>
-      </AbilityDef>
-
-
-<!-- Pulse Pistol -->
-
-<ThingDef ParentName="BaseHumanMakeableGun">
-  <defName>pphhyy_M1PulsePistol</defName>
-  <label>M1 pulse pistol</label>
-  <description>Pulse firearms use an electronic pulse action to fire, controlled directly from the trigger and powered by a battery. This is the first pulse pistol entering service with the URMC. 3 round highly accurate burst perfect back up sidearm.</description>
-  <graphicData>
-    <texPath>Weapon/M1PulsePistol</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>1.4</drawSize>
-  </graphicData>
-  <uiIconScale>1.5</uiIconScale>
-  <soundInteract>Interact_Autopistol</soundInteract>
-  <recipeMaker>
-    <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
-    <skillRequirements>
-      <Crafting>4</Crafting>
-    </skillRequirements>
-    <displayPriority>405</displayPriority>
-  </recipeMaker>
-  <weaponTags>
-    <li>SimpleGun</li>
-    <li>Autopistol</li>
-  </weaponTags>
-  <weaponClasses>
-    <li>RangedLight</li>
-  </weaponClasses>
-  <statBases>
-    <WorkToMake>5000</WorkToMake>
-    <Mass>1.2</Mass>
-    <AccuracyTouch>0.88</AccuracyTouch>
-    <AccuracyShort>0.77</AccuracyShort>
-    <AccuracyMedium>0.44</AccuracyMedium>
-    <AccuracyLong>0.33</AccuracyLong>
-    <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-  </statBases>
-  <costList>
-    <Steel>30</Steel>
-    <ComponentIndustrial>2</ComponentIndustrial>
-  </costList>
-  <verbs>
-    <li>
-      <verbClass>Verb_Shoot</verbClass>
+  <AbilityDef>
+    <defName>PulseRifleGrenade</defName>
+    <label>grenade barrel</label>
+    <description>PLACEHOLDER</description>
+    <iconPath>Resources/Grenade/Grenade_a</iconPath>
+    <aiCanUse>true</aiCanUse>
+    <ai_IsIncendiary>false</ai_IsIncendiary>
+    <showOnCharacterCard>false</showOnCharacterCard>
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+    <statBases>
+      <Ability_EffectRadius>1.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <label>throw frag grenade</label>
+      <verbClass>Verb_CastAbility</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>pphhyy_Bullet_M43PulseRifle</defaultProjectile>
-      <warmupTime>0.3</warmupTime>
-      <range>25.9</range>
-      <soundCast>Shot_Autopistol</soundCast>
-      <soundCastTail>GunTail_Light</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-    </li>
-  </verbs>
-  <tools>
-    <li>
-      <label>grip</label>
-      <capacities>
-        <li>Blunt</li>
-      </capacities>
-      <power>9</power>
-      <cooldownTime>2</cooldownTime>
-    </li>
-    <li>
-      <label>barrel</label>
-      <capacities>
-        <li>Blunt</li>
-        <li>Poke</li>
-      </capacities>
-      <power>9</power>
-      <cooldownTime>2</cooldownTime>
-    </li>
-  </tools>
-  <modExtensions>
-    <li Class="VFECore.ThingDefExtension">
-      <usableWithShields>true</usableWithShields>
+      <onlyManualCast>True</onlyManualCast>
+      <range>12.9</range>
+      <warmupTime>2.5</warmupTime>
+      <noiseRadius>4</noiseRadius>
+      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+      <soundCast>Shot_IncendiaryLauncher</soundCast>
+      <soundCastTail>GunTail_Medium</soundCastTail>
+      <muzzleFlashScale>14</muzzleFlashScale>
+      <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+      <defaultProjectile>pphhyy_GrenadeFragProjectile</defaultProjectile>
+      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityLaunchProjectile">
+        <projectileDef>pphhyy_GrenadeFragProjectile</projectileDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+
+  <!-- Pulse Pistol -->
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>pphhyy_M1PulsePistol</defName>
+    <label>M1 pulse pistol</label>
+    <description>Pulse firearms use an electronic pulse action to fire, controlled directly from the trigger and powered by a battery. This is the first pulse pistol entering service with the URMC. 3 round highly accurate burst perfect back up sidearm.</description>
+    <graphicData>
+      <texPath>Weapon/M1PulsePistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <uiIconScale>1.5</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>URMC_Weapons</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.88</AccuracyTouch>
+      <AccuracyShort>0.77</AccuracyShort>
+      <AccuracyMedium>0.44</AccuracyMedium>
+      <AccuracyLong>0.33</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>pphhyy_Bullet_M43PulseRifle</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>25.9</range>
+        <soundCast>pphhyy_PulseRifleSound</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
         <weaponDraftedDrawOffsets>
           <north>
             <drawOffset>(0.05,0.0,0.15)</drawOffset>
@@ -255,7 +260,7 @@
             <angleOffset>-45</angleOffset>
           </east>
           <south>
-            <drawOffset>(0,0,0.10)</drawOffset>  <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+            <drawOffset>(0,0,0.10)</drawOffset>            <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
             <angleOffset>-30</angleOffset>
           </south>
           <west>
@@ -263,9 +268,9 @@
             <angleOffset>45</angleOffset>
           </west>
         </weaponDraftedDrawOffsets>
-    </li>
-  </modExtensions>
-</ThingDef>
+      </li>
+    </modExtensions>
+  </ThingDef>
 
 
   <!-- Pulse LMG -->
@@ -289,8 +294,13 @@
         <Crafting>6</Crafting>
       </skillRequirements>
       <displayPriority>445</displayPriority>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
     </recipeMaker>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <statBases>
       <WorkToMake>34000</WorkToMake>
       <Mass>8.5</Mass>
@@ -318,9 +328,6 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-    </weaponTags>
     <tools>
       <li>
         <label>stock</label>
@@ -359,11 +366,12 @@ The S12 was created to give marines a competent weapon to break open insectoid s
     <equippedAngleOffset>-90</equippedAngleOffset>
     <techLevel>Medieval</techLevel>
     <weaponTags>
-      <li>MedievalMeleeAdvanced</li>
-      <li>LongSword</li>
+      <li>URMC_Weapons</li>
     </weaponTags>
     <costStuffCount>100</costStuffCount>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <statBases>
       <WorkToMake>18000</WorkToMake>
       <Mass>2</Mass>
@@ -405,6 +413,9 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         <Crafting>5</Crafting>
       </skillRequirements>
       <displayPriority>420</displayPriority>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
     </recipeMaker>
     <modExtensions>
       <li Class="VFECore.ThingDefExtension">
@@ -419,7 +430,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
             <angleOffset>20</angleOffset>
           </east>
           <south>
-            <drawOffset>(0.1,0.00,0.15)</drawOffset>  <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+            <drawOffset>(0.1,0.00,0.15)</drawOffset>            <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
             <angleOffset>15</angleOffset>
           </south>
           <west>
@@ -454,12 +465,17 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         <Crafting>6</Crafting>
       </skillRequirements>
       <displayPriority>445</displayPriority>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
     </recipeMaker>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <statBases>
       <WorkToMake>34000</WorkToMake>
       <Mass>8.5</Mass>
-      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>75</Steel>
@@ -473,7 +489,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         <minRange>2</minRange>
         <hasStandardCommand>true</hasStandardCommand>
         <range>14</range>
-        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>16</ticksBetweenBurstShots>
         <burstShotCount>10</burstShotCount>
         <soundCast>pphhyy_ImmolatorSound</soundCast>
         <muzzleFlashScale>5</muzzleFlashScale>
@@ -483,9 +499,6 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         </targetParams>
       </li>
     </verbs>
-    <weaponTags>
-      <li>IndustrialGunAdvanced</li>
-    </weaponTags>
     <tools>
       <li>
         <label>stock</label>
@@ -508,381 +521,386 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   </ThingDef>
 
 
-<!-- M80 GL Machine -->
+  <!-- M80 GL Machine -->
 
 
-<ThingDef ParentName="pphhyy_RangedWeapons">
-  <defName>pphhyy_M80GLMachine</defName>
-  <label>M80 gl machine</label>
-  <description>Mark 80 Grenade Launcher Machine is a portable weapon capable of delivering 3 grenades at once from its rapid launcher, this destructive marvel is a masterpiece from the URMC arsenal, very useful for cleaning bunkers and defensive positions fast and from a decent distance.</description>
-  <graphicData>
-    <texPath>Weapon/M80GLMachine</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>1.3</drawSize>
-  </graphicData>
-  <uiIconScale>1.4</uiIconScale>
-  <soundInteract>Interact_Autopistol</soundInteract>
-  <recipeMaker>
-    <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
-    <skillRequirements>
-      <Crafting>4</Crafting>
-    </skillRequirements>
-    <displayPriority>405</displayPriority>
-  </recipeMaker>
-  <weaponTags>
-    <li>SimpleGun</li>
-    <li>Autopistol</li>
-  </weaponTags>
-  <weaponClasses>
-    <li>RangedLight</li>
-  </weaponClasses>
-  <statBases>
-    <WorkToMake>5000</WorkToMake>
-    <Mass>1.2</Mass>
-    <AccuracyTouch>0.33</AccuracyTouch>
-    <AccuracyShort>0.25</AccuracyShort>
-    <AccuracyMedium>0.18</AccuracyMedium>
-    <AccuracyLong>0.15</AccuracyLong>
-    <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-  </statBases>
-  <costList>
-    <Plasteel>80</Plasteel>
-    <ComponentIndustrial>8</ComponentIndustrial>
-  </costList>
-  <verbs>
-    <li>
-      <label>launch frag grenade</label>
-      <verbClass>Verb_Shoot</verbClass>
-      <defaultProjectile>pphhyy_GrenadeFragProjectile</defaultProjectile>
-      <hasStandardCommand>true</hasStandardCommand>
-      <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-      <burstShotCount>3</burstShotCount>
-      <range>24.9</range>
-      <forcedMissRadius>8.9</forcedMissRadius>
-      <warmupTime>3</warmupTime>
-      <noiseRadius>4</noiseRadius>
-      <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-      <soundCast>Shot_IncendiaryLauncher</soundCast>
-      <soundCastTail>GunTail_Medium</soundCastTail>
-      <muzzleFlashScale>14</muzzleFlashScale>
-      <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-      </targetParams>
-      <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-    </li>
-  </verbs>
-  <tools>
-    <li>
-      <label>grip</label>
-      <capacities>
-        <li>Blunt</li>
-      </capacities>
-      <power>9</power>
-      <cooldownTime>2</cooldownTime>
-    </li>
-    <li>
-      <label>barrel</label>
-      <capacities>
-        <li>Blunt</li>
-        <li>Poke</li>
-      </capacities>
-      <power>9</power>
-      <cooldownTime>2</cooldownTime>
-    </li>
-  </tools>
-</ThingDef>
+  <ThingDef ParentName="pphhyy_RangedWeapons">
+    <defName>pphhyy_M80GLMachine</defName>
+    <label>M80 gl machine</label>
+    <description>Mark 80 Grenade Launcher Machine is a portable weapon capable of delivering 3 grenades at once from its rapid launcher, this destructive marvel is a masterpiece from the URMC arsenal, very useful for cleaning bunkers and defensive positions fast and from a decent distance.</description>
+    <graphicData>
+      <texPath>Weapon/M80GLMachine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Autopistol</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+      <displayPriority>405</displayPriority>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>1.2</Mass>
+      <AccuracyTouch>0.33</AccuracyTouch>
+      <AccuracyShort>0.25</AccuracyShort>
+      <AccuracyMedium>0.18</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>80</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <label>launch frag grenade</label>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>pphhyy_GrenadeFragProjectile</defaultProjectile>
+        <hasStandardCommand>true</hasStandardCommand>
+        <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <range>24.9</range>
+        <forcedMissRadius>8.9</forcedMissRadius>
+        <warmupTime>3</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>Shot_IncendiaryLauncher</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 
 
-<!-- M50X Recon Rifle -->
+  <!-- M50X Recon Rifle -->
 
-<ThingDef ParentName="BaseHumanMakeableGun">
-  <defName>pphhyy_M50XReconRifle</defName>
-  <label>M50X recon rifle</label>
-  <description>An ancient design of precision sniper rifle. Bolt action. It has an exceptionally long range, great accuracy and good power. Because it's so unwieldy, other weapons outclass it at close range.</description>
-  <possessionCount>1</possessionCount>
-  <graphicData>
-    <texPath>Weapon/M50XReconRifle</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>1.3</drawSize>
-  </graphicData>
-  <soundInteract>Interact_Rifle</soundInteract>
-  <weaponClasses>
-    <li>LongShots</li>
-    <li>RangedHeavy</li>
-  </weaponClasses>
-  <recipeMaker>
-    <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
-    <skillRequirements>
-      <Crafting>7</Crafting>
-    </skillRequirements>
-    <displayPriority>425</displayPriority>
-  </recipeMaker>
-  <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
-  <statBases>
-    <WorkToMake>45000</WorkToMake>
-    <Mass>4</Mass>
-    <AccuracyTouch>0.65</AccuracyTouch>
-    <AccuracyShort>0.80</AccuracyShort>
-    <AccuracyMedium>0.95</AccuracyMedium>
-    <AccuracyLong>0.97</AccuracyLong>
-    <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
-  </statBases>
-  <costList>
-    <Plasteel>70</Plasteel>
-    <ComponentIndustrial>8</ComponentIndustrial>
-  </costList>
-  <verbs>
-    <li>
-      <verbClass>Verb_Shoot</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>pphhyy_Bullet_SniperRifle</defaultProjectile>
-      <warmupTime>3.5</warmupTime>
-      <range>44.9</range>
-      <soundCast>pphhyy_ReconRifleSound</soundCast>
-      <soundCastTail>GunTail_Heavy</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-    </li>
-  </verbs>
-  <tools>
-    <li>
-      <label>stock</label>
-      <capacities>
-        <li>Blunt</li>
-      </capacities>
-      <power>9</power>
-      <cooldownTime>2</cooldownTime>
-    </li>
-    <li>
-      <label>barrel</label>
-      <capacities>
-        <li>Blunt</li>
-        <li>Poke</li>
-      </capacities>
-      <power>9</power>
-      <cooldownTime>2</cooldownTime>
-    </li>
-  </tools>
-  <weaponTags Inherit="False">
-    <li>SniperRifle</li>
-  </weaponTags>
-  <modExtensions>
-    <li Class="VFECore.ThingDefExtension">
-      <weaponDraftedDrawOffsets>
-        <north>
-          <drawOffset>(0.05,0.0,0)</drawOffset>
-          <angleOffset>-30</angleOffset>
-        </north>
-        <east>
-          <drawOffset>(0.10,0.2,0.05)</drawOffset>
-          <angleOffset>-45</angleOffset>
-        </east>
-        <south>
-          <drawOffset>(0.10,0,0)</drawOffset>  <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
-          <angleOffset>-30</angleOffset>
-        </south>
-        <west>
-          <drawOffset>(-0.10,0.0,0.05)</drawOffset>
-          <angleOffset>45</angleOffset>
-        </west>
-      </weaponDraftedDrawOffsets>
-    </li>
-  </modExtensions>
-</ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>pphhyy_M50XReconRifle</defName>
+    <label>M50X recon rifle</label>
+    <description>An ancient design of precision sniper rifle. Bolt action. It has an exceptionally long range, great accuracy and good power. Because it's so unwieldy, other weapons outclass it at close range.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapon/M50XReconRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>LongShots</li>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <displayPriority>425</displayPriority>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.80</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.97</AccuracyLong>
+      <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>70</Plasteel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>pphhyy_Bullet_SniperRifle</defaultProjectile>
+        <warmupTime>3.5</warmupTime>
+        <range>44.9</range>
+        <soundCast>pphhyy_ReconRifleSound</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>URMC_Weapons</li>
+    </weaponTags>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <weaponDraftedDrawOffsets>
+          <north>
+            <drawOffset>(0.05,0.0,0)</drawOffset>
+            <angleOffset>-30</angleOffset>
+          </north>
+          <east>
+            <drawOffset>(0.10,0.2,0.05)</drawOffset>
+            <angleOffset>-45</angleOffset>
+          </east>
+          <south>
+            <drawOffset>(0.10,0,0)</drawOffset>            <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+            <angleOffset>-30</angleOffset>
+          </south>
+          <west>
+            <drawOffset>(-0.10,0.0,0.05)</drawOffset>
+            <angleOffset>45</angleOffset>
+          </west>
+        </weaponDraftedDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
 
-<ThingDef ParentName="BaseBullet">
-  <defName>pphhyy_Bullet_SniperRifle</defName>
-  <label>sniper rifle bullet</label>
-  <graphicData>
-    <texPath>Things/Projectile/Bullet_Big</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-  </graphicData>
-  <projectile>
-    <damageDef>Bullet</damageDef>
-    <damageAmountBase>30</damageAmountBase>
-    <stoppingPower>1.5</stoppingPower>
-    <speed>100</speed>
-  </projectile>
-</ThingDef>
-
-
-<!-- M52H Breaching Shotgun -->
-
-<ThingDef ParentName="pphhyy_RangedWeapons">
-  <defName>pphhyy_M52HBreachingShotgun</defName>
-  <label>M52H breaching shotgun</label>
-  <description>the M52 Hicks is a mag-fed, pump-action shotgun, another highly modifiable firearm platform at the discretion of squad officers, this weapon offers a reliable room cleaning and close combat solution fit for any marine, corpsmen or specialist who like to keep something handy for close encounters.</description>
-  <possessionCount>1</possessionCount>
-  <graphicData>
-    <texPath>Weapon/M52HBreachingShotgun</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>1.3</drawSize>
-  </graphicData>
-  <soundInteract>Interact_Shotgun</soundInteract>
-  <weaponClasses>
-    <li>ShortShots</li>
-  </weaponClasses>
-  <weaponTags>
-    <li>ShortShots</li>
-    <li>PumpShotgun</li>
-  </weaponTags>
-  <statBases>
-    <WorkToMake>12000</WorkToMake>
-    <Mass>3.4</Mass>
-    <AccuracyTouch>0.80</AccuracyTouch>
-    <AccuracyShort>0.87</AccuracyShort>
-    <AccuracyMedium>0.77</AccuracyMedium>
-    <AccuracyLong>0.64</AccuracyLong>
-    <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
-  </statBases>
-  <costList>
-    <Plasteel>65</Plasteel>
-    <ComponentIndustrial>3</ComponentIndustrial>
-  </costList>
-  <recipeMaker>
-    <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
-    <skillRequirements>
-      <Crafting>5</Crafting>
-    </skillRequirements>
-    <displayPriority>430</displayPriority>
-  </recipeMaker>
-  <verbs>
-    <li>
-      <verbClass>Verb_Shoot</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_Shotgun</defaultProjectile>
-      <warmupTime>0.9</warmupTime>
-      <range>15.9</range>
-      <soundCast>pphhyy_BreachingShotgunSound</soundCast>
-      <soundCastTail>GunTail_Heavy</soundCastTail>
-      <muzzleFlashScale>9</muzzleFlashScale>
-    </li>
-  </verbs>
-  <tools>
-    <li>
-      <label>stock</label>
-      <capacities>
-        <li>Blunt</li>
-      </capacities>
-      <power>9</power>
-      <cooldownTime>2</cooldownTime>
-    </li>
-    <li>
-      <label>barrel</label>
-      <capacities>
-        <li>Blunt</li>
-        <li>Poke</li>
-      </capacities>
-      <power>9</power>
-      <cooldownTime>2</cooldownTime>
-    </li>
-  </tools>
-</ThingDef>
-
-<!-- M10 Rl Sadar-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>pphhyy_Bullet_SniperRifle</defName>
+    <label>sniper rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
 
 
-<ThingDef ParentName="BaseHumanMakeableGun">
-  <defName>pphhyy_M10RLSadar</defName>
-  <label>M10 RL Sadar</label>
-  <description>A reloadable, single shot RPG. This premier anti-armor weapon carries the most powerful ordnance available to marine infantry, man-portable anti-tank, the launcher itself can be unwieldy to deploy and take a few seconds to be ready to fire from a resting position. It requires a highly trained specialist to avoid unnecessary casualties, it is designed to use a variety of customizable rockets.</description>
-  <tickerType>Normal</tickerType>
-  <smeltable>false</smeltable>
-  <graphicData>
-    <texPath>Weapon/M10RLSadar</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-    <drawSize>1.4</drawSize>
-  </graphicData>
-  <recipeMaker>
-    <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
-    <skillRequirements>
-      <Crafting>5</Crafting>
-    </skillRequirements>
-    <displayPriority>430</displayPriority>
-  </recipeMaker>
-  <costList>
-    <Plasteel>90</Plasteel>
-    <ComponentIndustrial>10</ComponentIndustrial>
-  </costList>
-  <statBases>
-    <MarketValue>1000</MarketValue>
-    <Mass>7</Mass>
-    <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
-  </statBases>
-  <techLevel>Spacer</techLevel>
-  <weaponTags>
-    <li>Gun</li>
-    <li>GunSingleUse</li>
-  </weaponTags>
-  <weaponClasses>
-    <li>RangedHeavy</li>
-  </weaponClasses>
-  <tradeTags>
-    <li>ExoticMisc</li>
-    <li>WeaponRanged</li>
-  </tradeTags>
-  <thingSetMakerTags>
-    <li>SingleUseWeapon</li>
-    <li>RewardStandardLowFreq</li>
-  </thingSetMakerTags>
-  <relicChance>0</relicChance>
-  <verbs>
-    <li>
-      <verbClass>Verb_Shoot</verbClass>
-      <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_Rocket</defaultProjectile>
-      <forcedMissRadius>2.9</forcedMissRadius>
-      <warmupTime>4.5</warmupTime>
-      <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
-      <range>35.9</range>
-      <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
-      <burstShotCount>1</burstShotCount>
-      <soundCast>pphhyy_RLSadarSound</soundCast>
-      <soundCastTail>GunTail_Heavy</soundCastTail>
-      <onlyManualCast>true</onlyManualCast>
-      <stopBurstWithoutLos>false</stopBurstWithoutLos>
-      <targetParams>
-        <canTargetLocations>true</canTargetLocations>
-      </targetParams>
-      <muzzleFlashScale>14</muzzleFlashScale>
-    </li>
-  </verbs>
-  <tools>
-    <li>
-      <label>barrel</label>
-      <capacities>
-        <li>Blunt</li>
-      </capacities>
-      <power>11.7</power>
-      <cooldownTime>2.6</cooldownTime>
-    </li>
-  </tools>
-  <comps>
-    <li Class="CompProperties_Biocodable"/>
-  </comps>
-  <modExtensions>
-    <li Class="VFECore.ThingDefExtension">
-      <weaponDraftedDrawOffsets>
-        <north>
-          <drawOffset>(0.05,0.0,0)</drawOffset>
-          <angleOffset>-30</angleOffset>
-        </north>
-        <east>
-          <drawOffset>(0.10,0.2,0.15)</drawOffset>
-          <angleOffset>-45</angleOffset>
-        </east>
-        <south>
-          <drawOffset>(-0.05,0,0.10)</drawOffset>  <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
-          <angleOffset>-20</angleOffset>
-        </south>
-        <west>
-          <drawOffset>(-0.10,0.0,0.15)</drawOffset>
-          <angleOffset>45</angleOffset>
-        </west>
-      </weaponDraftedDrawOffsets>
-    </li>
-  </modExtensions>
-</ThingDef>
+  <!-- M52H Breaching Shotgun -->
+
+  <ThingDef ParentName="pphhyy_RangedWeapons">
+    <defName>pphhyy_M52HBreachingShotgun</defName>
+    <label>M52H breaching shotgun</label>
+    <description>the M52 Hicks is a mag-fed, pump-action shotgun, another highly modifiable firearm platform at the discretion of squad officers, this weapon offers a reliable room cleaning and close combat solution fit for any marine, corpsmen or specialist who like to keep something handy for close encounters.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Weapon/M52HBreachingShotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.3</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Shotgun</soundInteract>
+    <weaponClasses>
+      <li>ShortShots</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.4</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.87</AccuracyShort>
+      <AccuracyMedium>0.77</AccuracyMedium>
+      <AccuracyLong>0.64</AccuracyLong>
+      <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>65</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>430</displayPriority>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Shotgun</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>15.9</range>
+        <soundCast>pphhyy_BreachingShotgunSound</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- M10 Rl Sadar-->
+
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>pphhyy_M10RLSadar</defName>
+    <label>M10 RL Sadar</label>
+    <description>A reloadable, single shot RPG. This premier anti-armor weapon carries the most powerful ordnance available to marine infantry, man-portable anti-tank, the launcher itself can be unwieldy to deploy and take a few seconds to be ready to fire from a resting position. It requires a highly trained specialist to avoid unnecessary casualties, it is designed to use a variety of customizable rockets.</description>
+    <tickerType>Normal</tickerType>
+    <smeltable>false</smeltable>
+    <graphicData>
+      <texPath>Weapon/M10RLSadar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>430</displayPriority>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>90</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>7</Mass>
+      <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>URMC_Weapons</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <tradeTags>
+      <li>ExoticMisc</li>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>SingleUseWeapon</li>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+    <relicChance>0</relicChance>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Rocket</defaultProjectile>
+        <forcedMissRadius>2.9</forcedMissRadius>
+        <warmupTime>4.5</warmupTime>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>35.9</range>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>pphhyy_RLSadarSound</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <onlyManualCast>true</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>14</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <weaponDraftedDrawOffsets>
+          <north>
+            <drawOffset>(0.05,0.0,0)</drawOffset>
+            <angleOffset>-30</angleOffset>
+          </north>
+          <east>
+            <drawOffset>(0.10,0.2,0.15)</drawOffset>
+            <angleOffset>-45</angleOffset>
+          </east>
+          <south>
+            <drawOffset>(-0.05,0,0.10)</drawOffset>            <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+            <angleOffset>-20</angleOffset>
+          </south>
+          <west>
+            <drawOffset>(-0.10,0.0,0.15)</drawOffset>
+            <angleOffset>45</angleOffset>
+          </west>
+        </weaponDraftedDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
 
 
 
