@@ -44,8 +44,7 @@
             <li>Overhead</li>
           </layers>
           <tags>
-            <li>IndustrialBasic</li>
-            <li>Western</li>
+          <li>URMC_HatsAndHelmets</li>
           </tags>
           <defaultOutfitTags>
             <li>Worker</li>
@@ -116,8 +115,7 @@
             <li>Overhead</li>
           </layers>
           <tags>
-            <li>IndustrialBasic</li>
-            <li>Western</li>
+            <li>URMC_HatsAndHelmets</li>
           </tags>
           <defaultOutfitTags>
             <li>Worker</li>
@@ -187,8 +185,7 @@
           <li>Overhead</li>
         </layers>
         <tags>
-          <li>IndustrialBasic</li>
-          <li>Western</li>
+          <li>URMC_HatsAndHelmets</li>
         </tags>
         <defaultOutfitTags>
           <li>Worker</li>

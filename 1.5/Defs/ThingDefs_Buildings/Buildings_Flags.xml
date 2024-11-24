@@ -70,6 +70,9 @@
           <Crafting>6</Crafting>
         </skillRequirements>
         <displayPriority>445</displayPriority>
+		<recipeUsers>
+			<li>TableMachining</li>
+		  </recipeUsers>
        </recipeMaker>
        <costList>
         <Cloth>60</Cloth>
