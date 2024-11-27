@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Patch>
+
+    <Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="pphhyy_GrenadeFrag" or defName="pphhyy_GrenadeIncendiary" or defName="pphhyy_GrenadeIncendiaryProjectile" or defName="pphhyy_GrenadeFoam" or defName="pphhyy_GrenadeFoamProjectile"]</xpath>
+	</Operation>
+
+</Patch>
