@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_ColonialFatigue"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
-		</value>
-	</Operation>
-
-    <Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M1Flak"]/label</xpath>
-		<value>
-			<label>armor vest</label>
 		</value>
 	</Operation>
 
@@ -74,11 +67,7 @@
 		<xpath>Defs/ThingDef[defName="pphhyy_M1Flak"]/statBases/ArmorRating_Heat</xpath>
 	</Operation>
 
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="pphhyy_M1Flak"]/equippedStatOffsets/MoveSpeed</xpath>
-	</Operation>
-
-    <Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="pphhyy_M1Flak"]</xpath>
 		<value>
 			<costStuffCount>90</costStuffCount>
@@ -158,13 +147,6 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M2Recon"]/costList</xpath>
-		<value>
-			<DevilstrandCloth>40</DevilstrandCloth>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="pphhyy_M2Recon"]</xpath>
 		<value>
 			<equippedStatOffsets>
@@ -177,7 +159,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M2Recon"]/apparel/bodyPartGroups</xpath>
+		<xpath>Defs/ThingDef[@Name="pphhyy_URMCArmors"]/apparel/bodyPartGroups</xpath>
 		<value>
 			<li>Hands</li>
 			<li>Feet</li>
@@ -234,61 +216,57 @@
 
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer"]/statBases</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
+			defName="pphhyy_M3Officer"]/statBases</xpath>
 		<value>
-			<Bulk>100</Bulk>
+			<Bulk>80</Bulk>
 			<WornBulk>15</WornBulk>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/statBases/MaxHitPoints</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
+			defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/statBases/MaxHitPoints</xpath>
 		<value>
 			<MaxHitPoints>500</MaxHitPoints>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer"]/statBases/Mass</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
+			defName="pphhyy_M3Officer"]/statBases/Mass</xpath>
 		<value>
 			<Mass>50</Mass>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/statBases/Flammability</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
+			defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/statBases/Flammability</xpath>
 		<value>
 			<Flammability>0</Flammability>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/statBases/ArmorRating_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
+			defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
 			<ArmorRating_Sharp>20</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/statBases/ArmorRating_Blunt</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
+			defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>45</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/costList</xpath>
-		<value>
-			<DevilstrandCloth>50</DevilstrandCloth>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/equippedStatOffsets/MoveSpeed</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/equippedStatOffsets</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
+			defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/equippedStatOffsets</xpath>
 		<value>
 			<CarryWeight>80</CarryWeight>
 			<CarryBulk>10</CarryBulk>
@@ -297,16 +275,9 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]/apparel/bodyPartGroups</xpath>
-		<value>
-			<li>Hands</li>
-			<li>Feet</li>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
+			defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]</xpath>
 		<value>
 			<li Class="CombatExtended.PartialArmorExt">
 				<stats>
@@ -351,7 +322,7 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="pphhyy_M3Veteran"]/statBases</xpath>
 		<value>
 			<Bulk>50</Bulk>
@@ -366,11 +337,19 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Veteran" or defName="pphhyy_M10VeteranHelmet"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<MoveSpeed>0.2</MoveSpeed>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="pphhyy_M4Goliath"]/statBases</xpath>
 		<value>
-			<Bulk>100</Bulk>
+			<Bulk>80</Bulk>
 			<WornBulk>15</WornBulk>
 		</value>
 	</Operation>
@@ -411,32 +390,15 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M4Goliath"]/costList</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M4Goliath"]</xpath>
 		<value>
-			<DevilstrandCloth>60</DevilstrandCloth>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationRemove">
-		<xpath>Defs/ThingDef[defName="pphhyy_M4Goliath"]/equippedStatOffsets/MoveSpeed</xpath>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M4Goliath"]/equippedStatOffsets</xpath>
-		<value>
-			<CarryWeight>100</CarryWeight>
-			<CarryBulk>20</CarryBulk>
-			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
-			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
-			<MeleeDodgeChance>-0.15</MeleeDodgeChance>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M4Goliath"]/apparel/bodyPartGroups</xpath>
-		<value>
-			<li>Hands</li>
-			<li>Feet</li>
+			<equippedStatOffsets>
+				<CarryWeight>100</CarryWeight>
+				<CarryBulk>20</CarryBulk>
+				<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+				<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+				<MeleeDodgeChance>-0.15</MeleeDodgeChance>
+			</equippedStatOffsets>
 		</value>
 	</Operation>
 
@@ -477,7 +439,8 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Armor" or defName="pphhyy_M3Veteran" or defName="pphhyy_M4Goliath"]/verbs</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Armor" or defName="pphhyy_M3Veteran" or
+			defName="pphhyy_M4Goliath"]/verbs</xpath>
 		<value>
 			<verbs>
 				<li Class="CombatExtended.VerbPropertiesCE">
@@ -505,7 +468,8 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Armor" or defName="pphhyy_M3Veteran" or defName="pphhyy_M4Goliath"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Armor" or defName="pphhyy_M3Veteran" or
+			defName="pphhyy_M4Goliath"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
 		<value>
 			<ammoDef>Ammo_URMC_Grenade_HE</ammoDef>
 		</value>
@@ -540,7 +504,8 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Officer"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
+		<xpath>
+			Defs/ThingDef[defName="pphhyy_M3Officer"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
 		<value>
 			<ammoDef>Ammo_URMC_Grenade_Incendiary</ammoDef>
 		</value>
@@ -575,29 +540,34 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
+		<xpath>
+			Defs/ThingDef[defName="pphhyy_M3Medic"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
 		<value>
 			<ammoDef>Ammo_URMC_Grenade_Foam</ammoDef>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Armor" or defName="pphhyy_M3Veteran" or defName="pphhyy_M4Goliath" or defName="pphhyy_M3Officer" or defName="pphhyy_M3Medic"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoCountPerCharge</xpath>
+		<xpath>
+			Defs/ThingDef[defName="pphhyy_M3Armor" or defName="pphhyy_M3Veteran" or
+			defName="pphhyy_M4Goliath" or defName="pphhyy_M3Officer" or
+			defName="pphhyy_M3Medic"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoCountPerCharge</xpath>
 		<value>
 			<ammoCountPerCharge>1</ammoCountPerCharge>
 		</value>
 	</Operation>
 
-    <!-- Hats -->
+	<!-- Hats -->
 
-    <Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_UtilityCover" or defName="pphhyy_OfficerBeret" or defName="pphhyy_ColonialBeret"]/statBases/StuffEffectMultiplierArmor</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_UtilityCover" or defName="pphhyy_OfficerBeret" or
+			defName="pphhyy_ColonialBeret"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_M3-SLightHelmet"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>4</StuffEffectMultiplierArmor>
@@ -606,17 +576,21 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_M3-SLightHelmet"]/stuffCategories/li[.="Metallic"]</xpath>
 		<value>
 			<li>Steeled</li>
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_M3-SHelmet"]/description</xpath>
 		<value>
-			<description>A high-tech armored helmet with a built-in status computer and a protective plasteel-weave plate.\n\nBuilt-in servo-motors assist the wearer's muscles in holding the weight of the helmet while the integrated combat HUD improves weapon accuracy.\n\nArmor like this is often used by imperial scout troops or glitterworld police forces.</description>
+			<description>A high-tech armored helmet with a built-in status computer and a protective
+				plasteel-weave plate.\n\nBuilt-in servo-motors assist the wearer's muscles in
+				holding the weight of the helmet while the integrated combat HUD improves weapon
+				accuracy.\n\nArmor like this is often used by imperial scout troops or glitterworld
+				police forces.</description>
 		</value>
 	</Operation>
 
@@ -726,8 +700,10 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or defName="pphhyy_M10VeteranHelmet"]/statBases</xpath>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
+			defName="pphhyy_M10PatternMedicHelmet" or
+			defName="pphhyy_M10PatternOfficerHelmet"]/statBases</xpath>
 		<value>
 			<Bulk>5</Bulk>
 			<WornBulk>1</WornBulk>
@@ -736,42 +712,54 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or defName="pphhyy_M10VeteranHelmet"]/statBases/Flammability</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
+			defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or
+			defName="pphhyy_M10VeteranHelmet"]/statBases/Flammability</xpath>
 		<value>
 			<Flammability>0</Flammability>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or defName="pphhyy_M10VeteranHelmet"]/statBases/Mass</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
+			defName="pphhyy_M10PatternMedicHelmet" or
+			defName="pphhyy_M10PatternOfficerHelmet"]/statBases/Mass</xpath>
 		<value>
 			<Mass>4.8</Mass>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or defName="pphhyy_M10VeteranHelmet"]/statBases/MaxHitPoints</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
+			defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or
+			defName="pphhyy_M10VeteranHelmet"]/statBases/MaxHitPoints</xpath>
 		<value>
 			<MaxHitPoints>240</MaxHitPoints>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or defName="pphhyy_M10VeteranHelmet"]/statBases/ArmorRating_Sharp</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
+			defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or
+			defName="pphhyy_M10VeteranHelmet"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
 			<ArmorRating_Sharp>16</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or defName="pphhyy_M10VeteranHelmet"]/statBases/ArmorRating_Blunt</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
+			defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or
+			defName="pphhyy_M10VeteranHelmet"]/statBases/ArmorRating_Blunt</xpath>
 		<value>
 			<ArmorRating_Blunt>36</ArmorRating_Blunt>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or defName="pphhyy_M10VeteranHelmet"]/equippedStatOffsets</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
+			defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or
+			defName="pphhyy_M10VeteranHelmet"]/equippedStatOffsets</xpath>
 		<value>
 			<AimingAccuracy>0.15</AimingAccuracy>
 			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
@@ -780,14 +768,18 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or defName="pphhyy_M10VeteranHelmet"]/apparel</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
+			defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or
+			defName="pphhyy_M10VeteranHelmet"]/apparel</xpath>
 		<value>
 			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or defName="pphhyy_M10VeteranHelmet"]/apparel/layers</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
+			defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or
+			defName="pphhyy_M10VeteranHelmet"]/apparel/layers</xpath>
 		<value>
 			<li>OnHead</li>
 			<li>StrappedHead</li>
@@ -795,7 +787,9 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or defName="pphhyy_M10VeteranHelmet"]</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
+			defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or
+			defName="pphhyy_M10VeteranHelmet"]</xpath>
 		<value>
 			<li Class="CombatExtended.PartialArmorExt">
 				<stats>
@@ -818,7 +812,7 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationAdd">
+	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="pphhyy_M10VeteranHelmet"]/statBases</xpath>
 		<value>
 			<Bulk>2</Bulk>

@@ -45,7 +45,7 @@
         <defName>Ammo_URMC_Grenade_HE</defName>
         <label>URMC grenade (HE)</label>
         <graphicData>
-            <texPath>Resources/Grenade/Grenade</texPath>
+            <texPath>Resources/Grenade</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -59,13 +59,13 @@
         <defName>Ammo_URMC_Grenade_Incendiary</defName>
         <label>URMC grenade (Incendiary)</label>
         <graphicData>
-            <texPath>Resources/IncendiaryGrenade/IncendiaryGrenade</texPath>
+            <texPath>Resources/IncendiaryGrenade</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
             <MarketValue>2.59</MarketValue>
         </statBases>
-        <ammoClass>Grenade</ammoClass>
+        <ammoClass>IncendiaryFuel</ammoClass>
         <detonateProjectile>Bullet_URMC_Grenade_Incendiary</detonateProjectile>
     </ThingDef>
 
@@ -73,7 +73,7 @@
         <defName>Ammo_URMC_Grenade_Foam</defName>
         <label>URMC grenade (Foam)</label>
         <graphicData>
-            <texPath>Resources/FoamGrenade/FoamGrenade</texPath>
+            <texPath>Resources/FoamGrenade</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
