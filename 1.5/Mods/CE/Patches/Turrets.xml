@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="pphhyy_UA12_PulseSentry" or defName="pphhyy_Gun_UA12PulseSentry" or defName="pphhyy_UA12_ScorcherSentry" or defName="pphhyy_Gun_UA12ScorcherSentry"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_Gun_M34ThumperMortar"]/label</xpath>
+		<value>
+			<label>81mm mortar</label>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="pphhyy_Gun_M34ThumperMortar"]/comps/li[@Class="CompProperties_Stunnable"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="pphhyy_Gun_M34ThumperMortar"]/comps</xpath>
+	</Operation>
+
+	<!-- Add trade tags -->
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="pphhyy_Gun_M34ThumperMortar"]/tradeTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="pphhyy_Gun_M34ThumperMortar"]</xpath>
+			<value>
+				<tradeTags />
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="pphhyy_Gun_M34ThumperMortar"]/tradeTags</xpath>
+		<value>
+			<li>CE_Turret</li>
+		</value>
+	</Operation>
+
+</Patch>
