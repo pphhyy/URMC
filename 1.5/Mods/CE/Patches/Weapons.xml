@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_M1PulsePistol"]/tools</xpath>
 		<value>
 			<tools>
@@ -30,7 +30,7 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>
 			Defs/ThingDef[
 			defName="pphhyy_M43PulseRifle" or
@@ -78,7 +78,7 @@
 		</value>
 	</Operation>
 
-    <Operation Class="PatchOperationReplace">
+	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_M10RLSadar"]/tools</xpath>
 		<value>
 			<tools>
@@ -174,7 +174,8 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M43PulseRifle"]/comps/li[@Class="CompProperties_EquippableAbilityReloadable"]</xpath>
+		<xpath>
+			Defs/ThingDef[defName="pphhyy_M43PulseRifle"]/comps/li[@Class="CompProperties_EquippableAbilityReloadable"]</xpath>
 		<value>
 			<li Class="CombatExtended.CompProperties_UnderBarrel">
 				<standardLabel>switch to rifle</standardLabel>
@@ -344,7 +345,7 @@
 			<minRange>5</minRange>
 			<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 			<burstShotCount>3</burstShotCount>
-			<soundCast>VWE_Shot_GrenadeLauncher</soundCast>
+			<soundCast>Shot_IncendiaryLauncher</soundCast>
 			<muzzleFlashScale>14</muzzleFlashScale>
 			<ai_IsBuildingDestroyer>True</ai_IsBuildingDestroyer>
 			<ignorePartialLoSBlocker>True</ignorePartialLoSBlocker>
@@ -491,23 +492,6 @@
 			<SightsEfficiency>1</SightsEfficiency>
 			<RangedWeapon_Cooldown>0.39</RangedWeapon_Cooldown>
 		</statBases>
-		<Properties>
-			<recoilAmount>0.85</recoilAmount>
-			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-			<hasStandardCommand>True</hasStandardCommand>
-			<defaultProjectile>Bullet_Flamethrower_Prometheum</defaultProjectile>
-			<burstShotCount>20</burstShotCount>
-			<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-			<warmupTime>1.1</warmupTime>
-			<range>11</range>
-			<minRange>3</minRange>
-			<soundCast>Shot_MiniFlameblaster</soundCast>
-			<muzzleFlashScale>0</muzzleFlashScale>
-			<ai_IsBuildingDestroyer>True</ai_IsBuildingDestroyer>
-			<targetParams>
-				<canTargetLocations>True</canTargetLocations>
-			</targetParams>
-		</Properties>
 		<AmmoUser>
 			<magazineSize>40</magazineSize>
 			<reloadTime>5</reloadTime>
@@ -522,6 +506,32 @@
 			<li>GunHeavy</li>
 		</weaponTags>
 		<AllowWithRunAndGun>false</AllowWithRunAndGun>
+	</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_M44FImmolator"]/verbs</xpath>
+		<value>
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE">
+					<recoilAmount>0.85</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<hasStandardCommand>True</hasStandardCommand>
+					<defaultProjectile>Bullet_Flamethrower_Prometheum</defaultProjectile>
+					<burstShotCount>20</burstShotCount>
+					<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+					<warmupTime>1.1</warmupTime>
+					<range>11</range>
+					<minRange>3</minRange>
+					<soundCast>pphhyy_ImmolatorSound</soundCast>
+					<muzzleFlashScale>0</muzzleFlashScale>
+					<ai_IsBuildingDestroyer>True</ai_IsBuildingDestroyer>
+					<targetParams>
+						<canTargetLocations>True</canTargetLocations>
+					</targetParams>
+				</li>
+			</verbs>
+		</value>
 	</Operation>
 
 </Patch>
