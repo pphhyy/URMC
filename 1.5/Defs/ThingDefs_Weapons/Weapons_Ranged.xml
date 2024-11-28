@@ -48,7 +48,6 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
-      <displayPriority>420</displayPriority>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -192,7 +191,6 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
-      <displayPriority>405</displayPriority>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -293,7 +291,6 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
-      <displayPriority>445</displayPriority>
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
@@ -412,7 +409,6 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
-      <displayPriority>420</displayPriority>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -464,7 +460,6 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
-      <displayPriority>445</displayPriority>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -540,7 +535,6 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
-      <displayPriority>405</displayPriority>
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
@@ -628,7 +622,6 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
-      <displayPriority>425</displayPriority>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -757,7 +750,6 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
-      <displayPriority>430</displayPriority>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -814,7 +806,6 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
-      <displayPriority>430</displayPriority>
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>

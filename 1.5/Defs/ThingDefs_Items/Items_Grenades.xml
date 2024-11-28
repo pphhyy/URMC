@@ -10,9 +10,9 @@
         <label>frag grenades</label>
         <description>Exploding in a decent blast radius, these Grenades also have the potential to damage nearby walls. Take care when using near structures leading to space or even near your own marines! It is set to detonate in 5 seconds. These are meant to use with the M3 pattern armors.</description>
         <recipeMaker>
-          <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+          <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
           <recipeUsers>
-            <li>FabricationBench</li>
+            <li>TableMachining</li>
           </recipeUsers>
         </recipeMaker>
         <stackLimit>10</stackLimit>
@@ -87,10 +87,6 @@
           <Steel>5</Steel>
           <Chemfuel>20</Chemfuel>
         </costList>
-        <weaponTags>
-          <li>GrenadeDestructive</li>
-          <li>EmpireGrenadeDestructive</li>
-        </weaponTags>
         <thingCategories>
           <li>Grenades</li>
         </thingCategories>
