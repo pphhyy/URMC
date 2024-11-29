@@ -53,7 +53,7 @@
       <AccuracyShort>0.30</AccuracyShort>
       <AccuracyMedium>0.23</AccuracyMedium>
       <AccuracyLong>0.15</AccuracyLong>
-      <RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
       <DeteriorationRate>0</DeteriorationRate>
       <Mass>40</Mass>
       <Flammability>0</Flammability>
@@ -64,9 +64,9 @@
         <defaultProjectile>Bullet_Minigun</defaultProjectile>
         <warmupTime>0</warmupTime>
         <range>28.9</range>
-        <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>24</burstShotCount>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>pphhyy_PulseRifleSound</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
