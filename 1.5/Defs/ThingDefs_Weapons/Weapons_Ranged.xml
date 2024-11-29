@@ -758,7 +758,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_Shotgun</defaultProjectile>
+        <defaultProjectile>pphhyy_Bullet_Shotgun</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>15.9</range>
         <soundCast>pphhyy_BreachingShotgunSound</soundCast>
@@ -772,7 +772,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
+        <power>12</power>
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
@@ -781,11 +781,28 @@ The S12 was created to give marines a competent weapon to break open insectoid s
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>12</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
   </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>pphhyy_Bullet_Shotgun</defName>
+    <label>shotgun blast</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>36</damageAmountBase>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
 
   <!-- M10 Rl Sadar-->
 
