@@ -22,7 +22,7 @@
     <!-- ==================== Ammo ========================== -->
 
     <ThingDef Class="CombatExtended.AmmoDef" Name="10x24mmCaselessBase"
-        ParentName="SpacerSmallAmmoBase" Abstract="True">
+        ParentName="AdvancedAmmoRecipeBase" Abstract="True">
         <description>10 millimeter explosive-tip caseless. Standard light armor-piercing round.</description>
         <statBases>
             <Mass>0.017</Mass>
@@ -83,7 +83,7 @@
 
     <!-- ==================== Recipes ========================== -->
 
-    <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <RecipeDef ParentName="AdvancedAmmoRecipeBase">
         <defName>MakeAmmo_10x24mmCaseless</defName>
         <label>make 10x24mm Caseless cartridge x500</label>
         <description>Craft 500 10x24mm Caseless cartridges.</description>
