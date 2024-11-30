@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- === Adds ammo to the scenario === -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ScenarioDef[defName="pphhyy_EasyStart" or defName="pphhyy_HardStart"]/scenario/parts</xpath>
+		<value>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>ScatterThingsAnywhere</def>
+				<thingDef>Ammo_10x24mmCaseless</thingDef>
+				<count>360</count>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>
