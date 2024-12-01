@@ -22,7 +22,7 @@
     <!-- ==================== Ammo ========================== -->
 
     <ThingDef Class="CombatExtended.AmmoDef" Name="10x24mmCaselessBase"
-        ParentName="AdvancedAmmoRecipeBase" Abstract="True">
+        ParentName="MediumAmmoBase" Abstract="True">
         <description>10 millimeter explosive-tip caseless. Standard light armor-piercing round.</description>
         <statBases>
             <Mass>0.017</Mass>
