@@ -383,7 +383,7 @@
 			<recoilAmount>1.50</recoilAmount>
 			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+			<defaultProjectile>Bullet_10x24mmCaseless</defaultProjectile>
 			<warmupTime>1.8</warmupTime>
 			<range>75</range>
 			<soundCast>Shot_SniperRifle</soundCast>
@@ -393,7 +393,7 @@
 		<AmmoUser>
 			<magazineSize>5</magazineSize>
 			<reloadTime>4</reloadTime>
-			<ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+			<ammoSet>AmmoSet_10x24mmCaseless</ammoSet>
 		</AmmoUser>
 		<FireModes>
 			<aiAimMode>AimedShot</aiAimMode>
