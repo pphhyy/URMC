@@ -38,7 +38,6 @@
     <description>The comfort wear of the corps, is what the officers would tell you. When not murdering bugs or other less then friendly aliens the Marines wear these during down time.</description>
     <label>colonial fatigue</label>
     <recipeMaker>
-      <displayPriority>208</displayPriority>
       <researchPrerequisite Inherit="false">pphhyy_URMCBasic</researchPrerequisite>
     </recipeMaker>
     <graphicData>
@@ -103,7 +102,6 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
-      <displayPriority>220</displayPriority>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -117,7 +115,7 @@
     <statBases>
       <WorkToMake>9000</WorkToMake>
       <MaxHitPoints>200</MaxHitPoints>
-      <Mass>4</Mass>
+      <Mass>2</Mass>
       <Flammability>0.6</Flammability>
       <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
@@ -185,7 +183,7 @@
     <statBases>
       <WorkToMake>45000</WorkToMake>
       <MaxHitPoints>280</MaxHitPoints>
-      <Mass>9</Mass>
+      <Mass>5</Mass>
       <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
@@ -239,7 +237,7 @@
   <ThingDef ParentName="pphhyy_URMCArmors">
     <defName>pphhyy_M3Medic</defName>
     <label>M3 pattern medic armor</label>
-    <description>Standard Issue Armor used by Medics, provides modest protection from bullet and melee attacks, an all rounder in terms of protection. Boosts Medical Skill.</description>
+    <description>Standard Issue Armor used by Medics, provides modest protection from bullet and melee attacks, an all rounder in terms of protection. Comes with Foam grenades to put out the fire on some eager marines. Boosts Medical Skill.</description>
     <recipeMaker Inherit="false">
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
@@ -259,7 +257,7 @@
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>340</MaxHitPoints>
-      <Mass>12</Mass>
+      <Mass>6</Mass>
       <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
@@ -397,7 +395,7 @@
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>340</MaxHitPoints>
-      <Mass>12</Mass>
+      <Mass>6</Mass>
       <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
@@ -465,7 +463,7 @@
   <ThingDef ParentName="pphhyy_URMCArmors">
     <defName>pphhyy_M3Officer</defName>
     <label>M3 pattern officer armor</label>
-    <description>A well-crafted suit of M3 Pattern Armor typically found in the hands of higher-ranking officers. Useful for letting your men know who is in charge when taking to the field. Comes with Foam grenades to put out the fire on some eager marines.</description>
+    <description>A well-crafted suit of M3 Pattern Armor typically found in the hands of higher-ranking officers. Useful for letting your men know who is in charge when taking to the field. Comes with Incendiary grenades.</description>
     <recipeMaker Inherit="false">
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
@@ -507,7 +505,7 @@
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>340</MaxHitPoints>
-      <Mass>12</Mass>
+      <Mass>6</Mass>
       <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
@@ -576,7 +574,7 @@
   <ThingDef ParentName="pphhyy_URMCArmors">
     <defName>pphhyy_M4Goliath</defName>
     <label>M3-G4 grenadier armor</label>
-    <description>A custom set of M3 armour packed to the brim with padding, plating, and every other form of ballistic protection under the sun. Being much heavier than the other armour types. Equipped with 2 Frag Grenades and 2 Incendiary Grenades.</description>
+    <description>A custom set of M3 armour packed to the brim with padding, plating, and every other form of ballistic protection under the sun. Being much heavier than the other armour types. Equipped with 4 Frag Grenades.</description>
     <recipeMaker Inherit="false">
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
@@ -596,7 +594,7 @@
     <statBases>
       <WorkToMake>75000</WorkToMake>
       <MaxHitPoints>400</MaxHitPoints>
-      <Mass>15</Mass>
+      <Mass>7</Mass>
       <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
@@ -721,7 +719,7 @@
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MaxHitPoints>340</MaxHitPoints>
-      <Mass>12</Mass>
+      <Mass>6</Mass>
       <Flammability>0.4</Flammability>
       <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
@@ -729,6 +727,7 @@
       <Insulation_Cold>34</Insulation_Cold>
       <Insulation_Heat>10</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
+      <MarketValue>2000</MarketValue>
     </statBases>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -819,7 +818,6 @@
     <products>
       <pphhyy_M3Veteran>1</pphhyy_M3Veteran>
     </products>
-    <displayPriority>1430</displayPriority>
   </RecipeDef>
 
 

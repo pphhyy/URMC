@@ -10,7 +10,6 @@
         <description>The comfort wear of the corps, is what the officers would tell you. When not murdering bugs or other less then friendly aliens the Marines wear these during down time.</description>
         <possessionCount>1</possessionCount>
         <recipeMaker>
-          <displayPriority>100</displayPriority>
           <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
         </recipeMaker>
         <graphicData>
@@ -81,7 +80,6 @@
         <description>The comfort wear of the corps, is what the officers would tell you. When not murdering bugs or other less then friendly aliens the Marines wear these during down time. This Beret is meant for the officers.</description>
         <possessionCount>1</possessionCount>
         <recipeMaker>
-          <displayPriority>100</displayPriority>
           <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
         </recipeMaker>
         <graphicData>
@@ -151,7 +149,6 @@
       <description>The comfort wear of the corps, is what the officers would tell you. When not murdering bugs or other less then friendly aliens the Marines wear these during down time. The Utility Cover is good for keeping rain off your pants.</description>
       <possessionCount>1</possessionCount>
       <recipeMaker>
-        <displayPriority>100</displayPriority>
         <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
       </recipeMaker>
       <graphicData>
