@@ -236,7 +236,7 @@
 		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
 			defName="pphhyy_M3Officer"]/statBases/Mass</xpath>
 		<value>
-			<Mass>25</Mass>
+			<Mass>15</Mass>
 		</value>
 	</Operation>
 
@@ -333,7 +333,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_M3Veteran"]/statBases/Mass</xpath>
 		<value>
-			<Mass>12</Mass>
+			<Mass>10</Mass>
 		</value>
 	</Operation>
 
@@ -364,7 +364,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_M4Goliath"]/statBases/Mass</xpath>
 		<value>
-			<Mass>80</Mass>
+			<Mass>25</Mass>
 		</value>
 	</Operation>
 
