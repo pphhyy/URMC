@@ -277,7 +277,7 @@
         <onlyManualCast>True</onlyManualCast>
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
@@ -378,7 +378,7 @@
         <onlyManualCast>True</onlyManualCast>
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
@@ -488,7 +488,7 @@
         <onlyManualCast>True</onlyManualCast>
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
@@ -611,7 +611,7 @@
         <onlyManualCast>True</onlyManualCast>
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
@@ -702,7 +702,7 @@
         <onlyManualCast>True</onlyManualCast>
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>

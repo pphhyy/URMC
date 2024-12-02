@@ -151,8 +151,8 @@
       <verbClass>Verb_CastAbility</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <onlyManualCast>True</onlyManualCast>
-      <range>12.9</range>
-      <warmupTime>2.5</warmupTime>
+      <range>29</range>
+      <warmupTime>0.2</warmupTime>
       <noiseRadius>4</noiseRadius>
       <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
       <soundCast>Shot_IncendiaryLauncher</soundCast>
