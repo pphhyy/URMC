@@ -106,8 +106,8 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="pphhyy_M2Recon"]/statBases</xpath>
 		<value>
-			<Bulk>80</Bulk>
-			<WornBulk>12</WornBulk>
+			<Bulk>40</Bulk>
+			<WornBulk>6</WornBulk>
 		</value>
 	</Operation>
 
@@ -219,8 +219,8 @@
 		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
 			defName="pphhyy_M3Officer"]/statBases</xpath>
 		<value>
-			<Bulk>80</Bulk>
-			<WornBulk>15</WornBulk>
+			<Bulk>40</Bulk>
+			<WornBulk>12</WornBulk>
 		</value>
 	</Operation>
 
@@ -236,7 +236,7 @@
 		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
 			defName="pphhyy_M3Officer"]/statBases/Mass</xpath>
 		<value>
-			<Mass>50</Mass>
+			<Mass>15</Mass>
 		</value>
 	</Operation>
 
@@ -325,7 +325,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="pphhyy_M3Veteran"]/statBases</xpath>
 		<value>
-			<Bulk>50</Bulk>
+			<Bulk>25</Bulk>
 			<WornBulk>7</WornBulk>
 		</value>
 	</Operation>
@@ -333,7 +333,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_M3Veteran"]/statBases/Mass</xpath>
 		<value>
-			<Mass>25</Mass>
+			<Mass>10</Mass>
 		</value>
 	</Operation>
 
@@ -349,7 +349,7 @@
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[defName="pphhyy_M4Goliath"]/statBases</xpath>
 		<value>
-			<Bulk>80</Bulk>
+			<Bulk>40</Bulk>
 			<WornBulk>15</WornBulk>
 		</value>
 	</Operation>
@@ -364,7 +364,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_M4Goliath"]/statBases/Mass</xpath>
 		<value>
-			<Mass>80</Mass>
+			<Mass>25</Mass>
 		</value>
 	</Operation>
 

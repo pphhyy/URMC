@@ -29,7 +29,6 @@
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
-      <displayPriority>205</displayPriority>
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
@@ -546,6 +545,7 @@
       <Insulation_Cold>4</Insulation_Cold>
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
+      <MarketValue>800</MarketValue>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -631,7 +631,6 @@
     <products>
       <pphhyy_M10VeteranHelmet>1</pphhyy_M10VeteranHelmet>
     </products>
-    <displayPriority>1430</displayPriority>
   </RecipeDef>
 
 
