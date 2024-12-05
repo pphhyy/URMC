@@ -2,81 +2,81 @@
 
 <Defs>
 
-    <!-- URMC Banner -->
+	<!-- URMC Banner -->
 
-    <ThingDef ParentName="BuildingBase">
-        <defName>pphhyy_URMCBanner</defName>
-        <label>URMC banner</label>
-        <description>URMC Banner meant to be installed in key locations to inspire the United Rimwrold Marine Core.</description>
-        <altitudeLayer>BuildingOnTop</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <selectable>true</selectable>
-        <fillPercent>0.20</fillPercent>
-        <pathCost>14</pathCost>
-        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-        <designationCategory>Furniture</designationCategory>
-        <rotatable>true</rotatable>
-        <size>(1,1)</size>
-        <graphicData>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <texPath>Building/Flags/URMCBanner</texPath>
-          <drawSize>(2.9,2.9)</drawSize>
-          <drawOffset>(0,0,0.7)</drawOffset>
-        </graphicData>
-        <minifiedDef>MinifiedThing</minifiedDef>
-        <thingCategories>
-          <li>BuildingsFurniture</li>
-        </thingCategories>
-        <statBases>
-          <MaxHitPoints>50</MaxHitPoints>
-          <Flammability>0.5</Flammability>
-          <Mass>3</Mass>
-          <Beauty>8</Beauty>
-        </statBases>
-        <researchPrerequisites>
-            <li>pphhyy_URMCBasic</li>
-          </researchPrerequisites>
-        <uiIconScale>0.4</uiIconScale>
-        <costList>
-          <Steel>60</Steel>
-          <Gold>5</Gold>
-          <Cloth>60</Cloth>
-        </costList>
-      </ThingDef>
+	<ThingDef ParentName="BuildingBase">
+		<defName>pphhyy_URMCBanner</defName>
+		<label>URMC banner</label>
+		<description>URMC Banner meant to be installed in key locations to inspire the United Rimwrold Marine Core.</description>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<selectable>true</selectable>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>14</pathCost>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>true</rotatable>
+		<size>(1,1)</size>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Building/Flags/URMCBanner</texPath>
+			<drawSize>(2.9,2.9)</drawSize>
+			<drawOffset>(0,0,0.7)</drawOffset>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Mass>3</Mass>
+			<Beauty>200</Beauty>
+		</statBases>
+		<researchPrerequisites>
+			<li>pphhyy_URMCBasic</li>
+		</researchPrerequisites>
+		<uiIconScale>0.4</uiIconScale>
+		<costList>
+			<Steel>60</Steel>
+			<Gold>5</Gold>
+			<Cloth>60</Cloth>
+		</costList>
+	</ThingDef>
 
-      <!-- URMC Standard -->
+	<!-- URMC Standard -->
 
-      <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-        <defName>pphhyy_URMCStandard</defName>
-        <label>URMC standard</label>
-        <description>URMC handheld colors to be taken into combat to inspire the United Rimwrold Marine Core.</description>
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>pphhyy_URMCStandard</defName>
+		<label>URMC standard</label>
+		<description>URMC handheld colors to be taken into combat to inspire the United Rimwrold Marine Core.</description>
 		<burnableByRecipe>true</burnableByRecipe>
 		<smeltable>false</smeltable>
 		<techLevel>Spacer</techLevel>
 		<thingCategories Inherit="False">
 			<li>VFEC_Shields</li>
 		</thingCategories>
-        <graphicData>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <texPath>Building/Flags/URMCStandard</texPath>
-            <drawSize>1.5</drawSize>
-          </graphicData>
-          <equippedStatOffsets>
-            <PainShockThreshold>0.10</PainShockThreshold>
-          </equippedStatOffsets>
-	   <recipeMaker>
-        <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
-        <skillRequirements>
-          <Crafting>6</Crafting>
-        </skillRequirements>
-		<recipeUsers>
-			<li>TableMachining</li>
-		  </recipeUsers>
-       </recipeMaker>
-       <costList>
-        <Cloth>60</Cloth>
-        <Steel>60</Steel>
-      </costList>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Building/Flags/URMCStandard</texPath>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit= "false">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Cloth>60</Cloth>
+			<Steel>60</Steel>
+		</costList>
 		<equipmentType>None</equipmentType>
 		<thingClass>VFECore.Apparel_Shield</thingClass>
 		<statBases>
@@ -124,13 +124,13 @@
 						<offset>(0.25, -0.047, 0.65)</offset>
 					</south>
 					<west>
-						<offset>(-0.15, -0.05, 0.65)</offset> <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+						<offset>(-0.15, -0.05, 0.65)</offset>						<!-- -Left/+Right, -Back/+Front, -Down/+Up -->
 						<behind>true</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>
 		</comps>
-		<equippedAngleOffset>0</equippedAngleOffset> <!-- was -30 -->
+		<equippedAngleOffset>0</equippedAngleOffset>		<!-- was -30 -->
 		<modExtensions>
 			<li Class="VFECore.ThingDefExtension">
 				<useFactionColourForPawnKinds>

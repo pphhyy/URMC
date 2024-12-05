@@ -17,7 +17,9 @@
     </apparel>
   </ThingDef>
 
-  <!-- M3-S Light Helmet-->
+<!--__Base Mod Helmets__-->
+
+<!-- M3-S Light Helmet-->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M3-SLightHelmet</defName>
@@ -29,7 +31,7 @@
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit="false">
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
@@ -91,7 +93,7 @@
     </tradeTags>
   </ThingDef>
 
-  <!-- M3-S Helmet -->
+<!-- M3-S Helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M3-SHelmet</defName>
@@ -103,7 +105,7 @@
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit="false">
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
@@ -170,7 +172,7 @@
     </thingSetMakerTags>
   </ThingDef>
 
-  <!--  M10 Pattern Marine Helmet -->
+<!--  M10 Pattern Marine Helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M10PatternMarineHelmet</defName>
@@ -182,7 +184,7 @@
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit="false">
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
@@ -258,7 +260,7 @@
     </thingSetMakerTags>
   </ThingDef>
 
-  <!-- M10 Pattern Medic Helmet -->
+<!-- M10 Pattern Medic Helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M10PatternMedicHelmet</defName>
@@ -270,7 +272,7 @@
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit="false">
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
@@ -346,7 +348,7 @@
     </thingSetMakerTags>
   </ThingDef>
 
-  <!-- M10 pattern officer helmet -->
+<!-- M10 pattern officer helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M10PatternOfficerHelmet</defName>
@@ -358,7 +360,7 @@
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit="false">
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
@@ -435,7 +437,7 @@
     </thingSetMakerTags>
   </ThingDef>
 
-  <!-- M3-G4 Helmet -->
+<!-- M3-G4 Helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M3-G4Helmet</defName>
@@ -515,7 +517,7 @@
     </thingSetMakerTags>
   </ThingDef>
 
-  <!-- M10 Veteran Helmet -->
+<!-- M10 Veteran Helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M10VeteranHelmet</defName>
@@ -632,6 +634,5 @@
       <pphhyy_M10VeteranHelmet>1</pphhyy_M10VeteranHelmet>
     </products>
   </RecipeDef>
-
 
 </Defs>

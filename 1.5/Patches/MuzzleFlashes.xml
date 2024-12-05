@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Muzzle Flash</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_M43PulseRifle"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalshThree</def>
+                            <drawSize>(0.6,0.6)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.46,0.04)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_M1PulsePistol"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalshThree</def>
+                            <drawSize>(0.5,0.5)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.27,-0.02)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_M45PulseLMG"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalshThree</def>
+                            <drawSize>(0.5,0.5)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.6,0.05)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_M50XReconRifle"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalsh</def>
+                            <drawSize>(0.5,0.5)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.55,0.05)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_M52HBreachingShotgun"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalsh</def>
+                            <drawSize>(0.5,0.8)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.43,0.05)</li>
+                            </offsets>
+                        </li>
+
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_M80GLMachine"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalshTwo</def>
+                            <drawSize>(0.7,0.7)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.58,0.03)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_M10RLSadar"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalsh</def>
+                            <drawSize>(0.7,0.9)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.53,0.12)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+                <!-- <li Class="SafePatcher.PatchOperationSetModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_Gun_UA12PulseSentry"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_StandardMuzzleFalshThree</def>
+                            <drawSize>(0.7,0.8)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.97,0)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li> -->
+            </operations>
+        </match>
+    </Operation>
+
+
+</Patch>
