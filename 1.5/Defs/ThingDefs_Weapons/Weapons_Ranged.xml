@@ -2,7 +2,10 @@
 
 <Defs>
 
+    <!-- Base for the weapons -->
+
   <ThingDef Name= "pphhyy_RangedWeapons" ParentName="BaseHumanMakeableGun" Abstract= "true">
+    <techLevel>Spacer</techLevel>
     <weaponTags>
       <li>URMC_Weapons</li>
     </weaponTags>
@@ -30,8 +33,9 @@
     </modExtensions>
   </ThingDef>
 
+<!-- __Base Mod Weapons__ -->
 
-  <!-- M43 Pulse Rifle Mk2 -->
+<!-- M43 Pulse Rifle Mk2 -->
 
   <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_M43PulseRifle</defName>
@@ -173,7 +177,7 @@
   </AbilityDef>
 
 
-  <!-- Pulse Pistol -->
+<!-- Pulse Pistol -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>pphhyy_M1PulsePistol</defName>
@@ -271,7 +275,7 @@
   </ThingDef>
 
 
-  <!-- Pulse LMG -->
+<!-- Pulse LMG -->
 
   <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_M45PulseLMG</defName>
@@ -346,7 +350,7 @@
     </tools>
   </ThingDef>
 
-  <!-- S12 Combat Machete -->
+<!-- S12 Combat Machete -->
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>pphhyy_S12CombatMachete</defName>
@@ -409,7 +413,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit= "false">
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
@@ -439,7 +443,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   </ThingDef>
 
 
-  <!-- M44F Immolator -->
+<!-- M44F Immolator -->
 
 
   <ThingDef ParentName="pphhyy_RangedWeapons">
@@ -516,7 +520,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   </ThingDef>
 
 
-  <!-- M80 GL Machine -->
+<!-- M80 GL Machine -->
 
 
   <ThingDef ParentName="pphhyy_RangedWeapons">
@@ -600,7 +604,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   </ThingDef>
 
 
-  <!-- M50X Recon Rifle -->
+<!-- M50X Recon Rifle -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>pphhyy_M50XReconRifle</defName>
@@ -716,7 +720,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   </ThingDef>
 
 
-  <!-- M52H Breaching Shotgun -->
+<!-- M52H Breaching Shotgun -->
 
   <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_M52HBreachingShotgun</defName>
@@ -803,9 +807,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
     </projectile>
   </ThingDef>
 
-
-  <!-- M10 Rl Sadar-->
-
+<!-- M10 Rl Sadar-->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>pphhyy_M10RLSadar</defName>
@@ -909,8 +911,6 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       </li>
     </modExtensions>
   </ThingDef>
-
-
 
 
 </Defs>

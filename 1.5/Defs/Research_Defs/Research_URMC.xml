@@ -9,12 +9,14 @@
         <generalDescription>Everything the URMC needs to spread peace and prosperity to the galaxy is in this research tab.</generalDescription>
     </ResearchTabDef>
 
+<!-- Base Mod Research -->
+
     <ResearchProjectDef>
         <defName>pphhyy_URMCBasic</defName>
         <label>URMC basic</label>
         <description>Basic Marine gear, enough destruction to level villages.</description>
         <baseCost>1000</baseCost>
-        <techLevel>Industrial</techLevel>
+        <techLevel>Spacer</techLevel>
         <tab>pphhyy_URMC</tab>
         <prerequisites>
             <li>ComplexClothing</li>
@@ -28,7 +30,7 @@
         <label>URMC recon</label>
         <description>Marine Recon gear, when you need specialized tools and wepaons.</description>
         <baseCost>2000</baseCost>
-        <techLevel>Industrial</techLevel>
+        <techLevel>Spacer</techLevel>
         <tab>pphhyy_URMC</tab>
         <prerequisites>
             <li>pphhyy_URMCBasic</li>
@@ -42,7 +44,7 @@
         <label>URMC marine</label>
         <description>Mainstay of the URMC, providing all the standard protection of the core. As well as some nice heavy gear for dealing with hard targets.</description>
         <baseCost>6000</baseCost>
-        <techLevel>Industrial</techLevel>
+        <techLevel>Spacer</techLevel>
         <tab>pphhyy_URMC</tab>
         <prerequisites>
             <li>pphhyy_URMCRecon</li>
@@ -57,7 +59,7 @@
         <label>URMC heavy</label>
         <description>When cities need to be leveled, hopefully bug cities.</description>
         <baseCost>6000</baseCost>
-        <techLevel>Industrial</techLevel>
+        <techLevel>Spacer</techLevel>
         <tab>pphhyy_URMC</tab>
         <prerequisites>
             <li>pphhyy_URMCMarine</li>
@@ -71,10 +73,12 @@
         <label>URMC basic turrets</label>
         <description>When marines need to sleep soundly they employ the URMC turrets</description>
         <baseCost>2000</baseCost>
-        <techLevel>Industrial</techLevel>
+        <techLevel>Spacer</techLevel>
         <tab>pphhyy_URMC</tab>
         <researchViewX>1.50</researchViewX>
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
+
+
 
 </Defs>
