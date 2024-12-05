@@ -453,9 +453,9 @@
 			<WorkToMake>49500</WorkToMake>
 		</statBases>
 		<Properties>
-			<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_50mmRocket_HE</defaultProjectile>
+			<defaultProjectile>Bullet_83mmSMAW_HEAT</defaultProjectile>
 			<warmupTime>2.1</warmupTime>
 			<range>48</range>
 			<burstShotCount>1</burstShotCount>
@@ -470,7 +470,7 @@
 		<AmmoUser>
 			<magazineSize>1</magazineSize>
 			<reloadTime>6</reloadTime>
-			<ammoSet>AmmoSet_50mmRocket</ammoSet>
+			<ammoSet>AmmoSet_83mmSMAW</ammoSet>
 		</AmmoUser>
 		<FireModes>
 			<aiAimMode>AimedShot</aiAimMode>

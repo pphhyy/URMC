@@ -275,6 +275,19 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Armor" or
+			defName="pphhyy_M3Officer"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryWeight>80</CarryWeight>
+				<CarryBulk>10</CarryBulk>
+				<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+				<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="pphhyy_M3Medic" or defName="pphhyy_M3Armor" or
 			defName="pphhyy_M3Officer" or defName="pphhyy_M3Veteran"]</xpath>
@@ -338,7 +351,20 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3Veteran" or defName="pphhyy_M10VeteranHelmet"]</xpath>
+		<xpath>Defs/ThingDef[defName="pphhyy_M3Veteran"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryWeight>80</CarryWeight>
+				<CarryBulk>10</CarryBulk>
+				<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+				<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+				<MoveSpeed>0.2</MoveSpeed>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="pphhyy_M10VeteranHelmet"]</xpath>
 		<value>
 			<equippedStatOffsets>
 				<MoveSpeed>0.2</MoveSpeed>
