@@ -7,7 +7,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_URMCBanner</defName>
 		<label>URMC banner</label>
-		<description>URMC Banner meant to be installed in key locations to inspire the United Rimwrold Marine Core.</description>
+		<description>URMC Banner meant to be installed in key locations to inspire the United Rimworld Marine Core.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
@@ -49,7 +49,7 @@
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>pphhyy_URMCStandard</defName>
 		<label>URMC standard</label>
-		<description>URMC handheld colors to be taken into combat to inspire the United Rimwrold Marine Core.</description>
+		<description>URMC handheld colors to be taken into combat to inspire the United Rimworld Marine Core.</description>
 		<burnableByRecipe>true</burnableByRecipe>
 		<smeltable>false</smeltable>
 		<techLevel>Spacer</techLevel>
