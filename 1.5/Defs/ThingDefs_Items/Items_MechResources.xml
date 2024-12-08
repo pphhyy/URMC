@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+
+<Defs>
+
+    <!-- Talus Synth Head-->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_TalusSynthHead</defName>
+    <label>talus synth head</label>
+    <description>PLACEHOLDER</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>10</stackLimit>
+    <graphicData>
+      <texPath>Resources/TalusSynthHead</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>100</WorkToMake>
+        </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <SubcoreRegular>1</SubcoreRegular>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+    <!-- Talus Synth Body-->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_TalusSynthBody</defName>
+    <label>talus synth body</label>
+    <description>PLACEHOLDER</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>10</stackLimit>
+    <graphicData>
+      <texPath>Resources/TalusSynthBody</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>100</WorkToMake>
+        </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+    <!-- Synth Lab Coat -->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_SynthLabCoat</defName>
+    <label>synth lab coat</label>
+    <description>PLACEHOLDER</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>10</stackLimit>
+    <graphicData>
+      <texPath>Resources/SynthLabCoat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>100</WorkToMake>
+        </statBases>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>ElectricTailoringBench</li>
+            <li>HandTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+    <!-- Synth Work Coveralls-->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_SynthWorkCoveralls</defName>
+    <label>synth work coveralls</label>
+    <description>PLACEHOLDER</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>10</stackLimit>
+    <graphicData>
+      <texPath>Resources/SynthWorkCoveralls</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>100</WorkToMake>
+        </statBases>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>ElectricTailoringBench</li>
+            <li>HandTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+    <!-- Talus Combat Armor-->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_TalusCombatArmor</defName>
+    <label>talus combat armor</label>
+    <description>PLACEHOLDER</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>10</stackLimit>
+    <graphicData>
+      <texPath>Resources/TalusCombatArmor</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>100</WorkToMake>
+        </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <Cloth>40</Cloth>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>TableMachining</li>
+            <li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_TalusCombatHelmet</defName>
+    <label>talus combat helmet</label>
+    <description>PLACEHOLDER</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>10</stackLimit>
+    <graphicData>
+      <texPath>Resources/TalusCombatHelmet</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>100</WorkToMake>
+        </statBases>
+    <costList>
+      <Steel>40</Steel>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>TableMachining</li>
+            <li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>
