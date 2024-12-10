@@ -234,7 +234,7 @@
             </bodyPartGroups>
             <wornGraphicPath>Armor/PearlTechLabCoat/PearlTechLabCoat</wornGraphicPath>
             <layers>
-                <li>OnSkin</li>
+                <li>Shell</li>
             </layers>
             <defaultOutfitTags>
                 <li>Worker</li>
@@ -349,6 +349,9 @@
             <SignalChip>1</SignalChip>
         </costList>
         <apparel>
+           <renderSkipFlags>
+                <li>None</li>
+           </renderSkipFlags>   
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
@@ -569,7 +572,7 @@
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>
-            <damageAmountBase>25</damageAmountBase>
+            <damageAmountBase>15</damageAmountBase>
             <stoppingPower>1.5</stoppingPower>
             <speed>120</speed>
              <extraDamages>
@@ -604,6 +607,9 @@ Unlike the pulse rifle these were commissioned with the purpose of putting down 
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
+            <weaponTags>
+               <li>pphhyy_EMPRifle</li>
+           </weaponTags>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
@@ -892,7 +898,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         <graphicData>
             <texPath>Gear/PTBandwidthEnhancer/PTBandwidthEnhancer</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(0.7,0.7)</drawSize>
+            <drawSize>1.5</drawSize>
         </graphicData>
         <tickerType>Normal</tickerType>
         <statBases>
