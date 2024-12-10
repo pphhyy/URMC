@@ -113,7 +113,7 @@
                         </li>
                     </value>
                 </li> -->
-                 <li Class="SafePatcher.PatchOperationSetModExtension">
+                 <li Class="PatchOperationAddModExtension">
                     <xpath>Defs/ThingDef[defName="pphhyy_EMPChargeLance"]</xpath>
                     <value>
                         <li Class="MuzzleFlash.MuzzleFlashProps">
@@ -126,7 +126,7 @@
                         </li>
                     </value>
                 </li>
-                <li Class="SafePatcher.PatchOperationSetModExtension">
+                <li Class="PatchOperationAddModExtension">
                     <xpath>Defs/ThingDef[defName="pphhyy_EMPRifle"]</xpath>
                     <value>
                         <li Class="MuzzleFlash.MuzzleFlashProps">
@@ -139,7 +139,7 @@
                         </li>
                     </value>
                 </li>
-                <li Class="SafePatcher.PatchOperationSetModExtension">
+                <li Class="PatchOperationAddModExtension">
                     <xpath>Defs/ThingDef[defName="pphhyy_EMPSMG"]</xpath>
                     <value>
                         <li Class="MuzzleFlash.MuzzleFlashProps">
