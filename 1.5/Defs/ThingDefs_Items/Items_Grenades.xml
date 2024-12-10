@@ -67,9 +67,9 @@
         <label>incendiary grenades</label>
         <description>Exploding in a decent blast radius leaving burning chemfuel behind, incendiary grenades are a powerful area of denial weapon that can deal immense damage to a hostile target if it's caught in the fire.</description>
         <recipeMaker>
-          <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+          <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
           <recipeUsers>
-            <li>FabricationBench</li>
+            <li>TableMachining</li>
           </recipeUsers>
         </recipeMaker>
         <graphicData>
@@ -101,9 +101,9 @@
         <label>foam grenades</label>
         <description>Exploding in a decent blast radius leaving behind a fire suppressing foam. Usually deployed after incendiary attacks or after marines have been attacked by incendiary bombs.</description>
         <recipeMaker>
-          <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+          <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
           <recipeUsers>
-            <li>FabricationBench</li>
+            <li>TableMachining</li>
           </recipeUsers>
         </recipeMaker>
         <graphicData>

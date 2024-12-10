@@ -22,19 +22,42 @@
         <graphicData>
             <texPath>Armor/M3TechArmor/M3TechArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
         </graphicData>
+        <verbs>
+            <li>
+                <label>throw EMP grenade</label>
+                <verbClass>Verb_LaunchProjectileStatic</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <onlyManualCast>True</onlyManualCast>
+                <range>12.9</range>
+                <forcedMissRadius>1.9</forcedMissRadius>
+                <warmupTime>0.2</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>pphhyy_GrenadeEMPProjectile</defaultProjectile>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
         <statBases>
             <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
             <ArmorRating_Heat>0.54</ArmorRating_Heat>
             <Insulation_Cold>34</Insulation_Cold>
             <Insulation_Heat>10</Insulation_Heat>
-            <EquipDelay>11</EquipDelay>
+            <EquipDelay>3</EquipDelay>
             <Mass>5</Mass>
         </statBases>
         <equippedStatOffsets>
             <MechBandwidth>12</MechBandwidth>
-            <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
             <MeleeHitChance>-0.5</MeleeHitChance>
         </equippedStatOffsets>
         <costList>
@@ -46,6 +69,19 @@
         <apparel>
             <wornGraphicPath>Armor/M3TechArmor/M3TechArmor</wornGraphicPath>
         </apparel>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="CompProperties_ApparelReloadable">
+                <maxCharges>2</maxCharges>
+                <ammoDef>pphhyy_GrenadeEMP</ammoDef>
+                <ammoCountPerCharge>1</ammoCountPerCharge>
+                <baseReloadTicks>60</baseReloadTicks>
+                <soundReload>Standard_Reload</soundReload>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>grenade</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+            </li>
+        </comps>
         <tradeability>Sellable</tradeability>
         <tradeTags Inherit="False">
             <li>HiTechArmor</li>
@@ -102,7 +138,7 @@
             <Uranium>5</Uranium>
         </costList>
         <apparel>
-            <wornGraphicPath>Armor/M2Recon/M2Recon</wornGraphicPath>
+            <wornGraphicPath>Armor/M3STechArmor/M3STechArmor</wornGraphicPath>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
             <options>
@@ -161,7 +197,7 @@
         </thingCategories>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
-            <WorkToMake>2700</WorkToMake>
+            <WorkToMake>6900</WorkToMake>
             <Mass>0.3</Mass>
             <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
@@ -258,6 +294,7 @@
         <graphicData>
             <texPath>HelmetsAndHats/M10TechHelmet/M10TechHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
         </graphicData>
         <statBases>
             <MaxHitPoints>240</MaxHitPoints>
@@ -349,9 +386,9 @@
             <SignalChip>1</SignalChip>
         </costList>
         <apparel>
-           <renderSkipFlags>
+            <renderSkipFlags>
                 <li>None</li>
-           </renderSkipFlags>   
+            </renderSkipFlags>
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
@@ -431,9 +468,9 @@
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <apparel>
-           <renderSkipFlags>
+            <renderSkipFlags>
                 <li>None</li>
-           </renderSkipFlags>    
+            </renderSkipFlags>
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
@@ -551,13 +588,13 @@
             <damageAmountBase>40</damageAmountBase>
             <stoppingPower>1.5</stoppingPower>
             <speed>120</speed>
-             <extraDamages>
-                  <li>
-                     <def>EMP</def>
-                     <amount>25</amount>
-                     <chance>0.6</chance>
-                 </li>
-             </extraDamages>
+            <extraDamages>
+                <li>
+                    <def>EMP</def>
+                    <amount>25</amount>
+                    <chance>0.6</chance>
+                </li>
+            </extraDamages>
         </projectile>
     </ThingDef>
 
@@ -575,13 +612,13 @@
             <damageAmountBase>15</damageAmountBase>
             <stoppingPower>1.5</stoppingPower>
             <speed>120</speed>
-             <extraDamages>
-                  <li>
-                     <def>EMP</def>
-                     <amount>15</amount>
-                     <chance>0.6</chance>
-                 </li>
-             </extraDamages>
+            <extraDamages>
+                <li>
+                    <def>EMP</def>
+                    <amount>15</amount>
+                    <chance>0.6</chance>
+                </li>
+            </extraDamages>
         </projectile>
     </ThingDef>
 
@@ -607,9 +644,9 @@ Unlike the pulse rifle these were commissioned with the purpose of putting down 
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
-            <weaponTags>
-               <li>pphhyy_EMPRifle</li>
-           </weaponTags>
+        <weaponTags>
+            <li>pphhyy_EMPRifle</li>
+        </weaponTags>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
@@ -806,7 +843,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                 </capacities>
                 <power>23</power>
                 <cooldownTime>2.6</cooldownTime>
-                 <extraMeleeDamages>
+                <extraMeleeDamages>
                     <li>
                         <def>EMP</def>
                         <amount>25</amount>
@@ -888,8 +925,8 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                 <Crafting>4</Crafting>
             </skillRequirements>
         </recipeMaker>
-          <stuffCategories Inheri= "false">
-         </stuffCategories>
+        <stuffCategories Inheri= "false">
+        </stuffCategories>
         <costList>
             <SignalChip>2</SignalChip>
             <Steel>50</Steel>
@@ -913,6 +950,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         <equippedStatOffsets>
             <MechBandwidth>12</MechBandwidth>
         </equippedStatOffsets>
+        <colorGenerator Class="ColorGenerator_Options" INherit= "false"></colorGenerator>
         <apparel>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <scoreOffset>4</scoreOffset>
