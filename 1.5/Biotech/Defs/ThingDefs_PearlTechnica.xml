@@ -471,6 +471,7 @@
         <graphicData>
             <texPath>Weapon/PTType102ChargeLance</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
         </graphicData>
         <soundInteract>Interact_ChargeLance</soundInteract>
         <thingSetMakerTags>
@@ -558,10 +559,10 @@
         <defName>pphhyy_Bullet_EMPRifleBullet</defName>
         <label>EMP shot</label>
         <graphicData>
-            <texPath>Things/Projectile/ChargeLanceShot</texPath>
+            <texPath>Things/Projectile/Charge_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
-            <drawSize>1.1</drawSize>
+            <drawSize>1.4</drawSize>
         </graphicData>
         <projectile>
             <damageDef>Bullet</damageDef>

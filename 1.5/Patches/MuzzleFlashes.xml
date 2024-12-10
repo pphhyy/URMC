@@ -113,6 +113,45 @@
                         </li>
                     </value>
                 </li> -->
+                 <li Class="SafePatcher.PatchOperationSetModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_EMPChargeLance"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(0.5,0.5)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.68,0.01)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+                <li Class="SafePatcher.PatchOperationSetModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_EMPRifle"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(0.5,0.5)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.47,0.06)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
+                <li Class="SafePatcher.PatchOperationSetModExtension">
+                    <xpath>Defs/ThingDef[defName="pphhyy_EMPSMG"]</xpath>
+                    <value>
+                        <li Class="MuzzleFlash.MuzzleFlashProps">
+                            <def>MF_ChargedMuzzleFalsh</def>
+                            <drawSize>(0.5,0.5)</drawSize>
+                            <isAlternately>true</isAlternately>
+                            <offsets>
+                                <li>(0.33,0.04)</li>
+                            </offsets>
+                        </li>
+                    </value>
+                </li>
             </operations>
         </match>
     </Operation>
