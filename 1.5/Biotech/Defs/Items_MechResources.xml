@@ -8,12 +8,13 @@
     <ThingDef ParentName= "ResourceBase">
     <defName>pphhyy_TalusSynthHead</defName>
     <label>talus synth head</label>
-    <description>PLACEHOLDER</description>
+    <description>Most of a synths cognitive functions are store in its head no different then a human.</description>
     <possessionCount>1</possessionCount>
     <stackLimit>10</stackLimit>
     <graphicData>
       <texPath>Resources/TalusSynthHead</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
     </graphicData>
         <statBases>
           <Mass>1</Mass>
@@ -43,12 +44,13 @@
     <ThingDef ParentName= "ResourceBase">
     <defName>pphhyy_TalusSynthBody</defName>
     <label>talus synth body</label>
-    <description>PLACEHOLDER</description>
+    <description>Synth bodies are remarkably durable compared to human bodies and come with very few downsides which we are not legally allowed to disclose to the public.</description>
     <possessionCount>1</possessionCount>
     <stackLimit>10</stackLimit>
     <graphicData>
       <texPath>Resources/TalusSynthBody</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
     </graphicData>
         <statBases>
           <Mass>1</Mass>
@@ -77,12 +79,13 @@
     <ThingDef ParentName= "ResourceBase">
     <defName>pphhyy_SynthLabCoat</defName>
     <label>synth lab coat</label>
-    <description>PLACEHOLDER</description>
+    <description>Lab Coat for Lab synths to do their work in a easy to identify manner.</description>
     <possessionCount>1</possessionCount>
     <stackLimit>10</stackLimit>
     <graphicData>
       <texPath>Resources/SynthLabCoat</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
     </graphicData>
         <statBases>
           <Mass>1</Mass>
@@ -110,12 +113,13 @@
     <ThingDef ParentName= "ResourceBase">
     <defName>pphhyy_SynthWorkCoveralls</defName>
     <label>synth work coveralls</label>
-    <description>PLACEHOLDER</description>
+    <description>Coveralls for worker synths to do their work in a easy to identify manner.</description>
     <possessionCount>1</possessionCount>
     <stackLimit>10</stackLimit>
     <graphicData>
       <texPath>Resources/SynthWorkCoveralls</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
     </graphicData>
         <statBases>
           <Mass>1</Mass>
@@ -143,12 +147,13 @@
     <ThingDef ParentName= "ResourceBase">
     <defName>pphhyy_TalusCombatArmor</defName>
     <label>talus combat armor</label>
-    <description>PLACEHOLDER</description>
+    <description>Pearl techs first synth combat armor meant to further improved the protective property's of the synth body.</description>
     <possessionCount>1</possessionCount>
     <stackLimit>10</stackLimit>
     <graphicData>
       <texPath>Resources/TalusCombatArmor</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
     </graphicData>
         <statBases>
           <Mass>1</Mass>
@@ -172,15 +177,18 @@
     </thingCategories>
   </ThingDef>
 
+  <!-- Talus Combat Helmet-->
+
     <ThingDef ParentName= "ResourceBase">
     <defName>pphhyy_TalusCombatHelmet</defName>
     <label>talus combat helmet</label>
-    <description>PLACEHOLDER</description>
+    <description>No different then a human helmet its purpose is to help protect a synths cognitive functions from harm.</description>
     <possessionCount>1</possessionCount>
     <stackLimit>10</stackLimit>
     <graphicData>
       <texPath>Resources/TalusCombatHelmet</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
     </graphicData>
         <statBases>
           <Mass>1</Mass>
