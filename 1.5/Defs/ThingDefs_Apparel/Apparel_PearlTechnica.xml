@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Defs>
+
+    <!--__Pearl Technica Armor__-->
+
+    <!-- M3 Pattern Tech Armor -->
+
+    <ThingDef ParentName="pphhyy_URMCArmors">
+        <defName>pphhyy_M3PatternTechArmor</defName>
+        <label>M3 pattern tech armor</label>
+        <description>After Pearl Technica acquired the rights to manufacture all the URMC's Synth needs; they produced the M3 Tech armor and M10 tech helmet. Borrowing heavily from the original gear and adding Synth control support. The armor of the M3 Tech is identical to the M3 Personal with added bandwidth capabilities. This allows Tech Marines to operate within Other Marine units or on their own both with Synth support.</description>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <displayPriority>530</displayPriority>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/MechlordSuit/MechlordSuit</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.54</ArmorRating_Heat>
+            <Insulation_Cold>34</Insulation_Cold>
+            <Insulation_Heat>10</Insulation_Heat>
+            <EquipDelay>11</EquipDelay>
+            <Mass>5</Mass>
+        </statBases>
+        <equippedStatOffsets>
+            <MechBandwidth>12</MechBandwidth>
+            <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+            <MeleeHitChance>-0.5</MeleeHitChance>
+        </equippedStatOffsets>
+        <costList>
+            <NanostructuringChip>2</NanostructuringChip>
+            <PowerfocusChip>1</PowerfocusChip>
+            <Plasteel>120</Plasteel>
+            <ComponentSpacer>8</ComponentSpacer>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MechlordSuit/MechlordSuit</wornGraphicPath>
+        </apparel>
+        <tradeability>Sellable</tradeability>
+        <tradeTags Inherit="False">
+            <li>HiTechArmor</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- M3-S Tech Scout Armor -->
+
+    <ThingDef ParentName="pphhyy_URMCArmors">
+        <defName>pphhyy_TechScoutArmor</defName>
+        <label>M3-S tech scout armor</label>
+        <description>A custom modified set of M3 Armor designed for recon missions. Allows more mobility for the wearer.</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit= "false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Armor/M2Recon/M2Recon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <tradeTags>
+            <li>HiTechArmor</li>
+            <li>Armor</li>
+        </tradeTags>
+        <equippedStatOffsets>
+            <MechBandwidth>6</MechBandwidth>
+        </equippedStatOffsets>
+        <statBases>
+            <WorkToMake>45000</WorkToMake>
+            <MaxHitPoints>280</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>32</Insulation_Cold>
+            <Insulation_Heat>9</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <costList>
+            <SignalChip>1</SignalChip>
+            <Plasteel>50</Plasteel>
+            <Uranium>5</Uranium>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Armor/M2Recon/M2Recon</wornGraphicPath>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3)</min>
+                    <max>(0.5,0.5,0.5)</max>
+                </li>
+            </options>
+        </colorGenerator>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <!-- Pearl Tech Lab Coveralls -->
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>pphhyy_LabCoveralls</defName>
+        <description>PLACEHOLDER</description>
+        <label>Pearl Tech Lab Coveralls</label>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Armor/ColonialFatigues/ColonialFatigues</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <ResearchSpeed>0.20</ResearchSpeed>
+            <DrugSynthesisSpeed>0.20</DrugSynthesisSpeed>
+        </equippedStatOffsets>
+        <costStuffCount>60</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>2700</WorkToMake>
+            <Mass>0.3</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Armor/ColonialFatigues/ColonialFatigues</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <useWornGraphicMask>true</useWornGraphicMask>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Pearl Tech Lab Coat -->
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>pphhyy_LabCoat</defName>
+        <description>PLACEHOLDER</description>
+        <label>Pearl Tech Lab Coat</label>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Armor/ColonialFatigues/ColonialFatigues</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <ResearchSpeed>0.20</ResearchSpeed>
+            <DrugSynthesisSpeed>0.20</DrugSynthesisSpeed>
+        </equippedStatOffsets>
+        <costStuffCount>60</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>2700</WorkToMake>
+            <Mass>0.3</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Armor/ColonialFatigues/ColonialFatigues</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <useWornGraphicMask>true</useWornGraphicMask>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!--__Pearl Technica Helmets__-->
+
+    <!-- M10 Pattern Tech Helmet -->
+
+    <ThingDef ParentName="pphhyy_URMC_Helmets">
+        <defName>pphhyy_M10PatternTechHelmet</defName>
+        <label>M10 tech helmet</label>
+        <description>After Pearl Technica acquired the rights to manufacture all the URMC's Synth needs; they produced the M3 Tech armor and M10 tech helmet. Borrowing heavily from the original gear and adding Synth control support. The armor of the M3 Tech is identical to the M3 Personal with added bandwidth capabilities. This allows Tech Marines to operate within Other Marine units or on their own both with Synth support.</description>
+        <graphicData>
+            <texPath>HelmetsAndHats/M10TechHelmet/M10TechHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>240</MaxHitPoints>
+            <Mass>1.5</Mass>
+        </statBases>
+        <equippedStatOffsets>
+            <MechBandwidth>12</MechBandwidth>
+            <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+            <MeleeHitChance>-0.5</MeleeHitChance>
+        </equippedStatOffsets>
+        <recipeMaker Inherit="False">
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <workSkill>Crafting</workSkill>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <displayPriority>520</displayPriority>
+        </recipeMaker>
+        <costList Inherit="False">
+            <Plasteel>120</Plasteel>
+            <ComponentSpacer>6</ComponentSpacer>
+            <NanostructuringChip>2</NanostructuringChip>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <scoreOffset>4</scoreOffset>
+            <mechanitorApparel>true</mechanitorApparel>
+            <wornGraphicPath>HelmetsAndHats/M10TechHelmet/M10TechHelmet</wornGraphicPath>
+            <forceEyesVisibleForRotations>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </forceEyesVisibleForRotations>
+        </apparel>
+    </ThingDef>
+
+    <!-- M3-S Tech Scout Helmet -->
+
+    <ThingDef ParentName="pphhyy_URMC_Helmets">
+        <defName>pphhyy_TechScoutHelmet</defName>
+        <label>M3-S tech scout helmet</label>
+        <description>A custom helmet from the M3 series designed to be lightweight and used for recon missions.</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>HelmetsAndHats/M3STechHelmet/M3STechHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <MechBandwidth>6</MechBandwidth>
+        </equippedStatOffsets>
+        <tradeTags>
+            <li>HiTechArmor</li>
+        </tradeTags>
+        <statBases>
+            <WorkToMake>15750</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>30</Plasteel>
+            <SignalChip>1</SignalChip>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>HelmetsAndHats/M9Recon/M9Recon</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65,1)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.5,0.5,0.5,1)</max>
+                </li>
+            </options>
+        </colorGenerator>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <!-- Pearl Tech Lab HUD -->
+
+    <ThingDef ParentName="pphhyy_URMC_Helmets">
+        <defName>pphhyy_LabHUD</defName>
+        <description>PLACEHOLDER</description>
+        <label>Pearl Tech Lab HUD</label>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>HelmetsAndHats/PTLabHUD/PTLabHUD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <ResearchSpeed>0.20</ResearchSpeed>
+            <DrugSynthesisSpeed>0.20</DrugSynthesisSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>20</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>2700</WorkToMake>
+            <Mass>0.3</Mass>
+            <ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.1</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>HelmetsAndHats/PTLabHUD/PTLabHUD</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65,1)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.5,0.5,0.5,1)</max>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+    <!--__Pearl Technica Weapons__-->
+
+    <!-- Pearl Technica Type 102 EMP Charge Lance -->
+
+    <ThingDef ParentName="pphhyy_RangedWeapons">
+        <defName>pphhyy_EMPChargeLance</defName>
+        <label>PT type 102 EMP charge lance</label>
+        <description>Pearl tech was founded to analyze, profit from and destroy Mechanoids. The type 102 embodies this approach to its core. Not only does it pack a punch it also discharges an EMP blast stunning most mechanoids. If the shot doesn't kill it the marines closing the distance while its stunned will.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Weapon/PTType102ChargeLance</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeLance</soundInteract>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <Mass>8</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.85</AccuracyShort>
+            <AccuracyMedium>0.85</AccuracyMedium>
+            <AccuracyLong>0.75</AccuracyLong>
+            <RangedWeapon_Cooldown>2.7</RangedWeapon_Cooldown>
+            <WorkToMake>60000</WorkToMake>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <displayPriority>210</displayPriority>
+        </recipeMaker>
+        <costList>
+            <Plasteel>60</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <tradeTags>
+            <li>WeaponRanged</li>
+        </tradeTags>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>pphhyy_Bullet_PearlChargeLance</defaultProjectile>
+                <warmupTime>1.7</warmupTime>
+                <range>29.9</range>
+                <soundCast>ChargeLance_Fire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>pphhyy_Bullet_PearlChargeLance</defName>
+        <label>pearl charge lance shot</label>
+        <graphicData>
+            <texPath>Things/Projectile/ChargeLanceShot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>EMP</damageDef>
+            <damageAmountBase>30</damageAmountBase>
+            <stoppingPower>1.5</stoppingPower>
+            <speed>120</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- Pearl Technica Type 66 EMP Rifle-->
+
+    <ThingDef ParentName="pphhyy_RangedWeapons">
+        <defName>pphhyy_EMPRifle</defName>
+        <label>PT type 66 EMP rifle</label>
+        <description>Like most Pearl Tech equipment it is largely stolen from other things; in this case the pulse rifle, now with added EMP effect.
+Unlike the pulse rifle these were commissioned with the purpose of putting down rogue synths from earlier generations like the [REDACTED] human like synths.</description>
+        <graphicData>
+            <texPath>Weapon/PTType66Rifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>40000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.66</AccuracyTouch>
+            <AccuracyShort>0.77</AccuracyShort>
+            <AccuracyMedium>0.72</AccuracyMedium>
+            <AccuracyLong>0.61</AccuracyLong>
+            <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <ComponentIndustrial>7</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>pphhyy_Bullet_PearlChargeLance</defaultProjectile>
+                <warmupTime>1.0</warmupTime>
+                <range>30.9</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <soundCast>pphhyy_PulseRifleSound</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!-- Pearl Technica Type 42 EMP SMG -->
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>pphhyy_EMPSMG</defName>
+        <label>PT type 42 EMP SMG</label>
+        <description>Like most Pearl Tech equipment it is largely stolen from other things; in this case the pulse SMG, now with added EMP effect.
+Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable commanding a group of synths. Although there have been no CONFIRMED Pearl tech synth rebellions, so far.</description>
+        <graphicData>
+            <texPath>Weapon/PTType42SMG</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>40000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.66</AccuracyTouch>
+            <AccuracyShort>0.77</AccuracyShort>
+            <AccuracyMedium>0.72</AccuracyMedium>
+            <AccuracyLong>0.61</AccuracyLong>
+            <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>30</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>pphhyy_Bullet_PearlChargeLance</defaultProjectile>
+                <warmupTime>1.0</warmupTime>
+                <range>24</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>pphhyy_PulseRifleSound</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.05,0.0,0.15)</drawOffset>
+                        <angleOffset>-30</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.10,0.2,0.10)</drawOffset>
+                        <angleOffset>-45</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(0,0,0.10)</drawOffset>                        <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+                        <angleOffset>-30</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.10,0.0,0.15)</drawOffset>
+                        <angleOffset>45</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!-- Pearl Technica EMP Lacerator -->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>pphhyy_EMPLacerator</defName>
+        <label>PT EMP lacerator</label>
+        <description>S12 Combat Machete The Tech Lacerator is just a S12 Combat Machete with battery attached to it, is what URMC marines would tell you. What the knuckle draggers don't know is the amount of time and precise fabrication that goes into making them without harming the user. That being said it is just a battery attached to a S12 Combat Machete.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapon/PTLacerator</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedAngleOffset>-90</equippedAngleOffset>
+        <techLevel>Medieval</techLevel>
+        <weaponTags>
+            <li>URMC_Weapons</li>
+        </weaponTags>
+        <costStuffCount>100</costStuffCount>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <relicChance>2</relicChance>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>23</power>
+                <cooldownTime>2.6</cooldownTime>
+                 <extraMeleeDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>25</amount>
+                        <chance>0.6</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>23</power>
+                <cooldownTime>2.6</cooldownTime>
+                <extraMeleeDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>25</amount>
+                        <chance>0.6</chance>
+                    </li>
+                </extraMeleeDamages>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.05,0.0,0)</drawOffset>
+                        <angleOffset>25</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.10,0.2,0.10)</drawOffset>
+                        <angleOffset>20</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(0.1,0.00,0.15)</drawOffset>                        <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+                        <angleOffset>15</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.20,0.0,0.10)</drawOffset>
+                        <angleOffset>-15</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+
+    <!--__Pearl Technica Other Apparel__-->
+
+    <!-- Pearl Tech Bandwidth Enhancer -->
+
+    <ThingDef ParentName="MechanitorPackBase">
+        <defName>pphhyy_BandwidthEnhancer</defName>
+        <label>pearl tech bandwidth enhancer</label>
+        <description>The Bandwidth Enhancer from Pearl Technica provides 12 extra bandwidth</description>
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <SignalChip>2</SignalChip>
+            <Steel>50</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+        <graphicData>
+            <texPath>Gear/PTBandwidthEnhancer/PTBandwidthEnhancer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.7,0.7)</drawSize>
+        </graphicData>
+        <tickerType>Normal</tickerType>
+        <statBases>
+            <WorkToMake>3200</WorkToMake>
+            <Mass>3</Mass>
+            <Flammability>0.4</Flammability>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <equippedStatOffsets>
+            <MechBandwidth>12</MechBandwidth>
+        </equippedStatOffsets>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <scoreOffset>4</scoreOffset>
+            <mechanitorApparel>true</mechanitorApparel>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <wornGraphicPath>Gear/PTBandwidthEnhancer/PTBandwidthEnhancer</wornGraphicPath>
+            <wornGraphicData>
+                <renderUtilityAsPack>true</renderUtilityAsPack>
+                <north>
+                    <offset>(0,-0.15)</offset>
+                </north>
+                <south>
+                    <offset>(0,-0.15)</offset>
+                </south>
+                <east>
+                    <offset>(-0.35,-0.1)</offset>
+                    <thin>
+                        <offset>(0.05,0)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(-0.15,0)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(-0.20,0)</offset>
+                    </fat>
+                </east>
+                <west>
+                    <offset>(0.35,-0.1)</offset>
+                    <thin>
+                        <offset>(-0.05,0)</offset>
+                    </thin>
+                    <hulk>
+                        <offset>(0.15,0)</offset>
+                    </hulk>
+                    <fat>
+                        <offset>(0.20,0)</offset>
+                    </fat>
+                </west>
+                <male>
+                    <scale>(0.75,0.75)</scale>
+                </male>
+                <female>
+                    <scale>(0.75,0.75)</scale>
+                </female>
+                <thin>
+                    <scale>(0.7,0.7)</scale>
+                </thin>
+                <hulk>
+                    <scale>(0.9,0.9)</scale>
+                </hulk>
+                <fat>
+                    <scale>(0.9,0.9)</scale>
+                </fat>
+            </wornGraphicData>
+        </apparel>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!--Pearl Technica Wrist Controller-->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>pphhyy_WristController</defName>
+        <label>pearl technica wrist controller</label>
+        <description>PLACEHOLDER</description>
+        <burnableByRecipe>true</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Gear/PTWristController/PTWristController</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <MechRemoteRepairDistance>10.9</MechRemoteRepairDistance>
+            <MechFormingSpeed>0.66</MechFormingSpeed>
+            <MechRepairSpeed>0.33</MechRepairSpeed>
+            <MechRemoteShieldEnergy>7</MechRemoteShieldEnergy>
+            <MechRemoteShieldDistance>7</MechRemoteShieldDistance>
+            <MechControlGroups>2</MechControlGroups>
+            <WorkSpeedGlobalOffsetMech>0.12</WorkSpeedGlobalOffsetMech>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit= "false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Cloth>60</Cloth>
+            <Steel>60</Steel>
+        </costList>
+        <equipmentType>None</equipmentType>
+        <thingClass>VFECore.Apparel_Shield</thingClass>
+        <statBases>
+            <Mass>3</Mass>
+            <WorkToMake>6000</WorkToMake>
+            <MarketValue>300</MarketValue>
+            <Flammability>0.4</Flammability>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <bodyPartGroups>
+                <li>LeftHand</li>
+            </bodyPartGroups>
+            <layers>
+                <li>VFEC_OuterShell</li>
+            </layers>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <comps>
+            <li Class="VFECore.CompProperties_Shield">
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Gear/PTWristController/PTWristController</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.4</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(-0.2, 0, 0.05)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(0.05, 0, 0.05)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0.20, -0.047, 0.05)</offset>
+                    </south>
+                    <west>
+                        <offset>(-0.05, -0.05, 0.05)</offset>                        <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+                        <behind>true</behind>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <equippedAngleOffset>0</equippedAngleOffset>
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <useFactionColourForPawnKinds>
+
+                </useFactionColourForPawnKinds>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+
+    <!--__Pearl Technica Banners__-->
+
+    <!-- Pearl Technica Banner -->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>pphhyy_PearlTechnicaBanner</defName>
+        <label>pearl technica banner</label>
+        <description>PLACEHOLD</description>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <selectable>true</selectable>
+        <fillPercent>0.20</fillPercent>
+        <pathCost>14</pathCost>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <designationCategory>Furniture</designationCategory>
+        <rotatable>true</rotatable>
+        <size>(1,1)</size>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Building/Flags/PTBanner</texPath>
+            <drawSize>(2.9,2.9)</drawSize>
+            <drawOffset>(0,0,0.7)</drawOffset>
+        </graphicData>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsFurniture</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <Mass>3</Mass>
+            <Beauty>200</Beauty>
+        </statBases>
+        <researchPrerequisites>
+            <li>pphhyy_URMCPearlTechnicaTier1</li>
+        </researchPrerequisites>
+        <uiIconScale>0.4</uiIconScale>
+        <costList>
+            <Steel>60</Steel>
+            <Gold>5</Gold>
+            <Cloth>60</Cloth>
+        </costList>
+    </ThingDef>
+
+    <!-- Pearl Technica Standard -->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>pphhyy_PearlTechnicaStandard</defName>
+        <label>pearl technica standard</label>
+        <description>PLACEHOLDER</description>
+        <burnableByRecipe>true</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Building/Flags/PTStandard</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit= "false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Cloth>60</Cloth>
+            <Steel>60</Steel>
+        </costList>
+        <equipmentType>None</equipmentType>
+        <thingClass>VFECore.Apparel_Shield</thingClass>
+        <statBases>
+            <Mass>3</Mass>
+            <WorkToMake>6000</WorkToMake>
+            <MarketValue>300</MarketValue>
+            <Flammability>0.4</Flammability>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <bodyPartGroups>
+                <li>LeftHand</li>
+            </bodyPartGroups>
+            <layers>
+                <li>VFEC_OuterShell</li>
+            </layers>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <comps>
+            <li Class="VFECore.CompProperties_Shield">
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Building/Flags/PTStandard</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.8</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(-0.2, 0, 0.60)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(0.15, 0, 0.65)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0.25, -0.047, 0.65)</offset>
+                    </south>
+                    <west>
+                        <offset>(-0.15, -0.05, 0.65)</offset>                        <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+                        <behind>true</behind>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <equippedAngleOffset>0</equippedAngleOffset>        <!-- was -30 -->
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <useFactionColourForPawnKinds>
+
+                </useFactionColourForPawnKinds>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+
+</Defs>

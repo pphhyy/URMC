@@ -30,15 +30,17 @@
     </apparel>
   </ThingDef>
 
+<!-- __Base Mod Armor__-->
 
-  <!-- Colonial fatigues -->
+
+<!-- Colonial fatigues -->
 
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>pphhyy_ColonialFatigue</defName>
     <description>The comfort wear of the corps, is what the officers would tell you. When not murdering bugs or other less then friendly aliens the Marines wear these during down time.</description>
     <label>colonial fatigue</label>
     <recipeMaker>
-      <researchPrerequisite Inherit="false">pphhyy_URMCBasic</researchPrerequisite>
+      <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>Armor/ColonialFatigues/ColonialFatigues</texPath>
@@ -89,7 +91,7 @@
     </tradeTags>
   </ThingDef>
 
-  <!-- m1 flak (wip) -->
+<!-- m1 flak (wip) -->
 
 
   <ThingDef ParentName="pphhyy_URMCArmors">
@@ -97,12 +99,12 @@
     <label>M3-L pattern light armor</label>
     <description>A lighter, cut down version of the standard M3 pattern armor. It sacrifices protection for more speed.</description>
     <recipeMaker>
-      <researchPrerequisite Inherit="false">pphhyy_URMCBasic</researchPrerequisite>
+      <researchPrerequisite >pphhyy_URMCBasic</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit="false">
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
@@ -154,19 +156,19 @@
     </tradeTags>
   </ThingDef>
 
-  <!-- m2 recon (wip) -->
+<!-- m2 recon (wip) -->
 
   <ThingDef ParentName="pphhyy_URMCArmors">
     <defName>pphhyy_M2Recon</defName>
     <label>M3-S light armor</label>
     <description>A custom modified set of M3 Armor designed for recon missions. Allows more mobility for the wearer.</description>
-    <recipeMaker Inherit="false">
+    <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit= "false">
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
@@ -232,19 +234,19 @@
   </ThingDef>
 
 
-  <!-- m3 medic (wip) -->
+<!-- m3 medic (wip) -->
 
   <ThingDef ParentName="pphhyy_URMCArmors">
     <defName>pphhyy_M3Medic</defName>
     <label>M3 pattern medic armor</label>
     <description>Standard Issue Armor used by Medics, provides modest protection from bullet and melee attacks, an all rounder in terms of protection. Comes with Foam grenades to put out the fire on some eager marines. Boosts Medical Skill.</description>
-    <recipeMaker Inherit="false">
+    <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit="false">
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
@@ -277,7 +279,7 @@
         <onlyManualCast>True</onlyManualCast>
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
@@ -348,19 +350,19 @@
   </ThingDef>
 
 
-  <!-- m3 armor (wip) -->
+<!-- m3 armor (wip) -->
 
   <ThingDef ParentName="pphhyy_URMCArmors">
     <defName>pphhyy_M3Armor</defName>
     <label>M3 pattern personal armor</label>
     <description>Standard Issue Armor, provides modest protection from bullet and melee attacks, an all rounder. Comes with Frag Grenades to assist in tactical situations.</description>
-    <recipeMaker Inherit="false">
+    <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit="false">
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
@@ -378,7 +380,7 @@
         <onlyManualCast>True</onlyManualCast>
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
@@ -458,19 +460,19 @@
     </thingSetMakerTags>
   </ThingDef>
 
-  <!-- m3 officer (wip)-->
+<!-- m3 officer (wip)-->
 
   <ThingDef ParentName="pphhyy_URMCArmors">
     <defName>pphhyy_M3Officer</defName>
     <label>M3 pattern officer armor</label>
     <description>A well-crafted suit of M3 Pattern Armor typically found in the hands of higher-ranking officers. Useful for letting your men know who is in charge when taking to the field. Comes with Incendiary grenades.</description>
-    <recipeMaker Inherit="false">
+    <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit="false">
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
@@ -488,7 +490,7 @@
         <onlyManualCast>True</onlyManualCast>
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
@@ -569,19 +571,19 @@
     </thingSetMakerTags>
   </ThingDef>
 
-  <!-- m4 goliath -->
+<!-- m4 goliath -->
 
   <ThingDef ParentName="pphhyy_URMCArmors">
     <defName>pphhyy_M4Goliath</defName>
     <label>M3-G4 grenadier armor</label>
     <description>A custom set of M3 armour packed to the brim with padding, plating, and every other form of ballistic protection under the sun. Being much heavier than the other armour types. Equipped with 4 Frag Grenades.</description>
-    <recipeMaker Inherit="false">
+    <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
-      <recipeUsers>
+      <recipeUsers Inherit="false">
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
@@ -611,7 +613,7 @@
         <onlyManualCast>True</onlyManualCast>
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
@@ -679,7 +681,7 @@
   </ThingDef>
 
 
-  <!-- m3 veteran -->
+<!-- m3 veteran -->
 
   <ThingDef ParentName="pphhyy_URMCArmors">
     <defName>pphhyy_M3Veteran</defName>
@@ -702,7 +704,7 @@
         <onlyManualCast>True</onlyManualCast>
         <range>12.9</range>
         <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
+        <warmupTime>0.2</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
