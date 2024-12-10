@@ -10,7 +10,7 @@
     <label>talus synth head</label>
     <description>Most of a synths cognitive functions are store in its head no different then a human.</description>
     <possessionCount>1</possessionCount>
-    <stackLimit>10</stackLimit>
+    <stackLimit>3</stackLimit>
     <graphicData>
       <texPath>Resources/TalusSynthHead</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -46,7 +46,7 @@
     <label>talus synth body</label>
     <description>Synth bodies are remarkably durable compared to human bodies and come with very few downsides which we are not legally allowed to disclose to the public.</description>
     <possessionCount>1</possessionCount>
-    <stackLimit>10</stackLimit>
+    <stackLimit>3</stackLimit>
     <graphicData>
       <texPath>Resources/TalusSynthBody</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -81,7 +81,7 @@
     <label>synth lab coat</label>
     <description>Lab Coat for Lab synths to do their work in a easy to identify manner.</description>
     <possessionCount>1</possessionCount>
-    <stackLimit>10</stackLimit>
+    <stackLimit>3</stackLimit>
     <graphicData>
       <texPath>Resources/SynthLabCoat</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -115,7 +115,7 @@
     <label>synth work coveralls</label>
     <description>Coveralls for worker synths to do their work in a easy to identify manner.</description>
     <possessionCount>1</possessionCount>
-    <stackLimit>10</stackLimit>
+    <stackLimit>3</stackLimit>
     <graphicData>
       <texPath>Resources/SynthWorkCoveralls</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -149,7 +149,7 @@
     <label>talus combat armor</label>
     <description>Pearl techs first synth combat armor meant to further improved the protective property's of the synth body.</description>
     <possessionCount>1</possessionCount>
-    <stackLimit>10</stackLimit>
+    <stackLimit>3</stackLimit>
     <graphicData>
       <texPath>Resources/TalusCombatArmor</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -165,7 +165,7 @@
     </costList>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
       <displayPriority>110</displayPriority>
         <recipeUsers>
             <li>TableMachining</li>
@@ -184,7 +184,7 @@
     <label>talus combat helmet</label>
     <description>No different then a human helmet its purpose is to help protect a synths cognitive functions from harm.</description>
     <possessionCount>1</possessionCount>
-    <stackLimit>10</stackLimit>
+    <stackLimit>3</stackLimit>
     <graphicData>
       <texPath>Resources/TalusCombatHelmet</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -199,7 +199,7 @@
     </costList>
     <techLevel>Spacer</techLevel>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
       <displayPriority>110</displayPriority>
         <recipeUsers>
             <li>TableMachining</li>

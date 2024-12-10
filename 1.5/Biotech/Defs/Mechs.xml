@@ -55,6 +55,18 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       <BandwidthCost>2</BandwidthCost>
       <ControlTakingTime>18</ControlTakingTime>
     </statBases>
+        <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
     <race>
       <body>Lancer</body>
       <lifeStageAges Inherit="False">
@@ -136,6 +148,18 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
     </statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
     <race>
       <body>Lancer</body>
       <lifeStageAges Inherit="False">
@@ -472,7 +496,7 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
         <count>1</count>
       </li>
     </ingredients>
-    <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+    <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
       <products>
       <pphhyy_Tartarus01Mk>1</pphhyy_Tartarus01Mk>
       </products>
