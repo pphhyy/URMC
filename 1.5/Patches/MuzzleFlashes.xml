@@ -113,7 +113,18 @@
                         </li>
                     </value>
                 </li> -->
-                 <li Class="PatchOperationAddModExtension">
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Biotech</li>
+            <li>Muzzle Flash</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+        <operations>
+        <li Class="PatchOperationAddModExtension">
                     <xpath>Defs/ThingDef[defName="pphhyy_EMPChargeLance"]</xpath>
                     <value>
                         <li Class="MuzzleFlash.MuzzleFlashProps">
@@ -152,9 +163,8 @@
                         </li>
                     </value>
                 </li>
-            </operations>
+        </operations>
         </match>
-    </Operation>
-
+        </Operation>
 
 </Patch>

@@ -78,37 +78,5 @@
         <researchViewX>1.50</researchViewX>
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
-
-    <!-- Pearl Technica Research-->
-
-    <ResearchProjectDef>
-        <defName>pphhyy_URMCPearlTechnicaTier1</defName>
-        <label>URMC pearl technica tier 1</label>
-        <description>Pearl Technica basic colony modules</description>
-        <baseCost>3000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <tab>pphhyy_URMC</tab>
-        <prerequisites>
-            <li>StandardMechtech</li>
-            <li>pphhyy_URMCMarine</li>
-        </prerequisites>
-        <researchViewX>4.50</researchViewX>
-        <researchViewY>2.00</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef>
-        <defName>pphhyy_URMCPearlTechnicaTier2</defName>
-        <label>URMC pearl technica tier 2</label>
-        <description>Pearl Technica advanced colony modules and military</description>
-        <baseCost>3000</baseCost>
-        <techLevel>Spacer</techLevel>
-        <tab>pphhyy_URMC</tab>
-        <prerequisites>
-            <li>HighMechtech</li>
-            <li>pphhyy_URMCPearlTechnicaTier1</li>
-        </prerequisites>
-        <researchViewX>6</researchViewX>
-        <researchViewY>2.00</researchViewY>
-    </ResearchProjectDef>
-
+    
 </Defs>
