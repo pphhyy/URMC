@@ -428,6 +428,9 @@
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <apparel>
+           <renderSkipFlags>
+                <li>None</li>
+           </renderSkipFlags>    
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
