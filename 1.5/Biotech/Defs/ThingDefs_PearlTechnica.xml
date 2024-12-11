@@ -297,8 +297,14 @@
             <drawSize>1.5</drawSize>
         </graphicData>
         <statBases>
+            <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.54</ArmorRating_Heat>
             <MaxHitPoints>240</MaxHitPoints>
             <Mass>1.5</Mass>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <MechBandwidth>12</MechBandwidth>
@@ -1013,9 +1019,9 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                 </fat>
             </wornGraphicData>
         </apparel>
-            <comps>
-      <li Class="CompProperties_Forbiddable" Inherit= "false"/>
-          </comps>
+        <comps>
+            <li Class="CompProperties_Forbiddable" Inherit= "false"/>
+        </comps>
         <tradeTags>
             <li>ExoticMisc</li>
         </tradeTags>
@@ -1300,41 +1306,41 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
-<!-- EMP Grenade -->
+    <!-- EMP Grenade -->
 
     <ThingDef ParentName="pphhyy_GrenadesBase">
         <defName>pphhyy_GrenadeEMP</defName>
         <label>EMP grenades</label>
         <description>EMP Grenades are the bane of Mechanoids everywhere; they have also proven useful when a synth has a unforeseen malfunction, which as defiantly never happened. Trusted usually to Tech Marines to avoid accidental power outages. It is set to detonate in 5 seconds. These are meant to use with the Marine Pearl Tech armors.</description>
         <recipeMaker>
-          <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
-          <recipeUsers>
-            <li>TableMachining</li>
-          </recipeUsers>
+            <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
         </recipeMaker>
         <costList>
-          <Steel>5</Steel>
-          <ComponentSpacer>1</ComponentSpacer>
+            <Steel>5</Steel>
+            <ComponentSpacer>1</ComponentSpacer>
         </costList>
         <graphicData>
-          <texPath>Resources/EMPGrenade</texPath>
-          <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Resources/EMPGrenade</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
-      </ThingDef>
+    </ThingDef>
 
-      <ThingDef ParentName="BaseFragGrenadeProjectile">
+    <ThingDef ParentName="BaseFragGrenadeProjectile">
         <defName>pphhyy_GrenadeEMPProjectile</defName>
         <label>EMP grenade</label>
         <thingClass>Projectile_Explosive</thingClass>
         <graphicData>
-          <texPath>Resources/EMPGrenade/EMPGrenade_a</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Resources/EMPGrenade/EMPGrenade_a</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-          <explosionRadius>3.5</explosionRadius >
-          <damageDef>EMP</damageDef>
-          <explosionDelay>100</explosionDelay>
+            <explosionRadius>3.5</explosionRadius >
+            <damageDef>EMP</damageDef>
+            <explosionDelay>100</explosionDelay>
         </projectile>
-      </ThingDef>
+    </ThingDef>
 
 </Defs>
