@@ -1266,5 +1266,73 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         </modExtensions>
     </ThingDef>
 
+    <!-- Pearl Technica Research-->
+
+    <ResearchProjectDef>
+        <defName>pphhyy_URMCPearlTechnicaTier1</defName>
+        <label>URMC pearl technica tier 1</label>
+        <description>Pearl Technica basic colony modules</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>pphhyy_URMC</tab>
+        <prerequisites>
+            <li>StandardMechtech</li>
+            <li>pphhyy_URMCMarine</li>
+        </prerequisites>
+        <researchViewX>4.50</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>pphhyy_URMCPearlTechnicaTier2</defName>
+        <label>URMC pearl technica tier 2</label>
+        <description>Pearl Technica advanced colony modules and military</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>pphhyy_URMC</tab>
+        <prerequisites>
+            <li>HighMechtech</li>
+            <li>pphhyy_URMCPearlTechnicaTier1</li>
+        </prerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+<!-- EMP Grenade -->
+
+    <ThingDef ParentName="pphhyy_GrenadesBase">
+        <defName>pphhyy_GrenadeEMP</defName>
+        <label>EMP grenades</label>
+        <description>EMP Grenades are the bane of Mechanoids everywhere; they have also proven useful when a synth has a unforeseen malfunction, which as defiantly never happened. Trusted usually to Tech Marines to avoid accidental power outages. It is set to detonate in 5 seconds. These are meant to use with the Marine Pearl Tech armors.</description>
+        <recipeMaker>
+          <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+          <recipeUsers>
+            <li>TableMachining</li>
+          </recipeUsers>
+        </recipeMaker>
+        <costList>
+          <Steel>5</Steel>
+          <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <graphicData>
+          <texPath>Resources/EMPGrenade</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+      </ThingDef>
+
+      <ThingDef ParentName="BaseFragGrenadeProjectile">
+        <defName>pphhyy_GrenadeEMPProjectile</defName>
+        <label>EMP grenade</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+          <texPath>Resources/EMPGrenade/EMPGrenade_a</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+          <explosionRadius>3.5</explosionRadius >
+          <damageDef>EMP</damageDef>
+          <explosionDelay>100</explosionDelay>
+        </projectile>
+      </ThingDef>
 
 </Defs>
