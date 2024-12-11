@@ -906,7 +906,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
 
     <!-- Pearl Tech Bandwidth Enhancer -->
 
-    <ThingDef ParentName="MechanitorPackBase">
+    <ThingDef ParentName="ApparelNoQualityBase">
         <defName>pphhyy_BandwidthEnhancer</defName>
         <label>pearl tech bandwidth enhancer</label>
         <description>The Bandwidth Enhancer from Pearl Technica provides 12 extra bandwidth</description>
@@ -950,7 +950,6 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         <equippedStatOffsets>
             <MechBandwidth>12</MechBandwidth>
         </equippedStatOffsets>
-        <colorGenerator Class="ColorGenerator_Options" INherit= "false"></colorGenerator>
         <apparel>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <scoreOffset>4</scoreOffset>
@@ -1014,6 +1013,9 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                 </fat>
             </wornGraphicData>
         </apparel>
+            <comps>
+      <li Class="CompProperties_Forbiddable" Inherit= "false"/>
+          </comps>
         <tradeTags>
             <li>ExoticMisc</li>
         </tradeTags>
