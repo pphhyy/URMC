@@ -432,7 +432,7 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
     </statBases>
     <race>
       <deathAction>
-        <workerClass>DeathActionWorker_BigExplosion</workerClass>
+        <workerClass>URMC.DeathActionWorker_MechDetonatorExplosion</workerClass>
       </deathAction>
       <body>Lancer</body>
       <lifeStageAges Inherit="False">
@@ -445,6 +445,13 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
         </li>
       </lifeStageAges>
     </race>
+	<comps>
+	  <li Class="URMC.CompProperties_MechDetonator">
+	  <iconPath>Things/Mote/SpeechSymbols/Speech</iconPath>
+	  <radius>3</radius>
+	  <damage>-1</damage> <!--default is -1-->
+	  </li>
+    </comps>
   </ThingDef>
   
   <PawnKindDef ParentName="BaseMechanoidKind">
