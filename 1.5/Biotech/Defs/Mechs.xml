@@ -502,7 +502,42 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       </products>
   </RecipeDef>
 
+  <!-- Resurrecting Synths Recipe -->
 
-
+  <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
+    <defName>pphhyy_ResurrectSynths</defName>
+    <label>resurrect synths</label>
+    <description>Resurrect a friendly synth. So long as the synth's body is not completely destroyed, it can be resurrected.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_pphhyy_Talus02Mk</li>
+        <li>Corpse_pphhyy_Talus04Mk</li>
+        <li>Corpse_pphhyy_Talus06Mk</li>
+        <li>Corpse_pphhyy_Talus08Mk</li>
+        <li>Corpse_pphhyy_Tartarus01Mk</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+    <li>MechGestator</li>
+    </recipeUsers>
+  </RecipeDef>
 
 </Defs>
