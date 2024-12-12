@@ -451,7 +451,7 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
       <li Class="URMC.CompProperties_MechDetonator">
         <iconPath>Things/Mote/SpeechSymbols/Speech</iconPath>
         <radius>3</radius>
-        <damage>-1</damage>        <!--default is -1-->
+        <damage>50</damage>        <!--default is -1-->
       </li>
     </comps>
   </ThingDef>
