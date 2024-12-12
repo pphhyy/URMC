@@ -20,21 +20,44 @@
             </recipeUsers>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/MechlordSuit/MechlordSuit</texPath>
+            <texPath>Armor/M3TechArmor/M3TechArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
         </graphicData>
+        <verbs>
+            <li>
+                <label>throw EMP grenade</label>
+                <verbClass>Verb_LaunchProjectileStatic</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <onlyManualCast>True</onlyManualCast>
+                <range>12.9</range>
+                <forcedMissRadius>1.9</forcedMissRadius>
+                <warmupTime>0.2</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>pphhyy_GrenadeEMPProjectile</defaultProjectile>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
         <statBases>
             <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
             <ArmorRating_Heat>0.54</ArmorRating_Heat>
             <Insulation_Cold>34</Insulation_Cold>
             <Insulation_Heat>10</Insulation_Heat>
-            <EquipDelay>11</EquipDelay>
+            <EquipDelay>3</EquipDelay>
             <Mass>5</Mass>
         </statBases>
         <equippedStatOffsets>
             <MechBandwidth>12</MechBandwidth>
-            <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
             <MeleeHitChance>-0.5</MeleeHitChance>
         </equippedStatOffsets>
         <costList>
@@ -44,8 +67,21 @@
             <ComponentSpacer>8</ComponentSpacer>
         </costList>
         <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MechlordSuit/MechlordSuit</wornGraphicPath>
+            <wornGraphicPath>Armor/M3TechArmor/M3TechArmor</wornGraphicPath>
         </apparel>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="CompProperties_ApparelReloadable">
+                <maxCharges>2</maxCharges>
+                <ammoDef>pphhyy_GrenadeEMP</ammoDef>
+                <ammoCountPerCharge>1</ammoCountPerCharge>
+                <baseReloadTicks>60</baseReloadTicks>
+                <soundReload>Standard_Reload</soundReload>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>grenade</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+            </li>
+        </comps>
         <tradeability>Sellable</tradeability>
         <tradeTags Inherit="False">
             <li>HiTechArmor</li>
@@ -69,7 +105,7 @@
             </recipeUsers>
         </recipeMaker>
         <graphicData>
-            <texPath>Armor/M2Recon/M2Recon</texPath>
+            <texPath>Armor/M3STechArmor/M3STechArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
@@ -102,7 +138,7 @@
             <Uranium>5</Uranium>
         </costList>
         <apparel>
-            <wornGraphicPath>Armor/M2Recon/M2Recon</wornGraphicPath>
+            <wornGraphicPath>Armor/M3STechArmor/M3STechArmor</wornGraphicPath>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
             <options>
@@ -136,14 +172,14 @@
     <!-- Pearl Tech Lab Coveralls -->
 
     <ThingDef ParentName="ApparelMakeableBase">
-        <defName>pphhyy_LabCoveralls</defName>
-        <description>PLACEHOLDER</description>
+        <defName>pphhyy_TechCoveralls</defName>
+        <description>Iconic Pearl Tech lab attire, when colonists see staff dressed like this they rest assured that science is being taken serious and with the highest respect for safety. The clean and efficient Pearl Tech science gear helps boost a lab techs ability to synthesize drugs and conduct research.</description>
         <label>Pearl Tech Lab Coveralls</label>
         <recipeMaker>
             <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Armor/ColonialFatigues/ColonialFatigues</texPath>
+            <texPath>Armor/PearlTechCoverall/PearlTechCoverall</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
@@ -161,7 +197,7 @@
         </thingCategories>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
-            <WorkToMake>2700</WorkToMake>
+            <WorkToMake>6900</WorkToMake>
             <Mass>0.3</Mass>
             <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
@@ -175,13 +211,10 @@
                 <li>Shoulders</li>
                 <li>Arms</li>
             </bodyPartGroups>
-            <wornGraphicPath>Armor/ColonialFatigues/ColonialFatigues</wornGraphicPath>
+            <wornGraphicPath>Armor/PearlTechCoverall/PearlTechCoverall</wornGraphicPath>
             <layers>
                 <li>OnSkin</li>
             </layers>
-            <tags>
-                <li>IndustrialBasic</li>
-            </tags>
             <defaultOutfitTags>
                 <li>Worker</li>
             </defaultOutfitTags>
@@ -197,13 +230,13 @@
 
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>pphhyy_LabCoat</defName>
-        <description>PLACEHOLDER</description>
+        <description>Iconic Pearl Tech lab attire, when colonists see staff dressed like this they rest assured that science is being taken serious and with the highest respect for safety. The clean and efficient Pearl Tech science gear helps boost a lab techs ability to synthesize drugs and conduct research.</description>
         <label>Pearl Tech Lab Coat</label>
         <recipeMaker>
             <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Armor/ColonialFatigues/ColonialFatigues</texPath>
+            <texPath>Armor/PearlTechLabCoat/PearlTechLabCoat</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
@@ -235,13 +268,10 @@
                 <li>Shoulders</li>
                 <li>Arms</li>
             </bodyPartGroups>
-            <wornGraphicPath>Armor/ColonialFatigues/ColonialFatigues</wornGraphicPath>
+            <wornGraphicPath>Armor/PearlTechLabCoat/PearlTechLabCoat</wornGraphicPath>
             <layers>
-                <li>OnSkin</li>
+                <li>Shell</li>
             </layers>
-            <tags>
-                <li>IndustrialBasic</li>
-            </tags>
             <defaultOutfitTags>
                 <li>Worker</li>
             </defaultOutfitTags>
@@ -264,10 +294,17 @@
         <graphicData>
             <texPath>HelmetsAndHats/M10TechHelmet/M10TechHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
         </graphicData>
         <statBases>
+            <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.54</ArmorRating_Heat>
             <MaxHitPoints>240</MaxHitPoints>
             <Mass>1.5</Mass>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <MechBandwidth>12</MechBandwidth>
@@ -355,10 +392,13 @@
             <SignalChip>1</SignalChip>
         </costList>
         <apparel>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>HelmetsAndHats/M9Recon/M9Recon</wornGraphicPath>
+            <wornGraphicPath>HelmetsAndHats/M3STechHelmet/M3STechHelmet</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -396,7 +436,7 @@
 
     <ThingDef ParentName="pphhyy_URMC_Helmets">
         <defName>pphhyy_LabHUD</defName>
-        <description>PLACEHOLDER</description>
+        <description>The Lab HUD is the epitome of Pearl Tech lab gear. The HUD helps lab techs track anything from drug cook times to research projects to when to take your mandated 2 minute break. Usually worn by lead lab techs but affluent labs will outfit all their techs with this gear.</description>
         <label>Pearl Tech Lab HUD</label>
         <recipeMaker>
             <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
@@ -411,8 +451,8 @@
             <drawSize>1.5</drawSize>
         </graphicData>
         <equippedStatOffsets>
-            <ResearchSpeed>0.20</ResearchSpeed>
-            <DrugSynthesisSpeed>0.20</DrugSynthesisSpeed>
+            <ResearchSpeed>0.420</ResearchSpeed>
+            <DrugSynthesisSpeed>0.40</DrugSynthesisSpeed>
         </equippedStatOffsets>
         <costList>
             <ComponentSpacer>1</ComponentSpacer>
@@ -434,6 +474,9 @@
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <apparel>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
@@ -477,6 +520,7 @@
         <graphicData>
             <texPath>Weapon/PTType102ChargeLance</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.5</drawSize>
         </graphicData>
         <soundInteract>Interact_ChargeLance</soundInteract>
         <thingSetMakerTags>
@@ -538,18 +582,49 @@
 
     <ThingDef ParentName="BaseBullet">
         <defName>pphhyy_Bullet_PearlChargeLance</defName>
-        <label>pearl charge lance shot</label>
+        <label>EMP shot</label>
         <graphicData>
             <texPath>Things/Projectile/ChargeLanceShot</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
-            <drawSize>1.5</drawSize>
+            <drawSize>1.1</drawSize>
         </graphicData>
         <projectile>
-            <damageDef>EMP</damageDef>
-            <damageAmountBase>30</damageAmountBase>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>40</damageAmountBase>
             <stoppingPower>1.5</stoppingPower>
             <speed>120</speed>
+            <extraDamages>
+                <li>
+                    <def>EMP</def>
+                    <amount>25</amount>
+                    <chance>0.6</chance>
+                </li>
+            </extraDamages>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>pphhyy_Bullet_EMPRifleBullet</defName>
+        <label>EMP shot</label>
+        <graphicData>
+            <texPath>Things/Projectile/Charge_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <stoppingPower>1.5</stoppingPower>
+            <speed>120</speed>
+            <extraDamages>
+                <li>
+                    <def>EMP</def>
+                    <amount>15</amount>
+                    <chance>0.6</chance>
+                </li>
+            </extraDamages>
         </projectile>
     </ThingDef>
 
@@ -575,6 +650,9 @@ Unlike the pulse rifle these were commissioned with the purpose of putting down 
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
+        <weaponTags>
+            <li>pphhyy_EMPRifle</li>
+        </weaponTags>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
@@ -596,7 +674,7 @@ Unlike the pulse rifle these were commissioned with the purpose of putting down 
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>pphhyy_Bullet_PearlChargeLance</defaultProjectile>
+                <defaultProjectile>pphhyy_Bullet_EMPRifleBullet</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
                 <range>30.9</range>
                 <burstShotCount>3</burstShotCount>
@@ -671,7 +749,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>pphhyy_Bullet_PearlChargeLance</defaultProjectile>
+                <defaultProjectile>pphhyy_Bullet_EMPRifleBullet</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
                 <range>24</range>
                 <burstShotCount>3</burstShotCount>
@@ -741,9 +819,9 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         <equippedAngleOffset>-90</equippedAngleOffset>
         <techLevel>Medieval</techLevel>
         <weaponTags>
+            <li>pphhyy_EMPLacerator</li>
             <li>URMC_Weapons</li>
         </weaponTags>
-        <costStuffCount>100</costStuffCount>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
@@ -752,10 +830,9 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
             <Mass>2</Mass>
         </statBases>
         <relicChance>2</relicChance>
-        <stuffCategories>
-            <li>Metallic</li>
-            <li>Woody</li>
-        </stuffCategories>
+        <costList>
+            <Steel>60</Steel>
+        </costList>
         <tools>
             <li>
                 <label>handle</label>
@@ -772,7 +849,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                 </capacities>
                 <power>23</power>
                 <cooldownTime>2.6</cooldownTime>
-                 <extraMeleeDamages>
+                <extraMeleeDamages>
                     <li>
                         <def>EMP</def>
                         <amount>25</amount>
@@ -835,7 +912,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
 
     <!-- Pearl Tech Bandwidth Enhancer -->
 
-    <ThingDef ParentName="MechanitorPackBase">
+    <ThingDef ParentName="ApparelNoQualityBase">
         <defName>pphhyy_BandwidthEnhancer</defName>
         <label>pearl tech bandwidth enhancer</label>
         <description>The Bandwidth Enhancer from Pearl Technica provides 12 extra bandwidth</description>
@@ -854,6 +931,8 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                 <Crafting>4</Crafting>
             </skillRequirements>
         </recipeMaker>
+        <stuffCategories Inheri= "false">
+        </stuffCategories>
         <costList>
             <SignalChip>2</SignalChip>
             <Steel>50</Steel>
@@ -862,7 +941,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         <graphicData>
             <texPath>Gear/PTBandwidthEnhancer/PTBandwidthEnhancer</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(0.7,0.7)</drawSize>
+            <drawSize>1.5</drawSize>
         </graphicData>
         <tickerType>Normal</tickerType>
         <statBases>
@@ -940,6 +1019,9 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                 </fat>
             </wornGraphicData>
         </apparel>
+        <comps>
+            <li Class="CompProperties_Forbiddable" Inherit= "false"/>
+        </comps>
         <tradeTags>
             <li>ExoticMisc</li>
         </tradeTags>
@@ -950,7 +1032,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>pphhyy_WristController</defName>
         <label>pearl technica wrist controller</label>
-        <description>PLACEHOLDER</description>
+        <description>A Mechanitor's greatest friend, the Pearl Tech Wrist Controller boosts a wide variety of Mechanitor skills all without the Mechanitor needing to have more implants. However should a Mechanitor use implants with this the effect is further increased. It adds 1 control group, boosts work, repair and gestation speeds; as well as boosting all the remote ability and the connected mechs/snyths work speed.</description>
         <burnableByRecipe>true</burnableByRecipe>
         <smeltable>false</smeltable>
         <techLevel>Spacer</techLevel>
@@ -960,7 +1042,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
             <texPath>Gear/PTWristController/PTWristController</texPath>
-            <drawSize>1.5</drawSize>
+            <drawSize>1.3</drawSize>
         </graphicData>
         <equippedStatOffsets>
             <MechRemoteRepairDistance>10.9</MechRemoteRepairDistance>
@@ -968,8 +1050,8 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
             <MechRepairSpeed>0.33</MechRepairSpeed>
             <MechRemoteShieldEnergy>7</MechRemoteShieldEnergy>
             <MechRemoteShieldDistance>7</MechRemoteShieldDistance>
-            <MechControlGroups>2</MechControlGroups>
-            <WorkSpeedGlobalOffsetMech>0.12</WorkSpeedGlobalOffsetMech>
+            <MechControlGroups>1</MechControlGroups>
+            <WorkSpeedGlobalOffsetMech>0.24</WorkSpeedGlobalOffsetMech>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
@@ -981,8 +1063,12 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
             </recipeUsers>
         </recipeMaker>
         <costList>
-            <Cloth>60</Cloth>
-            <Steel>60</Steel>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Plasteel>50</Plasteel>
+            <PowerfocusChip>2</PowerfocusChip>
+            <SignalChip>2</SignalChip>
+            <SubcoreBasic>2</SubcoreBasic>
+            <SubcoreHigh>1</SubcoreHigh>
         </costList>
         <equipmentType>None</equipmentType>
         <thingClass>VFECore.Apparel_Shield</thingClass>
@@ -1016,7 +1102,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                 <offHandGraphicData>
                     <texPath>Gear/PTWristController/PTWristController</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>1.4</drawSize>
+                    <drawSize>0.8</drawSize>
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
@@ -1055,7 +1141,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
     <ThingDef ParentName="BuildingBase">
         <defName>pphhyy_PearlTechnicaBanner</defName>
         <label>pearl technica banner</label>
-        <description>PLACEHOLD</description>
+        <description>Pearl Tech Banner meant to be installed in key locations for maximum customer satisfaction.</description>
         <altitudeLayer>BuildingOnTop</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <selectable>true</selectable>
@@ -1097,7 +1183,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>pphhyy_PearlTechnicaStandard</defName>
         <label>pearl technica standard</label>
-        <description>PLACEHOLDER</description>
+        <description>Pearl Tech handheld colors to be taken into combat as a form of aggressive advertising.</description>
         <burnableByRecipe>true</burnableByRecipe>
         <smeltable>false</smeltable>
         <techLevel>Spacer</techLevel>
@@ -1188,5 +1274,73 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         </modExtensions>
     </ThingDef>
 
+    <!-- Pearl Technica Research-->
+
+    <ResearchProjectDef>
+        <defName>pphhyy_URMCPearlTechnicaTier1</defName>
+        <label>URMC pearl technica tier 1</label>
+        <description>Pearl Technica basic colony modules</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>pphhyy_URMC</tab>
+        <prerequisites>
+            <li>StandardMechtech</li>
+            <li>pphhyy_URMCMarine</li>
+        </prerequisites>
+        <researchViewX>4.50</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>pphhyy_URMCPearlTechnicaTier2</defName>
+        <label>URMC pearl technica tier 2</label>
+        <description>Pearl Technica advanced colony modules and military</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>pphhyy_URMC</tab>
+        <prerequisites>
+            <li>HighMechtech</li>
+            <li>pphhyy_URMCPearlTechnicaTier1</li>
+        </prerequisites>
+        <researchViewX>6</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!-- EMP Grenade -->
+
+    <ThingDef ParentName="pphhyy_GrenadesBase">
+        <defName>pphhyy_GrenadeEMP</defName>
+        <label>EMP grenades</label>
+        <description>EMP Grenades are the bane of Mechanoids everywhere; they have also proven useful when a synth has a unforeseen malfunction, which as defiantly never happened. Trusted usually to Tech Marines to avoid accidental power outages. It is set to detonate in 5 seconds. These are meant to use with the Marine Pearl Tech armors.</description>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Steel>5</Steel>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <graphicData>
+            <texPath>Resources/EMPGrenade</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseFragGrenadeProjectile">
+        <defName>pphhyy_GrenadeEMPProjectile</defName>
+        <label>EMP grenade</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Resources/EMPGrenade/EMPGrenade_a</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <explosionRadius>3.5</explosionRadius >
+            <damageDef>EMP</damageDef>
+            <explosionDelay>100</explosionDelay>
+        </projectile>
+    </ThingDef>
 
 </Defs>

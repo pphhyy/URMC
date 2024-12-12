@@ -67,9 +67,9 @@
         <label>incendiary grenades</label>
         <description>Exploding in a decent blast radius leaving burning chemfuel behind, incendiary grenades are a powerful area of denial weapon that can deal immense damage to a hostile target if it's caught in the fire.</description>
         <recipeMaker>
-          <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+          <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
           <recipeUsers>
-            <li>FabricationBench</li>
+            <li>TableMachining</li>
           </recipeUsers>
         </recipeMaker>
         <graphicData>
@@ -101,9 +101,9 @@
         <label>foam grenades</label>
         <description>Exploding in a decent blast radius leaving behind a fire suppressing foam. Usually deployed after incendiary attacks or after marines have been attacked by incendiary bombs.</description>
         <recipeMaker>
-          <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+          <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
           <recipeUsers>
-            <li>FabricationBench</li>
+            <li>TableMachining</li>
           </recipeUsers>
         </recipeMaker>
         <graphicData>
@@ -128,41 +128,5 @@
         </projectile>
       </ThingDef>
 
-<!-- EMP Grenade -->
-
-    <ThingDef ParentName="pphhyy_GrenadesBase">
-        <defName>pphhyy_GrenadeEMP</defName>
-        <label>EMP grenades</label>
-        <description>EMP Grenades are the bane of Mechanoids everywhere; they have also proven useful when a synth has a unforeseen malfunction, which as defiantly never happened. Trusted usually to Tech Marines to avoid accidental power outages. It is set to detonate in 5 seconds. These are meant to use with the Marine Pearl Tech armors.</description>
-        <recipeMaker>
-          <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
-          <recipeUsers>
-            <li>TableMachining</li>
-          </recipeUsers>
-        </recipeMaker>
-        <costList>
-          <Steel>5</Steel>
-          <ComponentSpacer>1</ComponentSpacer>
-        </costList>
-        <graphicData>
-          <texPath>Resources/EMPGrenade</texPath>
-          <graphicClass>Graphic_StackCount</graphicClass>
-        </graphicData>
-      </ThingDef>
-
-      <ThingDef ParentName="BaseFragGrenadeProjectile">
-        <defName>pphhyy_GrenadeEMPProjectile</defName>
-        <label>EMP grenade</label>
-        <thingClass>Projectile_Explosive</thingClass>
-        <graphicData>
-          <texPath>Resources/EMPGrenade/EMPGrenade_a</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-          <explosionRadius>3.5</explosionRadius >
-          <damageDef>EMP</damageDef>
-          <explosionDelay>100</explosionDelay>
-        </projectile>
-      </ThingDef>
 
 </Defs>
