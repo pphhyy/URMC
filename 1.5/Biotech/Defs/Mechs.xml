@@ -580,6 +580,14 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
     <ingredients>
       <li>
         <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
           <categories>
             <li>Corpses</li>
           </categories>
