@@ -174,10 +174,14 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       <mechEnabledWorkTypes>
         <li>Doctor</li>
         <li>Crafting</li>
+        <li>Smithing</li>
+        <li>Tailoring</li>
       </mechEnabledWorkTypes>
       <mechWorkTypePriorities>
         <Doctor>1</Doctor>
         <Crafting>2</Crafting>
+        <Smithing>2</Smithing>
+        <Tailoring>2</Tailoring>
       </mechWorkTypePriorities>
     </race>
   </ThingDef>
@@ -512,7 +516,7 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
         </filter>
         <count>1</count>
       </li>
-            <li>
+      <li>
         <filter>
           <thingDefs>
             <li>ComponentIndustrial</li>
@@ -574,6 +578,14 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
     <label>resurrect tartarus synth</label>
     <description>Resurrect a friendly tartarus synth. So long as the synth's body is not completely destroyed, it can be resurrected.</description>
     <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
       <li>
         <filter>
           <categories>
