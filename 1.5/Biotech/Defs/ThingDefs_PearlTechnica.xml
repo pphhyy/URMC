@@ -578,6 +578,16 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+        <modExtensions>
+            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                <def>MF_ChargedMuzzleFalsh</def>
+                <drawSize>(0.5,0.5)</drawSize>
+                <isAlternately>true</isAlternately>
+                <offsets>
+                    <li>(0.68,0.01)</li>
+                </offsets>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -703,6 +713,16 @@ Unlike the pulse rifle these were commissioned with the purpose of putting down 
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+        <modExtensions>
+            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                <def>MF_ChargedMuzzleFalsh</def>
+                <drawSize>(0.5,0.5)</drawSize>
+                <isAlternately>true</isAlternately>
+                <offsets>
+                    <li>(0.47,0.06)</li>
+                </offsets>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <!-- Pearl Technica Type 42 EMP SMG -->
@@ -799,6 +819,14 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                         <angleOffset>45</angleOffset>
                     </west>
                 </weaponDraftedDrawOffsets>
+            </li>
+            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                <def>MF_ChargedMuzzleFalsh</def>
+                <drawSize>(0.5,0.5)</drawSize>
+                <isAlternately>true</isAlternately>
+                <offsets>
+                    <li>(0.33,0.04)</li>
+                </offsets>
             </li>
         </modExtensions>
     </ThingDef>
