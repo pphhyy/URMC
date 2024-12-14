@@ -449,7 +449,7 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
     </race>
     <comps>
       <li Class="URMC.CompProperties_MechDetonator">
-        <iconPath>Things/Mote/SpeechSymbols/Speech</iconPath>
+        <iconPath>UI/ExplodyButton</iconPath>
         <radius>3</radius>
         <damage>50</damage>        <!--default is -1-->
       </li>
@@ -466,7 +466,7 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
       <li>
         <bodyGraphicData>
           <texPath>Mechanoids/Tartarus/TartarusMk01</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>2</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
