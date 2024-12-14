@@ -609,17 +609,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3-SHelmet"]/description</xpath>
-		<value>
-			<description>A high-tech armored helmet with a built-in status computer and a protective
-				plasteel-weave plate.\n\nBuilt-in servo-motors assist the wearer's muscles in
-				holding the weight of the helmet while the integrated combat HUD improves weapon
-				accuracy.\n\nArmor like this is often used by imperial scout troops or glitterworld
-				police forces.</description>
-		</value>
-	</Operation>
-
 	<Operation Class="PatchOperationAddModExtension">
 		<xpath>Defs/ThingDef[defName="pphhyy_M3-SHelmet"]</xpath>
 		<value>
