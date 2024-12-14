@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="pphhyy_GrenadeEMP" or
+						defName="pphhyy_GrenadeEMPProjectile"]</xpath>
+				</li>
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/statBases</xpath>
+					<value>
+						<Bulk>40</Bulk>
+						<WornBulk>12</WornBulk>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/statBases</xpath>
+					<value>
+						<MaxHitPoints>500</MaxHitPoints>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/statBases/Mass</xpath>
+					<value>
+						<Mass>15</Mass>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/statBases</xpath>
+					<value>
+						<Flammability>0</Flammability>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>20</ArmorRating_Sharp>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>45</ArmorRating_Blunt>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/equippedStatOffsets</xpath>
+					<value>
+						<CarryWeight>70</CarryWeight>
+						<CarryBulk>15</CarryBulk>
+						<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+						<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/equippedStatOffsets/MeleeHitChance</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]</xpath>
+					<value>
+						<modExtensions Inherit="False">
+							<li Class="CombatExtended.PartialArmorExt">
+								<stats>
+									<li>
+										<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+										<parts>
+											<li>Neck</li>
+											<li>Hand</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+										<parts>
+											<li>Neck</li>
+											<li>Hand</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+										<parts>
+											<li>Leg</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+										<parts>
+											<li>Leg</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+										<parts>
+											<li>Arm</li>
+										</parts>
+									</li>
+									<li>
+										<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+										<parts>
+											<li>Arm</li>
+										</parts>
+									</li>
+								</stats>
+							</li>
+						</modExtensions>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="CombatExtended.VerbPropertiesCE">
+								<label>launch URMC grenade</label>
+								<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<onlyManualCast>True</onlyManualCast>
+								<warmupTime>1.5</warmupTime>
+								<range>40</range>
+								<minRange>5</minRange>
+								<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+								<soundCast>Shot_IncendiaryLauncher</soundCast>
+								<soundCastTail>GunTail_Medium</soundCastTail>
+								<muzzleFlashScale>14</muzzleFlashScale>
+								<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+								<targetParams>
+									<canTargetLocations>true</canTargetLocations>
+								</targetParams>
+								<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+								<defaultProjectile>Bullet_URMC_Grenade_EMP</defaultProjectile>
+								<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+							</li>
+						</verbs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
+					<value>
+						<ammoDef>Ammo_URMC_Grenade_EMP</ammoDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]/statBases</xpath>
+					<value>
+						<Bulk>5</Bulk>
+						<WornBulk>1</WornBulk>
+						<NightVisionEfficiency_Apparel>0.6</NightVisionEfficiency_Apparel>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]/statBases</xpath>
+					<value>
+						<Flammability>0</Flammability>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]/statBases/Mass</xpath>
+					<value>
+						<Mass>4.8</Mass>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>16</ArmorRating_Sharp>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>36</ArmorRating_Blunt>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]/equippedStatOffsets</xpath>
+					<value>
+						<AimingAccuracy>0.15</AimingAccuracy>
+						<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+						<SmokeSensitivity>-1</SmokeSensitivity>
+					</value>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]/equippedStatOffsets/ShootingAccuracyPawn</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]/equippedStatOffsets/MeleeHitChance</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]/apparel</xpath>
+					<value>
+						<immuneToToxGasExposure>true</immuneToToxGasExposure>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]/apparel/layers</xpath>
+					<value>
+						<li>OnHead</li>
+						<li>StrappedHead</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="pphhyy_M10PatternTechHelmet"]</xpath>
+					<value>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+									<parts>
+										<li>Nose</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+									<parts>
+										<li>Nose</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutArmor"]/statBases</xpath>
+					<value>
+						<Bulk>40</Bulk>
+						<WornBulk>6</WornBulk>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutArmor"]/statBases/MaxHitPoints</xpath>
+					<value>
+						<MaxHitPoints>400</MaxHitPoints>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutArmor"]/statBases/Mass</xpath>
+					<value>
+						<Mass>10</Mass>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutArmor"]/statBases/Flammability</xpath>
+					<value>
+						<Flammability>0.2</Flammability>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_TechScoutArmor"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>16</ArmorRating_Sharp>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_TechScoutArmor"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>34</ArmorRating_Blunt>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutArmor"]/equippedStatOffsets</xpath>
+					<value>
+						<CarryWeight>50</CarryWeight>
+						<CarryBulk>8</CarryBulk>
+						<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
+						<MoveSpeed>0.4</MoveSpeed>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutArmor"]</xpath>
+					<value>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+									<parts>
+										<li>Neck</li>
+										<li>Hand</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+									<parts>
+										<li>Neck</li>
+										<li>Hand</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+									<parts>
+										<li>Leg</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.90</ArmorRating_Blunt>
+									<parts>
+										<li>Leg</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+									<parts>
+										<li>Arm</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+									<parts>
+										<li>Arm</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutHelmet"]</xpath>
+					<value>
+						<li Class="CombatExtended.ApparelDefExtension">
+							<isRadioPack>true</isRadioPack>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutHelmet"]/statBases</xpath>
+					<value>
+						<Bulk>4</Bulk>
+						<WornBulk>1</WornBulk>
+						<NightVisionEfficiency_Apparel>0.7</NightVisionEfficiency_Apparel>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutHelmet"]/statBases/Flammability</xpath>
+					<value>
+						<Flammability>0.25</Flammability>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutHelmet"]/statBases/Mass</xpath>
+					<value>
+						<Mass>3.0</Mass>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutHelmet"]/statBases/MaxHitPoints</xpath>
+					<value>
+						<MaxHitPoints>190</MaxHitPoints>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_TechScoutHelmet"]/statBases/ArmorRating_Sharp</xpath>
+					<value>
+						<ArmorRating_Sharp>12</ArmorRating_Sharp>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_TechScoutHelmet"]/statBases/ArmorRating_Blunt</xpath>
+					<value>
+						<ArmorRating_Blunt>26</ArmorRating_Blunt>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutHelmet"]/equippedStatOffsets</xpath>
+					<value>
+							<AimingAccuracy>0.15</AimingAccuracy>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutHelmet"]/apparel/layers</xpath>
+					<value>
+						<li>OnHead</li>
+						<li>StrappedHead</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="pphhyy_TechScoutHelmet"]</xpath>
+					<value>
+						<li Class="CombatExtended.PartialArmorExt">
+							<stats>
+								<li>
+									<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+									<parts>
+										<li>Eye</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+									<parts>
+										<li>Eye</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+									<parts>
+										<li>Nose</li>
+										<li>Jaw</li>
+									</parts>
+								</li>
+								<li>
+									<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+									<parts>
+										<li>Nose</li>
+										<li>Jaw</li>
+									</parts>
+								</li>
+							</stats>
+						</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>
+						Defs/ThingDef[defName="pphhyy_LabCoat"]/statBases/StuffEffectMultiplierArmor</xpath>
+					<value>
+						<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_LabHUD"]/statBases</xpath>
+					<value>
+						<Bulk>5</Bulk>
+						<WornBulk>2</WornBulk>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_BandwidthEnhancer"]/apparel/bodyPartGroups
+					</xpath>
+					<value>
+						<li>Shoulders</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="pphhyy_BandwidthEnhancer"]/apparel/layers
+					</xpath>
+					<value>
+						<li>Backpack</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>
+						Defs/ThingDef[
+						defName="pphhyy_BandwidthEnhancer" or
+						defName="pphhyy_WristController"
+						]/statBases
+					</xpath>
+					<value>
+						<Bulk>10</Bulk>
+						<WornBulk>2</WornBulk>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

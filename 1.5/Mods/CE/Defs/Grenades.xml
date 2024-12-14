@@ -17,6 +17,7 @@
             <Ammo_URMC_Grenade_HE>Bullet_URMC_Grenade_HE</Ammo_URMC_Grenade_HE>
             <Ammo_URMC_Grenade_Incendiary>Bullet_URMC_Grenade_Incendiary</Ammo_URMC_Grenade_Incendiary>
             <Ammo_URMC_Grenade_Foam>Bullet_URMC_Grenade_Foam</Ammo_URMC_Grenade_Foam>
+            <Ammo_URMC_Grenade_EMP>Bullet_URMC_Grenade_EMP</Ammo_URMC_Grenade_EMP>
         </ammoTypes>
         <similarTo>AmmoSet_LauncherGrenade</similarTo>
     </CombatExtended.AmmoSetDef>
@@ -25,7 +26,7 @@
 
     <ThingDef Class="CombatExtended.AmmoDef" Name="URMC_GrenadeBase" ParentName="MediumAmmoBase"
         Abstract="True">
-        <description>Relatively small, low velocity grenade for use in grenade launchers.</description>
+        <description>Specialized grenade developed for use in shoulder-fired grenade launchers.</description>
         <statBases>
             <Mass>0.36</Mass>
             <Bulk>0.28</Bulk>
@@ -82,6 +83,20 @@
         <ammoClass>FoamFuel</ammoClass>
         <generateAllowChance>0</generateAllowChance>
         <detonateProjectile>Bullet_URMC_Grenade_Foam</detonateProjectile>
+    </ThingDef>
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="URMC_GrenadeBase">
+        <defName>Ammo_URMC_Grenade_EMP</defName>
+        <label>URMC grenade (EMP)</label>
+        <graphicData>
+            <texPath>Resources/EMPGrenade</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.75</MarketValue>
+        </statBases>
+        <ammoClass>GrenadeEMP</ammoClass>
+        <detonateProjectile>Bullet_URMC_Grenade_HE</detonateProjectile>
     </ThingDef>
 
     <!-- ================== Projectiles ================== -->
@@ -149,6 +164,17 @@
         </projectile>
     </ThingDef>
 
+    <ThingDef ParentName="BaseURMC_GrenadeBullet">
+        <defName>Bullet_URMC_Grenade_EMP</defName>
+        <label>URMC grenade (EMP)</label>
+        <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>EMP</damageDef>
+            <damageAmountBase>18</damageAmountBase>
+            <explosionRadius>1.5</explosionRadius>
+        </projectile>
+    </ThingDef>
+
     <!-- ==================== Recipes ========================== -->
 
     <RecipeDef ParentName="LauncherAmmoRecipeBase">
@@ -192,7 +218,7 @@
         <products>
             <Ammo_URMC_Grenade_HE>100</Ammo_URMC_Grenade_HE>
         </products>
-        <workAmount>11800</workAmount>        
+        <workAmount>11800</workAmount>
         <recipeUsers>
             <li>TableMachining</li>
         </recipeUsers>
@@ -231,7 +257,7 @@
         <products>
             <Ammo_URMC_Grenade_Incendiary>100</Ammo_URMC_Grenade_Incendiary>
         </products>
-        <workAmount>9800</workAmount>        
+        <workAmount>9800</workAmount>
         <recipeUsers>
             <li>TableMachining</li>
         </recipeUsers>
@@ -278,7 +304,49 @@
         <products>
             <Ammo_URMC_Grenade_Foam>100</Ammo_URMC_Grenade_Foam>
         </products>
-        <workAmount>9800</workAmount>        
+        <workAmount>9800</workAmount>
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef ParentName="LauncherAmmoRecipeBase">
+        <defName>MakeAmmo_URMC_Grenade_EMP</defName>
+        <label>make URMC EMP grenades x100</label>
+        <description>Craft 100 URMC EMP grenades.</description>
+        <jobString>Making URMC EMP grenades.</jobString>
+        <researchPrerequisites>
+            <li>MicroelectronicsBasics</li>
+            <li>CE_Launchers</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>32</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_URMC_Grenade_EMP>100</Ammo_URMC_Grenade_EMP>
+        </products>
+        <workAmount>8000</workAmount>
         <recipeUsers>
             <li>TableMachining</li>
         </recipeUsers>

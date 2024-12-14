@@ -307,7 +307,7 @@
 			<recoilPattern>Mounted</recoilPattern>
 		</Properties>
 		<AmmoUser>
-			<magazineSize>50</magazineSize>
+			<magazineSize>150</magazineSize>
 			<reloadTime>4.9</reloadTime>
 			<ammoSet>AmmoSet_10x24mmCaseless</ammoSet>
 		</AmmoUser>
