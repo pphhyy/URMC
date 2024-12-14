@@ -2,7 +2,7 @@
 
 <Defs>
 
-    <!-- Base for the weapons -->
+  <!-- Base for the weapons -->
 
   <ThingDef Name= "pphhyy_RangedWeapons" ParentName="BaseHumanMakeableGun" Abstract= "true">
     <techLevel>Spacer</techLevel>
@@ -33,9 +33,9 @@
     </modExtensions>
   </ThingDef>
 
-<!-- __Base Mod Weapons__ -->
+  <!-- __Base Mod Weapons__ -->
 
-<!-- M43 Pulse Rifle Mk2 -->
+  <!-- M43 Pulse Rifle Mk2 -->
 
   <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_M43PulseRifle</defName>
@@ -121,6 +121,16 @@
         <baseReloadTicks>60</baseReloadTicks>
       </li>
     </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshThree</def>
+        <drawSize>(0.6,0.6)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.46,0.04)</li>
+        </offsets>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -177,7 +187,7 @@
   </AbilityDef>
 
 
-<!-- Pulse Pistol -->
+  <!-- Pulse Pistol -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>pphhyy_M1PulsePistol</defName>
@@ -271,11 +281,18 @@
           </west>
         </weaponDraftedDrawOffsets>
       </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshThree</def>
+        <drawSize>(0.5,0.5)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.27,-0.02)</li>
+        </offsets>
+      </li>
     </modExtensions>
   </ThingDef>
 
-
-<!-- Pulse LMG -->
+  <!-- Pulse LMG -->
 
   <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_M45PulseLMG</defName>
@@ -348,9 +365,19 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshThree</def>
+        <drawSize>(0.5,0.5)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.6,0.05)</li>
+        </offsets>
+      </li>
+    </modExtensions>
   </ThingDef>
 
-<!-- S12 Combat Machete -->
+  <!-- S12 Combat Machete -->
 
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>pphhyy_S12CombatMachete</defName>
@@ -443,7 +470,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   </ThingDef>
 
 
-<!-- M44F Immolator -->
+  <!-- M44F Immolator -->
 
 
   <ThingDef ParentName="pphhyy_RangedWeapons">
@@ -520,7 +547,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   </ThingDef>
 
 
-<!-- M80 GL Machine -->
+  <!-- M80 GL Machine -->
 
 
   <ThingDef ParentName="pphhyy_RangedWeapons">
@@ -601,10 +628,20 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshTwo</def>
+        <drawSize>(0.7,0.7)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.58,0.03)</li>
+        </offsets>
+      </li>
+    </modExtensions>
   </ThingDef>
 
 
-<!-- M50X Recon Rifle -->
+  <!-- M50X Recon Rifle -->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>pphhyy_M50XReconRifle</defName>
@@ -701,6 +738,14 @@ The S12 was created to give marines a competent weapon to break open insectoid s
           </west>
         </weaponDraftedDrawOffsets>
       </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(0.5,0.5)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.55,0.05)</li>
+        </offsets>
+      </li>
     </modExtensions>
   </ThingDef>
 
@@ -720,12 +765,12 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   </ThingDef>
 
 
-<!-- M52H Breaching Shotgun -->
+  <!-- M52H Breaching Shotgun -->
 
   <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_M52HBreachingShotgun</defName>
     <label>M52H breaching shotgun</label>
-    <description>the M52 Hicks is a mag-fed, pump-action shotgun, another highly modifiable firearm platform at the discretion of squad officers, this weapon offers a reliable room cleaning and close combat solution fit for any marine, corpsmen or specialist who like to keep something handy for close encounters.</description>
+    <description>The M52 Hicks is a mag-fed, pump-action shotgun, another highly modifiable firearm platform at the discretion of squad officers, this weapon offers a reliable room cleaning and close combat solution fit for any marine, corpsmen or specialist who like to keep something handy for close encounters.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Weapon/M52HBreachingShotgun</texPath>
@@ -789,6 +834,16 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(0.5,0.8)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.43,0.05)</li>
+        </offsets>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseBullet">
@@ -807,7 +862,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
     </projectile>
   </ThingDef>
 
-<!-- M10 Rl Sadar-->
+  <!-- M10 Rl Sadar-->
 
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>pphhyy_M10RLSadar</defName>
@@ -908,6 +963,14 @@ The S12 was created to give marines a competent weapon to break open insectoid s
             <angleOffset>45</angleOffset>
           </west>
         </weaponDraftedDrawOffsets>
+      </li>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(0.7,0.9)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.53,0.12)</li>
+        </offsets>
       </li>
     </modExtensions>
   </ThingDef>
