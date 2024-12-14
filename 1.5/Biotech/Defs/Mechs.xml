@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>  
+<?xml version="1.0" encoding="UTF-8"?>
 
 <Defs>
 
   <!-- Recipe Base -->
 
- <RecipeDef Name= "pphhyy_MechRecipes" ParentName="MediumMechanoidRecipe" Abstract="True">
+  <RecipeDef Name= "pphhyy_MechRecipes" ParentName="MediumMechanoidRecipe" Abstract="True">
     <ingredients Inherit="False">
       <li>
         <filter>
@@ -22,7 +22,7 @@
         </filter>
         <count>1</count>
       </li>
-            <li>
+      <li>
         <filter>
           <thingDefs>
             <li>SubcoreRegular</li>
@@ -33,7 +33,7 @@
     </ingredients>
     <gestationCycles>1</gestationCycles>
     <recipeUsers>
-    <li>MechGestator</li>
+      <li>MechGestator</li>
     </recipeUsers>
   </RecipeDef>
 
@@ -55,7 +55,7 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       <BandwidthCost>2</BandwidthCost>
       <ControlTakingTime>18</ControlTakingTime>
     </statBases>
-        <tools>
+    <tools>
       <li>
         <label>head</label>
         <capacities>
@@ -78,21 +78,21 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
           <soundCall>Pawn_Mech_Legionary_Call</soundCall>
         </li>
       </lifeStageAges>
-        <mechEnabledWorkTypes>
-          <li>Construction</li>
-          <li>Cleaning</li>
-          <li>PlantCutting</li>
-          <li>Hauling</li>
-        </mechEnabledWorkTypes>
-      <mechWorkTypePriorities>       
+      <mechEnabledWorkTypes>
+        <li>Construction</li>
+        <li>Cleaning</li>
+        <li>PlantCutting</li>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+      <mechWorkTypePriorities>
         <Construction>1</Construction>
         <Hauling>2</Hauling>
-        <PlantCutting>3</PlantCutting> 
+        <PlantCutting>3</PlantCutting>
         <Cleaning>4</Cleaning>
       </mechWorkTypePriorities>
     </race>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="NonCombatLightMechanoidKind">
     <defName>pphhyy_Talus02Mk</defName>
     <label>talus mk02</label>
@@ -110,8 +110,8 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
     <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
   </PawnKindDef>
 
- <RecipeDef ParentName="pphhyy_MechRecipes">
-     <defName>pphhyy_Talus02Mk</defName>
+  <RecipeDef ParentName="pphhyy_MechRecipes">
+    <defName>pphhyy_Talus02Mk</defName>
     <label>gestate talus mk02</label>
     <description>Gestate a talus mk02 mechanoid.</description>
     <ingredients>
@@ -125,9 +125,9 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       </li>
     </ingredients>
     <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
-      <products>
+    <products>
       <pphhyy_Talus02Mk>1</pphhyy_Talus02Mk>
-      </products>
+    </products>
   </RecipeDef>
 
   <!-- Talus Mk 04-->
@@ -171,17 +171,21 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
           <soundCall>Pawn_Mech_Legionary_Call</soundCall>
         </li>
       </lifeStageAges>
-        <mechEnabledWorkTypes>
-          <li>Doctor</li>
-          <li>Crafting</li>
-        </mechEnabledWorkTypes>
-      <mechWorkTypePriorities>       
+      <mechEnabledWorkTypes>
+        <li>Doctor</li>
+        <li>Crafting</li>
+        <li>Smithing</li>
+        <li>Tailoring</li>
+      </mechEnabledWorkTypes>
+      <mechWorkTypePriorities>
         <Doctor>1</Doctor>
         <Crafting>2</Crafting>
+        <Smithing>2</Smithing>
+        <Tailoring>2</Tailoring>
       </mechWorkTypePriorities>
     </race>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="NonCombatLightMechanoidKind">
     <defName>pphhyy_Talus04Mk</defName>
     <label>talus mk04</label>
@@ -199,8 +203,8 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
     <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
   </PawnKindDef>
 
- <RecipeDef ParentName="pphhyy_MechRecipes">
-     <defName>pphhyy_Talus04Mk</defName>
+  <RecipeDef ParentName="pphhyy_MechRecipes">
+    <defName>pphhyy_Talus04Mk</defName>
     <label>gestate talus mk04</label>
     <description>Gestate a talus mk04 mechanoid.</description>
     <ingredients>
@@ -214,9 +218,9 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       </li>
     </ingredients>
     <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
-      <products>
+    <products>
       <pphhyy_Talus04Mk>1</pphhyy_Talus04Mk>
-      </products>
+    </products>
   </RecipeDef>
 
   <!-- Talus Mk 06 -->
@@ -251,7 +255,7 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       </lifeStageAges>
     </race>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="BaseMechanoidKind">
     <defName>pphhyy_Talus06Mk</defName>
     <label>talus mk06</label>
@@ -266,17 +270,17 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
         </bodyGraphicData>
       </li>
     </lifeStages>
-      <weaponMoney>9999~9999</weaponMoney>
-      <weaponTags>
-         <li>pphhyy_EMPLacerator</li>
-      </weaponTags>
-      <techHediffsChance>1</techHediffsChance>
-      <techHediffsMoney>9999~9999</techHediffsMoney>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>pphhyy_EMPLacerator</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
     <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
   </PawnKindDef>
 
- <RecipeDef ParentName="pphhyy_MechRecipes">
-     <defName>pphhyy_Talus06Mk</defName>
+  <RecipeDef ParentName="pphhyy_MechRecipes">
+    <defName>pphhyy_Talus06Mk</defName>
     <label>gestate talus mk06</label>
     <description>Gestate a talus mk06 mechanoid.</description>
     <ingredients>
@@ -288,7 +292,7 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
         </filter>
         <count>1</count>
       </li>
-            <li>
+      <li>
         <filter>
           <thingDefs>
             <li>pphhyy_TalusCombatArmor</li>
@@ -296,7 +300,7 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
         </filter>
         <count>1</count>
       </li>
-            <li>
+      <li>
         <filter>
           <thingDefs>
             <li>pphhyy_EMPLacerator</li>
@@ -306,9 +310,9 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       </li>
     </ingredients>
     <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
-      <products>
+    <products>
       <pphhyy_Talus06Mk>1</pphhyy_Talus06Mk>
-      </products>
+    </products>
   </RecipeDef>
 
   <!-- Talus Mk 08 -->
@@ -342,7 +346,7 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       </lifeStageAges>
     </race>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="BaseMechanoidKind">
     <defName>pphhyy_Talus08Mk</defName>
     <label>talus mk08</label>
@@ -357,17 +361,17 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
         </bodyGraphicData>
       </li>
     </lifeStages>
-      <weaponMoney>9999~9999</weaponMoney>
-      <weaponTags>
-         <li>pphhyy_EMPRifle</li>
-      </weaponTags>
-      <techHediffsChance>1</techHediffsChance>
-      <techHediffsMoney>9999~9999</techHediffsMoney>
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <li>pphhyy_EMPRifle</li>
+    </weaponTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
     <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
   </PawnKindDef>
 
- <RecipeDef ParentName="pphhyy_MechRecipes">
-     <defName>pphhyy_Talus08Mk</defName>
+  <RecipeDef ParentName="pphhyy_MechRecipes">
+    <defName>pphhyy_Talus08Mk</defName>
     <label>gestate talus mk08</label>
     <description>Gestate a talus mk08 mechanoid.</description>
     <ingredients>
@@ -379,7 +383,7 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
         </filter>
         <count>1</count>
       </li>
-            <li>
+      <li>
         <filter>
           <thingDefs>
             <li>pphhyy_TalusCombatArmor</li>
@@ -387,7 +391,7 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
         </filter>
         <count>1</count>
       </li>
-            <li>
+      <li>
         <filter>
           <thingDefs>
             <li>pphhyy_EMPRifle</li>
@@ -397,9 +401,9 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       </li>
     </ingredients>
     <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
-      <products>
+    <products>
       <pphhyy_Talus08Mk>1</pphhyy_Talus08Mk>
-      </products>
+    </products>
   </RecipeDef>
 
   <!-- Tartarus Mk 01 -->
@@ -407,7 +411,9 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
   <ThingDef ParentName="BaseMechanoidWalker">
     <defName>pphhyy_Tartarus01Mk</defName>
     <label>tartarus mk01</label>
-    <description>PLACEHOLDER</description>
+    <description>The Tartarus was originally used to house rogue Synth units until they were destroyed. The mech is really 2 subcores in one unit: the mech that controls the Tartarus and the rogue Synth subcore held captive till destruction. With Pearl Tech successfully hunting all the rogue Synths the Tartarus has now become a way to dispose of the worst criminals known to man. Housing their conciseness in the mech as a sort of prison allowing them to be fully aware but unable to harm anyone else.  
+A Mechanitor only needs to send the Tartarus at the enemy and explode it at the right moment. 
+Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liability is on the user, by using the Tartarus you are agree to our terms and conditions.</description>
     <tools>
       <li>
         <label>head</label>
@@ -427,8 +433,8 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       <EnergyShieldEnergyMax>1.5</EnergyShieldEnergyMax>
       <BandwidthCost>2</BandwidthCost>
       <ControlTakingTime>18</ControlTakingTime>
-      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
     </statBases>
     <race>
       <deathAction>
@@ -445,15 +451,15 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
         </li>
       </lifeStageAges>
     </race>
-	<comps>
-	  <li Class="URMC.CompProperties_MechDetonator">
-	  <iconPath>Things/Mote/SpeechSymbols/Speech</iconPath>
-	  <radius>3</radius>
-	  <damage>-1</damage> <!--default is -1-->
-	  </li>
+    <comps>
+      <li Class="URMC.CompProperties_MechDetonator">
+        <iconPath>UI/ExplodyButton</iconPath>
+        <radius>3</radius>
+        <damage>50</damage>        <!--default is -1-->
+      </li>
     </comps>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="BaseMechanoidKind">
     <defName>pphhyy_Tartarus01Mk</defName>
     <label>tartarus mk01</label>
@@ -464,37 +470,37 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       <li>
         <bodyGraphicData>
           <texPath>Mechanoids/Tartarus/TartarusMk01</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>2</drawSize>
         </bodyGraphicData>
       </li>
     </lifeStages>
-      <techHediffsChance>1</techHediffsChance>
-      <techHediffsMoney>9999~9999</techHediffsMoney>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>9999~9999</techHediffsMoney>
     <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
   </PawnKindDef>
 
- <RecipeDef ParentName="MediumMechanoidRecipe">
-     <defName>pphhyy_Tartarus01Mk</defName>
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>pphhyy_Tartarus01Mk</defName>
     <label>gestate tartarus mk01</label>
     <description>Gestate a tartarus mk01 mechanoid.</description>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>pphhyy_TalusSynthHead</li>
+            <li>Chemfuel</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>100</count>
       </li>
       <li>
         <filter>
           <thingDefs>
-            <li>pphhyy_TalusSynthBody</li>
+            <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>100</count>
       </li>
-            <li>
+      <li>
         <filter>
           <thingDefs>
             <li>SubcoreHigh</li>
@@ -502,11 +508,31 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
         </filter>
         <count>1</count>
       </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
     </ingredients>
     <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
-      <products>
+    <products>
       <pphhyy_Tartarus01Mk>1</pphhyy_Tartarus01Mk>
-      </products>
+    </products>
+    <recipeUsers>
+      <li>MechGestator</li>
+    </recipeUsers>
+    <gestationCycles>1</gestationCycles>
   </RecipeDef>
 
   <!-- Resurrecting Synths Recipe -->
@@ -530,7 +556,7 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>25</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -543,8 +569,49 @@ Synths unlike mechanoids can be deployed faster since they only require 1 gestat
       </thingDefs>
     </fixedIngredientFilter>
     <recipeUsers>
-    <li>MechGestator</li>
+      <li>MechGestator</li>
     </recipeUsers>
   </RecipeDef>
+
+  <RecipeDef ParentName="BaseMechanoidResurrectionRecipe">
+    <defName>pphhyy_ResurrectTartarusSynth</defName>
+    <label>resurrect tartarus synth</label>
+    <description>Resurrect a friendly tartarus synth. So long as the synth's body is not completely destroyed, it can be resurrected.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Corpse_pphhyy_Tartarus01Mk</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>MechGestator</li>
+    </recipeUsers>
+  </RecipeDef>
+
 
 </Defs>

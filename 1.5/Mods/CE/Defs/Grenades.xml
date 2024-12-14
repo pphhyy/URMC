@@ -192,7 +192,10 @@
         <products>
             <Ammo_URMC_Grenade_HE>100</Ammo_URMC_Grenade_HE>
         </products>
-        <workAmount>11800</workAmount>
+        <workAmount>11800</workAmount>        
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
     </RecipeDef>
 
 
@@ -228,7 +231,10 @@
         <products>
             <Ammo_URMC_Grenade_Incendiary>100</Ammo_URMC_Grenade_Incendiary>
         </products>
-        <workAmount>9800</workAmount>
+        <workAmount>9800</workAmount>        
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
     </RecipeDef>
 
     <RecipeDef ParentName="LauncherAmmoRecipeBase">
@@ -272,7 +278,10 @@
         <products>
             <Ammo_URMC_Grenade_Foam>100</Ammo_URMC_Grenade_Foam>
         </products>
-        <workAmount>9800</workAmount>
+        <workAmount>9800</workAmount>        
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
     </RecipeDef>
 
 </Defs>
