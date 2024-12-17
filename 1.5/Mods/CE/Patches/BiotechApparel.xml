@@ -73,10 +73,9 @@
 						Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]/equippedStatOffsets/MeleeHitChance</xpath>
 				</li>
 
-				<li Class="PatchOperationAdd">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName="pphhyy_M3PatternTechArmor"]</xpath>
 					<value>
-						<modExtensions Inherit="False">
 							<li Class="CombatExtended.PartialArmorExt">
 								<stats>
 									<li>
@@ -119,7 +118,6 @@
 									</li>
 								</stats>
 							</li>
-						</modExtensions>
 					</value>
 				</li>
 
