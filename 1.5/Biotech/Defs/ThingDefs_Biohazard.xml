@@ -1,0 +1,1567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <!--__Melee Attacks__-->
+
+
+    <DamageDef>
+        <defName>pphhyy_ToxStab</defName>
+        <label>tox stab</label>
+        <workerClass>DamageWorker_Stab</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has been stabbed to death.</deathMessage>
+        <hediff>Stab</hediff>
+        <hediffSolid>Crack</hediffSolid>
+        <armorCategory>Sharp</armorCategory>
+        <stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+        <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+        <additionalHediffs>
+            <li>
+                <hediff>ToxicBuildup</hediff>
+                <severityPerDamageDealt>0.015</severityPerDamageDealt>
+                <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+                <inverseStatScaling>true</inverseStatScaling>
+                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+        <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+        <impactSoundType>Toxic</impactSoundType>
+        <damageEffecter>Impact_Toxic</damageEffecter>
+    </DamageDef>
+
+    <ToolCapacityDef>
+        <defName>pphhyy_ToxStab</defName>
+        <label>tox stab</label>
+    </ToolCapacityDef>
+
+    <ManeuverDef>
+        <defName>pphhyy_ToxStab</defName>
+        <requiredCapacity>pphhyy_ToxStab</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>pphhyy_ToxStab</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+    <DamageDef ParentName="CutBase">
+        <defName>pphhyy_ToxCut</defName>
+        <label>tox cut</label>
+        <additionalHediffs>
+            <li>
+                <hediff>ToxicBuildup</hediff>
+                <severityPerDamageDealt>0.010</severityPerDamageDealt>
+                <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+        <damageEffecter>Impact_Toxic</damageEffecter>
+    </DamageDef>
+
+    <ToolCapacityDef>
+        <defName>pphhyy_ToxCut</defName>
+        <label>tox cut</label>
+    </ToolCapacityDef>
+
+    <ManeuverDef>
+        <defName>pphhyy_ToxCut</defName>
+        <requiredCapacity>pphhyy_ToxCut</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>pphhyy_ToxCut</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+    <DamageDef ParentName="BluntBase">
+        <defName>pphhyy_ToxBlunt</defName>
+        <label>tox blunt</label>
+        <workerClass>DamageWorker_Blunt</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has been beaten to death.</deathMessage>
+        <hediff>Crush</hediff>
+        <hediffSkin>Bruise</hediffSkin>
+        <hediffSolid>Crack</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <armorCategory>Blunt</armorCategory>
+        <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+        <buildingDamageFactor>1.5</buildingDamageFactor>
+        <bluntStunDuration>2.0</bluntStunDuration>
+        <bluntInnerHitChance>0.4</bluntInnerHitChance>
+        <bluntInnerHitDamageFractionToConvert>0.1~0.2</bluntInnerHitDamageFractionToConvert>
+        <bluntInnerHitDamageFractionToAdd>0.2~0.35</bluntInnerHitDamageFractionToAdd>
+        <bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+            <points>
+                <li>(0.04, 0.20)</li>
+                <li>(0.5, 1)</li>
+            </points>
+        </bluntStunChancePerDamagePctOfCorePartToHeadCurve>
+        <bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+            <points>
+                <li>(0.4, 0)</li>
+                <li>(0.9, 0.15)</li>
+            </points>
+        </bluntStunChancePerDamagePctOfCorePartToBodyCurve>
+        <additionalHediffs>
+            <li>
+                <hediff>ToxicBuildup</hediff>
+                <severityPerDamageDealt>0.005</severityPerDamageDealt>
+                <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+                <inverseStatScaling>true</inverseStatScaling>
+                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+        <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+        <impactSoundType>Toxic</impactSoundType>
+        <damageEffecter>Impact_Toxic</damageEffecter>
+    </DamageDef>
+
+    <ToolCapacityDef>
+        <defName>pphhyy_ToxBlunt</defName>
+        <label>tox blunt</label>
+    </ToolCapacityDef>
+
+    <ManeuverDef>
+        <defName>pphhyy_ToxBlunt</defName>
+        <requiredCapacity>pphhyy_ToxBlunt</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>pphhyy_ToxBlunt</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+    <!--__Items and Resources__-->
+
+    <!-- Tox Grenade -->
+
+    <ThingDef ParentName="pphhyy_GrenadesBase">
+        <defName>pphhyy_GrenadeTox02MK</defName>
+        <label>tox grenades mk 02</label>
+        <description>EMP Grenades are the bane of Mechanoids everywhere; they have also proven useful when a synth has a unforeseen malfunction, which as defiantly never happened. Trusted usually to Tech Marines to avoid accidental power outages. It is set to detonate in 5 seconds. These are meant to use with the Marine Pearl Tech armors.</description>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Steel>5</Steel>
+            <pphhyy_RefinedToxMaterial>1</pphhyy_RefinedToxMaterial>
+        </costList>
+        <graphicData>
+            <texPath>Resources/ToxGrenade</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseFragGrenadeProjectile">
+        <defName>pphhyy_GrenadeToxProjectile</defName>
+        <label>tox grenade</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Resources/ToxGrenade/ToxGrenade_a</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <explosionRadius>1.5</explosionRadius >
+            <damageDef>ToxGas</damageDef>
+            <explosionRadiusDisplayPadding>3</explosionRadiusDisplayPadding>
+            <postExplosionGasType>ToxGas</postExplosionGasType>
+            <explosionDelay>100</explosionDelay>
+        </projectile>
+    </ThingDef>
+
+    <!-- Refined Tox Material -->
+
+    <ThingDef ParentName= "ResourceBase">
+        <defName>pphhyy_RefinedToxMaterial</defName>
+        <label>refined tox material</label>
+        <description>PLACEHOLDER</description>
+        <possessionCount>1</possessionCount>
+        <stackLimit>5</stackLimit>
+        <uiIconScale>1.3</uiIconScale>
+        <uiIconPath>Resources/RefinedToxMaterial/RefinedToxMaterial_a</uiIconPath>
+        <graphicData>
+            <texPath>Resources/RefinedToxMaterial</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <statBases>
+            <Mass>1</Mass>
+            <WorkToMake>2700</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>5</Steel>
+            <Wastepack>2</Wastepack>
+        </costList>
+        <techLevel>Spacer</techLevel>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <displayPriority>110</displayPriority>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!--__Biohazard Weapons__-->
+
+    <!-- M52H Tox Shotgun -->
+
+    <ThingDef ParentName="pphhyy_RangedWeapons">
+        <defName>pphhyy_M52HToxShotgun</defName>
+        <label>M52H tox shotgun</label>
+        <description>PLACEHOLDER</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapon/Tox/M52HToxShotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <weaponClasses>
+            <li>ShortShots</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+            <Mass>3.4</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.77</AccuracyMedium>
+            <AccuracyLong>0.64</AccuracyLong>
+            <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Plasteel>65</Plasteel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <pphhyy_RefinedToxMaterial>6</pphhyy_RefinedToxMaterial>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>pphhyy_Bullet_ShotgunToxic</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>15.9</range>
+                <soundCast>pphhyy_BreachingShotgunSound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <modExtensions>
+            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                <def>MF_StandardMuzzleFalsh</def>
+                <drawSize>(0.5,0.8)</drawSize>
+                <isAlternately>true</isAlternately>
+                <offsets>
+                    <li>(0.43,0.05)</li>
+                </offsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>pphhyy_Bullet_ShotgunToxic</defName>
+        <label>shotgun blast</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>BulletToxic</damageDef>
+            <damageAmountBase>33</damageAmountBase>
+            <stoppingPower>3</stoppingPower>
+            <armorPenetrationBase>0.14</armorPenetrationBase>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- Tox Pulse Rifle -->
+
+    <ThingDef ParentName="pphhyy_RangedWeapons">
+        <defName>pphhyy_M43ToxPulseRifle</defName>
+        <label>M43 tox pulse rifle</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Weapon/Tox/M43ToxPulseRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>40000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.66</AccuracyTouch>
+            <AccuracyShort>0.77</AccuracyShort>
+            <AccuracyMedium>0.72</AccuracyMedium>
+            <AccuracyLong>0.61</AccuracyLong>
+            <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>60</Steel>
+            <ComponentIndustrial>7</ComponentIndustrial>
+            <pphhyy_RefinedToxMaterial>6</pphhyy_RefinedToxMaterial>
+        </costList>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>pphhyy_Bullet_M43PulseRifleToxic</defaultProjectile>
+                <warmupTime>1.0</warmupTime>
+                <range>30.9</range>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <soundCast>pphhyy_PulseRifleSound</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <comps Inherit="False">
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Styleable"/>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_EquippableAbilityReloadable">
+                <abilityDef>PulseRifleGrenadeToxic</abilityDef>
+                <maxCharges>2</maxCharges>
+                <soundReload>Standard_Reload</soundReload>
+                <chargeNoun>grenade</chargeNoun>
+                <ammoDef>pphhyy_GrenadeTox02MK</ammoDef>
+                <ammoCountPerCharge>1</ammoCountPerCharge>
+                <baseReloadTicks>60</baseReloadTicks>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                <def>MF_StandardMuzzleFalshThree</def>
+                <drawSize>(0.6,0.6)</drawSize>
+                <isAlternately>true</isAlternately>
+                <offsets>
+                    <li>(0.46,0.04)</li>
+                </offsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>pphhyy_Bullet_M43PulseRifleToxic</defName>
+        <label>M43 Pulse Rifle bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>BulletToxic</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <speed>70</speed>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+        </projectile>
+    </ThingDef>
+
+    <AbilityDef>
+        <defName>PulseRifleGrenadeToxic</defName>
+        <label>toxic grenade barrel</label>
+        <description>Use the grenade barrel attached to the pulse rifle to deploy a toxic grenade.</description>
+        <iconPath>Resources/ToxGrenade/ToxGrenade_a</iconPath>
+        <aiCanUse>true</aiCanUse>
+        <ai_IsIncendiary>false</ai_IsIncendiary>
+        <showOnCharacterCard>false</showOnCharacterCard>
+        <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+        <statBases>
+            <Ability_EffectRadius>1.9</Ability_EffectRadius>
+        </statBases>
+        <verbProperties>
+            <label>throw frag grenade</label>
+            <verbClass>Verb_CastAbility</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <onlyManualCast>True</onlyManualCast>
+            <range>29</range>
+            <warmupTime>0.2</warmupTime>
+            <noiseRadius>4</noiseRadius>
+            <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+            <soundCast>Shot_IncendiaryLauncher</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>14</muzzleFlashScale>
+            <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <defaultProjectile>pphhyy_GrenadeToxProjectile</defaultProjectile>
+            <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityLaunchProjectile">
+                <projectileDef>pphhyy_GrenadeToxProjectile</projectileDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- Tox Sprayer -->
+
+    <ThingDef ParentName="pphhyy_RangedWeapons">
+        <defName>pphhyy_M44ToxSprayer</defName>
+        <label>M44 tox sprayer</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Weapon/Tox/M44ToxSprayer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>34000</WorkToMake>
+            <Mass>8.5</Mass>
+            <RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>75</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <Chemfuel>20</Chemfuel>
+        </costList>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <comps Inherit="False">
+            <li Class="CompProperties_EquippableAbilityReloadable">
+                <abilityDef>pphhyy_ToxicSprayer</abilityDef>
+                <soundReload>Standard_Reload</soundReload>
+                <chargeNoun>burner charge</chargeNoun>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Styleable"/>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+    </ThingDef>
+
+    <!-- Create new ability def -->
+
+    <AbilityDef>
+        <defName>pphhyy_ToxicSprayer</defName>
+        <label>toxic sprayer</label>
+        <description>Expend a pressurized bioferrite charge to create a burst of flame.</description>
+        <iconPath>UI/Abilities/Burner</iconPath>
+        <aiCanUse>true</aiCanUse>
+        <ai_IsIncendiary>true</ai_IsIncendiary>
+        <warmupStartSound>FireSpew_Warmup</warmupStartSound>
+        <showOnCharacterCard>false</showOnCharacterCard>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <requireLineOfSight>true</requireLineOfSight>
+            <range>9.9</range>
+            <warmupTime>0.5</warmupTime>
+            <soundCast>FireSpew_Resolve</soundCast>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <flammabilityAttachFireChanceCurve>
+                <points>
+                    <li>(0.2, 0)</li>
+                    <li>(1, 1)</li>
+                </points>
+            </flammabilityAttachFireChanceCurve>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilitySprayLiquid">
+                <projectileDef>Proj_ToxiSpray</projectileDef>
+                <numCellsToHit>9</numCellsToHit>
+                <sprayEffecter>AcidSpray_Directional</sprayEffecter>
+            </li>
+            <li Class="CompProperties_AbilityBurner">
+                <numStreams>15</numStreams>
+                <range>11</range>                <!-- go a bit further than the actual ability range, since it's meant to be a noisy effect -->
+                <coneSizeDegrees>7.2</coneSizeDegrees>
+                <moteDef>Mote_ToxicSprayer</moteDef>                <!-- Mote, enter your new mote here  -->
+                <barrelOffsetDistance>6</barrelOffsetDistance>                <!-- Offsets the tiles from flame to barrel "muzzle flash"  -->
+                <sizeReductionDistanceThreshold>8</sizeReductionDistanceThreshold>
+                <lifespanNoise>40</lifespanNoise>
+                <rangeNoise>.4</rangeNoise>
+                <effecterDef>BurnerUsed</effecterDef>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <ThingDef>
+        <defName>Proj_ToxiSpray</defName>
+        <label>toxic spray</label>
+        <thingClass>Projectile_Liquid</thingClass>
+        <category>Projectile</category>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <useHitPoints>False</useHitPoints>
+        <neverMultiSelect>True</neverMultiSelect>
+        <graphicData>
+            <texPath>Things/Projectile/Acid</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shaderType>MoteGlow</shaderType>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>pphhyy_ToxSprayDamage</damageDef>
+            <speed>25</speed>
+            <damageAmountBase>1</damageAmountBase>
+            <arcHeightFactor>0.4</arcHeightFactor>
+            <armorPenetrationBase>0</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+            <shadowSize>0</shadowSize>
+            <filthCount>0</filthCount>
+        </projectile>
+    </ThingDef>
+
+    <DamageDef>
+        <defName>pphhyy_ToxSprayDamage</defName>
+        <label>tox spray</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <hediff>Misc</hediff>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+        <isRanged>true</isRanged>
+        <makesAnimalsFlee>true</makesAnimalsFlee>
+        <additionalHediffs>
+            <li>
+                <hediff>ToxicBuildup</hediff>
+                <severityPerDamageDealt>0.065</severityPerDamageDealt>
+                <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+                <inverseStatScaling>true</inverseStatScaling>
+                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+        <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+    </DamageDef>
+
+    <!-- Mote, pphhyy needs to do art for this -->
+
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_ToxicSprayer</defName>
+        <thingClass>MoteDualAttached</thingClass>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <isSaveable>false</isSaveable>        <!-- because it's pure-vis, and weirdly constructed, it's better to not persist them at all -->
+        <mote>
+            <fadeInTime>0</fadeInTime>
+            <fadeOutTime>1</fadeOutTime>
+            <solidTime>999999</solidTime>
+            <needsMaintenance>True</needsMaintenance>
+            <rotateTowardsTarget>True</rotateTowardsTarget>
+            <scaleToConnectTargets>False</scaleToConnectTargets>
+            <fadeOutUnmaintained>True</fadeOutUnmaintained>
+        </mote>
+        <drawOffscreen>true</drawOffscreen>
+        <graphicData>
+            <texPath>Things/Mote/IncineratorFlameSheet</texPath>
+            <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+            <shaderType>MoteIncineratorBeam</shaderType>
+            <shaderParameters>
+                <_GradientTex>/Things/Mote/IncineratorBeamGradient</_GradientTex>
+                <_AgeScalarNoise>/Things/Mote/IncineratorBeamAgeNoise</_AgeScalarNoise>
+                <_ScrollSpeedA>-4 </_ScrollSpeedA>
+                <_ScrollSpeedB>3</_ScrollSpeedB>
+                <_Intensity>0</_Intensity>
+                <_NumFrames>12</_NumFrames>
+                <_FramesPerSec>12</_FramesPerSec>
+            </shaderParameters>
+            <drawSize>10</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <!-- Tox Machete -->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>pphhyy_S12ToxMachete</defName>
+        <label>S12 tox machete</label>
+        <description>PLACEHOLDER</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapon/Tox/S12ToxMachete</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedAngleOffset>-90</equippedAngleOffset>
+        <techLevel>Medieval</techLevel>
+        <weaponTags>
+            <li>URMC_Weapons</li>
+        </weaponTags>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <relicChance>2</relicChance>
+        <costList>
+            <Steel>60</Steel>
+            <pphhyy_RefinedToxMaterial>6</pphhyy_RefinedToxMaterial>
+        </costList>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>pphhyy_ToxBlunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>pphhyy_ToxStab</li>
+                </capacities>
+                <power>22</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>pphhyy_ToxCut</li>
+                </capacities>
+                <power>22</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.05,0.0,0)</drawOffset>
+                        <angleOffset>25</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.10,0.2,0.10)</drawOffset>
+                        <angleOffset>20</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(0.1,0.00,0.15)</drawOffset>                        <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+                        <angleOffset>15</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.20,0.0,0.10)</drawOffset>
+                        <angleOffset>-15</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!-- Tox Rocket Launcher -->
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>pphhyy_M10RLSadarTox</defName>
+        <label>M10 RL sadar tox</label>
+        <description>PLACEHOLDER</description>
+        <tickerType>Normal</tickerType>
+        <smeltable>false</smeltable>
+        <graphicData>
+            <texPath>Weapon/Tox/M10RLSadarTox</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Plasteel>90</Plasteel>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <pphhyy_RefinedToxMaterial>6</pphhyy_RefinedToxMaterial>
+        </costList>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>7</Mass>
+            <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+        </statBases>
+        <techLevel>Spacer</techLevel>
+        <weaponTags>
+            <li>URMC_Weapons</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <tradeTags>
+            <li>ExoticMisc</li>
+            <li>WeaponRanged</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>SingleUseWeapon</li>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+        <relicChance>0</relicChance>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>pphhyy_Bullet_ToxRocket</defaultProjectile>
+                <forcedMissRadius>2.9</forcedMissRadius>
+                <warmupTime>4.5</warmupTime>
+                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+                <range>55.9</range>
+                <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>pphhyy_RLSadarSound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <onlyManualCast>true</onlyManualCast>
+                <stopBurstWithoutLos>false</stopBurstWithoutLos>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11.7</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0.05,0.0,0)</drawOffset>
+                        <angleOffset>-30</angleOffset>
+                    </north>
+                    <east>
+                        <drawOffset>(0.10,0.2,0.15)</drawOffset>
+                        <angleOffset>-45</angleOffset>
+                    </east>
+                    <south>
+                        <drawOffset>(-0.05,0,0.10)</drawOffset>                        <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+                        <angleOffset>-20</angleOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(-0.10,0.0,0.15)</drawOffset>
+                        <angleOffset>45</angleOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                <def>MF_StandardMuzzleFalsh</def>
+                <drawSize>(0.7,0.9)</drawSize>
+                <isAlternately>true</isAlternately>
+                <offsets>
+                    <li>(0.53,0.12)</li>
+                </offsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>pphhyy_Bullet_ToxRocket</defName>
+        <label>rocket</label>
+        <graphicData>
+            <texPath>Things/Projectile/Rocket_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>ToxGas</damageDef>
+            <!-- Use default damage from explosion def -->
+            <explosionRadius>1.9</explosionRadius>
+            <explosionRadiusDisplayPadding>3</explosionRadiusDisplayPadding>
+            <postExplosionGasType>ToxGas</postExplosionGasType>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+
+    <!-- Tox Grenade Launcher -->
+
+    <ThingDef ParentName="pphhyy_RangedWeapons">
+        <defName>pphhyy_M80GLToxMachine</defName>
+        <label>M80 GL tox machine</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Weapon/Tox/M80GLToxMachine</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <statBases>
+            <WorkToMake>5000</WorkToMake>
+            <Mass>1.2</Mass>
+            <AccuracyTouch>0.33</AccuracyTouch>
+            <AccuracyShort>0.25</AccuracyShort>
+            <AccuracyMedium>0.18</AccuracyMedium>
+            <AccuracyLong>0.15</AccuracyLong>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Plasteel>80</Plasteel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+            <pphhyy_RefinedToxMaterial>6</pphhyy_RefinedToxMaterial>
+        </costList>
+        <verbs>
+            <li>
+                <label>launch frag grenade</label>
+                <verbClass>Verb_Shoot</verbClass>
+                <defaultProjectile>pphhyy_GrenadeToxProjectile</defaultProjectile>
+                <hasStandardCommand>true</hasStandardCommand>
+                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
+                <range>24.9</range>
+                <forcedMissRadius>8.9</forcedMissRadius>
+                <warmupTime>3</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <soundCast>Shot_IncendiaryLauncher</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <modExtensions>
+            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                <def>MF_StandardMuzzleFalshTwo</def>
+                <drawSize>(0.7,0.7)</drawSize>
+                <isAlternately>true</isAlternately>
+                <offsets>
+                    <li>(0.58,0.03)</li>
+                </offsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!--__Biohazard Armors__-->
+
+    <!-- M10 Haz Helmet -->
+
+    <ThingDef ParentName="pphhyy_URMC_Helmets">
+        <defName>pphhyy_M10HazHelmet</defName>
+        <label>M10 haz helmet</label>
+        <description>PLACEHOLDER</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>HelmetsAndHats/M10/M10</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <tradeTags>
+            <li>HiTechArmor</li>
+            <li>Armor</li>
+        </tradeTags>
+        <statBases>
+            <WorkToMake>21000</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>1.5</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.54</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+            <ToxicResistance>0.25</ToxicResistance>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>40</Plasteel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>HelmetsAndHats/M10/M10</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <forceEyesVisibleForRotations>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </forceEyesVisibleForRotations>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65,1)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.5,0.5,0.5,1)</max>
+                </li>
+            </options>
+        </colorGenerator>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <!-- M3 Haz Armor -->
+
+    <ThingDef ParentName="pphhyy_URMCArmors">
+        <defName>pphhyy_M3HazArmor</defName>
+        <label>M3 haz armor</label>
+        <description>PLACEHOLDER</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Armor/M3Armor/M3Armor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <ToxicResistance>0.75</ToxicResistance>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <label>throw frag grenade</label>
+                <verbClass>Verb_LaunchProjectileStatic</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <onlyManualCast>True</onlyManualCast>
+                <range>12.9</range>
+                <forcedMissRadius>1.9</forcedMissRadius>
+                <warmupTime>0.2</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>pphhyy_GrenadeToxProjectile</defaultProjectile>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
+        <statBases>
+            <WorkToMake>60000</WorkToMake>
+            <MaxHitPoints>340</MaxHitPoints>
+            <Mass>6</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.54</ArmorRating_Heat>
+            <Insulation_Cold>34</Insulation_Cold>
+            <Insulation_Heat>10</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HiTechArmor</li>
+            <li>Armor</li>
+        </tradeTags>
+        <costList>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Plasteel>100</Plasteel>
+            <Uranium>20</Uranium>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Armor/M3Armor/M3Armor</wornGraphicPath>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3)</min>
+                    <max>(0.5,0.5,0.5)</max>
+                </li>
+            </options>
+        </colorGenerator>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="CompProperties_ApparelReloadable">
+                <maxCharges>2</maxCharges>
+                <ammoDef>pphhyy_GrenadeTox02MK</ammoDef>
+                <ammoCountPerCharge>1</ammoCountPerCharge>
+                <baseReloadTicks>60</baseReloadTicks>
+                <soundReload>Standard_Reload</soundReload>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>grenade</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+            </li>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <!-- M3-S Haz Helmet -->
+
+    <ThingDef ParentName="pphhyy_URMC_Helmets">
+        <defName>pphhyy_M3-SHazHelmet</defName>
+        <label>M3-S haz helmet</label>
+        <description>PLACEHOLDER</description>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+            <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+            <texPath>HelmetsAndHats/M9Recon/M9Recon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <tradeTags>
+            <li>HiTechArmor</li>
+        </tradeTags>
+        <statBases>
+            <WorkToMake>15750</WorkToMake>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>1</Mass>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicResistance>0.25</ToxicResistance>
+        </equippedStatOffsets>
+        <costList>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>30</Plasteel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>HelmetsAndHats/M9Recon/M9Recon</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33,1)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65,1)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3,1)</min>
+                    <max>(0.5,0.5,0.5,1)</max>
+                </li>
+            </options>
+        </colorGenerator>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <!-- BH Fatigues -->
+
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>pphhyy_BHFatigue</defName>
+        <description>PLACEHOLDER</description>
+        <label>BH fatigue</label>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Armor/ColonialFatigues/ColonialFatigues</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <costStuffCount>45</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>2700</WorkToMake>
+            <Mass>0.3</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicResistance>0.75</ToxicResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Armor/ColonialFatigues/ColonialFatigues</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useWornGraphicMask>true</useWornGraphicMask>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <!-- Biohazard Buildings -->
+
+    <!-- Toxifier -->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>pphhyy_Toxifier</defName>
+        <label>toxifier</label>
+        <description>PLACEHOLDER</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Building/Power/ToxifierGenerator</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <shadowData>
+                <volume>(1.6, 1, 1.5)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <fillPercent>1</fillPercent>
+        <rotatable>false</rotatable>
+        <building>
+            <ai_chillDestination>false</ai_chillDestination>
+            <soundAmbient>Toxifier_Working</soundAmbient>
+        </building>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <designationCategory>Power</designationCategory>
+        <uiOrder>2100</uiOrder>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>8000</WorkToBuild>
+            <Mass>25</Mass>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <size>(2,2)</size>
+        <costList>
+            <Steel>125</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <researchPrerequisites>
+            <li>ToxifierGenerator</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="CompProperties_Toxifier">
+                <radius>52.9</radius>
+                <cellsToPollute>6</cellsToPollute>
+                <pollutionIntervalTicks>90000</pollutionIntervalTicks>                <!-- 1.5 days -->
+            </li>
+            <li Class="CompProperties_Stunnable">
+                <useLargeEMPEffecter>true</useLargeEMPEffecter>
+                <affectedDamageDefs>
+                    <li>EMP</li>
+                </affectedDamageDefs>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ToxifierGenerator</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    </ThingDef>
+
+    <!-- Pearl Technica Recycler -->
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>pphhyy_PTRecycler</defName>
+        <label>pearl technica recycler</label>
+        <description>PLACEHOLDER</description>
+        <thingClass>Building_WastepackAtomizer</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Building/Misc/WastepackAtomizer</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,2)</drawSize>
+            <shadowData>
+                <volume>(3, 0.35, 2)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <canOverlapZones>false</canOverlapZones>
+        <pathCost>42</pathCost>
+        <blockWind>true</blockWind>
+        <fillPercent>0.5</fillPercent>
+        <building>
+            <buildingTags>
+                <li>Biotech</li>
+            </buildingTags>
+            <ai_chillDestination>false</ai_chillDestination>
+            <wastepackAtomizerBottomGraphic>
+                <texPath>Things/Building/Misc/WastepackAtomizer_BottomLayer</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3,2)</drawSize>
+            </wastepackAtomizerBottomGraphic>
+            <wastepackAtomizerWindowGraphic>
+                <texPath>Things/Building/Misc/WastepackAtomizerWindow</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3,2)</drawSize>
+            </wastepackAtomizerWindowGraphic>
+            <wastepackAtomizerOperationEffecter>WastepackAtomizer_Operating</wastepackAtomizerOperationEffecter>
+        </building>
+        <designationCategory>Biotech</designationCategory>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0, 0, -1)</interactionCellOffset>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>30000</WorkToBuild>
+            <Mass>80</Mass>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <size>(3,2)</size>
+        <costList>
+            <Steel>200</Steel>
+            <Plasteel>50</Plasteel>
+            <SubcoreHigh>2</SubcoreHigh>
+        </costList>
+        <researchPrerequisites>
+            <li>WastepackAtomizer</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>400</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Atomizer">
+                <thingDef>Wastepack</thingDef>
+                <stackLimit>10</stackLimit>
+                <drawContainedThing>false</drawContainedThing>
+                <ticksPerAtomize>30000</ticksPerAtomize>
+                <resolveEffecter>AtomizerResolve</resolveEffecter>
+                <workingEffecter>WastepackAtomizer_Working</workingEffecter>
+                <materialsAddedSound>WastepackAtomizer_MaterialInserted</materialsAddedSound>
+                <contentsDrawOffset>(0.05, 0, 0.2)</contentsDrawOffset>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+        </comps>
+    </ThingDef>
+
+    <!-- Pulse Tox Turret -->
+
+    <ThingDef ParentName="AutocannonTurret">
+        <defName>pphhyy_PulseToxTurret</defName>
+        <label>pulse tox turret</label>
+        <description>PLACEHOLDER</description>
+        <uiIconPath>Building/Turrets/UA12PulseSentryBase</uiIconPath>
+        <size>(1,1)</size>
+        <statBases>
+            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+        </statBases>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Building/Turrets/UA12PulseSentryBase</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData IsNull= "true">
+            </shadowData>
+        </graphicData>
+        <costList>
+            <Steel>175</Steel>
+            <Plasteel>20</Plasteel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <pphhyy_RefinedToxMaterial>6</pphhyy_RefinedToxMaterial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <building>
+            <turretTopDrawSize>2</turretTopDrawSize>
+            <turretGunDef>pphhyy_Gun_PulseToxTurret</turretGunDef>
+            <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
+        </building>
+        <researchPrerequisites>
+            <li>pphhyy_URMCBasicTurrets</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>pphhyy_Gun_PulseToxTurret</defName>
+        <label>pulse tox turret</label>
+        <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+        <graphicData Inherit="false">
+            <texPath>Building/Turrets/UA12PulseSentry</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <AccuracyTouch>0.28</AccuracyTouch>
+            <AccuracyShort>0.30</AccuracyShort>
+            <AccuracyMedium>0.23</AccuracyMedium>
+            <AccuracyLong>0.15</AccuracyLong>
+            <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>40</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <defaultProjectile>Bullet_MinigunToxic</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>28.9</range>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <burstShotCount>24</burstShotCount>
+                <soundCast>pphhyy_PulseRifleSound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>Bullet_MinigunToxic</defName>
+        <label>minigun bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>BulletToxic</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+</Defs>
