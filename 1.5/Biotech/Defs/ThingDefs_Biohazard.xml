@@ -151,9 +151,9 @@
     <ThingDef ParentName="pphhyy_GrenadesBase">
         <defName>pphhyy_GrenadeTox02MK</defName>
         <label>tox grenades mk 02</label>
-        <description>EMP Grenades are the bane of Mechanoids everywhere; they have also proven useful when a synth has a unforeseen malfunction, which as defiantly never happened. Trusted usually to Tech Marines to avoid accidental power outages. It is set to detonate in 5 seconds. These are meant to use with the Marine Pearl Tech armors.</description>
+        <description>Deploys a toxic smoke designed to choke and incapacitate attackers and unruly citizens. Can lead to death if too much is breathed in so make sure to wear appropriate PPE.</description>
         <recipeMaker>
-            <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCChemicalWarfare</researchPrerequisite>
             <recipeUsers>
                 <li>TableMachining</li>
             </recipeUsers>
@@ -190,7 +190,7 @@
     <ThingDef ParentName= "ResourceBase">
         <defName>pphhyy_RefinedToxMaterial</defName>
         <label>refined tox material</label>
-        <description>PLACEHOLDER</description>
+        <description>By refining Tox material into something usable the URMC can turn this material into weapons.</description>
         <possessionCount>1</possessionCount>
         <stackLimit>5</stackLimit>
         <uiIconScale>1.3</uiIconScale>
@@ -210,7 +210,7 @@
         </costList>
         <techLevel>Spacer</techLevel>
         <recipeMaker>
-            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCChemicalWarfare</researchPrerequisite>
             <displayPriority>110</displayPriority>
             <recipeUsers>
                 <li>TableMachining</li>
@@ -228,7 +228,7 @@
     <ThingDef ParentName="pphhyy_RangedWeapons">
         <defName>pphhyy_M52HToxShotgun</defName>
         <label>M52H tox shotgun</label>
-        <description>PLACEHOLDER</description>
+        <description>The M52 Hicks is a mag-fed, pump-action shotgun, another highly modifiable firearm platform at the discretion of squad officers, this weapon offers a reliable room cleaning and close combat solution fit for any marine, corpsmen or specialist who like to keep something handy for close encounters. Comes with a Tox receiver for chemical warfare.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>Weapon/Tox/M52HToxShotgun</texPath>
@@ -254,7 +254,7 @@
             <pphhyy_RefinedToxMaterial>6</pphhyy_RefinedToxMaterial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCAdvancedChemicalWarfare</researchPrerequisite>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -326,7 +326,8 @@
     <ThingDef ParentName="pphhyy_RangedWeapons">
         <defName>pphhyy_M43ToxPulseRifle</defName>
         <label>M43 tox pulse rifle</label>
-        <description>PLACEHOLDER</description>
+        <description>M43 Tox Pulse Rifle has been outfitted with a Tox receiver for chemical warfare.
+This is the standard issue pulse rifle used by the United Rimworld Marine Corp. A reliable, robust, and overall effective standard issue weapon, the M43 must be held in two hands to accurately fire. The M43 MK2 has 6-round burstfire as well as a Grenade launcher underbarrel That can be loaded with Tox grenades. Despite its 6 round burst it is quite accurate.</description>
         <graphicData>
             <texPath>Weapon/Tox/M43ToxPulseRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -334,7 +335,7 @@
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCChemicalWarfare</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
@@ -489,7 +490,7 @@
             <li>RangedHeavy</li>
         </weaponClasses>
         <recipeMaker>
-            <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCAdvancedChemicalWarfare</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
@@ -533,7 +534,7 @@
             <li Class="CompProperties_EquippableAbilityReloadable">
                 <abilityDef>pphhyy_ToxicSprayer</abilityDef>
                 <soundReload>Standard_Reload</soundReload>
-                <chargeNoun>burner charge</chargeNoun>
+                <chargeNoun>sprayer charge</chargeNoun>
             </li>
             <li Class="CompProperties_Forbiddable"/>
             <li Class="CompProperties_Styleable"/>
@@ -546,27 +547,20 @@
     <AbilityDef>
         <defName>pphhyy_ToxicSprayer</defName>
         <label>toxic sprayer</label>
-        <description>Expend a pressurized bioferrite charge to create a burst of flame.</description>
+        <description>PLACEHOLDER</description>
         <iconPath>UI/Abilities/Burner</iconPath>
         <aiCanUse>true</aiCanUse>
-        <ai_IsIncendiary>true</ai_IsIncendiary>
-        <warmupStartSound>FireSpew_Warmup</warmupStartSound>
+        <warmupStartSound>pphhyy_ImmolatorSound</warmupStartSound>
         <showOnCharacterCard>false</showOnCharacterCard>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
             <requireLineOfSight>true</requireLineOfSight>
             <range>9.9</range>
             <warmupTime>0.5</warmupTime>
-            <soundCast>FireSpew_Resolve</soundCast>
+            <soundCast>pphhyy_ImmolatorSound</soundCast>
             <targetParams>
                 <canTargetLocations>true</canTargetLocations>
             </targetParams>
-            <flammabilityAttachFireChanceCurve>
-                <points>
-                    <li>(0.2, 0)</li>
-                    <li>(1, 1)</li>
-                </points>
-            </flammabilityAttachFireChanceCurve>
         </verbProperties>
         <comps>
             <li Class="CompProperties_AbilitySprayLiquid">
@@ -676,7 +670,9 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>pphhyy_S12ToxMachete</defName>
         <label>S12 tox machete</label>
-        <description>PLACEHOLDER</description>
+        <description>More sword then machete it does both roles reasonably well.
+The S12 was created to give marines a competent weapon to break open insectoid shells on wounded or small insectoids instead of wasting ammo on the downed creatures.
+Blade has a Tox core for chemical warfare.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>Weapon/Tox/S12ToxMachete</texPath>
@@ -728,7 +724,7 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCChemicalWarfare</researchPrerequisite>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -766,7 +762,7 @@
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>pphhyy_M10RLSadarTox</defName>
         <label>M10 RL sadar tox</label>
-        <description>PLACEHOLDER</description>
+        <description>A reloadable, single shot RPG. The launcher itself can be unwieldy to deploy and take a few seconds to be ready to fire from a resting position. It requires a highly trained specialist to avoid unnecessary casualties, it is designed to use a variety of customizable rockets. This one shots specially designed Toxic gas on impact, useful for covering a large area fast at long range. Not designed to breach fortifications like its cousin.</description>
         <tickerType>Normal</tickerType>
         <smeltable>false</smeltable>
         <graphicData>
@@ -899,7 +895,7 @@
     <ThingDef ParentName="pphhyy_RangedWeapons">
         <defName>pphhyy_M80GLToxMachine</defName>
         <label>M80 GL tox machine</label>
-        <description>PLACEHOLDER</description>
+        <description>Mark 80 Grenade Launcher Machine is a portable weapon capable of delivering 3 tox grenades at once from its rapid launcher. With its tox payload it can turn an enemy defensive line into a bio hazard zone fast rendering the defenses useless.</description>
         <graphicData>
             <texPath>Weapon/Tox/M80GLToxMachine</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -908,7 +904,7 @@
         <uiIconScale>1.4</uiIconScale>
         <soundInteract>Interact_Autopistol</soundInteract>
         <recipeMaker>
-            <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCAdvancedChemicalWarfare</researchPrerequisite>
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
@@ -994,10 +990,11 @@
     <ThingDef ParentName="pphhyy_URMC_Helmets">
         <defName>pphhyy_M10HazHelmet</defName>
         <label>M10 haz helmet</label>
-        <description>PLACEHOLDER</description>
+        <description>Standard Issue Helmet used by URCM. Provides modest protection from bullet and melee attacks at the head.
+The Haz version of the M10 comes with Tox resistance; paired with the Haz armor or fatigue it will allow marines to enter into combat in the worst toxic terrain unhamred.</description>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-            <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCAdvancedChemicalWarfare</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -1083,10 +1080,10 @@
     <ThingDef ParentName="pphhyy_URMCArmors">
         <defName>pphhyy_M3HazArmor</defName>
         <label>M3 haz armor</label>
-        <description>PLACEHOLDER</description>
+        <description>Standard Issue Armor, provides modest protection from bullet and melee attacks, an all rounder. Comes with Tox Grenades to assist in tactical situations. The Haz version of the M3 comes with Tox resistance; paired with the M10 Haz Helmet or M3S Haz Helmet it will allow marines to enter into combat in the worst toxic terrain unharmed.</description>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-            <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCAdvancedChemicalWarfare</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -1196,12 +1193,12 @@
     <ThingDef ParentName="pphhyy_URMC_Helmets">
         <defName>pphhyy_M3-SHazHelmet</defName>
         <label>M3-S haz helmet</label>
-        <description>PLACEHOLDER</description>
+        <description>A lighter, cut down version of the standard M3 pattern armor. It sacrifices protection for more speed. The Haz version of the  M3-S comes with Tox resistance; paired with the Haz armor or fatigue it will allow marines to enter into combat in the worst toxic terrain unharmed.</description>
         <recipeMaker>
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-            <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCChemicalWarfare</researchPrerequisite>
             <skillRequirements>
-                <Crafting>6</Crafting>
+                <Crafting>6</Crafting> 
             </skillRequirements>
             <recipeUsers Inherit="false">
                 <li>TableMachining</li>
@@ -1277,10 +1274,10 @@
 
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>pphhyy_BHFatigue</defName>
-        <description>PLACEHOLDER</description>
+        <description>Biohazard Fatigue mostly for civilian use in the colonies or attached non combatants to URMC missions. Paired with either Haz helmet will allow the civy to operate without choking to death.</description>
         <label>BH fatigue</label>
         <recipeMaker>
-            <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+            <researchPrerequisite>pphhyy_URMCChemicalWarfare</researchPrerequisite>
         </recipeMaker>
         <graphicData>
             <texPath>Armor/ColonialFatigues/ColonialFatigues</texPath>
@@ -1338,7 +1335,8 @@
     <ThingDef ParentName="BuildingBase">
         <defName>pphhyy_Toxifier</defName>
         <label>toxifier</label>
-        <description>PLACEHOLDER</description>
+        <description>Used primarily for defensive positions and area denial by turning an area into a hellscape making it very hard for hostiles to assault URMC positions.
+It will produce twice as much pollution as the Toxifier generator without giving any power.</description>
         <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Building/Power/ToxifierGenerator</texPath>
@@ -1375,9 +1373,6 @@
             <Steel>125</Steel>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
-        <researchPrerequisites>
-            <li>ToxifierGenerator</li>
-        </researchPrerequisites>
         <comps>
             <li Class="CompProperties_Toxifier">
                 <radius>52.9</radius>
@@ -1391,6 +1386,9 @@
                 </affectedDamageDefs>
             </li>
         </comps>
+         <researchPrerequisites>
+            <li>pphhyy_URMCChemicalWarfare</li>
+        </researchPrerequisites>
         <placeWorkers>
             <li>PlaceWorker_ToxifierGenerator</li>
         </placeWorkers>
@@ -1402,7 +1400,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>pphhyy_PTRecycler</defName>
         <label>pearl technica recycler</label>
-        <description>PLACEHOLDER</description>
+        <description>Pearl Techs first Environmental Tool designed to help colonies deal with 2 issues, recycling toxic waste and getting rid off unwanted prisoner. By utilizing High subcore AIs the instead of the Mechanoid chip you can recycle waste without the added material cost. Some think utilizing prisoners for such a tax is unethical, Pearl Technica is lobbying heavily to change that opinion.</description>
         <thingClass>Building_WastepackAtomizer</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <tickerType>Normal</tickerType>
@@ -1453,7 +1451,8 @@
             <SubcoreHigh>2</SubcoreHigh>
         </costList>
         <researchPrerequisites>
-            <li>WastepackAtomizer</li>
+            <li>ToxGas</li>
+            <li>pphhyy_URMCPearlTechnicaEnviro</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <comps>
@@ -1480,7 +1479,8 @@
     <ThingDef ParentName="AutocannonTurret">
         <defName>pphhyy_PulseToxTurret</defName>
         <label>pulse tox turret</label>
-        <description>PLACEHOLDER</description>
+        <description>Unlike its cousins the pulse sentry is capable of friendly fire, but what it lacks in IFF tracking it makes up for in suppressive fire. While not accurate it lays down a dizzying 24 pulse rounds in a single burst meant to suppress an enemy making them vulnerable to more accurate weapons or explosives.
+This turret has been outfitted with a Tox receiver for chemical warfare.</description>
         <uiIconPath>Building/Turrets/UA12PulseSentryBase</uiIconPath>
         <size>(1,1)</size>
         <statBases>
@@ -1513,6 +1513,7 @@
             <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
         </building>
         <researchPrerequisites>
+            <li>ToxGas</li>
             <li>pphhyy_URMCBasicTurrets</li>
         </researchPrerequisites>
     </ThingDef>
@@ -1563,5 +1564,49 @@
             <speed>70</speed>
         </projectile>
     </ThingDef>
+
+    <!-- Biohazard Update Research -->
+
+    <ResearchProjectDef>
+        <defName>pphhyy_URMCChemicalWarfare</defName>
+        <label>URMC chemical warfare</label>
+        <description>Basic Chemical warfare allowing the URMC to pollute the terrain and or pollute their enemies bodies with toxic lead. Also basic Tox protection gear.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>pphhyy_URMC</tab>
+        <prerequisites>
+            <li>ToxGas</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>pphhyy_URMCAdvancedChemicalWarfare</defName>
+        <label>URMC advanced chemical warfare</label>
+        <description>More advanced Chemical warfare with proper marine armor with tox resist for fighting in true hellscapes.</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>pphhyy_URMC</tab>
+        <prerequisites>
+            <li>pphhyy_URMCChemicalWarfare</li>
+        </prerequisites>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>pphhyy_URMCPearlTechnicaEnviro</defName>
+        <label>URMC pearl technica enviro</label>
+        <description>Pearl Tech environmental conditioning equipment.</description>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>pphhyy_URMC</tab>
+        <prerequisites>
+            <li>pphhyy_URMCPearlTechnicaTier1</li>
+        </prerequisites>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
 
 </Defs>
