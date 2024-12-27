@@ -52,6 +52,20 @@
                     </value>
                 </li>
 
+                <li Class="PatchOperationReplace">
+                    <xpath>
+                        Defs/ThingDef[
+                        defName="pphhyy_EMPChargeLance"
+                        ]/recipeMaker/researchPrerequisite
+                    </xpath>
+                        <value>
+                            <researchPrerequisites>
+                                <li>pphhyy_URMCPearlTechnicaTier2</li>
+                                <li>ChargedShot</li>
+                            </researchPrerequisites>
+                        </value>
+                </li>
+
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                     <defName>pphhyy_EMPChargeLance</defName>
                     <statBases>
@@ -80,14 +94,13 @@
                     </AmmoUser>
                     <FireModes>
                         <aimedBurstShotCount>1</aimedBurstShotCount>
-                        <aiUseBurstMode>TRUE</aiUseBurstMode>
+                        <aiUseBurstMode>TRUE</aiUseBurstMode>                        
                         <aiAimMode>AimedShot</aiAimMode>
                     </FireModes>
                     <weaponTags>
                         <li>CE_AI_Rifle</li>
                         <li>AdvancedGun</li>
                     </weaponTags>
-                    <researchPrerequisite>ChargedShot</researchPrerequisite>
                 </li>
 
                 <li Class="PatchOperationReplace">
