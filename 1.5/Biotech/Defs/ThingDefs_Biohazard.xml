@@ -4,7 +4,6 @@
 
     <!--__Melee Attacks__-->
 
-
     <DamageDef>
         <defName>pphhyy_ToxStab</defName>
         <label>tox stab</label>
@@ -144,6 +143,23 @@
         <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
     </ManeuverDef>
 
+    <DamageDef ParentName="Bullet">
+        <defName>pphhyy_ToxBullet</defName>
+        <label>toxic bullet</label>
+        <soundExplosion>BulletImpact_Metal</soundExplosion>
+        <additionalHediffs>
+            <li>
+                <hediff>ToxicBuildup</hediff>
+                <severityPerDamageDealt>0.010</severityPerDamageDealt>
+                <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+                <inverseStatScaling>true</inverseStatScaling>
+                <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+            </li>
+        </additionalHediffs>
+        <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
+        <impactSoundType>Toxic</impactSoundType>
+    </DamageDef>
+
     <!--__Items and Resources__-->
 
     <!-- Tox Grenade -->
@@ -264,6 +280,7 @@
         </recipeMaker>
         <verbs>
             <li>
+                <forcedMissRadius>0.1</forcedMissRadius>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>pphhyy_Bullet_ShotgunToxic</defaultProjectile>
@@ -312,12 +329,17 @@
             <texPath>Things/Projectile/Bullet_Shotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
         <projectile>
-            <damageDef>BulletToxic</damageDef>
-            <damageAmountBase>33</damageAmountBase>
+            <damageDef>pphhyy_ToxBullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
             <stoppingPower>3</stoppingPower>
+            <explosionRadius>0.5</explosionRadius>
+            <explosionRadiusDisplayPadding>0.5</explosionRadiusDisplayPadding>
+            <postExplosionGasType>ToxGas</postExplosionGasType>
             <armorPenetrationBase>0.14</armorPenetrationBase>
             <speed>55</speed>
+            <ai_IsIncendiary>false</ai_IsIncendiary>
         </projectile>
     </ThingDef>
 
@@ -362,6 +384,7 @@ This is the standard issue pulse rifle used by the United Rimworld Marine Corp. 
         </costList>
         <verbs>
             <li>
+                <forcedMissRadius>0.1</forcedMissRadius>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>pphhyy_Bullet_M43PulseRifleToxic</defaultProjectile>
@@ -428,10 +451,14 @@ This is the standard issue pulse rifle used by the United Rimworld Marine Corp. 
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
         <projectile>
-            <damageDef>BulletToxic</damageDef>
+            <damageDef>pphhyy_ToxBullet</damageDef>
             <damageAmountBase>15</damageAmountBase>
             <speed>70</speed>
+            <explosionRadius>0.5</explosionRadius>
+            <explosionRadiusDisplayPadding>0.5</explosionRadiusDisplayPadding>
+            <postExplosionGasType>ToxGas</postExplosionGasType>
             <armorPenetrationBase>0.35</armorPenetrationBase>
         </projectile>
     </ThingDef>
@@ -771,7 +798,10 @@ Blade has a Tox core for chemical warfare.</description>
             <drawSize>1.4</drawSize>
         </graphicData>
         <recipeMaker>
-            <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
+            <researchPrerequisites>
+                <li>pphhyy_URMCHeavy</li>
+                <li>ToxGas</li>
+            </researchPrerequisites>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -787,7 +817,7 @@ Blade has a Tox core for chemical warfare.</description>
         <statBases>
             <MarketValue>1000</MarketValue>
             <Mass>7</Mass>
-            <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
         </statBases>
         <techLevel>Spacer</techLevel>
         <weaponTags>
@@ -811,10 +841,10 @@ Blade has a Tox core for chemical warfare.</description>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>pphhyy_Bullet_ToxRocket</defaultProjectile>
                 <forcedMissRadius>2.9</forcedMissRadius>
-                <warmupTime>4.5</warmupTime>
+                <warmupTime>2.5</warmupTime>
                 <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
                 <range>55.9</range>
-                <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>pphhyy_RLSadarSound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -1003,7 +1033,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             </recipeUsers>
         </recipeMaker>
         <graphicData>
-            <texPath>HelmetsAndHats/M10/M10</texPath>
+            <texPath>HelmetsAndHats/M10HazHelmet/M10HazHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
@@ -1036,7 +1066,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>HelmetsAndHats/M10/M10</wornGraphicPath>
+            <wornGraphicPath>HelmetsAndHats/M10HazHelmet/M10HazHelmet</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -1092,7 +1122,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             </recipeUsers>
         </recipeMaker>
         <graphicData>
-            <texPath>Armor/M3Armor/M3Armor</texPath>
+            <texPath>Armor/M3HazArmor/M3HazArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
@@ -1147,7 +1177,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             <Uranium>20</Uranium>
         </costList>
         <apparel>
-            <wornGraphicPath>Armor/M3Armor/M3Armor</wornGraphicPath>
+            <wornGraphicPath>Armor/M3HazArmor/M3HazArmor</wornGraphicPath>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
             <options>
@@ -1198,14 +1228,14 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
             <researchPrerequisite>pphhyy_URMCChemicalWarfare</researchPrerequisite>
             <skillRequirements>
-                <Crafting>6</Crafting> 
+                <Crafting>6</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="false">
                 <li>TableMachining</li>
             </recipeUsers>
         </recipeMaker>
         <graphicData>
-            <texPath>HelmetsAndHats/M9Recon/M9Recon</texPath>
+            <texPath>HelmetsAndHats/M3SHazHelmet/M3SHazHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
@@ -1236,7 +1266,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>HelmetsAndHats/M9Recon/M9Recon</wornGraphicPath>
+            <wornGraphicPath>HelmetsAndHats/M3SHazHelmet/M3SHazHelmet</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -1338,13 +1368,11 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
         <description>Used primarily for defensive positions and area denial by turning an area into a hellscape making it very hard for hostiles to assault URMC positions.
 It will produce twice as much pollution as the Toxifier generator without giving any power.</description>
         <tickerType>Normal</tickerType>
+        <uiIconScale>1</uiIconScale>
         <graphicData>
-            <texPath>Things/Building/Power/ToxifierGenerator</texPath>
+            <texPath>Building/Toxifier/Toxifier</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(2,2)</drawSize>
-            <shadowData>
-                <volume>(1.6, 1, 1.5)</volume>
-            </shadowData>
+            <drawSize>(3.5,3.5)</drawSize>
         </graphicData>
         <altitudeLayer>Building</altitudeLayer>
         <passability>Impassable</passability>
@@ -1368,7 +1396,7 @@ It will produce twice as much pollution as the Toxifier generator without giving
             <Mass>25</Mass>
             <Flammability>0.5</Flammability>
         </statBases>
-        <size>(2,2)</size>
+        <size>(1,3)</size>
         <costList>
             <Steel>125</Steel>
             <ComponentIndustrial>3</ComponentIndustrial>
@@ -1386,7 +1414,7 @@ It will produce twice as much pollution as the Toxifier generator without giving
                 </affectedDamageDefs>
             </li>
         </comps>
-         <researchPrerequisites>
+        <researchPrerequisites>
             <li>pphhyy_URMCChemicalWarfare</li>
         </researchPrerequisites>
         <placeWorkers>
@@ -1405,12 +1433,9 @@ It will produce twice as much pollution as the Toxifier generator without giving
         <drawerType>MapMeshAndRealTime</drawerType>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Things/Building/Misc/WastepackAtomizer</texPath>
+            <texPath>Building/PearlTechRecycler/PearlTechRecycler</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3,2)</drawSize>
-            <shadowData>
-                <volume>(3, 0.35, 2)</volume>
-            </shadowData>
+            <drawSize>(3,3)</drawSize>
         </graphicData>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
@@ -1424,14 +1449,14 @@ It will produce twice as much pollution as the Toxifier generator without giving
             </buildingTags>
             <ai_chillDestination>false</ai_chillDestination>
             <wastepackAtomizerBottomGraphic>
-                <texPath>Things/Building/Misc/WastepackAtomizer_BottomLayer</texPath>
+                <texPath>Building/PearlTechRecycler/PearlTechRecycler</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
-                <drawSize>(3,2)</drawSize>
+                <drawSize>(1,1)</drawSize>
             </wastepackAtomizerBottomGraphic>
             <wastepackAtomizerWindowGraphic>
-                <texPath>Things/Building/Misc/WastepackAtomizerWindow</texPath>
+                <texPath>Building/PearlTechRecycler/PearlTechRecycler</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
-                <drawSize>(3,2)</drawSize>
+                <drawSize>(1,1)</drawSize>
             </wastepackAtomizerWindowGraphic>
             <wastepackAtomizerOperationEffecter>WastepackAtomizer_Operating</wastepackAtomizerOperationEffecter>
         </building>
@@ -1559,7 +1584,7 @@ This turret has been outfitted with a Tox receiver for chemical warfare.</descri
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <damageDef>BulletToxic</damageDef>
+            <damageDef>pphhyy_ToxBullet</damageDef>
             <damageAmountBase>10</damageAmountBase>
             <speed>70</speed>
         </projectile>
@@ -1576,8 +1601,9 @@ This turret has been outfitted with a Tox receiver for chemical warfare.</descri
         <tab>pphhyy_URMC</tab>
         <prerequisites>
             <li>ToxGas</li>
+            <li>pphhyy_URMCBasic</li>
         </prerequisites>
-        <researchViewX>0.00</researchViewX>
+        <researchViewX>0</researchViewX>
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
@@ -1606,7 +1632,7 @@ This turret has been outfitted with a Tox receiver for chemical warfare.</descri
             <li>pphhyy_URMCPearlTechnicaTier1</li>
         </prerequisites>
         <researchViewX>6.00</researchViewX>
-        <researchViewY>2.00</researchViewY>
+        <researchViewY>1.25</researchViewY>
     </ResearchProjectDef>
 
 </Defs>
