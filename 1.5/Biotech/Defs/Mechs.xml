@@ -615,12 +615,14 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
 
   <!--__Biohazard Update Mech__-->
 
-<!-- Talus mk10-->
+  <!-- Talus mk10-->
 
   <ThingDef ParentName="BaseMechanoidWalker">
     <defName>pphhyy_Talus10Mk</defName>
     <label>talus mk10</label>
-    <description>PLACEHOLDER</description>
+    <description>The MK 10 Is responsible for post chemical warfare or spill clean up. Specializing in cleaning and hauling dangerous goods.  Unlike the other work synths Colonists don't seem to mind these mechs taking these jobs.
+Talus Synthetics are named after the bronze man Talus tasked with defending the Greek city of Crete.
+Synths unlike mechanoids can be deployed faster since they only require 1 gestation cycle thanks to all their parts being assemble before hand.</description>
     <statBases>
       <MarketValue>1200</MarketValue>
       <MoveSpeed>4.3</MoveSpeed>
@@ -629,7 +631,7 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
       <BandwidthCost>2</BandwidthCost>
       <ControlTakingTime>18</ControlTakingTime>
     </statBases>
-        <tools>
+    <tools>
       <li>
         <label>head</label>
         <capacities>
@@ -652,17 +654,17 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
           <soundCall>Pawn_Mech_Legionary_Call</soundCall>
         </li>
       </lifeStageAges>
-        <mechEnabledWorkTypes>
-          <li>Cleaning</li>
-          <li>Hauling</li>
-        </mechEnabledWorkTypes>
-      <mechWorkTypePriorities>       
+      <mechEnabledWorkTypes>
+        <li>Cleaning</li>
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+      <mechWorkTypePriorities>
         <Hauling>1</Hauling>
         <Cleaning>2</Cleaning>
       </mechWorkTypePriorities>
     </race>
   </ThingDef>
-  
+
   <PawnKindDef ParentName="NonCombatLightMechanoidKind">
     <defName>pphhyy_Talus10Mk</defName>
     <label>talus mk10</label>
@@ -680,8 +682,8 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
     <controlGroupPortraitZoom>1.2</controlGroupPortraitZoom>
   </PawnKindDef>
 
- <RecipeDef ParentName="pphhyy_MechRecipes">
-     <defName>pphhyy_Talus10Mk</defName>
+  <RecipeDef ParentName="pphhyy_MechRecipes">
+    <defName>pphhyy_Talus10Mk</defName>
     <label>gestate talus mk10</label>
     <description>Gestate a talus mk02 mechanoid.</description>
     <ingredients>
@@ -694,10 +696,13 @@ Pearl Tech takes no responsibility for misuse of the Tartarus MK 01 and all liab
         <count>1</count>
       </li>
     </ingredients>
-    <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
-      <products>
+    <researchPrerequisites>
+      <li>ToxGas</li>
+      <li>pphhyy_URMCPearlTechnicaTier1</li>
+    </researchPrerequisites>
+    <products>
       <pphhyy_Talus10Mk>1</pphhyy_Talus10Mk>
-      </products>
+    </products>
   </RecipeDef>
 
 </Defs>
