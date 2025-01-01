@@ -184,13 +184,13 @@
 					<magazineSize>2</magazineSize>
 					<reloadOneAtATime>true</reloadOneAtATime>
 					<reloadTime>0.85</reloadTime>
-					<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+					<ammoSet>AmmoSet_URMC_Grenade</ammoSet>
 				</propsUnderBarrel>
 				<verbPropsUnderBarrel>
 					<recoilAmount>0.35</recoilAmount>
 					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
+					<defaultProjectile>Bullet_URMC_Grenade_HE</defaultProjectile>
 					<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 					<warmupTime>1.1</warmupTime>
 					<range>40</range>
