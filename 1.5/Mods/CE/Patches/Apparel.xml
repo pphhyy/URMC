@@ -152,7 +152,6 @@
 			<equippedStatOffsets>
 				<CarryWeight>50</CarryWeight>
 				<CarryBulk>8</CarryBulk>
-				<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 				<MoveSpeed>0.4</MoveSpeed>
 			</equippedStatOffsets>
 		</value>
@@ -271,7 +270,6 @@
 			<CarryWeight>80</CarryWeight>
 			<CarryBulk>15</CarryBulk>
 			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
-			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 		</value>
 	</Operation>
 
@@ -283,7 +281,6 @@
 				<CarryWeight>80</CarryWeight>
 				<CarryBulk>10</CarryBulk>
 				<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
-				<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 			</equippedStatOffsets>
 		</value>
 	</Operation>
@@ -357,7 +354,6 @@
 				<CarryWeight>80</CarryWeight>
 				<CarryBulk>10</CarryBulk>
 				<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
-				<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 				<MoveSpeed>0.2</MoveSpeed>
 			</equippedStatOffsets>
 		</value>
@@ -422,7 +418,6 @@
 				<CarryWeight>100</CarryWeight>
 				<CarryBulk>20</CarryBulk>
 				<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
-				<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 				<MeleeDodgeChance>-0.15</MeleeDodgeChance>
 			</equippedStatOffsets>
 		</value>
@@ -777,17 +772,7 @@
 			defName="pphhyy_M10VeteranHelmet"]/equippedStatOffsets</xpath>
 		<value>
 			<AimingAccuracy>0.15</AimingAccuracy>
-			<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 			<SmokeSensitivity>-1</SmokeSensitivity>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M10PatternMarineHelmet" or
-			defName="pphhyy_M10PatternMedicHelmet" or defName="pphhyy_M10PatternOfficerHelmet" or
-			defName="pphhyy_M10VeteranHelmet"]/apparel</xpath>
-		<value>
-			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</value>
 	</Operation>
 
@@ -894,16 +879,8 @@
 			<equippedStatOffsets>
 				<PsychicSensitivity>-0.2</PsychicSensitivity>
 				<AimingAccuracy>0.15</AimingAccuracy>
-				<ToxicEnvironmentResistance>0.50</ToxicEnvironmentResistance>
 				<SmokeSensitivity>-1</SmokeSensitivity>
 			</equippedStatOffsets>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="pphhyy_M3-G4Helmet"]/apparel</xpath>
-		<value>
-			<immuneToToxGasExposure>true</immuneToToxGasExposure>
 		</value>
 	</Operation>
 
