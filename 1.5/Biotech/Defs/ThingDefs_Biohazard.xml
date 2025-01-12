@@ -517,12 +517,10 @@ This is the standard issue pulse rifle used by the United Rimworld Marine Corp. 
             <li>RangedHeavy</li>
         </weaponClasses>
         <recipeMaker>
-            <researchPrerequisite>pphhyy_URMCAdvancedChemicalWarfare</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
-            <recipeUsers>
-                <li>TableMachining</li>
+            <recipeUsers IsNull= "true">
             </recipeUsers>
         </recipeMaker>
         <thingSetMakerTags>
@@ -1310,7 +1308,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             <researchPrerequisite>pphhyy_URMCChemicalWarfare</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Armor/ColonialFatigues/ColonialFatigues</texPath>
+            <texPath>Armor/BHFatigue/BHFatigue</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
@@ -1341,8 +1339,9 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
                 <li>Neck</li>
                 <li>Shoulders</li>
                 <li>Arms</li>
+                <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Armor/ColonialFatigues/ColonialFatigues</wornGraphicPath>
+            <wornGraphicPath>Armor/BHFatigue/BHFatigue</wornGraphicPath>
             <layers>
                 <li>OnSkin</li>
             </layers>
