@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <LangVersion>Latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -50,10 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompMechDetonator.cs" />
-    <Compile Include="CompProperties_MechDetonator.cs" />
-    <Compile Include="DeathActionWorker_MechDetonatorExplosion.cs" />
+    <Compile Include="DeathActionWorkers\DeathActionWorker_MechDetonatorExplosion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThingComponents\CompMechDetonator.cs" />
+    <Compile Include="ThingComponents\CompProperties\CompProperties_AlertLights.cs" />
+    <Compile Include="ThingComponents\CompProperties\CompProperties_MechDetonator.cs" />
+    <Compile Include="ThingComponents\Comp_AlertLights.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
