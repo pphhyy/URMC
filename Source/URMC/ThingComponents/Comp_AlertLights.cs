@@ -27,7 +27,7 @@ namespace URMC
             
             if (_lerpDirection)
             {
-                _lerpProgress += LERP_SPEED;
+                _lerpProgress += LERP_SPEED * Props.lerpSpeed;
                 if (!(_lerpProgress >= 1f)) 
                     return;
                     
@@ -36,7 +36,7 @@ namespace URMC
             }
             else
             {
-                _lerpProgress -= LERP_SPEED;
+                _lerpProgress -= LERP_SPEED * Props.lerpSpeed;
                 if (!(_lerpProgress <= 0f)) 
                     return;
                     
@@ -48,17 +48,19 @@ namespace URMC
         public override void PostDraw()
         {
             base.PostDraw();
-            if (parent is Pawn parentPawn && ShouldDraw(parentPawn))
+            if (parent is not Pawn parentPawn || !ShouldDraw(parentPawn)) 
+                return;
+            
+            if (_alertLightsGraphicLeft == null || _alertLightsGraphicRight == null)
             {
-                if (_alertLightsGraphicLeft == null || _alertLightsGraphicRight == null)
-                {
-                    CacheAlertLightsGraphics(parentPawn);
-                }
-                
-                DrawAlertLight(parentPawn, _alertLightsGraphicLeft, parentPawn.Rotation, _drawSize, _lerpProgress);
-                
-                DrawAlertLight(parentPawn, _alertLightsGraphicRight, parentPawn.Rotation, _drawSize, 1f - _lerpProgress);
+                CacheAlertLightsGraphics(parentPawn);
             }
+                
+            DrawAlertLight(parentPawn, _alertLightsGraphicLeft, 
+                parentPawn.Rotation, _drawSize, _lerpProgress);
+                
+            DrawAlertLight(parentPawn, _alertLightsGraphicRight, 
+                parentPawn.Rotation, _drawSize, 1f - _lerpProgress);
         }
         
         private static bool ShouldDraw(Pawn pawn)
@@ -100,13 +102,13 @@ namespace URMC
             
             _alertLightsGraphicLeft = GraphicDatabase.Get<Graphic_Multi>(
                 alertLightsGraphicLeftPath,
-                ShaderDatabase.TransparentPostLight,
+                ShaderDatabase.MoteGlow,
                 new Vector2(_drawSize.x, _drawSize.y),
                 Color.white);
 
             _alertLightsGraphicRight = GraphicDatabase.Get<Graphic_Multi>(
                 alertLightsGraphicRightPath,
-                ShaderDatabase.TransparentPostLight,
+                ShaderDatabase.MoteGlow,
                 new Vector2(_drawSize.x, _drawSize.y),
                 Color.white);
         }

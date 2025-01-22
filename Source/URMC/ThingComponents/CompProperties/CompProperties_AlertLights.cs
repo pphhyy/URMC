@@ -7,6 +7,7 @@ namespace URMC
     {
         public string alertLightsGraphicLeft = null;
         public string alertLightsGraphicRight = null;
+        public float lerpSpeed = 1f;
         public Color colorOne = Color.white;
         public Color colorTwo = Color.white;
 
