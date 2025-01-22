@@ -57,7 +57,7 @@
             <li Class="URMC.CompProperties_AlertLights">
                 <alertLightsGraphicLeft>Mechanoids/TalusMk12/TalusMk12GlowLeft</alertLightsGraphicLeft>
                 <alertLightsGraphicRight>Mechanoids/TalusMk12/TalusMk12GlowRight</alertLightsGraphicRight>
-                <lerpSpeed>3.0</lerpSpeed>
+                <lerpSpeed>6.0</lerpSpeed>
                 <colorOne>(102, 217, 255)</colorOne>
                 <colorTwo>(255, 102, 102)</colorTwo>
             </li>
