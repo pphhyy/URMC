@@ -717,9 +717,13 @@ Blade has a Tox core for chemical warfare.</description>
             <WorkToMake>18000</WorkToMake>
             <Mass>2</Mass>
         </statBases>
+        <costStuffCount>100</costStuffCount>
         <relicChance>2</relicChance>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
         <costList>
-            <Steel>60</Steel>
             <pphhyy_RefinedToxMaterial>6</pphhyy_RefinedToxMaterial>
         </costList>
         <tools>
@@ -1343,15 +1347,36 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             </bodyPartGroups>
             <wornGraphicPath>Armor/BHFatigue/BHFatigue</wornGraphicPath>
             <layers>
-                <li>OnSkin</li>
+                <li>Middle</li>
+                <li>Shell</li>
             </layers>
             <defaultOutfitTags>
                 <li>Worker</li>
                 <li>Soldier</li>
             </defaultOutfitTags>
-            <useWornGraphicMask>true</useWornGraphicMask>
+            <useWornGraphicMask>false</useWornGraphicMask>
         </apparel>
-        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.9,0.9,0.9)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.33,0.33,0.33)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.65,0.65,0.65)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(0.3,0.3,0.3)</min>
+                    <max>(0.5,0.5,0.5)</max>
+                </li>
+            </options>
+        </colorGenerator>
         <tradeTags>
             <li>BasicClothing</li>
         </tradeTags>
@@ -1367,7 +1392,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
         <description>Used primarily for defensive positions and area denial by turning an area into a hellscape making it very hard for hostiles to assault URMC positions.
 It will produce twice as much pollution as the Toxifier generator without giving any power.</description>
         <tickerType>Normal</tickerType>
-        <uiIconScale>1</uiIconScale>
+        <uiIconScale>0.3</uiIconScale>
         <graphicData>
             <texPath>Building/Toxifier/Toxifier</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -1395,7 +1420,7 @@ It will produce twice as much pollution as the Toxifier generator without giving
             <Mass>25</Mass>
             <Flammability>0.5</Flammability>
         </statBases>
-        <size>(1,3)</size>
+        <size>(1,1)</size>
         <costList>
             <Steel>125</Steel>
             <ComponentIndustrial>3</ComponentIndustrial>
@@ -1436,8 +1461,12 @@ It will produce twice as much pollution as the Toxifier generator without giving
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(3,3)</drawSize>
         </graphicData>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
+        <minifiedDef>MinifiedThing</minifiedDef>
         <canOverlapZones>false</canOverlapZones>
         <pathCost>42</pathCost>
         <blockWind>true</blockWind>
