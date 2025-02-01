@@ -1397,6 +1397,7 @@ It will produce twice as much pollution as the Toxifier generator without giving
             <texPath>Building/Toxifier/Toxifier</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(3.5,3.5)</drawSize>
+            <drawOffset>(0,0,0.8)</drawOffset>
         </graphicData>
         <altitudeLayer>Building</altitudeLayer>
         <passability>Impassable</passability>
