@@ -1354,7 +1354,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
                 <li>Worker</li>
                 <li>Soldier</li>
             </defaultOutfitTags>
-            <useWornGraphicMask>false</useWornGraphicMask>
+            <useWornGraphicMask>True</useWornGraphicMask>
         </apparel>
         <colorGenerator Class="ColorGenerator_Options">
             <options>
