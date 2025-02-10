@@ -1,68 +1,289 @@
-<?xml version="1.0" encoding="UTF-8"?>  
-
+<?xml version="1.0" encoding="UTF-8"?>
 
 <Defs>
 
-    <PawnKindDef ParentName="BasePlayerPawnKind">
-        <defName>pphhyy_Officer</defName>
-        <label>URMC officer</label>
-        <defaultFactionType>pphhyy_URMC_Outpost</defaultFactionType>
-        <apparelRequired>
-            <li>pphhyy_M3Officer</li>
-            <li>pphhyy_M10PatternOfficerHelmet</li>
-          </apparelRequired>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-        <apparelMoney>350~600</apparelMoney>
-        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-        <techHediffsMoney>50~800</techHediffsMoney>
-        <initialResistanceRange>13~21</initialResistanceRange>
-      </PawnKindDef>
+  <!--__Pawns Base__-->
 
-      <PawnKindDef ParentName="BasePlayerPawnKind">
-        <defName>pphhyy_Medic</defName>
-        <label>URMC medic</label>
-        <defaultFactionType>pphhyy_URMC_Outpost</defaultFactionType>
-        <apparelRequired>
-            <li>pphhyy_M3Medic</li>
-            <li>pphhyy_M10PatternMedicHelmet</li>
-          </apparelRequired>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-        <apparelMoney>350~600</apparelMoney>
-        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-        <techHediffsMoney>50~800</techHediffsMoney>
-        <initialResistanceRange>13~21</initialResistanceRange>
-      </PawnKindDef>
+  <PawnKindDef Name= "URMCFactionPawnBase" Abstract= "true">
+    <race>Human</race>
+    <initialWillRange>2~4</initialWillRange>
+    <combatPower>50</combatPower>
+    <defaultFactionType>pphhyy_Faction_URMC</defaultFactionType>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelMoney>350~1500</apparelMoney>
+    <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
+    <apparelIgnorePollution>True</apparelIgnorePollution>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <useFactionXenotypes>true</useFactionXenotypes>
+    <weaponMoney>500~2000</weaponMoney>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li>
+          <thingDef>MealSurvivalPack</thingDef>
+          <countRange>2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0</Neanderthal>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0</Hussar>
+        <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0</Pigskin>
+        <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0</Yttakin>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0</Genie>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0</Dirtmole>
+        <Highmate MayRequire="Ludeon.RimWorld.Biotech">0</Highmate>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0</Impid>
+        <Sanguophage MayRequire="Ludeon.RimWorld.Biotech">0</Sanguophage>
+        <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
 
-      <PawnKindDef ParentName="BasePlayerPawnKind">
-        <defName>pphhyy_Marine</defName>
-        <label>URMC marine</label>
-        <defaultFactionType>pphhyy_URMC_Outpost</defaultFactionType>
-        <apparelRequired>
-            <li>pphhyy_M3Armor</li>
-            <li>pphhyy_M10PatternMarineHelmet</li>
-          </apparelRequired>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-        <apparelMoney>350~600</apparelMoney>
-        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-        <techHediffsMoney>50~800</techHediffsMoney>
-        <initialResistanceRange>13~21</initialResistanceRange>
-      </PawnKindDef>
+  <!--__Faction Pawns__-->
 
-      <PawnKindDef ParentName="BasePlayerPawnKind">
-        <defName>pphhyy_Veteran</defName>
-        <label>URMC veteran</label>
-        <defaultFactionType>pphhyy_URMC_SoleSurvivor</defaultFactionType>
-        <apparelRequired>
-            <li>pphhyy_M3Veteran</li>
-            <li>pphhyy_M10VeteranHelmet</li>
-            <li>pphhyy_ColonialFatigue</li>
-          </apparelRequired>
-        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-        <apparelMoney>350~600</apparelMoney>
-        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-        <techHediffsMoney>50~800</techHediffsMoney>
-        <initialResistanceRange>13~21</initialResistanceRange>
-      </PawnKindDef>
+  <!-- Marine Officer -->
 
+  <PawnKindDef ParentName="URMCFactionPawnBase">
+    <defName>pphhyy_Officer</defName>
+    <label>marine officer</label>
+    <apparelRequired>
+      <li>pphhyy_M3Officer</li>
+      <li>pphhyy_ColonialFatigue</li>
+    </apparelRequired>
+    <factionLeader>true</factionLeader>
+    <apparelTags>
+      <li>URMC_OfficerBeret</li>
+      <li>URMC_OfficerHelmet</li>
+    </apparelTags>
+    <weaponTags>
+      <li>pphhyy_M43PulseRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Marine Medic -->
+
+  <PawnKindDef ParentName="URMCFactionPawnBase">
+    <defName>pphhyy_Medic</defName>
+    <label>URMC medic</label>
+    <apparelRequired>
+      <li>pphhyy_M3Medic</li>
+      <li>pphhyy_ColonialFatigue</li>
+      <li>pphhyy_M10PatternMedicHelmet</li>
+    </apparelRequired>
+    <inventoryOptions>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>4</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <weaponTags>
+      <li>pphhyy_M43PulseRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Marine -->
+
+  <PawnKindDef ParentName="URMCFactionPawnBase">
+    <defName>pphhyy_Marine</defName>
+    <label>URMC marine</label>
+    <apparelRequired>
+      <li>pphhyy_M3Armor</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>URMC_MarineHelmet</li>
+      <li>URMC_ColonialBeret</li>
+    </apparelTags>
+    <weaponTags>
+      <li>pphhyy_M43PulseRifle</li>
+      <li>pphhyy_S12CombatMachete</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Marine Veteran -->
+
+  <PawnKindDef ParentName="URMCFactionPawnBase">
+    <defName>pphhyy_Veteran</defName>
+    <label>marine veteran</label>
+    <apparelRequired>
+      <li>pphhyy_M3Veteran</li>
+      <li>pphhyy_ColonialFatigue</li>
+    </apparelRequired>
+    <apparelTags>
+      <li>URMC_ColonialBeret</li>
+      <li>URMC_VeteranHelmet</li>
+    </apparelTags>
+    <weaponTags>
+      <li>pphhyy_M43PulseRifle</li>
+      <li>pphhyy_S12CombatMachete</li>
+      <li>pphhyy_M44FImmolator</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Marine Heavy -->
+
+  <PawnKindDef ParentName="URMCFactionPawnBase">
+    <defName>pphhyy_Heavy</defName>
+    <label>marine heavy</label>
+    <apparelRequired>
+      <li>pphhyy_M4Goliath</li>
+      <li>pphhyy_ColonialFatigue</li>
+      <li>pphhyy_M3-G4Helmet</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>pphhyy_M45PulseLMG</li>
+      <li>pphhyy_M10RLSadar</li>
+      <li>pphhyy_M80GLMachine</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Marine Specialist -->
+
+  <PawnKindDef ParentName="URMCFactionPawnBase">
+    <defName>pphhyy_Specialist</defName>
+    <label>marine specialist</label>
+    <apparelTags>
+      <li>URMC_ColonialBeret</li>
+      <li>URMC_MarineHelmet</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>pphhyy_M3Armor</li>
+      <li>pphhyy_ColonialFatigue</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>pphhyy_M52HBreachingShotgun</li>
+      <li>pphhyy_M45PulseLMG</li>
+      <li>pphhyy_M44FImmolator</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Marine Cadet -->
+
+  <PawnKindDef ParentName="URMCFactionPawnBase">
+    <defName>pphhyy_Cadet</defName>
+    <label>marine cadet</label>
+    <apparelTags>
+      <li>URMC_UtilityCover</li>
+      <li>URMC_M3SLight</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>pphhyy_M1Flak</li>
+      <li>pphhyy_ColonialFatigue</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>pphhyy_M1PulsePistol</li>
+      <li>pphhyy_S12CombatMachete</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Marine Scout -->
+
+  <PawnKindDef ParentName="URMCFactionPawnBase">
+    <defName>pphhyy_Scout</defName>
+    <label>marine scout</label>
+    <apparelTags>
+      <li>URMC_UtilityCover</li>
+      <li>URMC_M3SHelmet</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>pphhyy_M2Recon</li>
+      <li>pphhyy_ColonialFatigue</li>
+    </apparelRequired>
+    <weaponTags>
+      <li>pphhyy_M1PulsePistol</li>
+      <li>pphhyy_S12CombatMachete</li>
+      <li>pphhyy_M43PulseRifle</li>
+      <li>pphhyy_M50XReconRifle</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <!-- Marine Flag Bearer -->
+
+  <PawnKindDef ParentName="URMCFactionPawnBase">
+    <defName>pphhyy_FlagBearer</defName>
+    <label>marine flag bearer</label>
+    <apparelRequired>
+      <li>pphhyy_M3Armor</li>
+      <li>pphhyy_ColonialFatigue</li>
+      <li>pphhyy_M10PatternMarineHelmet</li>
+    </apparelRequired>
+    <trader>true</trader>
+    <weaponTags>
+      <li>pphhyy_M1PulsePistol</li>
+      <li>pphhyy_S12CombatMachete</li>
+    </weaponTags>
+        <modExtensions>
+      <li Class="VFECore.PawnKindDefExtension">
+        <shieldMoney>
+          <min>200</min>
+          <max>1500</max>
+        </shieldMoney>
+        <shieldTags>
+          <li>pphhyy_URMCStandard</li>
+        </shieldTags>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+
+  <!--__Replacement for man in black pawns__-->
+
+  <!-- Pvt. Jenette Vasquez-->
+
+  <PawnKindDef>
+    <defName>pphhyy_PvtJenetteVasquez</defName>
+    <label>Pvt. Jenette Vasquez</label>
+    <fixedGender>Female</fixedGender>
+    <race>Human</race>
+    <defaultFactionType>pphhyy_Faction_URMC</defaultFactionType>
+    <combatPower>55</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <isFighter>true</isFighter>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Offworld</li>
+          <li>Outlander</li>
+          <li>Outsider</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <invNutrition>10.0</invNutrition>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>500~1500</weaponMoney>
+    <weaponTags>
+      <li>pphhyy_M43PulseRifle</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>pphhyy_ColonialFatigue</li>
+      <li>pphhyy_M3Armor</li>
+      <li>pphhyy_UtilityCover</li>
+    </apparelRequired>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <favoriteColor>(58,58,58)</favoriteColor>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>0~2</initialResistanceRange>
+    <humanPregnancyChance>0</humanPregnancyChance>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
 
 </Defs>

@@ -19,6 +19,9 @@
                 <li>FabricationBench</li>
             </recipeUsers>
         </recipeMaker>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
         <graphicData>
             <texPath>Armor/M3TechArmor/M3TechArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>

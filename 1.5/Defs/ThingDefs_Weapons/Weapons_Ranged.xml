@@ -72,6 +72,9 @@
       <Steel>60</Steel>
       <ComponentIndustrial>7</ComponentIndustrial>
     </costList>
+    <weaponTags>
+      <li>pphhyy_M43PulseRifle</li>
+    </weaponTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -151,7 +154,7 @@
   <AbilityDef>
     <defName>PulseRifleGrenade</defName>
     <label>grenade barrel</label>
-    <description>PLACEHOLDER</description>
+    <description>Use the grenade barrel attached to the pulse rifle to deploy a grenade.</description>
     <iconPath>Resources/Grenade/Grenade_a</iconPath>
     <aiCanUse>true</aiCanUse>
     <ai_IsIncendiary>false</ai_IsIncendiary>
@@ -210,7 +213,7 @@
       </recipeUsers>
     </recipeMaker>
     <weaponTags>
-      <li>URMC_Weapons</li>
+      <li>pphhyy_M1PulsePistol</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
@@ -307,6 +310,9 @@
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
+    <weaponTags>
+      <li>pphhyy_M45PulseLMG</li>
+    </weaponTags>
     <recipeMaker>
       <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
       <skillRequirements>
@@ -394,6 +400,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
     <equippedAngleOffset>-90</equippedAngleOffset>
     <techLevel>Medieval</techLevel>
     <weaponTags>
+      <li>pphhyy_S12CombatMachete</li>
       <li>URMC_Weapons</li>
     </weaponTags>
     <costStuffCount>100</costStuffCount>
@@ -486,6 +493,9 @@ The S12 was created to give marines a competent weapon to break open insectoid s
     <weaponClasses>
       <li>RangedHeavy</li>
     </weaponClasses>
+    <weaponTags>
+      <li>pphhyy_M44FImmolator</li>
+    </weaponTags>
     <recipeMaker>
       <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
       <skillRequirements>
@@ -570,6 +580,9 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         <li>FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
+    <weaponTags>
+      <li>pphhyy_M80GLMachine</li>
+    </weaponTags>
     <weaponClasses>
       <li>RangedLight</li>
     </weaponClasses>
@@ -716,6 +729,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
     </tools>
     <weaponTags>
       <li>URMC_Weapons</li>
+      <li>pphhyy_M50XReconRifle</li>
     </weaponTags>
     <modExtensions>
       <li Class="VFECore.ThingDefExtension">
@@ -803,6 +817,9 @@ The S12 was created to give marines a competent weapon to break open insectoid s
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
+    <weaponTags>
+    <li>pphhyy_M52HBreachingShotgun</li>
+    </weaponTags>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -896,6 +913,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
     <techLevel>Spacer</techLevel>
     <weaponTags>
       <li>URMC_Weapons</li>
+      <li>pphhyy_M10RLSadar</li>
     </weaponTags>
     <weaponClasses>
       <li>RangedHeavy</li>
