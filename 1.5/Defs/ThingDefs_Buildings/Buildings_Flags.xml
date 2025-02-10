@@ -79,6 +79,9 @@
 		</costList>
 		<equipmentType>None</equipmentType>
 		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<weaponTags>
+		<li>URMC_Standard</li>
+		</weaponTags>
 		<statBases>
 			<Mass>3</Mass>
 			<WorkToMake>6000</WorkToMake>

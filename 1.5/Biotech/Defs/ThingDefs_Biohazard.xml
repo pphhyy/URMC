@@ -1399,7 +1399,7 @@ It will produce twice as much pollution as the Toxifier generator without giving
             <drawSize>(3.5,3.5)</drawSize>
             <drawOffset>(0,0,0.8)</drawOffset>
         </graphicData>
-        <altitudeLayer>Building</altitudeLayer>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
         <passability>Impassable</passability>
         <minifiedDef>MinifiedThing</minifiedDef>
         <thingCategories>
