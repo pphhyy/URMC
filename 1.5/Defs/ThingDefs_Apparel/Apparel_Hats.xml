@@ -43,7 +43,7 @@
             <li>Overhead</li>
           </layers>
           <tags>
-          <li>URMC_HatsAndHelmets</li>
+          <li>URMC_ColonialBeret</li>
           </tags>
           <defaultOutfitTags>
             <li>Worker</li>
@@ -113,7 +113,7 @@
             <li>Overhead</li>
           </layers>
           <tags>
-            <li>URMC_HatsAndHelmets</li>
+            <li>URMC_OfficerBeret</li>
           </tags>
           <defaultOutfitTags>
             <li>Worker</li>
@@ -182,7 +182,7 @@
           <li>Overhead</li>
         </layers>
         <tags>
-          <li>URMC_HatsAndHelmets</li>
+          <li>URMC_UtilityCover</li>
         </tags>
         <defaultOutfitTags>
           <li>Worker</li>

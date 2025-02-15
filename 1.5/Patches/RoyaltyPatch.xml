@@ -21,4 +21,12 @@
 
   </Operation>
 
+ <Operation Class="PatchOperationAdd">
+                    <xpath>/Defs/BackstoryDef[defName="InfantryMedic6" or defName="MilitaryOfficer17" or defName="WarRefugee51" or defName="ArmyCook0" or defName="MilitaryEngineer45" or defName="AceFighterPilot54" or defName="SpaceMarine16" or defName="MilitaryCommissar71" or defName="SpaceMarineMedic10" or defName="SpaceTactician28" or defName="InfantryOfficer49" or defName="Sheriff52" or defName="Scout44" or defName="MilitaryInventor35" or defName="SpaceMarine51" or defName="ParamilitaryAgent11" or defName="SpaceMarine19" or defName="MechWarVeteran77" or defName="MedicSoldier54" or defName="SpaceNavyDoctor72" or defName="OverwatchSniper42" or defName="AWOLSoldier49" or defName="FactionLeader74" or defName="SpaceMarine9" or defName="CombatMedic82" or defName="LostMarine81" or defName="SpecialForces13" or defName="DischargedSoldier53" or defName="MilitaryGunsmith27" or defName="CombatMedtech59" or defName="MilitiaSoldier79" or defName="ArmySergeant16" or defName="OfficerCadet25" or defName="VatgrownMedic53" or defName="MilitaryChild82" or defName="ChildSpy47" or defName="VatgrownSoldier8"]/spawnCategories</xpath>
+                    <value>
+                        <li>URMC_MilitaryBackstories</li>
+                    </value>
+                </Operation>
+
+
 </Patch>

@@ -17,9 +17,9 @@
     </apparel>
   </ThingDef>
 
-<!--__Base Mod Helmets__-->
+  <!--__Base Mod Helmets__-->
 
-<!-- M3-S Light Helmet-->
+  <!-- M3-S Light Helmet-->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M3-SLightHelmet</defName>
@@ -59,6 +59,9 @@
       <Plasteel>10</Plasteel>
     </costList>
     <apparel>
+      <tags>
+        <li>URMC_M3SLight</li>
+      </tags>
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
@@ -93,7 +96,7 @@
     </tradeTags>
   </ThingDef>
 
-<!-- M3-S Helmet -->
+  <!-- M3-S Helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M3-SHelmet</defName>
@@ -135,6 +138,9 @@
       <Plasteel>30</Plasteel>
     </costList>
     <apparel>
+      <tags>
+        <li>URMC_M3SHelmet</li>
+      </tags>
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
@@ -172,7 +178,7 @@
     </thingSetMakerTags>
   </ThingDef>
 
-<!--  M10 Pattern Marine Helmet -->
+  <!--  M10 Pattern Marine Helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M10PatternMarineHelmet</defName>
@@ -218,6 +224,9 @@
       <Plasteel>40</Plasteel>
     </costList>
     <apparel>
+      <tags>
+        <li>URMC_MarineHelmet</li>
+      </tags>
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
@@ -260,7 +269,7 @@
     </thingSetMakerTags>
   </ThingDef>
 
-<!-- M10 Pattern Medic Helmet -->
+  <!-- M10 Pattern Medic Helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M10PatternMedicHelmet</defName>
@@ -306,6 +315,9 @@
       <Plasteel>40</Plasteel>
     </costList>
     <apparel>
+      <tags>
+        <li>URMC_MedicHelmet</li>
+      </tags>
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
@@ -348,7 +360,7 @@
     </thingSetMakerTags>
   </ThingDef>
 
-<!-- M10 pattern officer helmet -->
+  <!-- M10 pattern officer helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M10PatternOfficerHelmet</defName>
@@ -395,6 +407,9 @@
       <Gold>5</Gold>
     </costList>
     <apparel>
+      <tags>
+        <li>URMC_OfficerHelmet</li>
+      </tags>
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
@@ -437,7 +452,7 @@
     </thingSetMakerTags>
   </ThingDef>
 
-<!-- M3-G4 Helmet -->
+  <!-- M3-G4 Helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M3-G4Helmet</defName>
@@ -480,6 +495,9 @@
       <Plasteel>50</Plasteel>
     </costList>
     <apparel>
+      <tags>
+        <li>URMC_M3G4Helmet</li>
+      </tags>
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
@@ -517,7 +535,7 @@
     </thingSetMakerTags>
   </ThingDef>
 
-<!-- M10 Veteran Helmet -->
+  <!-- M10 Veteran Helmet -->
 
   <ThingDef ParentName="pphhyy_URMC_Helmets">
     <defName>pphhyy_M10VeteranHelmet</defName>
@@ -562,6 +580,9 @@
         <li>2</li>
         <li>3</li>
       </forceEyesVisibleForRotations>
+      <tags>
+        <li>URMC_VeteranHelmet</li>
+      </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
@@ -616,7 +637,7 @@
         <filter>
           <thingDefs>
             <li>pphhyy_M10PatternOfficerHelmet</li>
-            <li>pphhyy_M10PatternMedicHelmet</li> 
+            <li>pphhyy_M10PatternMedicHelmet</li>
             <li>pphhyy_M10PatternMarineHelmet</li>
           </thingDefs>
         </filter>
@@ -626,7 +647,7 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>pphhyy_M10PatternOfficerHelmet</li>
-        <li>pphhyy_M10PatternMedicHelmet</li> 
+        <li>pphhyy_M10PatternMedicHelmet</li>
         <li>pphhyy_M10PatternMarineHelmet</li>
       </thingDefs>
     </fixedIngredientFilter>
