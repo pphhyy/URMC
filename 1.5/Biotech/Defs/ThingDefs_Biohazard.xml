@@ -503,7 +503,7 @@ This is the standard issue pulse rifle used by the United Rimworld Marine Corp. 
 
     <!-- Tox Sprayer -->
 
-    <ThingDef ParentName="pphhyy_RangedWeapons">
+    <!-- <ThingDef ParentName="pphhyy_RangedWeapons">
         <defName>pphhyy_M44ToxSprayer</defName>
         <label>M44 tox sprayer</label>
         <description>PLACEHOLDER</description>
@@ -565,11 +565,11 @@ This is the standard issue pulse rifle used by the United Rimworld Marine Corp. 
             <li Class="CompProperties_Styleable"/>
             <li Class="CompProperties_Biocodable"/>
         </comps>
-    </ThingDef>
+    </ThingDef> -->
 
     <!-- Create new ability def -->
 
-    <AbilityDef>
+    <!-- <AbilityDef>
         <defName>pphhyy_ToxicSprayer</defName>
         <label>toxic sprayer</label>
         <description>PLACEHOLDER</description>
@@ -595,19 +595,19 @@ This is the standard issue pulse rifle used by the United Rimworld Marine Corp. 
             </li>
             <li Class="CompProperties_AbilityBurner">
                 <numStreams>15</numStreams>
-                <range>11</range>                <!-- go a bit further than the actual ability range, since it's meant to be a noisy effect -->
+                <range>11</range>                
                 <coneSizeDegrees>7.2</coneSizeDegrees>
-                <moteDef>Mote_ToxicSprayer</moteDef>                <!-- Mote, enter your new mote here  -->
-                <barrelOffsetDistance>6</barrelOffsetDistance>                <!-- Offsets the tiles from flame to barrel "muzzle flash"  -->
+                <moteDef>Mote_ToxicSprayer</moteDef>               
+                <barrelOffsetDistance>6</barrelOffsetDistance>                
                 <sizeReductionDistanceThreshold>8</sizeReductionDistanceThreshold>
                 <lifespanNoise>40</lifespanNoise>
                 <rangeNoise>.4</rangeNoise>
                 <effecterDef>BurnerUsed</effecterDef>
             </li>
         </comps>
-    </AbilityDef>
+    </AbilityDef> -->
 
-    <ThingDef>
+    <!-- <ThingDef>
         <defName>Proj_ToxiSpray</defName>
         <label>toxic spray</label>
         <thingClass>Projectile_Liquid</thingClass>
@@ -632,9 +632,9 @@ This is the standard issue pulse rifle used by the United Rimworld Marine Corp. 
             <shadowSize>0</shadowSize>
             <filthCount>0</filthCount>
         </projectile>
-    </ThingDef>
+    </ThingDef> -->
 
-    <DamageDef>
+    <!-- <DamageDef>
         <defName>pphhyy_ToxSprayDamage</defName>
         <label>tox spray</label>
         <workerClass>DamageWorker_AddInjury</workerClass>
@@ -654,15 +654,15 @@ This is the standard issue pulse rifle used by the United Rimworld Marine Corp. 
             </li>
         </additionalHediffs>
         <applyAdditionalHediffsIfHuntingForFood>false</applyAdditionalHediffsIfHuntingForFood>
-    </DamageDef>
+    </DamageDef> -->
 
     <!-- Mote, pphhyy needs to do art for this -->
 
-    <ThingDef ParentName="MoteBase">
+    <!-- <ThingDef ParentName="MoteBase">
         <defName>Mote_ToxicSprayer</defName>
         <thingClass>MoteDualAttached</thingClass>
         <altitudeLayer>MoteOverhead</altitudeLayer>
-        <isSaveable>false</isSaveable>        <!-- because it's pure-vis, and weirdly constructed, it's better to not persist them at all -->
+        <isSaveable>false</isSaveable>       
         <mote>
             <fadeInTime>0</fadeInTime>
             <fadeOutTime>1</fadeOutTime>
@@ -688,7 +688,7 @@ This is the standard issue pulse rifle used by the United Rimworld Marine Corp. 
             </shaderParameters>
             <drawSize>10</drawSize>
         </graphicData>
-    </ThingDef>
+    </ThingDef> -->
 
     <!-- Tox Machete -->
 
