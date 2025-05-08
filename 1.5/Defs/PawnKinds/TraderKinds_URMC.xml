@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<!-- Base Trader -->
+
+  <TraderKindDef>
+    <defName>Base_URMC_Standard</defName>
+    <label>URMC Trader</label>
+    <stockGenerators>
+
+      <!-- Weapons -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M50XReconRifle</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M80GLMachine</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M44FImmolator</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_S12CombatMachete</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M45PulseLMG</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M1PulsePistol</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M43PulseRifle</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10RLSadar</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M52HBreachingShotgun</thingDef>
+        <countRange>1</countRange>
+      </li>
+
+      <!-- Other things -->
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MealSurvivalPack</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <li Class="StockGenerator_Tag">
+        <tradeTag>MortarShell</tradeTag>
+        <thingDefCountRange>1~5</thingDefCountRange>
+        <countRange>20~40</countRange>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Shell_Deadlife</li>
+        </excludedThingDefs>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_GrenadeFrag</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_GrenadeIncendiary</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_GrenadeFoam</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <!-- Apparel-->
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_ColonialFatigue</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M1Flak</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M2Recon</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Medic</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Armor</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Officer</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M4Goliath</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Veteran</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_ColonialBeret</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_OfficerBeret</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_UtilityCover</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3-SLightHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3-SHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10PatternMarineHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10PatternMedicHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10PatternOfficerHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3-G4Helmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10VeteranHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+
+<!-- Caravan Trader -->
+
+  <TraderKindDef>
+    <defName>Caravan_URMC_Standard</defName>
+    <label>URMC trader</label>
+    <faction>pphhyy_Faction_URMC</faction>
+    <stockGenerators>
+
+      <!-- Weapons -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M50XReconRifle</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M80GLMachine</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M44FImmolator</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_S12CombatMachete</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M45PulseLMG</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M1PulsePistol</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M43PulseRifle</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10RLSadar</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M52HBreachingShotgun</thingDef>
+        <countRange>1</countRange>
+      </li>
+
+      <!-- Other things -->
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MealSurvivalPack</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <li Class="StockGenerator_Tag">
+        <tradeTag>MortarShell</tradeTag>
+        <thingDefCountRange>1~5</thingDefCountRange>
+        <countRange>20~40</countRange>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Shell_Deadlife</li>
+        </excludedThingDefs>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_GrenadeFrag</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_GrenadeIncendiary</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_GrenadeFoam</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <!-- Apparel-->
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_ColonialFatigue</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M1Flak</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M2Recon</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Medic</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Armor</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Officer</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M4Goliath</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Veteran</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_ColonialBeret</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_OfficerBeret</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_UtilityCover</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3-SLightHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3-SHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10PatternMarineHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10PatternMedicHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10PatternOfficerHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3-G4Helmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10VeteranHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+
+
+    </stockGenerators>
+  </TraderKindDef>
+
+  <!-- Visitor Trader -->
+
+  <TraderKindDef>
+    <defName>Visitor_URMC_Standard</defName>
+    <label>URMC trader</label>
+    <faction>pphhyy_Faction_URMC</faction>
+    <stockGenerators>
+
+      <!-- Weapons -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M50XReconRifle</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M80GLMachine</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M44FImmolator</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_S12CombatMachete</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M45PulseLMG</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M1PulsePistol</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M43PulseRifle</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10RLSadar</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M52HBreachingShotgun</thingDef>
+        <countRange>1</countRange>
+      </li>
+
+      <!-- Other things -->
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MealSurvivalPack</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <li Class="StockGenerator_Tag">
+        <tradeTag>MortarShell</tradeTag>
+        <thingDefCountRange>1~5</thingDefCountRange>
+        <countRange>20~40</countRange>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Shell_Deadlife</li>
+        </excludedThingDefs>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_GrenadeFrag</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_GrenadeIncendiary</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_GrenadeFoam</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+
+      <!-- Apparel-->
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_ColonialFatigue</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M1Flak</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M2Recon</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Medic</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Armor</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Officer</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M4Goliath</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3Veteran</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_ColonialBeret</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_OfficerBeret</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_UtilityCover</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3-SLightHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3-SHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10PatternMarineHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10PatternMedicHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10PatternOfficerHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M3-G4Helmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>pphhyy_M10VeteranHelmet</thingDef>
+        <countRange>1</countRange>
+      </li>
+
+
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

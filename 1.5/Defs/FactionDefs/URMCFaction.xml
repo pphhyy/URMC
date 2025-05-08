@@ -20,17 +20,21 @@
         <colorSpectrum>
             <li>(1, 1, 1)</li>
         </colorSpectrum>
+        <fixedLeaderKinds>
+			<li>pphhyy_Officer</li>
+		</fixedLeaderKinds>
         <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
         <pawnSingular>Marine</pawnSingular>
         <pawnsPlural>Marines</pawnsPlural>
-        <categoryTag>URMC_MilitaryBackstories</categoryTag>
+        <categoryTag>URMC_Adult</categoryTag>
         <settlementGenerationWeight>1</settlementGenerationWeight>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <naturalEnemy>false</naturalEnemy>
         <canSiege>true</canSiege>
         <canStageAttacks>true</canStageAttacks>
         <leaderTitle>officer</leaderTitle>
         <factionIconPath>HelmetsAndHats/M10/M10</factionIconPath>
-        <techLevel>Industrial</techLevel>
+        <techLevel>Spacer</techLevel>
         <fixedName>URMC</fixedName>
         <settlementNameMaker>NamerSettlementEmpire</settlementNameMaker>
         <allowedCultures>
@@ -69,10 +73,13 @@
         
         <backstoryFilters>
             <li>
-                <categories>
-                    <li>URMC_MilitaryBackstories</li>
-                </categories>
-                <commonality>2</commonality>
+                <categoriesChildhood>
+                    <li>Offworld</li>
+                  </categoriesChildhood>
+                <categoriesAdulthood>
+                    <li>URMC_Adult</li>
+                </categoriesAdulthood>
+                <commonality>1</commonality>
             </li>
         </backstoryFilters>
 
@@ -81,19 +88,19 @@
         <!-- Caravan Trader Kinds -->
         
         <caravanTraderKinds>
-            <li>Base_Outlander_Standard</li>
+            <li>Caravan_URMC_Standard</li>
         </caravanTraderKinds>
 
         <!-- Vistor Trader Kinds -->
         
         <visitorTraderKinds>
-            <li>Base_Outlander_Standard</li>
+            <li>Visitor_URMC_Standard</li>
         </visitorTraderKinds>
 
         <!-- Base Trader Kinds -->
         
         <baseTraderKinds>
-            <li>Base_Outlander_Standard</li>
+            <li>Base_URMC_Standard</li>
         </baseTraderKinds>
 
         <!-- Trader Kind Arrival Options -->
@@ -124,7 +131,11 @@
                 </disallowedStrategies>
                 <options>
                     <pphhyy_Marine>14</pphhyy_Marine>
-                    <pphhyy_Officer>1</pphhyy_Officer>
+                    <pphhyy_Officer>4</pphhyy_Officer>
+                    <pphhyy_Cadet>8</pphhyy_Cadet>
+                    <pphhyy_Medic>5</pphhyy_Medic>
+                    <pphhyy_Specialist>3</pphhyy_Specialist>
+                    <pphhyy_Heavy>2</pphhyy_Heavy>
                 </options>
             </li>
 
@@ -133,15 +144,16 @@
             <li>
                 <kindDef>Peaceful</kindDef>
                 <options>
-                    <pphhyy_Marine>14</pphhyy_Marine>
-                    <pphhyy_Officer>1</pphhyy_Officer>
-    
+                    <pphhyy_Marine>15</pphhyy_Marine>
+                    <pphhyy_Officer>4</pphhyy_Officer>
+                    <pphhyy_Cadet>8</pphhyy_Cadet>
+                    <pphhyy_Medic>5</pphhyy_Medic>
                 </options>
             </li>
 
             <!--__________ URMC Traders __________-->
 
-            <!-- URMCCF Caravan -->
+            <!-- URMC Caravan -->
 
             <li>
                 <kindDef>Trader</kindDef>
@@ -149,10 +161,13 @@
                     <pphhyy_FlagBearer>1</pphhyy_FlagBearer>
                 </traders>
                 <carriers>
-                    <Alpaca>1</Alpaca>
+                    <Alpaca>2</Alpaca>
                 </carriers>
                 <guards>
-                    <pphhyy_Marine>4</pphhyy_Marine>
+                    <pphhyy_Marine>15</pphhyy_Marine>
+                    <pphhyy_Medic>5</pphhyy_Medic>
+                    <pphhyy_Cadet>10</pphhyy_Cadet>
+                    <pphhyy_Scout>4</pphhyy_Scout>
                 </guards>
             </li>
 
@@ -161,7 +176,9 @@
             <li>
                 <kindDef>Settlement</kindDef>
                 <options>
-                    <pphhyy_Marine>30</pphhyy_Marine>
+                    <pphhyy_Marine>15</pphhyy_Marine>
+                    <pphhyy_Cadet>10</pphhyy_Cadet>
+                    <pphhyy_Scout>4</pphhyy_Scout>
                     <pphhyy_Officer>1</pphhyy_Officer>
                 </options>
             </li>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+
+<Defs>
+
+    <IncidentDef>
+        <defName>pphhyy_ManInBlackGroup</defName>
+        <label>A Brigade</label>
+        <category>Special</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_WandererJoin</workerClass>
+        <letterLabel>A Brigade</letterLabel>
+        <letterText>PLACEHOLDER</letterText>
+        <baseChance>0</baseChance>
+        <minRefireDays>60</minRefireDays>
+        <minGreatestPopulation>3</minGreatestPopulation>
+        <pawnKind>pphhyy_PvtJenetteVasquez</pawnKind>
+        <pawnFixedGender>None</pawnFixedGender>
+        <pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+    </IncidentDef>
+
+</Defs>
