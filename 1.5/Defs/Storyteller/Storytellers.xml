@@ -4,7 +4,7 @@
 
     <StorytellerDef ParentName="BaseStoryteller">
         <defName>pphhyy_URMCStoryteller</defName>
-        <label>Cassandra Classic</label>
+        <label>Al Apone</label>
         <description>PLACEHOLDER</description>
         <portraitLarge>UI/HeroArt/Storytellers/CassandraClassic</portraitLarge>
         <portraitTiny>UI/HeroArt/Storytellers/CassandraClassicTiny</portraitTiny>
@@ -195,13 +195,18 @@
                 <offDays>5</offDays>
                 <numIncidentsRange>1</numIncidentsRange>
             </li>
+            <li Class="StorytellerCompProperties_OnOffCycle">
+                <incident>MechCluster</incident>
+                <onDays>6</onDays>
+                <offDays>11</offDays>
+                <numIncidentsRange>1</numIncidentsRange>
+            </li>
             <!-- Triggered -->
             <li Class="StorytellerCompProperties_Triggered">
-                <incident>StrangerInBlackJoin</incident>
+                <incident>pphhyy_ManInBlackGroup</incident>
                 <delayTicks>180</delayTicks>
             </li>
         </comps>
     </StorytellerDef>
-
 
 </Defs>

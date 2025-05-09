@@ -7,18 +7,20 @@
   <PawnKindDef Name= "URMCFactionPawnBase" Abstract= "true">
     <race>Human</race>
     <initialWillRange>2~4</initialWillRange>
-    <combatPower>50</combatPower>
     <defaultFactionType>pphhyy_Faction_URMC</defaultFactionType>
     <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
     <apparelMoney>350~1500</apparelMoney>
     <apparelIgnoreSeasons>True</apparelIgnoreSeasons>
     <apparelIgnorePollution>True</apparelIgnorePollution>
     <techHediffsMoney>50~800</techHediffsMoney>
+    <apparelTags>
+      <li>URMC_Armor</li>
+    </apparelTags>
     <useFactionXenotypes>true</useFactionXenotypes>
-    <weaponMoney>500~2000</weaponMoney>
+    <weaponMoney>500~2500</weaponMoney>
     <initialResistanceRange>13~21</initialResistanceRange>
     <inventoryOptions>
-      <subOptionsChooseOne>
+      <subOptionsTakeAll>
         <li>
           <thingDef>MedicineIndustrial</thingDef>
           <countRange>1</countRange>
@@ -27,7 +29,7 @@
           <thingDef>MealSurvivalPack</thingDef>
           <countRange>2</countRange>
         </li>
-      </subOptionsChooseOne>
+      </subOptionsTakeAll>
     </inventoryOptions>
     <xenotypeSet>
       <xenotypeChances>
@@ -43,6 +45,10 @@
         <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1</Baseliner>
       </xenotypeChances>
     </xenotypeSet>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Social</li>
+    </requiredWorkTags>
   </PawnKindDef>
 
   <!--__Faction Pawns__-->
@@ -52,6 +58,7 @@
   <PawnKindDef ParentName="URMCFactionPawnBase">
     <defName>pphhyy_Officer</defName>
     <label>marine officer</label>
+    <combatPower>80</combatPower>
     <apparelRequired>
       <li>pphhyy_M3Officer</li>
       <li>pphhyy_ColonialFatigue</li>
@@ -71,6 +78,7 @@
   <PawnKindDef ParentName="URMCFactionPawnBase">
     <defName>pphhyy_Medic</defName>
     <label>URMC medic</label>
+    <combatPower>60</combatPower>
     <apparelRequired>
       <li>pphhyy_M3Medic</li>
       <li>pphhyy_ColonialFatigue</li>
@@ -94,6 +102,7 @@
   <PawnKindDef ParentName="URMCFactionPawnBase">
     <defName>pphhyy_Marine</defName>
     <label>URMC marine</label>
+    <combatPower>75</combatPower>
     <apparelRequired>
       <li>pphhyy_M3Armor</li>
     </apparelRequired>
@@ -112,6 +121,7 @@
   <PawnKindDef ParentName="URMCFactionPawnBase">
     <defName>pphhyy_Veteran</defName>
     <label>marine veteran</label>
+    <combatPower>110</combatPower>
     <apparelRequired>
       <li>pphhyy_M3Veteran</li>
       <li>pphhyy_ColonialFatigue</li>
@@ -132,6 +142,7 @@
   <PawnKindDef ParentName="URMCFactionPawnBase">
     <defName>pphhyy_Heavy</defName>
     <label>marine heavy</label>
+    <combatPower>130</combatPower>
     <apparelRequired>
       <li>pphhyy_M4Goliath</li>
       <li>pphhyy_ColonialFatigue</li>
@@ -149,6 +160,7 @@
   <PawnKindDef ParentName="URMCFactionPawnBase">
     <defName>pphhyy_Specialist</defName>
     <label>marine specialist</label>
+    <combatPower>110</combatPower>
     <apparelTags>
       <li>URMC_ColonialBeret</li>
       <li>URMC_MarineHelmet</li>
@@ -169,6 +181,7 @@
   <PawnKindDef ParentName="URMCFactionPawnBase">
     <defName>pphhyy_Cadet</defName>
     <label>marine cadet</label>
+    <combatPower>50</combatPower>
     <apparelTags>
       <li>URMC_UtilityCover</li>
       <li>URMC_M3SLight</li>
@@ -188,6 +201,7 @@
   <PawnKindDef ParentName="URMCFactionPawnBase">
     <defName>pphhyy_Scout</defName>
     <label>marine scout</label>
+    <combatPower>60</combatPower>
     <apparelTags>
       <li>URMC_UtilityCover</li>
       <li>URMC_M3SHelmet</li>
@@ -209,32 +223,23 @@
   <PawnKindDef ParentName="URMCFactionPawnBase">
     <defName>pphhyy_FlagBearer</defName>
     <label>marine flag bearer</label>
+    <combatPower>65</combatPower>
     <apparelRequired>
       <li>pphhyy_M3Armor</li>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M10PatternMarineHelmet</li>
+      <li>pphhyy_URMCStandard</li>
     </apparelRequired>
     <trader>true</trader>
     <weaponTags>
       <li>pphhyy_M1PulsePistol</li>
       <li>pphhyy_S12CombatMachete</li>
     </weaponTags>
-        <modExtensions>
-      <li Class="VFECore.PawnKindDefExtension">
-        <shieldMoney>
-          <min>200</min>
-          <max>1500</max>
-        </shieldMoney>
-        <shieldTags>
-          <li>pphhyy_URMCStandard</li>
-        </shieldTags>
-      </li>
-    </modExtensions>
   </PawnKindDef>
 
   <!--__Replacement for man in black pawns__-->
 
-  <!-- Pvt. Jenette Vasquez-->
+  <!-- Pvt. Jenette Vasquez -->
 
   <PawnKindDef>
     <defName>pphhyy_PvtJenetteVasquez</defName>
@@ -242,18 +247,214 @@
     <fixedGender>Female</fixedGender>
     <race>Human</race>
     <defaultFactionType>pphhyy_Faction_URMC</defaultFactionType>
-    <combatPower>55</combatPower>
+    <combatPower>65</combatPower>
     <minGenerationAge>20</minGenerationAge>
     <maxGenerationAge>55</maxGenerationAge>
     <isFighter>true</isFighter>
     <chemicalAddictionChance>0.05</chemicalAddictionChance>
     <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <inventoryOptions>
+      <subOptionsTakeAll>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li>
+          <thingDef>MealSurvivalPack</thingDef>
+          <countRange>2</countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
     <backstoryFiltersOverride>
       <li>
         <categories>
-          <li>Offworld</li>
-          <li>Outlander</li>
-          <li>Outsider</li>
+          <li>URMC_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <invNutrition>10.0</invNutrition>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>500~1500</weaponMoney>
+    <weaponTags>
+      <li>pphhyy_M45PulseLMG</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>pphhyy_M3Veteran</li>
+      <li>pphhyy_ColonialFatigue</li>
+      <li>URMC_UtilityCover</li>
+    </apparelRequired>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <favoriteColor>(58,58,58)</favoriteColor>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>0~2</initialResistanceRange>
+    <humanPregnancyChance>0</humanPregnancyChance>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <!-- Mark Drake -->
+
+  <PawnKindDef>
+    <defName>pphhyy_MarkDrake</defName>
+    <label>Mark Drake</label>
+    <fixedGender>Male</fixedGender>
+    <race>Human</race>
+    <defaultFactionType>pphhyy_Faction_URMC</defaultFactionType>
+    <combatPower>65</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <isFighter>true</isFighter>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <inventoryOptions>
+      <subOptionsTakeAll>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li>
+          <thingDef>MealSurvivalPack</thingDef>
+          <countRange>2</countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>URMC_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <invNutrition>10.0</invNutrition>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>500~1500</weaponMoney>
+    <weaponTags>
+      <li>pphhyy_M45PulseLMG</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>pphhyy_ColonialFatigue</li>
+      <li>pphhyy_M3Armor</li>
+      <li>URMC_VeteranHelmet</li>
+    </apparelRequired>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <favoriteColor>(58,58,58)</favoriteColor>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>0~2</initialResistanceRange>
+    <humanPregnancyChance>0</humanPregnancyChance>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <!-- Al Apone -->
+
+  <PawnKindDef>
+    <defName>pphhyy_AlApone</defName>
+    <label>Al Apone</label>
+    <fixedGender>Male</fixedGender>
+    <race>Human</race>
+    <defaultFactionType>pphhyy_Faction_URMC</defaultFactionType>
+    <combatPower>85</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <isFighter>true</isFighter>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <inventoryOptions>
+      <subOptionsTakeAll>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li>
+          <thingDef>MealSurvivalPack</thingDef>
+          <countRange>2</countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>URMC_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <invNutrition>10.0</invNutrition>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>500~1500</weaponMoney>
+    <weaponTags>
+      <li>pphhyy_M44FImmolator</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>pphhyy_ColonialFatigue</li>
+      <li>pphhyy_M3Armor</li>
+      <li>URMC_UtilityCover</li>
+    </apparelRequired>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <favoriteColor>(58,58,58)</favoriteColor>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>0~2</initialResistanceRange>
+    <humanPregnancyChance>0</humanPregnancyChance>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <!-- William Hudson -->
+
+  <PawnKindDef>
+    <defName>pphhyy_WilliamHudson</defName>
+    <label>William Hudson</label>
+    <fixedGender>Male</fixedGender>
+    <race>Human</race>
+    <defaultFactionType>pphhyy_Faction_URMC</defaultFactionType>
+    <combatPower>65</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <isFighter>true</isFighter>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <inventoryOptions>
+      <subOptionsTakeAll>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li>
+          <thingDef>MealSurvivalPack</thingDef>
+          <countRange>2</countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>URMC_Adult</li>
         </categories>
       </li>
     </backstoryFiltersOverride>
@@ -271,7 +472,69 @@
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Armor</li>
-      <li>pphhyy_UtilityCover</li>
+      <li>URMC_VeteranHelmet</li>
+    </apparelRequired>
+    <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+    <favoriteColor>(58,58,58)</favoriteColor>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>0~2</initialResistanceRange>
+    <humanPregnancyChance>0</humanPregnancyChance>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>8~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <!-- Dwayne Hicks -->
+
+  <PawnKindDef>
+    <defName>pphhyy_DwayneHicks</defName>
+    <label>Dwayne Hicks</label>
+    <fixedGender>Male</fixedGender>
+    <race>Human</race>
+    <defaultFactionType>pphhyy_Faction_URMC</defaultFactionType>
+    <combatPower>65</combatPower>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <isFighter>true</isFighter>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <inventoryOptions>
+      <subOptionsTakeAll>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li>
+          <thingDef>MealSurvivalPack</thingDef>
+          <countRange>2</countRange>
+        </li>
+      </subOptionsTakeAll>
+    </inventoryOptions>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>URMC_Adult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <requiredWorkTags>
+      <li>Violent</li>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <invNutrition>10.0</invNutrition>
+    <gearHealthRange>1~1</gearHealthRange>
+    <itemQuality>Good</itemQuality>
+    <weaponMoney>500~1500</weaponMoney>
+    <weaponTags>
+      <li>pphhyy_M43PulseRifle</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>pphhyy_ColonialFatigue</li>
+      <li>pphhyy_M3Armor</li>
+      <li>URMC_VeteranHelmet</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>(58,58,58)</favoriteColor>

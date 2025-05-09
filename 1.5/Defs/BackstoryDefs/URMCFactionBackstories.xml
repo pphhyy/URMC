@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<Defs>
+
+    <!-- URMC Backstories -->
+
+    <BackstoryDef>
+        <defName>URMC_Recruit</defName>
+        <identifier>URMC_Recruit</identifier>
+        <slot>Adulthood</slot>
+        <title>Marine Recruit</title>
+        <titleShort>Recruit</titleShort>
+        <description>[PAWN_nameDef] enlisted in the URMC straight out of school, seeking adventure and a way off [PAWN_possessive] backwater colony. Boot camp was grueling, but it forged [PAWN_objective] into a disciplined soldier ready to face the unknown.</description>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>2</Melee>
+            <Social>1</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Grizzled_Veteran</defName>
+        <identifier>URMC_Grizzled_Veteran</identifier>
+        <slot>Adulthood</slot>
+        <title>Grizzled Veteran</title>
+        <titleShort>Veteran</titleShort>
+        <description>After decades of service, [PAWN_nameDef] has seen it all: alien infestations, rogue AI uprisings, and countless skirmishes on hostile worlds. [PAWN_pronoun] carries the scars of battle and the wisdom of experience.</description>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Melee>3</Melee>
+            <Medicine>2</Medicine>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Tech_Specialist</defName>
+        <identifier>URMC_Tech_Specialist</identifier>
+        <slot>Adulthood</slot>
+        <title>Tech Specialist</title>
+        <titleShort>Techie</titleShort>
+        <description>[PAWN_nameDef] was recruited for [PAWN_possessive] expertise in hacking and electronics. In the URMC, [PAWN_pronoun] maintains critical systems and disables enemy defenses, often under heavy fire.</description>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Crafting>3</Crafting>
+            <Shooting>1</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Intellectual</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Medic</defName>
+        <identifier>URMC_Medic</identifier>
+        <slot>Adulthood</slot>
+        <title>Combat Medic</title>
+        <titleShort>Medic</titleShort>
+        <description>[PAWN_nameDef] trained as a field medic, patching up wounded marines under fire. [PAWN_pronoun] is skilled at stabilizing injuries and keeping the squad alive in the harshest conditions.</description>
+        <skillGains>
+            <Medicine>5</Medicine>
+            <Shooting>2</Shooting>
+            <Social>1</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Demolitions_Expert</defName>
+        <identifier>URMC_Demolitions_Expert</identifier>
+        <slot>Adulthood</slot>
+        <title>Demolitions Expert</title>
+        <titleShort>Demo Expert</titleShort>
+        <description>[PAWN_nameDef] specializes in explosives, from breaching charges to improvised traps. [PAWN_pronoun] is a master of destruction, but [PAWN_pronoun] knows the value of precision over brute force.</description>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Crafting>4</Crafting>
+            <Mining>2</Mining>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Heavy_Gunner</defName>
+        <identifier>URMC_Heavy_Gunner</identifier>
+        <slot>Adulthood</slot>
+        <title>Heavy Gunner</title>
+        <titleShort>Gunner</titleShort>
+        <description>[PAWN_nameDef] was trained to wield the heaviest weapons in the URMC arsenal. Whether mowing down enemies with a minigun or holding the line with a heavy plasma cannon, [PAWN_pronoun] is a walking fortress.</description>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Melee>2</Melee>
+            <Construction>1</Construction>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Scout_Sniper</defName>
+        <identifier>URMC_Scout_Sniper</identifier>
+        <slot>Adulthood</slot>
+        <title>Scout Sniper</title>
+        <titleShort>Sniper</titleShort>
+        <description>[PAWN_nameDef] excelled in marksmanship and reconnaissance, earning a place in the URMC's elite sniper corps. [PAWN_pronoun] is a master of stealth and precision, capable of taking out targets from extreme distances.</description>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Animals>2</Animals>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Dropship_Pilot</defName>
+        <identifier>URMC_Dropship_Pilot</identifier>
+        <slot>Adulthood</slot>
+        <title>Dropship Pilot</title>
+        <titleShort>Pilot</titleShort>
+        <description>[PAWN_nameDef] served as a dropship pilot, ferrying marines into and out of combat zones. [PAWN_pronoun] is skilled in aerial maneuvers and has nerves of steel, essential for surviving under enemy fire.</description>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Crafting>2</Crafting>
+            <Shooting>1</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Field_Engineer</defName>
+        <identifier>URMC_Field_Engineer</identifier>
+        <slot>Adulthood</slot>
+        <title>Field Engineer</title>
+        <titleShort>Engineer</titleShort>
+        <description>[PAWN_nameDef] was responsible for constructing fortifications, repairing equipment, and maintaining vehicles in the field. [PAWN_pronoun] is a problem solver who thrives under pressure.</description>
+        <skillGains>
+            <Construction>5</Construction>
+            <Crafting>3</Crafting>
+            <Mining>2</Mining>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Comms_Officer</defName>
+        <identifier>URMC_Comms_Officer</identifier>
+        <slot>Adulthood</slot>
+        <title>Comms Officer</title>
+        <titleShort>Comms</titleShort>
+        <description>[PAWN_nameDef] managed communications and battlefield coordination for the URMC. [PAWN_pronoun] is skilled in logistics and keeping the squad connected, even in the most chaotic situations.</description>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>3</Intellectual>
+            <Shooting>1</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Assault_Specialist</defName>
+        <identifier>URMC_Assault_Specialist</identifier>
+        <slot>Adulthood</slot>
+        <title>Assault Specialist</title>
+        <titleShort>Assault</titleShort>
+        <description>[PAWN_nameDef] was trained for close-quarters combat and breaching operations. [PAWN_pronoun] is fearless in the face of danger, leading the charge into enemy strongholds.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>4</Melee>
+            <Construction>1</Construction>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Orbital_Support_Tech</defName>
+        <identifier>URMC_Orbital_Support_Tech</identifier>
+        <slot>Adulthood</slot>
+        <title>Orbital Support Technician</title>
+        <titleShort>Support Tech</titleShort>
+        <description>[PAWN_nameDef] coordinated orbital strikes and supply drops for ground forces. [PAWN_pronoun] is adept at managing high-tech systems and ensuring the marines have the support they need.</description>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Crafting>2</Crafting>
+            <Social>1</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Field_Commander</defName>
+        <identifier>URMC_Field_Commander</identifier>
+        <slot>Adulthood</slot>
+        <title>Field Commander</title>
+        <titleShort>Commander</titleShort>
+        <description>[PAWN_nameDef] rose through the ranks of the URMC to lead squads in the field. [PAWN_pronoun] is a tactical genius, capable of making split-second decisions that save lives and win battles.</description>
+        <skillGains>
+            <Social>5</Social>
+            <Shooting>3</Shooting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Recon_Specialist</defName>
+        <identifier>URMC_Recon_Specialist</identifier>
+        <slot>Adulthood</slot>
+        <title>Recon Specialist</title>
+        <titleShort>Recon</titleShort>
+        <description>[PAWN_nameDef] was trained to operate behind enemy lines, gathering intelligence and sabotaging enemy operations. [PAWN_pronoun] is a master of stealth and survival.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Animals>2</Animals>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Drone_Operator</defName>
+        <identifier>URMC_Drone_Operator</identifier>
+        <slot>Adulthood</slot>
+        <title>Drone Operator</title>
+        <titleShort>Drone Op</titleShort>
+        <description>[PAWN_nameDef] controlled advanced drones for reconnaissance and combat support. [PAWN_pronoun] is skilled in remote operations and high-tech warfare.</description>
+        <skillGains>
+            <Intellectual>4</Intellectual>
+            <Crafting>3</Crafting>
+            <Shooting>1</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Heavy_Weapons_Specialist</defName>
+        <identifier>URMC_Heavy_Weapons_Specialist</identifier>
+        <slot>Adulthood</slot>
+        <title>Heavy Weapons Specialist</title>
+        <titleShort>Heavy Weapons</titleShort>
+        <description>[PAWN_nameDef] was trained to handle the most destructive weapons in the URMC arsenal. [PAWN_pronoun] is an expert in using rocket launchers, flamethrowers, and other heavy ordnance.</description>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Melee>2</Melee>
+            <Crafting>1</Crafting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Tactical_Analyst</defName>
+        <identifier>URMC_Tactical_Analyst</identifier>
+        <slot>Adulthood</slot>
+        <title>Tactical Analyst</title>
+        <titleShort>Analyst</titleShort>
+        <description>[PAWN_nameDef] specialized in analyzing enemy movements and devising counter-strategies. [PAWN_pronoun] is a critical thinker who ensures the URMC stays one step ahead of its enemies.</description>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+            <Social>3</Social>
+            <Shooting>1</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Sapper</defName>
+        <identifier>URMC_Sapper</identifier>
+        <slot>Adulthood</slot>
+        <title>Sapper</title>
+        <titleShort>Sapper</titleShort>
+        <description>[PAWN_nameDef] was trained in demolitions and tunnel warfare. [PAWN_pronoun] is an expert in breaching enemy defenses and creating pathways for the squad.</description>
+        <skillGains>
+            <Mining>5</Mining>
+            <Crafting>3</Crafting>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>Violent</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Battlefield_Mechanic</defName>
+        <identifier>URMC_Battlefield_Mechanic</identifier>
+        <slot>Adulthood</slot>
+        <title>Battlefield Mechanic</title>
+        <titleShort>Mechanic</titleShort>
+        <description>[PAWN_nameDef] repaired vehicles and equipment under fire, ensuring the URMC's machines of war stayed operational. [PAWN_pronoun] is a skilled mechanic with nerves of steel.</description>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Construction>3</Construction>
+            <Shooting>1</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>URMC_Survivalist</defName>
+        <identifier>URMC_Survivalist</identifier>
+        <slot>Adulthood</slot>
+        <title>Survivalist</title>
+        <titleShort>Survivalist</titleShort>
+        <description>[PAWN_nameDef] was trained to survive in the harshest environments, from toxic wastelands to frozen tundras. [PAWN_pronoun] is an expert in foraging, hunting, and staying alive against all odds.</description>
+        <skillGains>
+            <Plants>4</Plants>
+            <Animals>3</Animals>
+            <Shooting>2</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+        <spawnCategories>
+            <li>URMC_Adult</li>
+        </spawnCategories>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <possessions>
+        </possessions>
+    </BackstoryDef>
+
+
+</Defs>
