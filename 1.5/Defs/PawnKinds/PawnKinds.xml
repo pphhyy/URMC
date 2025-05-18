@@ -286,7 +286,7 @@
     <apparelRequired>
       <li>pphhyy_M3Veteran</li>
       <li>pphhyy_ColonialFatigue</li>
-      <li>URMC_UtilityCover</li>
+      <li>pphhyy_UtilityCover</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>(58,58,58)</favoriteColor>
@@ -348,7 +348,7 @@
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Armor</li>
-      <li>URMC_VeteranHelmet</li>
+      <li>pphhyy_VeteranHelmet</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>(58,58,58)</favoriteColor>
@@ -410,7 +410,7 @@
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Armor</li>
-      <li>URMC_UtilityCover</li>
+      <li>pphhyy_UtilityCover</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>(58,58,58)</favoriteColor>
@@ -472,7 +472,7 @@
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Armor</li>
-      <li>URMC_VeteranHelmet</li>
+      <li>pphhyy_VeteranHelmet</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>(58,58,58)</favoriteColor>
@@ -534,7 +534,7 @@
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Armor</li>
-      <li>URMC_VeteranHelmet</li>
+      <li>pphhyy_VeteranHelmet</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>(58,58,58)</favoriteColor>
