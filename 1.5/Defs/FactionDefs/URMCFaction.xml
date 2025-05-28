@@ -184,6 +184,21 @@
             </li>
         </pawnGroupMakers>
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+
+        <modExtensions>
+            <li Class="URMC.ModExt_FactionRaidControl">
+                <mandatoryRaidPawnKinds>
+                    <li>
+                        <pawnKind>pphhyy_Officer</pawnKind>
+                        <count>1</count>
+                    </li>
+                    <li>
+                        <pawnKind>pphhyy_Medic</pawnKind>
+                        <count>1</count>
+                    </li>
+                </mandatoryRaidPawnKinds>
+            </li>
+        </modExtensions>
     </FactionDef>
 
     <ThingSetMakerDef>
@@ -202,6 +217,5 @@
             </fixedParams>
         </root>
     </ThingSetMakerDef>
-
 
 </Defs>
