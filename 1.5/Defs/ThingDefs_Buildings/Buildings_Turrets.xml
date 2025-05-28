@@ -176,8 +176,6 @@
       </li>
     </comps>
     <size>(2,2)</size>
-    <stuffCategories IsNull= "true">
-    </stuffCategories>
     <graphicData>
       <texPath>Building/Turrets/M34ThumperMortarBase</texPath>
       <graphicClass>Graphic_Single</graphicClass>
