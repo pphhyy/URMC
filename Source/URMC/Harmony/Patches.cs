@@ -31,8 +31,6 @@ namespace URMC
                 var ext = parms?.faction?.def?.GetModExtension<ModExt_FactionRaidControl>();
                 if (ext?.mandatoryRaidPawnKinds != null)
                 {
-                    Log.Message($"[URMC] Adding mandatory pawns to group (initial count: {pawnList.Count})");
-
                     foreach (var entry in ext.mandatoryRaidPawnKinds)
                     {
                         for (int i = 0; i < entry.count; i++)
@@ -52,15 +50,12 @@ namespace URMC
                             
                             Pawn pawn = PawnGenerator.GeneratePawn(request);
                             pawnList.Add(pawn);
-                            Log.Message($"[URMC] Added mandatory pawn: {pawn.LabelShortCap} ({pawn.kindDef.defName})");
                         }
                     }
-                    Log.Message($"[URMC] Final group count after mandatory additions: {pawnList.Count}");
                 }
             }
             __result = pawnList;
         }
-        
         
         /// <summary>
         /// DO NOT DO THIS SHIT IF CALLED EVERY TICK OR EVEN CLOSE TO EVERY TICK.
