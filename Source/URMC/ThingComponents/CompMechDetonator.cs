@@ -19,7 +19,6 @@ namespace URMC
                     defaultLabel = "URMC_MechDetonate".Translate(),
                     action = delegate
                     {
-                        //Log.Message("BOOM");
                         parent.Kill();
                     }
                 };
