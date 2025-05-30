@@ -124,30 +124,57 @@
             <!-- URMC Marines -->
 
             <li>
-                <!-- Normal fights, URMC Marines -->
+                <!-- Cadet Group -->
                 <kindDef>Combat</kindDef>
                 <disallowedStrategies>
                     <li>EmergeFromWater</li>
                 </disallowedStrategies>
                 <options>
-                    <pphhyy_Marine>14</pphhyy_Marine>
-                    <pphhyy_Officer>4</pphhyy_Officer>
-                    <pphhyy_Cadet>8</pphhyy_Cadet>
-                    <pphhyy_Medic>5</pphhyy_Medic>
-                    <pphhyy_Specialist>3</pphhyy_Specialist>
-                    <pphhyy_Heavy>2</pphhyy_Heavy>
+                    <pphhyy_Cadet>15</pphhyy_Cadet>
                 </options>
             </li>
 
-            <!-- URMC Peaceful -->
+            <li>
+                <!-- Scout Group -->
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <pphhyy_Cadet>8</pphhyy_Cadet>
+                    <pphhyy_Specialist>2</pphhyy_Specialist>
+                    <pphhyy_Scout>14</pphhyy_Scout>
+                </options>
+            </li>
 
             <li>
-                <kindDef>Peaceful</kindDef>
+                <!-- Marine Group -->
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
                 <options>
-                    <pphhyy_Marine>15</pphhyy_Marine>
-                    <pphhyy_Officer>4</pphhyy_Officer>
-                    <pphhyy_Cadet>8</pphhyy_Cadet>
-                    <pphhyy_Medic>5</pphhyy_Medic>
+                    <pphhyy_Cadet>6</pphhyy_Cadet>
+                    <pphhyy_Specialist>2</pphhyy_Specialist>
+                    <pphhyy_Scout>4</pphhyy_Scout>
+                    <pphhyy_FlagBearer>1</pphhyy_FlagBearer>
+                    <pphhyy_Veteran>1</pphhyy_Veteran>
+                    <pphhyy_Marine>14</pphhyy_Marine>
+                </options>
+            </li>
+
+            <li>
+                <!-- Assault Group -->
+                <kindDef>Combat</kindDef>
+                <disallowedStrategies>
+                    <li>EmergeFromWater</li>
+                </disallowedStrategies>
+                <options>
+                    <pphhyy_Specialist>6</pphhyy_Specialist>
+                    <pphhyy_Heavy>6</pphhyy_Heavy>
+                    <pphhyy_FlagBearer>1</pphhyy_FlagBearer>
+                    <pphhyy_Veteran>6</pphhyy_Veteran>
+                    <pphhyy_Marine>6</pphhyy_Marine>
                 </options>
             </li>
 
