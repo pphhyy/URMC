@@ -348,7 +348,7 @@
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Armor</li>
-      <li>pphhyy_VeteranHelmet</li>
+      <li>pphhyy_M10VeteranHelmet</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>(58,58,58)</favoriteColor>
@@ -472,7 +472,7 @@
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Armor</li>
-      <li>pphhyy_VeteranHelmet</li>
+      <li>pphhyy_M10VeteranHelmet</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>(58,58,58)</favoriteColor>
@@ -534,7 +534,7 @@
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Armor</li>
-      <li>pphhyy_VeteranHelmet</li>
+      <li>pphhyy_M10VeteranHelmet</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>(58,58,58)</favoriteColor>
