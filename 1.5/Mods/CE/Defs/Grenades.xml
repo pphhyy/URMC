@@ -52,6 +52,10 @@
         <statBases>
             <MarketValue>2.75</MarketValue>
         </statBases>
+        <tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
         <ammoClass>GrenadeHE</ammoClass>
         <detonateProjectile>Bullet_URMC_Grenade_HE</detonateProjectile>
     </ThingDef>
@@ -66,6 +70,10 @@
         <statBases>
             <MarketValue>2.59</MarketValue>
         </statBases>
+        <tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
         <ammoClass>IncendiaryFuel</ammoClass>
         <detonateProjectile>Bullet_URMC_Grenade_Incendiary</detonateProjectile>
     </ThingDef>
@@ -80,6 +88,10 @@
         <statBases>
             <MarketValue>2.31</MarketValue>
         </statBases>
+        <tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FabricationBench</li>
+		</tradeTags>
         <ammoClass>FoamFuel</ammoClass>
         <generateAllowChance>0</generateAllowChance>
         <detonateProjectile>Bullet_URMC_Grenade_Foam</detonateProjectile>

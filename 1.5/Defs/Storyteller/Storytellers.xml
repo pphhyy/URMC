@@ -5,10 +5,11 @@
     <StorytellerDef ParentName="BaseStoryteller">
         <defName>pphhyy_URMCStoryteller</defName>
         <label>Al Apone</label>
-        <description>PLACEHOLDER</description>
-        <portraitLarge>UI/HeroArt/Storytellers/CassandraClassic</portraitLarge>
-        <portraitTiny>UI/HeroArt/Storytellers/CassandraClassicTiny</portraitTiny>
-        <listOrder>20</listOrder>
+        <description>Alright, sweethearts. What are you waiting for? Breakfast in bed? Another glorious day in the Corps. A day in the Marine Corps is like a day on the farm... every meal's a banquet, every paycheck a fortune, every formation a parade. I LOVE the Corps! 
+With AL Apone as your story teller expect bugs and mechanoid raids more frequently, you weren't sent to this world as a vacation! Get out there and kick ass Marine!</description>
+        <portraitLarge>StoryTeller/cigar_guy</portraitLarge>
+        <portraitTiny>StoryTeller/lookintomyeye</portraitTiny>
+        <listOrder>200</listOrder>
         <comps>
             <!-- Intro -->
             <li Class="StorytellerCompProperties_ClassicIntro"/>
@@ -185,27 +186,26 @@
             <!-- Insectoids infestations -->
             <li Class="StorytellerCompProperties_OnOffCycle">
                 <incident>Infestation</incident>
+                <minDaysPassed>12.0</minDaysPassed>
                 <onDays>9</onDays>
                 <offDays>4</offDays>
                 <numIncidentsRange>1</numIncidentsRange>
             </li>
             <li Class="StorytellerCompProperties_OnOffCycle">
                 <incident>DeepDrillInfestation</incident>
+                <minDaysPassed>17.0</minDaysPassed>
                 <onDays>7</onDays>
                 <offDays>5</offDays>
                 <numIncidentsRange>1</numIncidentsRange>
             </li>
             <li Class="StorytellerCompProperties_OnOffCycle">
                 <incident>MechCluster</incident>
+                <minDaysPassed>14.0</minDaysPassed>
                 <onDays>6</onDays>
                 <offDays>11</offDays>
                 <numIncidentsRange>1</numIncidentsRange>
             </li>
             <!-- Triggered -->
-            <li Class="StorytellerCompProperties_Triggered">
-                <incident>pphhyy_ManInBlackGroup</incident>
-                <delayTicks>180</delayTicks>
-            </li>
         </comps>
     </StorytellerDef>
 
