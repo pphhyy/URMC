@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/TraderKindDef[defName="Base_URMC_Standard"]/stockGenerators/li[thingDef="pphhyy_GrenadeFrag"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/TraderKindDef[defName="Base_URMC_Standard"]/stockGenerators/li[thingDef="pphhyy_GrenadeIncendiary"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/TraderKindDef[defName="Base_URMC_Standard"]/stockGenerators/li[thingDef="pphhyy_GrenadeFoam"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/TraderKindDef[defName="Caravan_URMC_Standard"]/stockGenerators/li[thingDef="pphhyy_GrenadeFrag"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/TraderKindDef[defName="Caravan_URMC_Standard"]/stockGenerators/li[thingDef="pphhyy_GrenadeIncendiary"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/TraderKindDef[defName="Caravan_URMC_Standard"]/stockGenerators/li[thingDef="pphhyy_GrenadeFoam"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/TraderKindDef[defName="Visitor_URMC_Standard"]/stockGenerators/li[thingDef="pphhyy_GrenadeFrag"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/TraderKindDef[defName="Visitor_URMC_Standard"]/stockGenerators/li[thingDef="pphhyy_GrenadeIncendiary"]</xpath>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/TraderKindDef[defName="Visitor_URMC_Standard"]/stockGenerators/li[thingDef="pphhyy_GrenadeFoam"]</xpath>
+	</Operation>
+
+</Patch>
