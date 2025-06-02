@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <URMC.CharacterDef>
+        <defName>pphhyy_Character_PvtJenetteVasquez</defName>
+        <pawnKind>pphhyy_PvtJenetteVasquez</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <definitions>
+            <!-- Bio -->
+            <li Class="URMC.CharacterStoryDefinition">
+                <firstName>Jenette</firstName>
+                <lastName>Vasqueze</lastName>
+                <nickname>Pvt Vasquez</nickname>
+                <gender>Female</gender>
+                <age>26</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="URMC.CharacterAppearanceDefinition">
+                <hairColor>(247, 215, 87)</hairColor>
+                <hairDef>Shaved</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(242, 200, 165)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </URMC.CharacterDef>
+	
+	<URMC.CharacterDef>
+        <defName>pphhyy_Character_MarkDrake</defName>
+        <pawnKind>pphhyy_MarkDrake</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <definitions>
+            <!-- Bio -->
+            <li Class="URMC.CharacterStoryDefinition">
+                <firstName>Mark</firstName>
+                <lastName>Drake</lastName>
+                <nickname>Pfc Drake</nickname>
+                <gender>Male</gender>
+                <age>34</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="URMC.CharacterAppearanceDefinition">
+                <hairColor>(247, 215, 87)</hairColor>
+                <hairDef>Shaved</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(242, 200, 165)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </URMC.CharacterDef>
+
+</Defs>

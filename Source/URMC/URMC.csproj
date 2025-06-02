@@ -33,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.3.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Lib.Harmony.2.3.6\lib\net472\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -56,10 +52,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DeathActionWorkers\DeathActionWorker_MechDetonatorExplosion.cs" />
+    <Compile Include="Defs\CharacterDef.cs" />
+    <Compile Include="Defs\CharacterDefinitions\CharacterAppearance.cs" />
+    <Compile Include="Defs\CharacterDefinitions\CharacterBaseDefinition.cs" />
+    <Compile Include="Defs\CharacterDefinitions\CharacterStoryDefinition.cs" />
+    <Compile Include="Defs\DefModExtensions\CharacterDefinitionUtils.cs" />
+    <Compile Include="Defs\DefModExtensions\ModExt_AlienTeam.cs" />
     <Compile Include="Defs\DefModExtensions\ModExt_FactionRaidControl.cs" />
     <Compile Include="Defs\URMCDefOf.cs" />
     <Compile Include="FactionUtils\MandatoryRaidPawnKinds.cs" />
     <Compile Include="Harmony\Patches.cs" />
+    <Compile Include="Incidents\IncidentWorker_AlienTeam.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThingComponents\CompMechDetonator.cs" />
     <Compile Include="ThingComponents\CompProperties\CompProperties_AlertLights.cs" />
@@ -67,7 +70,9 @@
     <Compile Include="ThingComponents\Comp_AlertLights.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <PackageReference Include="Lib.Harmony" Version="2.3.6">
+		<ExcludeAssets>runtime</ExcludeAssets>
+	</PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
