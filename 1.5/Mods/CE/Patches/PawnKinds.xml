@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="pphhyy_Officer" or defName="pphhyy_Medic" or defName="pphhyy_Veteran" or defName="pphhyy_Heavy" or defName="pphhyy_Specialist"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>6</min>
+					<max>8</max>
+				</primaryMagazineCount>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="pphhyy_Cadet" or defName="pphhyy_FlagBearer" or defName="pphhyy_Marine"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>4</min>
+					<max>6</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>0</min>
+						<max>10000</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>pphhyy_S12CombatMachete</li>
+					</weaponTags>
+				</forcedSidearm>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[defName="pphhyy_Scout"]</xpath>
+		<value>
+			<li Class="CombatExtended.LoadoutPropertiesExtension">
+				<primaryMagazineCount>
+					<min>4</min>
+					<max>6</max>
+				</primaryMagazineCount>
+				<forcedSidearm>
+					<sidearmMoney>
+						<min>0</min>
+						<max>10000</max>
+					</sidearmMoney>
+					<weaponTags>
+						<li>pphhyy_S12CombatMachete</li>
+                        <li>pphhyy_M1PulsePistol</li>
+					</weaponTags>
+                    <magazineCount>
+						<min>3</min>
+						<max>5</max>
+					</magazineCount>
+				</forcedSidearm>
+			</li>
+		</value>
+	</Operation>
+
+
+</Patch>
