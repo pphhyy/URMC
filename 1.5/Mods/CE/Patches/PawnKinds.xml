@@ -3,7 +3,7 @@
 <Patch>
 
 	<Operation Class="PatchOperationAddModExtension">
-		<xpath>Defs/PawnKindDef[defName="pphhyy_Officer" or defName="pphhyy_Medic" or defName="pphhyy_Veteran" or defName="pphhyy_Heavy" or defName="pphhyy_Specialist"]</xpath>
+		<xpath>Defs/PawnKindDef[defName="pphhyy_Officer" or defName="pphhyy_Medic" or defName="pphhyy_Veteran" or defName="pphhyy_Heavy" or defName="pphhyy_Specialist" or defName="pphhyy_PvtJenetteVasquez" or defName="pphhyy_MarkDrake" or defName="pphhyy_AlApone" or defName="pphhyy_WilliamHudson" or defName="pphhyy_DwayneHicks"]</xpath>
 		<value>
 			<li Class="CombatExtended.LoadoutPropertiesExtension">
 				<primaryMagazineCount>

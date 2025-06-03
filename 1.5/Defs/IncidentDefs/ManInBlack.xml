@@ -3,14 +3,14 @@
 
     <IncidentDef>
         <defName>pphhyy_ManInBlackGroup</defName>
-        <label>A Brigade</label>
+        <label>URMC Specialist Squad</label>
         <category>Special</category>
         <targetTags>
             <li>Map_PlayerHome</li>
         </targetTags>
         <workerClass>URMC.IncidentWorker_AlienTeam</workerClass>
-        <letterLabel>A Brigade</letterLabel>
-        <letterText>PLACEHOLDER</letterText>
+        <letterLabel>URMC Specialist Squad</letterLabel>
+        <letterText>It's a rescue mission. You'll love it.</letterText>
         <baseChance>0</baseChance>
         <minRefireDays>60</minRefireDays>
         <minGreatestPopulation>3</minGreatestPopulation>
@@ -19,6 +19,9 @@
 				<characterToSpawn>
 					<li>pphhyy_Character_PvtJenetteVasquez</li>
 					<li>pphhyy_Character_MarkDrake</li>
+                    <li>pphhyy_Character_DwayneHicks</li>
+                    <li>pphhyy_Character_WilliamHudson</li>
+                    <li>pphhyy_Character_AlApone</li>
 				</characterToSpawn>
 			</li>
 		</modExtensions>
