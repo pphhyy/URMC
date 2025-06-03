@@ -265,13 +265,6 @@
         </li>
       </subOptionsTakeAll>
     </inventoryOptions>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>URMC_Adult</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
       <li>Caring</li>
@@ -327,13 +320,6 @@
         </li>
       </subOptionsTakeAll>
     </inventoryOptions>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>URMC_Adult</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
       <li>Caring</li>
@@ -347,7 +333,7 @@
     </weaponTags>
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
-      <li>pphhyy_M3Armor</li>
+      <li>pphhyy_M3Veteran</li>
       <li>pphhyy_M10VeteranHelmet</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
@@ -389,13 +375,6 @@
         </li>
       </subOptionsTakeAll>
     </inventoryOptions>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>URMC_Adult</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
       <li>Caring</li>
@@ -409,7 +388,7 @@
     </weaponTags>
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
-      <li>pphhyy_M3Armor</li>
+      <li>pphhyy_M3Veteran</li>
       <li>pphhyy_UtilityCover</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
@@ -451,13 +430,6 @@
         </li>
       </subOptionsTakeAll>
     </inventoryOptions>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>URMC_Adult</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
       <li>Caring</li>
@@ -471,7 +443,7 @@
     </weaponTags>
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
-      <li>pphhyy_M3Armor</li>
+      <li>pphhyy_M3Veteran</li>
       <li>pphhyy_M10VeteranHelmet</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
@@ -513,13 +485,6 @@
         </li>
       </subOptionsTakeAll>
     </inventoryOptions>
-    <backstoryFiltersOverride>
-      <li>
-        <categories>
-          <li>URMC_Adult</li>
-        </categories>
-      </li>
-    </backstoryFiltersOverride>
     <requiredWorkTags>
       <li>Violent</li>
       <li>Caring</li>
@@ -533,7 +498,7 @@
     </weaponTags>
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
-      <li>pphhyy_M3Armor</li>
+      <li>pphhyy_M3Veteran</li>
       <li>pphhyy_M10VeteranHelmet</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>

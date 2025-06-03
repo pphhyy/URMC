@@ -74,20 +74,20 @@
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.65,0.65,0.65,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.9,0.9,0.9,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
       </options>
     </colorGenerator>
@@ -153,20 +153,20 @@
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.9,0.9,0.9,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.65,0.65,0.65,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
         </li>
       </options>
     </colorGenerator>
@@ -244,20 +244,20 @@
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.9,0.9,0.9,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.65,0.65,0.65,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
         </li>
       </options>
     </colorGenerator>
@@ -335,20 +335,20 @@
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.9,0.9,0.9,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.65,0.65,0.65,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
         </li>
       </options>
     </colorGenerator>
@@ -427,20 +427,20 @@
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.9,0.9,0.9,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.65,0.65,0.65,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
         </li>
       </options>
     </colorGenerator>
@@ -510,20 +510,20 @@
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.65,0.65,0.65,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
         </li>
         <li>
           <weight>10.1</weight>
-          <only>(0.9,0.9,0.9,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
       </options>
     </colorGenerator>
@@ -588,20 +588,20 @@
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.9,0.9,0.9,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.33,0.33,0.33,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>10</weight>
-          <only>(0.65,0.65,0.65,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
           <weight>6</weight>
-          <min>(0.3,0.3,0.3,1)</min>
-          <max>(0.5,0.5,0.5,1)</max>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
         </li>
       </options>
     </colorGenerator>

@@ -206,6 +206,10 @@ With AL Apone as your story teller expect bugs and mechanoid raids more frequent
                 <numIncidentsRange>1</numIncidentsRange>
             </li>
             <!-- Triggered -->
+             <li Class="StorytellerCompProperties_Triggered">
+                <incident>pphhyy_ManInBlackGroup</incident>
+                <delayTicks>180</delayTicks>
+            </li>
         </comps>
     </StorytellerDef>
 
