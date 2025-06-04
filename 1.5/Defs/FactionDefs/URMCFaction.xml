@@ -33,7 +33,7 @@
         <canSiege>true</canSiege>
         <canStageAttacks>true</canStageAttacks>
         <leaderTitle>officer</leaderTitle>
-        <factionIconPath>HelmetsAndHats/M10/M10</factionIconPath>
+        <factionIconPath>UI/URMCFactionIcon</factionIconPath>
         <techLevel>Spacer</techLevel>
         <fixedName>URMC</fixedName>
         <settlementNameMaker>NamerSettlementEmpire</settlementNameMaker>
@@ -210,7 +210,7 @@
                 </options>
             </li>
         </pawnGroupMakers>
-        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <settlementTexturePath>UI/URMCFactionIcon</settlementTexturePath>
 
         <modExtensions>
             <li Class="URMC.ModExt_FactionRaidControl">

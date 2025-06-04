@@ -147,7 +147,7 @@
         </categories>
       </li>
     </backstoryFilters>
-    <factionIconPath>HelmetsAndHats/M10/M10</factionIconPath>
+    <factionIconPath>UI/URMCFactionIcon</factionIconPath>
     <startingResearchTags>
       <li>ClassicStart</li>
     </startingResearchTags>
@@ -263,7 +263,7 @@
         </categories>
       </li>
     </backstoryFilters>
-    <factionIconPath>HelmetsAndHats/M10/M10</factionIconPath>
+    <factionIconPath>UI/URMCFactionIcon</factionIconPath>
     <startingResearchTags>
       <li>ClassicStart</li>
     </startingResearchTags>
