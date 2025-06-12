@@ -74,6 +74,9 @@
         <description>When marines need to sleep soundly they employ the URMC turrets</description>
         <baseCost>2000</baseCost>
         <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>Machining</li>
+        </prerequisites>
         <tab>pphhyy_URMC</tab>
         <researchViewX>1.50</researchViewX>
         <researchViewY>4.00</researchViewY>

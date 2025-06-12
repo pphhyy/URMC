@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+
+<Defs>
+<!-- 
+  <RecipeDef>
+    <defName>pphhyy_SmeltForScrap</defName>
+    <label>smelt to get scrap</label>
+    <description>PLACEHOLDER</description>
+    <jobString>Smelting.</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>SmeltingSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Apparel</li>
+            <li>Weapons</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Apparel</li>
+        <li>Weapons</li>
+      </categories>
+      <specialFiltersToDisallow>
+        <li>AllowNonSmeltableApparel</li>
+        <li>AllowNonSmeltableWeapons</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <forceHiddenSpecialFilters>
+      <li>AllowSmeltable</li>
+      <li>AllowBurnableWeapons</li>
+      <li>AllowNonBurnableWeapons</li>
+      <li>AllowSmeltableApparel</li>
+      <li>AllowBurnableApparel</li>
+      <li>AllowNonBurnableApparel</li>
+    </forceHiddenSpecialFilters>
+    <products>
+      <Chemfuel>1</Chemfuel>
+    </products>
+  </RecipeDef> -->
+
+
+
+
+</Defs>
