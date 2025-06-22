@@ -2,7 +2,7 @@
 
 <Defs>
 
-	<!-- URMC Banner -->
+	<!-- URMC Banner 
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_URMCBanner</defName>
@@ -43,8 +43,6 @@
 			<Cloth>60</Cloth>
 		</costList>
 	</ThingDef>
-
-	<!-- URMC Standard -->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
 		<defName>pphhyy_URMCStandard</defName>
@@ -127,13 +125,13 @@
 						<offset>(0.25, -0.047, 0.65)</offset>
 					</south>
 					<west>
-						<offset>(-0.15, -0.05, 0.65)</offset>						<!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+						<offset>(-0.15, -0.05, 0.65)</offset>					
 						<behind>true</behind>
 					</west>
 				</offHandHoldOffset>
 			</li>
 		</comps>
-		<equippedAngleOffset>0</equippedAngleOffset>		<!-- was -30 -->
+		<equippedAngleOffset>0</equippedAngleOffset>	
 		<modExtensions>
 			<li Class="VFECore.ThingDefExtension">
 				<useFactionColourForPawnKinds>
@@ -141,6 +139,6 @@
 				</useFactionColourForPawnKinds>
 			</li>
 		</modExtensions>
-	</ThingDef>
+	</ThingDef> -->
 
 </Defs>
