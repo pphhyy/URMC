@@ -762,7 +762,7 @@ Blade has a Tox core for chemical warfare.</description>
             </recipeUsers>
         </recipeMaker>
         <modExtensions>
-            <li Class="VFECore.ThingDefExtension">
+            <li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
                 <usableWithShields>true</usableWithShields>
                 <weaponDraftedDrawOffsets>
                     <north>
@@ -872,7 +872,7 @@ Blade has a Tox core for chemical warfare.</description>
             <li Class="CompProperties_Biocodable"/>
         </comps>
         <modExtensions>
-            <li Class="VFECore.ThingDefExtension">
+            <li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
                 <weaponDraftedDrawOffsets>
                     <north>
                         <drawOffset>(0.05,0.0,0)</drawOffset>

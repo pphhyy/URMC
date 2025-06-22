@@ -228,7 +228,7 @@
       <li>pphhyy_M3Armor</li>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M10PatternMarineHelmet</li>
-      <li>pphhyy_URMCStandard</li>
+   <!--    <li>pphhyy_URMCStandard</li> -->
     </apparelRequired>
     <trader>true</trader>
     <weaponTags>
