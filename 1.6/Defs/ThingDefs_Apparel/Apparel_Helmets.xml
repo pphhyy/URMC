@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <ThingDef Name= "pphhyy_URMC_Helmets" ParentName= "ArmorHelmetMakeableBase" Abstract= "true">
+    <techLevel>Spacer</techLevel>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <tags>
+        <li>URMC_HatsAndHelmets</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+  </ThingDef>
+
+  <!--__Base Mod Helmets__-->
+
+  <!-- M3-S Light Helmet-->
+
+  <ThingDef ParentName="pphhyy_URMC_Helmets">
+    <defName>pphhyy_M3-SLightHelmet</defName>
+    <label>M3-S light helmet</label>
+    <description>A lighter, cut down version of the standard M3 pattern armor. It sacrifices protection for more speed.</description>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="false">
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>HelmetsAndHats/M8Flak/M8Flak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <costList>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>URMC_M3SLight</li>
+      </tags>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>HelmetsAndHats/M8Flak/M8Flak</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <tradeTags>
+      <li>Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+  <!-- M3-S Helmet -->
+
+  <ThingDef ParentName="pphhyy_URMC_Helmets">
+    <defName>pphhyy_M3-SHelmet</defName>
+    <label>M3-S helmet</label>
+    <description>A custom helmet from the M3 series designed to be lightweight and used for recon missions.</description>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="false">
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>HelmetsAndHats/M9Recon/M9Recon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>15750</WorkToMake>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.46</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>30</Plasteel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>URMC_M3SHelmet</li>
+      </tags>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>HelmetsAndHats/M9Recon/M9Recon</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <!--  M10 Pattern Marine Helmet -->
+
+  <ThingDef ParentName="pphhyy_URMC_Helmets">
+    <defName>pphhyy_M10PatternMarineHelmet</defName>
+    <label>M10 pattern marine helmet</label>
+    <description>Standard Issue Helmet used by URCM. Provides modest protection from bullet and melee attacks at the head.</description>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="false">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>HelmetsAndHats/M10/M10</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+      <li>Armor</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>21000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>URMC_MarineHelmet</li>
+      </tags>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>HelmetsAndHats/M10/M10</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <!-- M10 Pattern Medic Helmet -->
+
+  <ThingDef ParentName="pphhyy_URMC_Helmets">
+    <defName>pphhyy_M10PatternMedicHelmet</defName>
+    <label>M10 pattern medic helmet</label>
+    <description>Standard Issue Helmet used by URCM. Provides modest protection from bullet and melee attacks at the head. This variant has a cross painted in the middle so the rank and file riflemen know to not to burst their pulsers in the direction of their valuable corpsmen.</description>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="false">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>HelmetsAndHats/M10Medic/M10Medic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+      <li>Armor</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>21000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MedicalQualityMax>0.4</MedicalQualityMax>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>URMC_MedicHelmet</li>
+      </tags>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>HelmetsAndHats/M10Medic/M10Medic</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <!-- M10 pattern officer helmet -->
+
+  <ThingDef ParentName="pphhyy_URMC_Helmets">
+    <defName>pphhyy_M10PatternOfficerHelmet</defName>
+    <label>M10 pattern officer helmet</label>
+    <description>Standard Issue Helmet used by URCM. Provides modest protection from bullet and melee attacks at the head. A slightly fancier helmet for marine leaders.</description>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="false">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>HelmetsAndHats/M10Officer/M10Officer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+      <li>Armor</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>21000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+      <Gold>5</Gold>
+    </costList>
+    <apparel>
+      <tags>
+        <li>URMC_OfficerHelmet</li>
+      </tags>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>HelmetsAndHats/M10Officer/M10Officer</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <!-- M3-G4 Helmet -->
+
+  <ThingDef ParentName="pphhyy_URMC_Helmets">
+    <defName>pphhyy_M3-G4Helmet</defName>
+    <label>M3-G4 helmet</label>
+    <description>Pairs with the M3-G4 heavy grenadier plating. Modified to withstand most forms of bullets and impacts, especially those from close range explosions</description>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>HelmetsAndHats/M12/M12</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+      <li>Armor</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>26250</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.6</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>50</Plasteel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>URMC_M3G4Helmet</li>
+      </tags>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>HelmetsAndHats/M12/M12</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+        <li>
+          <weight>10.1</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <!-- M10 Veteran Helmet -->
+
+  <ThingDef ParentName="pphhyy_URMC_Helmets">
+    <defName>pphhyy_M10VeteranHelmet</defName>
+    <label>M10 veteran helmet</label>
+    <description>Custom M10 Helmet used by URCM veterans. Provides modest protection from bullet and melee attacks at the head. Thanks to its extensive customization it no longer slows the wearer down.</description>
+    <recipeMaker IsNull= "true">
+    </recipeMaker>
+    <smeltable>false</smeltable>
+    <graphicData>
+      <texPath>HelmetsAndHats/M10Veteran/M10Veteran</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+      <li>Armor</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>21000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.15</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.60</ArmorRating_Heat>
+      <Insulation_Cold>4</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+      <MarketValue>800</MarketValue>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>HelmetsAndHats/M10Veteran/M10Veteran</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <forceEyesVisibleForRotations>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </forceEyesVisibleForRotations>
+      <tags>
+        <li>URMC_VeteranHelmet</li>
+      </tags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>pphhyy_M10VeteranHelmetI</defName>
+    <label>make M10 veteran helmet</label>
+    <description>Custom M10 Helmet used by URCM veterans. Provides modest protection from bullet and melee attacks at the head. Thanks to its extensive customization it no longer slows the wearer down.</description>
+    <jobString>Making an M10 Veteran Helmet.</jobString>
+    <workAmount>26250</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Smith</soundWorking>
+    <workSkill>Crafting</workSkill>
+    <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+    <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <skillRequirements>
+      <Crafting>7</Crafting>
+    </skillRequirements>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>pphhyy_M10PatternOfficerHelmet</li>
+            <li>pphhyy_M10PatternMedicHelmet</li>
+            <li>pphhyy_M10PatternMarineHelmet</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>pphhyy_M10PatternOfficerHelmet</li>
+        <li>pphhyy_M10PatternMedicHelmet</li>
+        <li>pphhyy_M10PatternMarineHelmet</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <pphhyy_M10VeteranHelmet>1</pphhyy_M10VeteranHelmet>
+    </products>
+  </RecipeDef>
+
+</Defs>

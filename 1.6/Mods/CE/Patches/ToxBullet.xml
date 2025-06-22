@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Biotech</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>
+                        Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_10x24mmCaseless"]/ammoTypes</xpath>
+                    <value>
+                        <Ammo_10x24mmCaseless_Tox>Bullet_10x24mmCaseless_Tox</Ammo_10x24mmCaseless_Tox>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="Base10x24mmCaselessBullet">
+                            <defName>Bullet_10x24mmCaseless_Tox</defName>
+                            <label>10x24mm Caseless bullet (Tox)</label>
+                            <projectile Class="CombatExtended.ProjectilePropertiesCE">
+                                <damageDef>pphhyy_ToxBullet</damageDef>
+                                <damageAmountBase>11</damageAmountBase>
+                                <armorPenetrationSharp>25</armorPenetrationSharp>
+                                <armorPenetrationBlunt>21.52</armorPenetrationBlunt>
+                                <explosionRadius>0.1</explosionRadius>
+                                <postExplosionGasType>ToxGas</postExplosionGasType>
+                            </projectile>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ThingDef Class="CombatExtended.AmmoDef" ParentName="10x24mmCaselessBase">
+                            <defName>Ammo_10x24mmCaseless_Tox</defName>
+                            <label>10x24mm Caseless (Tox)</label>
+                            <graphicData>
+                                <texPath>Things/Ammo/Railgun/Rifle</texPath>
+                                <graphicClass>Graphic_StackCount</graphicClass>
+                            </graphicData>
+                            <statBases>
+                                <MarketValue>0.6</MarketValue>
+                            </statBases>
+                            <ammoClass>Toxic</ammoClass>
+                        </ThingDef>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <RecipeDef ParentName="AdvancedAmmoRecipeBase">
+                            <defName>MakeAmmo_10x24mmCaseless_Tox</defName>
+                            <label>make 10x24mm Caseless (Tox) cartridge x500</label>
+                            <description>Craft 500 10x24mm Caseless (Tox) cartridges.</description>
+                            <jobString>Making 10x24mm Caseless (Tox) cartridges.</jobString>
+                            <ingredients>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>Plasteel</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>20</count>
+                                </li>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>Uranium</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>3</count>
+                                </li>
+                                <li>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>FSX</li>
+                                        </thingDefs>
+                                    </filter>
+                                    <count>7</count>
+                                </li>
+                            </ingredients>
+                            <fixedIngredientFilter>
+                                <thingDefs>
+                                    <li>Plasteel</li>
+                                    <li>Uranium</li>
+                                    <li>FSX</li>
+                                </thingDefs>
+                            </fixedIngredientFilter>
+                            <products>
+                                <Ammo_10x24mmCaseless_Tox>500</Ammo_10x24mmCaseless_Tox>
+                            </products>
+                            <workAmount>14800</workAmount>
+                        </RecipeDef>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+
+<Defs>
+
+    <!-- Grenades Base -->
+
+    <ThingDef Name= "pphhyy_GrenadesBase" ParentName="ResourceBase" Abstract= "true">
+        <stackLimit>10</stackLimit>
+        <intricate>true</intricate>
+        <tickerType>Normal</tickerType>
+        <uiIconScale>1.3</uiIconScale>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>100</WorkToMake>
+        </statBases>
+        <costList>
+          <Steel>5</Steel>
+          <Chemfuel>20</Chemfuel>
+        </costList>
+        <thingCategories>
+          <li>Grenades</li>
+        </thingCategories>
+        <smeltable>true</smeltable>
+      </ThingDef>
+
+<!-- Frag Grenade -->
+
+    <ThingDef ParentName="pphhyy_GrenadesBase">
+        <defName>pphhyy_GrenadeFrag</defName>
+        <label>frag grenades</label>
+        <description>Exploding in a decent blast radius, these Grenades also have the potential to damage nearby walls. Take care when using near structures leading to space or even near your own marines! It is set to detonate in 5 seconds. These are meant to use with the M3 pattern armors.</description>
+        <recipeMaker>
+          <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+          <recipeUsers>
+            <li>TableMachining</li>
+          </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+          <texPath>Resources/Grenade</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+      </ThingDef>
+
+      <ThingDef ParentName="BaseFragGrenadeProjectile">
+        <defName>pphhyy_GrenadeFragProjectile</defName>
+        <label>frag grenade</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+          <texPath>Resources/Grenade/Grenade_a</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+          <explosionRadius>1.9</explosionRadius >
+          <damageDef>Bomb</damageDef>
+          <!-- Use default damage from explosion def -->
+          <explosionDelay>100</explosionDelay>
+        </projectile>
+      </ThingDef>
+
+<!-- Incendiary Grenade -->
+
+    <ThingDef ParentName="pphhyy_GrenadesBase">
+        <defName>pphhyy_GrenadeIncendiary</defName>
+        <label>incendiary grenades</label>
+        <description>Exploding in a decent blast radius leaving burning chemfuel behind, incendiary grenades are a powerful area of denial weapon that can deal immense damage to a hostile target if it's caught in the fire.</description>
+        <recipeMaker>
+          <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+          <recipeUsers>
+            <li>TableMachining</li>
+          </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+          <texPath>Resources/IncendiaryGrenade</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+      </ThingDef>
+
+      <ThingDef ParentName="BaseFragGrenadeProjectile">
+        <defName>pphhyy_GrenadeIncendiaryProjectile</defName>
+        <label>incendiary grenade</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+          <texPath>Resources/IncendiaryGrenade/IncendiaryGrenade_a</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+          <explosionRadius>1.9</explosionRadius>
+          <damageDef>Flame</damageDef>
+          <!-- Use default damage from explosion def -->
+          <explosionDelay>100</explosionDelay>
+        </projectile>
+      </ThingDef>
+
+<!-- Foam Grenade -->
+
+      <ThingDef ParentName="pphhyy_GrenadesBase">
+        <defName>pphhyy_GrenadeFoam</defName>
+        <label>foam grenades</label>
+        <description>Exploding in a decent blast radius leaving behind a fire suppressing foam. Usually deployed after incendiary attacks or after marines have been attacked by incendiary bombs.</description>
+        <recipeMaker>
+          <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+          <recipeUsers>
+            <li>TableMachining</li>
+          </recipeUsers>
+        </recipeMaker>
+        <graphicData>
+          <texPath>Resources/FoamGrenade</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+      </ThingDef>
+
+      <ThingDef ParentName="BaseFragGrenadeProjectile">
+        <defName>pphhyy_GrenadeFoamProjectile</defName>
+        <label>foam grenade</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+          <texPath>Resources/FoamGrenade/FoamGrenade_a</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+          <explosionRadius>2.5</explosionRadius >
+          <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+          <damageDef>Extinguish</damageDef>
+          <explosionDelay>100</explosionDelay>
+        </projectile>
+      </ThingDef>
+
+
+</Defs>
