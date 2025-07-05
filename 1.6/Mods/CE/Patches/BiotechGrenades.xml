@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[
+						defName="pphhyy_GrenadeEMP" or
+						defName="pphhyy_GrenadeEMPProjectile" or
+						defName="pphhyy_GrenadeTox02MK" or
+						defName="pphhyy_GrenadeToxProjectile"]</xpath>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="BaseURMC_GrenadeBullet">
+							<defName>Bullet_URMC_Grenade_Tox</defName>
+							<label>URMC grenade (Tox)</label>
+							<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+							<projectile Class="CombatExtended.ProjectilePropertiesCE">
+								<damageDef>ToxGas</damageDef>
+								<explosionRadius>2</explosionRadius>
+								<postExplosionGasType>ToxGas</postExplosionGasType>
+								<preExplosionSpawnChance>1</preExplosionSpawnChance>
+							</projectile>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef Class="CombatExtended.AmmoDef" ParentName="URMC_GrenadeBase">
+							<defName>Ammo_URMC_Grenade_Tox</defName>
+							<label>URMC grenade (Tox)</label>
+							<graphicData>
+								<texPath>Resources/ToxGrenade</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<statBases>
+								<MarketValue>2.31</MarketValue>
+							</statBases>
+							<ammoClass>Toxic</ammoClass>
+							<generateAllowChance>0</generateAllowChance>
+							<detonateProjectile>Bullet_URMC_Grenade_Tox</detonateProjectile>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_URMC_Grenade"]/ammoTypes</xpath>
+					<value>
+						<Ammo_40x46mmGrenade_Tox>Bullet_40x46mmGrenade_Tox</Ammo_40x46mmGrenade_Tox>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<RecipeDef ParentName="LauncherAmmoRecipeBase">
+							<defName>MakeAmmo_URMC_Grenade_Tox</defName>
+							<label>make URMC Tox grenades x100</label>
+							<description>Craft 100 URMC Tox grenades.</description>
+							<jobString>Making URMC Tox grenades.</jobString>
+							<researchPrerequisites>
+								<li>MicroelectronicsBasics</li>
+								<li>CE_Launchers</li>
+							</researchPrerequisites>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Steel</li>
+										</thingDefs>
+									</filter>
+									<count>32</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ComponentIndustrial</li>
+										</thingDefs>
+									</filter>
+									<count>8</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>Steel</li>
+									<li>ComponentIndustrial</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<Ammo_URMC_Grenade_Tox>100</Ammo_URMC_Grenade_Tox>
+							</products>
+							<workAmount>8000</workAmount>
+							<recipeUsers>
+								<li>TableMachining</li>
+							</recipeUsers>
+						</RecipeDef>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+
+<Defs>
+
+    <!-- Talus Synth Head-->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_TalusSynthHead</defName>
+    <label>talus synth head</label>
+    <description>Most of a synths cognitive functions are store in its head no different then a human.</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>3</stackLimit>
+    <uiIconScale>1.3</uiIconScale>
+    <uiIconPath>Resources/TalusSynthHead/TalusSynthHead_a</uiIconPath>
+    <graphicData>
+      <texPath>Resources/TalusSynthHead</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>5000</WorkToMake>
+        </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <SubcoreRegular>1</SubcoreRegular>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+    <!-- Talus Synth Body-->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_TalusSynthBody</defName>
+    <label>talus synth body</label>
+    <description>Synth bodies are remarkably durable compared to human bodies and come with very few downsides which we are not legally allowed to disclose to the public.</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>3</stackLimit>
+    <uiIconScale>1.3</uiIconScale>
+    <uiIconPath>Resources/TalusSynthBody/TalusSynthBody_a</uiIconPath>
+    <graphicData>
+      <texPath>Resources/TalusSynthBody</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>5000</WorkToMake>
+        </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+    <!-- Synth Lab Coat -->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_SynthLabCoat</defName>
+    <label>synth lab coat</label>
+    <description>Lab Coat for Lab synths to do their work in a easy to identify manner.</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>3</stackLimit>
+    <uiIconScale>1.3</uiIconScale>
+    <uiIconPath>Resources/SynthLabCoat/SynthLabCoat_a</uiIconPath>
+    <graphicData>
+      <texPath>Resources/SynthLabCoat</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>2700</WorkToMake>
+        </statBases>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>ElectricTailoringBench</li>
+            <li>HandTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+    <!-- Synth Work Coveralls-->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_SynthWorkCoveralls</defName>
+    <label>synth work coveralls</label>
+    <description>Coveralls for worker synths to do their work in a easy to identify manner.</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>3</stackLimit>
+    <uiIconScale>1.3</uiIconScale>
+    <uiIconPath>Resources/SynthWorkCoveralls/SynthWorkCoveralls_a</uiIconPath>
+    <graphicData>
+      <texPath>Resources/SynthWorkCoveralls</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>2700</WorkToMake>
+        </statBases>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier1</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>ElectricTailoringBench</li>
+            <li>HandTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+    <!-- Talus Combat Armor-->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_TalusCombatArmor</defName>
+    <label>talus combat armor</label>
+    <description>Pearl techs first synth combat armor meant to further improved the protective property's of the synth body.</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>3</stackLimit>
+    <uiIconScale>1.3</uiIconScale>
+    <uiIconPath>Resources/TalusCombatArmor/TalusCombatArmor_a</uiIconPath>
+    <graphicData>
+      <texPath>Resources/TalusCombatArmor</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>5000</WorkToMake>
+        </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <Cloth>40</Cloth>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>TableMachining</li>
+            <li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <!-- Talus Combat Helmet-->
+
+    <ThingDef ParentName= "ResourceBase">
+    <defName>pphhyy_TalusCombatHelmet</defName>
+    <label>talus combat helmet</label>
+    <description>No different then a human helmet its purpose is to help protect a synths cognitive functions from harm.</description>
+    <possessionCount>1</possessionCount>
+    <stackLimit>3</stackLimit>
+    <uiIconScale>1.3</uiIconScale>
+    <uiIconPath>Resources/TalusCombatHelmet/TalusCombatHelmet_a</uiIconPath>
+    <graphicData>
+      <texPath>Resources/TalusCombatHelmet</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>5000</WorkToMake>
+        </statBases>
+    <costList>
+      <Steel>40</Steel>
+    </costList>
+    <techLevel>Spacer</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCPearlTechnicaTier2</researchPrerequisite>
+      <displayPriority>110</displayPriority>
+        <recipeUsers>
+            <li>TableMachining</li>
+            <li>FabricationBench</li>
+        </recipeUsers>
+    </recipeMaker>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>

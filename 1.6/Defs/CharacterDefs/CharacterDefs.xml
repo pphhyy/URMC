@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <URMC.CharacterDef>
+        <defName>pphhyy_Character_PvtJenetteVasquez</defName>
+        <pawnKind>pphhyy_PvtJenetteVasquez</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <definitions>
+            <!-- Bio -->
+            <li Class="URMC.CharacterStoryDefinition">
+                <firstName>Jenette</firstName>
+                <lastName>Vasqueze</lastName>
+                <nickname>Pvt Vasquez</nickname>
+                <gender>Female</gender>
+                <age>26</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="URMC.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Messy</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(193, 141, 106)</skinColorOverride>
+                <headTypeDef>Female_AverageNormal</headTypeDef>
+                <bodyTypeDef>Female</bodyTypeDef>
+            </li>
+        </definitions>
+    </URMC.CharacterDef>
+	
+	<URMC.CharacterDef>
+        <defName>pphhyy_Character_MarkDrake</defName>
+        <pawnKind>pphhyy_MarkDrake</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <definitions>
+            <!-- Bio -->
+            <li Class="URMC.CharacterStoryDefinition">
+                <firstName>Mark</firstName>
+                <lastName>Drake</lastName>
+                <nickname>Pfc Drake</nickname>
+                <gender>Male</gender>
+                <age>34</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="URMC.CharacterAppearanceDefinition">
+                <hairColor>(255, 249, 168)</hairColor>
+                <hairDef>Scatman</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(241, 202, 191)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </URMC.CharacterDef>
+
+	<URMC.CharacterDef>
+        <defName>pphhyy_Character_AlApone</defName>
+        <pawnKind>pphhyy_AlApone</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <definitions>
+            <!-- Bio -->
+            <li Class="URMC.CharacterStoryDefinition">
+                <firstName>Al</firstName>
+                <lastName>Apone</lastName>
+                <nickname>Officer Apone</nickname>
+                <gender>Male</gender>
+                <age>52</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="URMC.CharacterAppearanceDefinition">
+                <hairColor>(20, 20, 20)</hairColor>
+                <hairDef>Topdog</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(74, 45, 37)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </URMC.CharacterDef>
+
+	<URMC.CharacterDef>
+        <defName>pphhyy_Character_WilliamHudson</defName>
+        <pawnKind>pphhyy_WilliamHudson</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <definitions>
+            <!-- Bio -->
+            <li Class="URMC.CharacterStoryDefinition">
+                <firstName>William</firstName>
+                <lastName>Hudson</lastName>
+                <nickname>Pfc Hudson</nickname>
+                <gender>Male</gender>
+                <age>30</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="URMC.CharacterAppearanceDefinition">
+                <hairColor>(61, 39, 32)</hairColor>
+                <hairDef>Topdog</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(241, 202, 191)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </URMC.CharacterDef>
+
+	<URMC.CharacterDef>
+        <defName>pphhyy_Character_DwayneHicks</defName>
+        <pawnKind>pphhyy_DwayneHicks</pawnKind>
+        <xenotype>Baseliner</xenotype>
+        <definitions>
+            <!-- Bio -->
+            <li Class="URMC.CharacterStoryDefinition">
+                <firstName>Dwayne</firstName>
+                <lastName>Hicks</lastName>
+                <nickname>Corporal Hicks</nickname>
+                <gender>Male</gender>
+                <age>28</age>
+            </li>
+            <!-- Appearance -->
+            <li Class="URMC.CharacterAppearanceDefinition">
+                <hairColor>(122, 76, 61)</hairColor>
+                <hairDef>Topdog</hairDef>
+                <beardDef>NoBeard</beardDef>
+                <skinColorOverride>(241, 202, 191)</skinColorOverride>
+                <headTypeDef>Male_AverageNormal</headTypeDef>
+                <bodyTypeDef>Male</bodyTypeDef>
+            </li>
+        </definitions>
+    </URMC.CharacterDef>
+
+</Defs>
