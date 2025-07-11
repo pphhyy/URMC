@@ -4,7 +4,7 @@
 
   <!-- Easy Start -->
 
-  <ScenarioDef>
+  <ScenarioDef ParentName="Crashlanded">
     <defName>pphhyy_EasyStart</defName>
     <label>URMC Easy Start</label>
     <description>Distress signals have come from this world, so its time for the URMC to clear it out. Whether its a bug hunt, machine purge or just having fun blowing up raiders this planet needs your help.</description>
@@ -164,7 +164,7 @@
 
   <!-- Hard Start -->
 
-  <ScenarioDef>
+  <ScenarioDef ParentName="Crashlanded">
     <defName>pphhyy_HardStart</defName>
     <label>URMC Hard Start</label>
     <description>After countless battles your platoon was finally reduced to just you. Time to make this uncivilized world pay for all your fallen Marine brothers and sisters.</description>

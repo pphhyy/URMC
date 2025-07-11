@@ -10,7 +10,7 @@
       <li>URMC_Weapons</li>
     </weaponTags>
     <modExtensions>
-      <li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+      <li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <weaponDraftedDrawOffsets>
           <north>
             <drawOffset>(0.05,0.0,0)</drawOffset>
@@ -263,7 +263,7 @@
       </li>
     </tools>
     <modExtensions>
-      <li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+      <li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <usableWithShields>true</usableWithShields>
         <weaponDraftedDrawOffsets>
           <north>
@@ -452,7 +452,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       </recipeUsers>
     </recipeMaker>
     <modExtensions>
-      <li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+      <li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <usableWithShields>true</usableWithShields>
         <weaponDraftedDrawOffsets>
           <north>
@@ -732,7 +732,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <li>pphhyy_M50XReconRifle</li>
     </weaponTags>
     <modExtensions>
-      <li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+      <li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <weaponDraftedDrawOffsets>
           <north>
             <drawOffset>(0.05,0.0,0)</drawOffset>
@@ -962,7 +962,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       <li Class="CompProperties_Biocodable"/>
     </comps>
     <modExtensions>
-      <li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+      <li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
         <weaponDraftedDrawOffsets>
           <north>
             <drawOffset>(0.05,0.0,0)</drawOffset>
