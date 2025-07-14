@@ -2,7 +2,7 @@
 
 <Defs>
 
-	<!-- URMC Banner 
+	<!-- URMC Banner -->
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_URMCBanner</defName>
@@ -139,6 +139,6 @@
 				</useFactionColourForPawnKinds>
 			</li>
 		</modExtensions>
-	</ThingDef> -->
+	</ThingDef> 
 
 </Defs>

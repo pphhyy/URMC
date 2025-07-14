@@ -2,7 +2,7 @@
 
 <Defs>
 
-	<!-- URMC Banner 
+	<!-- URMC Banner -->
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_URMCBanner</defName>
@@ -76,7 +76,7 @@
 			<Steel>60</Steel>
 		</costList>
 		<equipmentType>None</equipmentType>
-		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<thingClass>VEF.Apparels.Apparel_Shield</thingClass>
 		<weaponTags>
 		<li>pphhyy_URMCStandard</li>
 		</weaponTags>
@@ -101,7 +101,7 @@
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
 		</apparel>
 		<comps>
-			<li Class="VFECore.CompProperties_Shield">
+			<li Class="VEF.Apparels.CompProperties_Shield">
 				<useDeflectMetalEffect>false</useDeflectMetalEffect>
 				<coveredBodyPartGroups>
 					<li>Arms</li>
@@ -133,12 +133,12 @@
 		</comps>
 		<equippedAngleOffset>0</equippedAngleOffset>	
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<useFactionColourForPawnKinds>
 
 				</useFactionColourForPawnKinds>
 			</li>
 		</modExtensions>
-	</ThingDef> -->
+	</ThingDef> 
 
 </Defs>

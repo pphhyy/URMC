@@ -1079,7 +1079,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         </tradeTags>
     </ThingDef>
 
-    <!--Pearl Technica Wrist Controller
+   <!-- Pearl Technica Wrist Controller -->
 
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>pphhyy_WristController</defName>
@@ -1183,7 +1183,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                 </useFactionColourForPawnKinds>
             </li>
         </modExtensions>
-    </ThingDef> -->
+    </ThingDef> 
 
 
     <!--__Pearl Technica Banners__-->
@@ -1230,7 +1230,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         </costList>
     </ThingDef>
 
-    <!-- Pearl Technica Standard 
+    <!-- Pearl Technica Standard -->
 
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>pphhyy_PearlTechnicaStandard</defName>
@@ -1324,7 +1324,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
                 </useFactionColourForPawnKinds>
             </li>
         </modExtensions>
-    </ThingDef> -->
+    </ThingDef> 
 
     <!-- Pearl Technica Research-->
 

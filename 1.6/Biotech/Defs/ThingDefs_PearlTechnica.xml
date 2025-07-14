@@ -823,7 +823,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
             </li>
         </tools>
         <modExtensions>
-            <li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
                 <usableWithShields>true</usableWithShields>
                 <weaponDraftedDrawOffsets>
                     <north>
@@ -935,7 +935,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
             </recipeUsers>
         </recipeMaker>
         <modExtensions>
-            <li Class="VFECore.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+            <li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
                 <usableWithShields>true</usableWithShields>
                 <weaponDraftedDrawOffsets>
                     <north>
@@ -1079,7 +1079,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         </tradeTags>
     </ThingDef>
 
-    <!--Pearl Technica Wrist Controller
+    <!--Pearl Technica Wrist Controller -->
 
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>pphhyy_WristController</defName>
@@ -1123,7 +1123,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
             <SubcoreHigh>1</SubcoreHigh>
         </costList>
         <equipmentType>None</equipmentType>
-        <thingClass>VFECore.Apparel_Shield</thingClass>
+        <thingClass>VEF.Apparels.Apparel_Shield</thingClass>
         <statBases>
             <Mass>3</Mass>
             <WorkToMake>6000</WorkToMake>
@@ -1145,7 +1145,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
             <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
         </apparel>
         <comps>
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VEF.Apparels.CompProperties_Shield">
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
                     <li>Arms</li>
@@ -1177,13 +1177,13 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         </comps>
         <equippedAngleOffset>0</equippedAngleOffset>
         <modExtensions>
-            <li Class="VFECore.ThingDefExtension">
+            <li Class="VEF.Things.ThingDefExtension">
                 <useFactionColourForPawnKinds>
 
                 </useFactionColourForPawnKinds>
             </li>
         </modExtensions>
-    </ThingDef> -->
+    </ThingDef> 
 
 
     <!--__Pearl Technica Banners__-->
@@ -1230,7 +1230,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         </costList>
     </ThingDef>
 
-    <!-- Pearl Technica Standard 
+    <!-- Pearl Technica Standard -->
 
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>pphhyy_PearlTechnicaStandard</defName>
@@ -1264,7 +1264,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
             <Steel>60</Steel>
         </costList>
         <equipmentType>None</equipmentType>
-        <thingClass>VFECore.Apparel_Shield</thingClass>
+        <thingClass>VEF.Apparels.Apparel_Shield</thingClass>
         <statBases>
             <Mass>3</Mass>
             <WorkToMake>6000</WorkToMake>
@@ -1286,7 +1286,7 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
             <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
         </apparel>
         <comps>
-            <li Class="VFECore.CompProperties_Shield">
+            <li Class="VEF.Apparels.CompProperties_Shield">
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
                     <li>Arms</li>
@@ -1318,13 +1318,13 @@ Unlike the type 66 the type 42 is meant for Tech Marines to feel comfortable com
         </comps>
         <equippedAngleOffset>0</equippedAngleOffset>      
         <modExtensions>
-            <li Class="VFECore.ThingDefExtension">
+            <li Class="VEF.Things.ThingDefExtension">
                 <useFactionColourForPawnKinds>
 
                 </useFactionColourForPawnKinds>
             </li>
         </modExtensions>
-    </ThingDef> -->
+    </ThingDef> 
 
     <!-- Pearl Technica Research-->
 
