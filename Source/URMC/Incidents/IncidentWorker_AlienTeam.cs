@@ -26,7 +26,7 @@ namespace URMC
 			modExtension = this.def.GetModExtension<ModExt_AlienTeam>();
 			if (modExtension == null) return false;
 			Map map = (Map)parms.target;
-			return this.CanSpawnJoiner(map);
+			return RCellFinder.TryFindRandomPawnEntryCell(out IntVec3 result, map, CellFinder.EdgeRoadChance_Animal);
 		}
 
 		public virtual Pawn GeneratePawn(CharacterDef characterDef)
@@ -43,23 +43,10 @@ namespace URMC
 			return pawn;
 		}
 
-		public virtual bool CanSpawnJoiner(Map map)
-		{
-			IntVec3 intVec;
-			return this.TryFindEntryCell(map, out intVec);
-		}
-
-		public virtual void SpawnJoiner(Map map, Pawn pawn)
-		{
-			IntVec3 loc;
-			this.TryFindEntryCell(map, out loc);
-			GenSpawn.Spawn(pawn, loc, map, WipeMode.Vanish);
-		}
-
 		protected override bool TryExecuteWorker(IncidentParms parms)
 		{
 			Map map = (Map)parms.target;
-			if (!this.CanSpawnJoiner(map))
+			if (!RCellFinder.TryFindRandomPawnEntryCell(out var result, map, CellFinder.EdgeRoadChance_Friendly))
 			{
 				return false;
 			}
@@ -71,7 +58,8 @@ namespace URMC
 				{
 					firstPawn = pawn;
 				}
-				this.SpawnJoiner(map, pawn);
+				IntVec3 loc = CellFinder.RandomClosewalkCellNear(result, map, 10);
+				((Pawn)GenSpawn.Spawn(pawn, loc, map)).needs.food.CurLevelPercentage = 1f;
 			}
 			// TaggedString baseLetterText = (this.def.pawnHediff != null) ? this.def.letterText.Formatted(pawn.Named("PAWN"), this.def.pawnHediff.Named("HEDIFF")).AdjustedFor(pawn, "PAWN", true) : this.def.letterText.Formatted(pawn.Named("PAWN")).AdjustedFor(pawn, "PAWN", true);
 			// TaggedString baseLetterLabel = this.def.letterLabel.Formatted(pawn.Named("PAWN")).AdjustedFor(pawn, "PAWN", true);
