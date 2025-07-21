@@ -1057,6 +1057,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
             <ToxicResistance>0.25</ToxicResistance>
         </equippedStatOffsets>
@@ -1130,6 +1131,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             <drawSize>1.5</drawSize>
         </graphicData>
         <equippedStatOffsets>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
             <ToxicResistance>0.75</ToxicResistance>
         </equippedStatOffsets>
         <verbs>
@@ -1258,6 +1260,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             <EquipDelay>2</EquipDelay>
         </statBases>
         <equippedStatOffsets>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
             <ToxicResistance>0.25</ToxicResistance>
         </equippedStatOffsets>
         <costList>
@@ -1335,6 +1338,7 @@ The Haz version of the M10 comes with Tox resistance; paired with the Haz armor 
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
+            <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
             <ToxicResistance>0.75</ToxicResistance>
         </equippedStatOffsets>
         <apparel>

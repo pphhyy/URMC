@@ -478,6 +478,9 @@
       <li>HiTechArmor</li>
       <li>Armor</li>
     </tradeTags>
+    <equippedStatOffsets>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
+    </equippedStatOffsets>
     <statBases>
       <WorkToMake>26250</WorkToMake>
       <MaxHitPoints>180</MaxHitPoints>
