@@ -602,6 +602,9 @@
       <Insulation_Heat>12</Insulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
+    <equippedStatOffsets>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+    </equippedStatOffsets>
     <verbs>
       <li>
         <label>throw frag grenade</label>
