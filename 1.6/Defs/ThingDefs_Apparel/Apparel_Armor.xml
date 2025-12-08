@@ -822,5 +822,85 @@
     </products>
   </RecipeDef>
 
+<!--__Arsenal Update 1__-->
+
+<!-- M57 Harness -->
+
+ <ThingDef ParentName="pphhyy_URMCArmors">
+    <defName>pphhyy_M57Harness</defName>
+    <label>M57 Harness</label>
+    <description>A harness is required to properly use the M57 intelligent firearm. Before the introduction of the harness only the burliest of marines could bring it to bear against the URMCs enemies. Now any marine can use it without speed or accuracy issues and lay down devastating fire coverage.
+The M57 Harness is rated just like the M2 Recon in terms of protection. Although there have been talks of a more armored power armor being developed.</description>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit= "false">
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Armor/M2Recon/M2Recon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <tradeTags>
+      <li>HiTechArmor</li>
+      <li>Armor</li>
+    </tradeTags>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.46</ArmorRating_Heat>
+      <Insulation_Cold>32</Insulation_Cold>
+      <Insulation_Heat>9</Insulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <costList>
+      <Plasteel>50</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Uranium>5</Uranium>
+    </costList>
+    <apparel>
+      <wornGraphicPath>Armor/M2Recon/M2Recon</wornGraphicPath>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <comps>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
 
 </Defs>

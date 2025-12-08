@@ -160,6 +160,7 @@
                     <pphhyy_FlagBearer>1</pphhyy_FlagBearer>
                     <pphhyy_Veteran>1</pphhyy_Veteran>
                     <pphhyy_Marine>14</pphhyy_Marine>
+                    <pphhyy_M57Operator>2</pphhyy_M57Operator>
                 </options>
             </li>
 
@@ -175,6 +176,7 @@
                     <pphhyy_FlagBearer>1</pphhyy_FlagBearer>
                     <pphhyy_Veteran>6</pphhyy_Veteran>
                     <pphhyy_Marine>6</pphhyy_Marine>
+                    <pphhyy_M57Operator>6</pphhyy_M57Operator>
                 </options>
             </li>
 

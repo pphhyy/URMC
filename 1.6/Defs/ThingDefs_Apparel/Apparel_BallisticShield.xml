@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>pphhyy_URMCB2Shield</defName>
+        <label>URMC B2 Shield</label>
+        <description>The Ballistic shield is the second version of the ballistic shield line. Shield is a steel frame with a cheap polyethylene substitute composite to provide bullet stopping power. This composite provides the user with a relatively light shield that can allow them to hold smaller firearms or onehanded equipment.</description>
+        <burnableByRecipe>true</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit= "false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <Cloth>30</Cloth>
+            <Steel>80</Steel>
+        </costList>
+        <equipmentType>None</equipmentType>
+        <thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+        <weaponTags>
+            <li>pphhyy_URMCB2Shield</li>
+        </weaponTags>
+        <statBases>
+            <Mass>3</Mass>
+            <WorkToMake>6000</WorkToMake>
+            <MarketValue>300</MarketValue>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <bodyPartGroups>
+                <li>LeftHand</li>
+            </bodyPartGroups>
+            <layers>
+                <li>VFEC_OuterShell</li>
+            </layers>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <comps>
+            <li Class="VEF.Apparels.CompProperties_Shield">
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.8</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(-0.2, 0, 0.60)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(0.15, 0, 0.65)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0.25, -0.047, 0.65)</offset>
+                    </south>
+                    <west>
+                        <offset>(-0.15, -0.05, 0.65)</offset>
+                        <behind>true</behind>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <equippedAngleOffset>0</equippedAngleOffset>
+        <modExtensions>
+            <li Class="VEF.Things.ThingDefExtension">
+                <useFactionColourForPawnKinds>
+
+                </useFactionColourForPawnKinds>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+</Defs>

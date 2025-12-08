@@ -83,6 +83,7 @@
       <li>pphhyy_M3Medic</li>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M10PatternMedicHelmet</li>
+      <li>pphhyy_URMCB2Shield</li>
     </apparelRequired>
     <inventoryOptions>
       <subOptionsChooseOne>
@@ -93,6 +94,7 @@
       </subOptionsChooseOne>
     </inventoryOptions>
     <weaponTags>
+      <li>pphhyy_M47PulseSMG</li>
       <li>pphhyy_M43PulseRifle</li>
     </weaponTags>
   </PawnKindDef>
@@ -111,6 +113,7 @@
       <li>URMC_ColonialBeret</li>
     </apparelTags>
     <weaponTags>
+      <li>pphhyy_M47PulseSMG</li>
       <li>pphhyy_M43PulseRifle</li>
       <li>pphhyy_S12CombatMachete</li>
     </weaponTags>
@@ -149,6 +152,7 @@
       <li>pphhyy_M3-G4Helmet</li>
     </apparelRequired>
     <weaponTags>
+      <li>pphhyy_GrendelBeam</li>
       <li>pphhyy_M45PulseLMG</li>
       <li>pphhyy_M10RLSadar</li>
       <li>pphhyy_M80GLMachine</li>
@@ -170,6 +174,7 @@
       <li>pphhyy_ColonialFatigue</li>
     </apparelRequired>
     <weaponTags>
+      <li>pphhyy_M46HeavyPulseRifle</li>
       <li>pphhyy_M52HBreachingShotgun</li>
       <li>pphhyy_M45PulseLMG</li>
       <li>pphhyy_M44FImmolator</li>
@@ -189,10 +194,13 @@
     <apparelRequired>
       <li>pphhyy_M1Flak</li>
       <li>pphhyy_ColonialFatigue</li>
+      <li>pphhyy_URMCB2Shield</li>
     </apparelRequired>
     <weaponTags>
       <li>pphhyy_M1PulsePistol</li>
       <li>pphhyy_S12CombatMachete</li>
+      <li>pphhyy_AnvilLMG</li>
+      <li>pphhyy_AnvilRifle</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -211,6 +219,7 @@
       <li>pphhyy_ColonialFatigue</li>
     </apparelRequired>
     <weaponTags>
+      <li>pphhyy_M47PulseSMG</li>
       <li>pphhyy_M1PulsePistol</li>
       <li>pphhyy_S12CombatMachete</li>
       <li>pphhyy_M43PulseRifle</li>
@@ -231,6 +240,27 @@
       <li>pphhyy_URMCStandard</li> 
     </apparelRequired>
     <trader>true</trader>
+    <weaponTags>
+      <li>pphhyy_M1PulsePistol</li>
+      <li>pphhyy_S12CombatMachete</li>
+    </weaponTags>
+  </PawnKindDef>
+
+<!-- Marine M57 Operator -->
+
+  <PawnKindDef ParentName="URMCFactionPawnBase">
+    <defName>pphhyy_M57Operator</defName>
+    <label>marine M57 operator</label>
+    <combatPower>80</combatPower>
+    <apparelRequired>
+      <li>pphhyy_M57Harness</li>
+      <li>pphhyy_ColonialFatigue</li>
+      <li>pphhyy_M57Headset</li> 
+    </apparelRequired>
+    <apparelTags>
+      <li>URMC_UtilityCover</li>
+      <li>URMC_Bandana</li>
+    </apparelTags>
     <weaponTags>
       <li>pphhyy_M1PulsePistol</li>
       <li>pphhyy_S12CombatMachete</li>
