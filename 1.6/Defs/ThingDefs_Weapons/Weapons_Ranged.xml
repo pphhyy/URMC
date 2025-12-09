@@ -1106,7 +1106,7 @@ The M57 earned its reputation during many bug nest clearing; emptying nest after
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -1192,7 +1192,7 @@ The M57 earned its reputation during many bug nest clearing; emptying nest after
 
   <!-- Anvil LMG MH3-R -->
 
-  <ThingDef ParentName="pphhyy_RangedWeapons">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>pphhyy_AnvilLMG</defName>
     <label>Anvil LMG MH3-R</label>
     <description>A drum fed light machine gun manufactured by Anvil Industries. Designed by James Holt, lead designer at Anvil.  The Holt or commonly referred as the "Mini Holt", is a low pen LMG with a focus on precision firing. Originally designed to curtail invasive species that have overtaken local ecosystems. The MH3-R has become a staple in fast moving operations and crowd control.</description>
@@ -1206,7 +1206,7 @@ The M57 earned its reputation during many bug nest clearing; emptying nest after
       <li>RangedHeavy</li>
     </weaponClasses>
     <recipeMaker>
-      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -1264,14 +1264,38 @@ The M57 earned its reputation during many bug nest clearing; emptying nest after
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>URMC_Weapons</li>
+    </weaponTags>
     <modExtensions>
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalshThree</def>
         <drawSize>(0.6,0.6)</drawSize>
         <isAlternately>true</isAlternately>
         <offsets>
-          <li>(0.46,0.04)</li>
+          <li>(0.53,0.04)</li>
         </offsets>
+      </li>
+      <li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <weaponDraftedDrawOffsets>
+          <north>
+            <drawOffset>(0.05,0.0,0)</drawOffset>
+            <angleOffset>-30</angleOffset>
+          </north>
+          <east>
+            <drawOffset>(0.10,0.2,0.05)</drawOffset>
+            <angleOffset>-45</angleOffset>
+          </east>
+          <south>
+            <drawOffset>(0.03,0,-0.03)</drawOffset>            <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+            <angleOffset>-30</angleOffset>
+          </south>
+          <west>
+            <drawOffset>(-0.10,0.0,0.05)</drawOffset>
+            <angleOffset>45</angleOffset>
+          </west>
+        </weaponDraftedDrawOffsets>
       </li>
     </modExtensions>
   </ThingDef>

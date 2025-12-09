@@ -257,13 +257,13 @@
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M57Headset</li> 
     </apparelRequired>
+    <weaponMoney>900~1500</weaponMoney>
     <apparelTags>
       <li>URMC_UtilityCover</li>
       <li>URMC_Bandana</li>
     </apparelTags>
     <weaponTags>
-      <li>pphhyy_M1PulsePistol</li>
-      <li>pphhyy_S12CombatMachete</li>
+      <li>pphhyy_IntelligentFirearm</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -316,7 +316,7 @@
     <apparelRequired>
       <li>pphhyy_M3Veteran</li>
       <li>pphhyy_ColonialFatigue</li>
-      <li>pphhyy_UtilityCover</li>
+      <li>pphhyy_Bandana</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>pphhyy_FavColor</favoriteColor>
@@ -371,7 +371,7 @@
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Veteran</li>
-      <li>pphhyy_M10VeteranHelmet</li>
+      <li>pphhyy_UtilityCover</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>pphhyy_FavColor</favoriteColor>

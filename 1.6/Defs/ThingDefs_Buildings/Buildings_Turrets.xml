@@ -8,7 +8,7 @@
     <defName>pphhyy_UA12_PulseSentry</defName>
     <label>UA12 pulse sentry</label>
     <description>Unlike its cousins the pulse sentry is capable of friendly fire, but what it lacks in IFF tracking it makes up for in suppressive fire. While not accurate it lays down a dizzying 24 pulse rounds in a single burst meant to suppress an enemy making them vulnerable to more accurate weapons or explosives.</description>
-    <uiIconPath>Building/Turrets/UA12PulseSentryBase</uiIconPath>
+    <uiIconPath>Building/Turrets/UA12PulseSentry</uiIconPath>
     <size>(1,1)</size>
     <statBases>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
@@ -83,7 +83,7 @@
     <defName>pphhyy_UA12_ScorcherSentry</defName>
     <label>UA12 scorcher sentry</label>
     <description>The Scorcher comes with no IFF tracking since its a flame thrower, no marine should be Infront of it save for marine in breacher armor. Shooting lit chem fuel into hostile targets, its a favorite of the URMC fighting on fringe worlds against the insectoid menace.</description>
-    <uiIconPath>Building/Turrets/UA12ScorcherSentryBase</uiIconPath>
+    <uiIconPath>Building/Turrets/UA12ScorcherSentry</uiIconPath>
     <statBases>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
       <Flammability>0</Flammability>
@@ -196,7 +196,7 @@
         <li>Artillery_MannedMortar</li>
       </buildingTags>
     </building>
-    <uiIconPath>Building/Turrets/M34ThumperMortarBase</uiIconPath>
+    <uiIconPath>Building/Turrets/M34ThumperMortar</uiIconPath>
     <uiIconScale>0.9</uiIconScale>
     <researchPrerequisites>
       <li>pphhyy_URMCBasicTurrets</li>
@@ -267,7 +267,7 @@
     <defName>pphhyy_Base_IntelligentTurret</defName>
     <label>UA13 INtelligent Firearm</label>
     <description>Turret version of the M57 sporting all of its advantages but must be placed before a fight. Because of its advanced components it does not need to be manned; allowing it to track confirm and engage threats independently.</description>
-    <uiIconPath>Things/Building/Security/TurretAutocannon_MenuIcon</uiIconPath>
+    <uiIconPath>Building/Turrets/UA13IntelligentFirearm</uiIconPath>
     <statBases>
       <ShootingAccuracyTurret>2</ShootingAccuracyTurret>
     </statBases>
@@ -275,6 +275,12 @@
     <thingCategories>
       <li>BuildingsMisc</li>
     </thingCategories>
+    <graphicData>
+      <texPath>Building/Turrets/UA13IntelligentFirearmBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData IsNull= "true">
+      </shadowData>
+    </graphicData>
     <costList>
       <Steel>350</Steel>
       <Plasteel>40</Plasteel>
@@ -301,7 +307,8 @@
       </li>
     </comps>
     <building>
-      <turretGunDef>Gun_AutocannonTurret</turretGunDef>
+      <turretTopDrawSize>2</turretTopDrawSize>
+      <turretGunDef>pphhyy_Gun_IntelligentTurret</turretGunDef>
       <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
     </building>
     <researchPrerequisites>
@@ -314,7 +321,7 @@
     <label>UA13 INtelligent Firearm</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>
     <graphicData>
-      <texPath>Things/Building/Security/TurretAutocannon_Top</texPath>
+      <texPath>Building/Turrets/UA13IntelligentFirearm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
