@@ -54,15 +54,20 @@
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
         </li>
       </options>
     </colorGenerator>
@@ -124,15 +129,20 @@
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
         </li>
       </options>
     </colorGenerator>
@@ -193,15 +203,20 @@
       <options>
         <li>
           <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
         </li>
         <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
         </li>
       </options>
     </colorGenerator>

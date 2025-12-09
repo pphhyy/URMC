@@ -12,6 +12,7 @@
     <graphicData>
       <texPath>Weapon/GrendelBeamM5R</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <recipeMaker>
       <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>

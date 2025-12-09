@@ -829,7 +829,7 @@
  <ThingDef ParentName="pphhyy_URMCArmors">
     <defName>pphhyy_M57Harness</defName>
     <label>M57 Harness</label>
-    <description>A harness is required to properly use the M57 intelligent firearm. Before the introduction of the harness only the burliest of marines could bring it to bear against the URMCs enemies. Now any marine can use it without speed or accuracy issues and lay down devastating fire coverage.
+    <description>A harness is required to properly use the M57 intelligent firearm. Before the introduction of the harness only the burliest of marines could bring it to bear against the URMCs enemies. Now any marine can use it without speed or accuracy issues and lay down devastating fire coverage.
 The M57 Harness is rated just like the M2 Recon in terms of protection. Although there have been talks of a more armored power armor being developed.</description>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -842,7 +842,7 @@ The M57 Harness is rated just like the M2 Recon in terms of protection. Although
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/M2Recon/M2Recon</texPath>
+      <texPath>Armor/M57Harness/M57Harness</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -872,7 +872,7 @@ The M57 Harness is rated just like the M2 Recon in terms of protection. Although
       <Uranium>5</Uranium>
     </costList>
     <apparel>
-      <wornGraphicPath>Armor/M2Recon/M2Recon</wornGraphicPath>
+      <wornGraphicPath>Armor/M57Harness/M57Harness</wornGraphicPath>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>

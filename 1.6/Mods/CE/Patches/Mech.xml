@@ -182,6 +182,14 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/PawnKindDef[defName="pphhyy_CombatEngineer"]/lifeStages/li/dessicatedBodyGraphicData</xpath>
+				</li>
+
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/PawnKindDef[defName="pphhyy_Engineer"]/lifeStages/li/dessicatedBodyGraphicData</xpath>
+				</li>
+
 			</operations>
 		</match>
 	</Operation>

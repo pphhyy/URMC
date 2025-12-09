@@ -788,7 +788,7 @@ Not much is logged about their home world or who made these creatures. Marines t
     </recipeUsers>
   </RecipeDef>
 
-<!-- Engineer -->
+<!-- Combat Engineer -->
 
   <ThingDef ParentName="LightMechanoid">
     <defName>pphhyy_CombatEngineer</defName>
@@ -820,6 +820,13 @@ Not much is logged about their home world or who made these creatures. Marines t
         </li>
       </lifeStageAges>
     </race>
+    <comps>
+      <li Class="URMC.CompProperties_MechDetonator">
+        <iconPath>UI/ExplodyButton</iconPath>
+        <radius>3</radius>
+        <damage>50</damage>        <!--default is -1-->
+      </li>
+    </comps>
   </ThingDef>
 
   <PawnKindDef ParentName="NonCombatLightMechanoidKind">

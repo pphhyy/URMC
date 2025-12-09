@@ -1001,6 +1001,78 @@
 
 <!-- BackPacks -->
 
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="pphhyy_CombatRucksackMkI"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>Shoulders</li>
+		</value>
+	</Operation>
 
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_CombatRucksackMkI"]/apparel/layers</xpath>
+		<value>
+			<layers>
+			<li>Backpack</li>
+			</layers>
+		</value>
+	</Operation>
+
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="pphhyy_CombatRucksackMkII"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>Shoulders</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_CombatRucksackMkII"]/apparel/layers</xpath>
+		<value>
+			<layers>
+			<li>Backpack</li>
+			</layers>
+		</value>
+	</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_CombatRucksackMkI"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryBulk>20</CarryBulk>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_CombatRucksackMkII"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryBulk>20</CarryBulk>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+			defName = "pphhyy_CombatRucksackMkI" 
+			]/statBases
+		</xpath>
+		<value>
+			<Bulk>3</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
+
+<Operation Class="PatchOperationAdd">
+		<xpath>
+			Defs/ThingDef[
+			defName = "pphhyy_CombatRucksackMkII" 
+			]/statBases
+		</xpath>
+		<value>
+			<Bulk>3</Bulk>
+			<WornBulk>1</WornBulk>
+		</value>
+	</Operation>
 
 </Patch>
