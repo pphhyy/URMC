@@ -157,6 +157,60 @@
 		</value>
 	</Operation>
 
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Harness"]/statBases</xpath>
+		<value>
+			<Bulk>40</Bulk>
+			<WornBulk>6</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Harness"]/statBases/MaxHitPoints</xpath>
+		<value>
+			<MaxHitPoints>400</MaxHitPoints>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Harness"]/statBases/Mass</xpath>
+		<value>
+			<Mass>10</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Harness"]/statBases/Flammability</xpath>
+		<value>
+			<Flammability>0.2</Flammability>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Harness"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>16</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Harness"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>34</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Harness"]</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryWeight>50</CarryWeight>
+				<CarryBulk>8</CarryBulk>
+				<MoveSpeed>0.4</MoveSpeed>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ThingDef[@Name="pphhyy_URMCArmors"]/apparel/bodyPartGroups</xpath>
 		<value>
@@ -582,9 +636,40 @@
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="pphhyy_UtilityCover" or defName="pphhyy_OfficerBeret" or
-			defName="pphhyy_ColonialBeret"]/statBases/StuffEffectMultiplierArmor</xpath>
+			defName="pphhyy_ColonialBeret" or defName="pphhyy_Bandana"]/statBases/StuffEffectMultiplierArmor</xpath>
 		<value>
 			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Headset"]/statBases/ArmorRating_Sharp</xpath>
+		<value>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Headset"]/statBases</xpath>
+		<value>
+			<NightVisionEfficiency_Apparel>0.80</NightVisionEfficiency_Apparel>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Headset"]/statBases/ArmorRating_Blunt</xpath>
+		<value>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="pphhyy_M57Headset"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets Inherit="False">
+				<AimingAccuracy>0.6</AimingAccuracy>
+				<ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
+			</equippedStatOffsets>
 		</value>
 	</Operation>
 
@@ -913,5 +998,9 @@
 			</li>
 		</value>
 	</Operation>
+
+<!-- BackPacks -->
+
+
 
 </Patch>

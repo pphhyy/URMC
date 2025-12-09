@@ -2,15 +2,15 @@
 
 <Defs>
 
-  <!--   <ThingDef ParentName="MechanitorPackBase">
-        <defName>pphhyy_MedicPack</defName>
-        <label>medic pack</label>
-        <description>PLACEHOLDER</description>
+  <ThingDef ParentName="MechanitorPackBase">
+        <defName>pphhyy_CombatRucksackMkI</defName>
+        <label>combat rucksack mkI</label>
+        <description>Standard issue for all Ammo Bearers. Made of a thick polyester substitute to prevent tearing and increase sturdiness. The combat rucksack comes in MK1 and MK2 with varying weight thresholds.</description>
         <techLevel>Spacer</techLevel>
         <thingClass>Apparel</thingClass>
         <recipeMaker>
           <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-          <researchPrerequisite>BasicMechtech</researchPrerequisite>
+          <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
           <recipeUsers>
             <li>TableMachining</li>
           </recipeUsers>
@@ -23,11 +23,11 @@
           </skillRequirements>
         </recipeMaker>
         <costList>
-          <Steel>100</Steel>
-          <ComponentIndustrial>6</ComponentIndustrial>
+          <Steel>10</Steel>
+          <Leather_Plain>25</Leather_Plain>
         </costList>
         <graphicData>
-          <texPath>Gear/BackPackWip/BackPackWip_south</texPath>
+          <texPath>Gear/URMCCombatRucksackV1/URMCCombatRucksackV1</texPath>
           <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <tickerType>Normal</tickerType>
@@ -52,7 +52,7 @@
           <layers>
             <li>Belt</li>
           </layers>
-          <wornGraphicPath>Gear/BackPackWip/BackPackWip</wornGraphicPath>
+          <wornGraphicPath>Gear/URMCCombatRucksackV1/URMCCombatRucksackV1</wornGraphicPath>
           <wornGraphicData>
             <renderUtilityAsPack>true</renderUtilityAsPack>
             <north>
@@ -85,19 +85,19 @@
           <li>Clothing</li>
         </tradeTags>
         <equippedStatOffsets>
-            <MedicalQualityMax>0.4</MedicalQualityMax>
+            <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
       </ThingDef>
 
       <ThingDef ParentName="MechanitorPackBase">
-        <defName>pphhyy_EngineerPack</defName>
-        <label>engineer pack</label>
-        <description>PLACEHOLDER</description>
+        <defName>pphhyy_CombatRucksackMkII</defName>
+        <label>combat rucksack mkII</label>
+        <description>Standard issue for all Ammo Bearers. Made of a thick polyester substitute to prevent tearing and increase sturdiness. The combat rucksack comes in MK1 and MK2 with varying weight thresholds.</description>
         <techLevel>Spacer</techLevel>
         <thingClass>Apparel</thingClass>
         <recipeMaker>
           <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-          <researchPrerequisite>BasicMechtech</researchPrerequisite>
+          <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
           <recipeUsers>
             <li>TableMachining</li>
           </recipeUsers>
@@ -110,11 +110,11 @@
           </skillRequirements>
         </recipeMaker>
         <costList>
-          <Steel>100</Steel>
-          <ComponentIndustrial>6</ComponentIndustrial>
+          <Steel>15</Steel>
+          <Leather_Plain>25</Leather_Plain>
         </costList>
         <graphicData>
-          <texPath>Gear/BackPackWip/BackPackWip_south</texPath>
+          <texPath>Gear/URMCCombatRucksackV2/URMCCombatRucksackV2</texPath>
           <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <tickerType>Normal</tickerType>
@@ -139,7 +139,7 @@
           <layers>
             <li>Belt</li>
           </layers>
-          <wornGraphicPath>Gear/BackPackWip/BackPackWip</wornGraphicPath>
+          <wornGraphicPath>Gear/URMCCombatRucksackV2/URMCCombatRucksackV2</wornGraphicPath>
           <wornGraphicData>
             <renderUtilityAsPack>true</renderUtilityAsPack>
             <north>
@@ -172,8 +172,8 @@
           <li>Clothing</li>
         </tradeTags>
         <equippedStatOffsets>
-            <ConstructionSpeed>0.4</ConstructionSpeed>
+            <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
-      </ThingDef> -->
+      </ThingDef> 
 
 </Defs>

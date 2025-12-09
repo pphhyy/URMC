@@ -818,7 +818,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
       </recipeUsers>
     </recipeMaker>
     <weaponTags>
-    <li>pphhyy_M52HBreachingShotgun</li>
+      <li>pphhyy_M52HBreachingShotgun</li>
     </weaponTags>
     <verbs>
       <li>
@@ -993,5 +993,473 @@ The S12 was created to give marines a competent weapon to break open insectoid s
     </modExtensions>
   </ThingDef>
 
+  <!--__Arsenal Update 1__-->
+
+  <!-- Intelligent Firearm -->
+
+  <ThingDef ParentName="pphhyy_RangedWeapons">
+    <defName>pphhyy_IntelligentFirearm</defName>
+    <label>intelligent firearm</label>
+    <description>M57 Intelligent Firearm is a legally distinct weapon. While not as long range as other LMGs it has perfect accuracy at all effective ranges and friendly fire is highly unlikely. Expensive to manufacture and needs a host of other equipment to wield properly it is still taken on close quarters missions by the URMC.
+The M57 earned its reputation during many bug nest clearing; emptying nest after nest with unending pulse fire.</description>
+    <graphicData>
+      <texPath>Weapon/M57IntelligentFirearm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>1</AccuracyShort>
+      <AccuracyMedium>1</AccuracyMedium>
+      <AccuracyLong>1</AccuracyLong>
+      <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <weaponTags>
+      <li>pphhyy_IntelligentFirearm</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>pphhyy_Bullet_M43PulseRifle</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>pphhyy_PulseRifleSound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.4</MoveSpeed>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshThree</def>
+        <drawSize>(0.6,0.6)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.75,0.04)</li>
+        </offsets>
+      </li>
+      <li Class="VEF.Weapons.HeavyWeapon">
+        <weaponHitPointsDeductionOnShot>1</weaponHitPointsDeductionOnShot>
+        <isHeavy>true</isHeavy>
+        <supportedArmors>
+          <li>pphhyy_M57Harness</li>
+        </supportedArmors>
+        <disableOptionLabelKey>URMC_CantEquipWeapon</disableOptionLabelKey>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- Anvil Rifle MA3-RS -->
+
+  <ThingDef ParentName="pphhyy_RangedWeapons">
+    <defName>pphhyy_AnvilRifle</defName>
+    <label>Anvil Rifle MA3-RS</label>
+    <description>The MA3-RS or colloquially known as "The Anvil" or "Anvil Rifle", is a magazine fed bullpup rifle ranging in different low penetrating ammo types. Manufactured by Anvil Industries for security operations within colonial law. Built in mind for common ammo types with an ammo indicator, compass, and multi-tool attachment.</description>
+    <graphicData>
+      <texPath>Weapon/AnvilRifleMA3RS</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>420</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AnvilRifle</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>pphhyy_AnvilRifle</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshThree</def>
+        <drawSize>(0.6,0.6)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.46,0.04)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AnvilRifle</defName>
+    <label>anvil rifle bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <speed>70</speed>
+      <armorPenetrationBase>0.1</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <!-- Anvil LMG MH3-R -->
+
+  <ThingDef ParentName="pphhyy_RangedWeapons">
+    <defName>pphhyy_AnvilLMG</defName>
+    <label>Anvil LMG MH3-R</label>
+    <description>A drum fed light machine gun manufactured by Anvil Industries. Designed by James Holt, lead designer at Anvil.  The Holt or commonly referred as the "Mini Holt", is a low pen LMG with a focus on precision firing. Originally designed to curtail invasive species that have overtaken local ecosystems. The MH3-R has become a staple in fast moving operations and crowd control.</description>
+    <graphicData>
+      <texPath>Weapon/AnvilHoltLMGMH3R</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <recipeMaker>
+      <researchPrerequisite>GasOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>445</displayPriority>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>34000</WorkToMake>
+      <Mass>8.5</Mass>
+      <AccuracyTouch>0.40</AccuracyTouch>
+      <AccuracyShort>0.48</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.26</AccuracyLong>
+      <RangedWeapon_Cooldown>1.28</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AnvilLMG</defaultProjectile>
+        <warmupTime>1.8</warmupTime>
+        <range>25.9</range>
+        <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>Shot_Minigun</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>pphhyy_AnvilLMG</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshThree</def>
+        <drawSize>(0.6,0.6)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.46,0.04)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AnvilLMG</defName>
+    <label>Anvil LMG bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>46</speed>
+      <armorPenetrationBase>0.1</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+  <!-- M47 Pulse SMG -->
+
+  <ThingDef ParentName="pphhyy_RangedWeapons">
+    <defName>pphhyy_M47PulseSMG</defName>
+    <label>M47 pulse SMG</label>
+    <description>This is the standard issue pulse submachine gun used by the United Rimworld Marine Corp. Faster firing pulse with an extra kick in recoil. Unlike the Pulse rifle, the submachine gun is not standard issue. Stored securely at checkpoints and barracks. The Pulse SMG is intended for emergency combat scenarios in which close quarters combat is required.</description>
+    <graphicData>
+      <texPath>Weapon/M47PulseSMG</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.66</AccuracyTouch>
+      <AccuracyShort>0.77</AccuracyShort>
+      <AccuracyMedium>0.72</AccuracyMedium>
+      <AccuracyLong>0.61</AccuracyLong>
+      <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+    </costList>
+    <weaponTags>
+      <li>pphhyy_M47PulseSMG</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>pphhyy_Bullet_M43PulseRifle</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>27.9</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>pphhyy_PulseRifleSound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshThree</def>
+        <drawSize>(0.55,0.55)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.46,0.04)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- M46 Heavy Pulse Rifle -->
+
+  <ThingDef ParentName="pphhyy_RangedWeapons">
+    <defName>pphhyy_M46HeavyPulseRifle</defName>
+    <label>M46 heavy pulse rifle</label>
+    <description>The Heavy Pulse Rifle is a 3 round burst rifle with an attached muzzle brake for better accuracy. Standard ammo type is heavier than its regular counterpart. You can fill out a requisition form from the armory or obtain one based on duty position.</description>
+    <graphicData>
+      <texPath>Weapon/M46HeavyPulseRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.4</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCMarine</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.72</AccuracyTouch>
+      <AccuracyShort>0.84</AccuracyShort>
+      <AccuracyMedium>0.79</AccuracyMedium>
+      <AccuracyLong>0.67</AccuracyLong>
+      <RangedWeapon_Cooldown>1.87</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>75</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <weaponTags>
+      <li>pphhyy_M46HeavyPulseRifle</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>pphhyy_Bullet_M43PulseRifle</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>pphhyy_PulseRifleSound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalshThree</def>
+        <drawSize>(0.6,0.6)</drawSize>
+        <isAlternately>true</isAlternately>
+        <offsets>
+          <li>(0.6,0.04)</li>
+        </offsets>
+      </li>
+    </modExtensions>
+  </ThingDef>
 
 </Defs>

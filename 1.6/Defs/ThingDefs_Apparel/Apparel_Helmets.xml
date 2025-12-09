@@ -659,4 +659,72 @@
     </products>
   </RecipeDef>
 
+  <!--__Arsenal Update 1__-->
+
+  <!-- M57 Headset -->
+
+  <ThingDef ParentName="pphhyy_URMC_Helmets">
+    <defName>pphhyy_M57Headset</defName>
+    <label>M57 Headset</label>
+    <description>M57 Headset is required by all marines to wield a M57, it is critical for human input on target acquisition. Without it the M57 would fire at anything that moves. The M57 headset can also be used with other firearms to improve the wearers accuracy no different then the standard gunlink.</description>
+    <graphicData>
+      <texPath>HelmetsAndHats/URMCM57Headset/URMCM57Headset</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0</VacuumResistance>
+    </equippedStatOffsets>
+    <statBases>
+      <Mass>0.1</Mass>
+      <ArmorRating_Sharp>0</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0</ArmorRating_Blunt>
+      <ArmorRating_Heat>0</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>0</Insulation_Heat>
+    </statBases>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>10</Plasteel>
+    </costList>
+    <apparel>
+      <wornGraphicPath>HelmetsAndHats/URMCM57Headset/URMCM57Headset</wornGraphicPath>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups Inherit="False">
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+          <li>EyeCover</li>
+        </layers>
+      <tags Inherit="False">
+        <li>URMC_M57Headset</li>
+      </tags>
+      <defaultOutfitTags Inherit="False">
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>Clothing</li>
+    </tradeTags>
+    <thingSetMakerTags Inherit="False">
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+    <comps Inherit="False">
+      <li Class="CompProperties_Biocodable"/>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Styleable" />
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
 </Defs>

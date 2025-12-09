@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<ThingDef ParentName="pphhyy_RangedWeapons">
+    <defName>pphhyy_GrendelBeam</defName>
+    <label>grendel beam M5-R</label>
+    <description>The M5-R Grendel beam is a high-powered energy weapon manufactured by Anvil Industries. Designed strictly for high armored wildlife or acts of rebellion. The Grendel beam can penetrate most metallic composites and has the option of additional licensing for attachment mounts. May or may not come with required G-Series 67 batteries.</description>
+    <tradeability>Sellable</tradeability>
+    <relicChance>0</relicChance>
+    <smeltable>false</smeltable>
+    <graphicData>
+      <texPath>Weapon/GrendelBeamM5R</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCHeavy</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Plasteel>40</Plasteel>
+      <Steel>30</Steel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToMake>47000</WorkToMake>
+      <Mass>4</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <verbs>
+      <li>
+        <verbClass>Verb_ShootBeam</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <warmupTime>1.0</warmupTime>
+        <range>24.9</range>
+        <minRange>3.9</minRange>
+        <beamFullWidthRange>6.9</beamFullWidthRange>
+        <burstShotCount>5</burstShotCount>
+        <showBurstShotStats>false</showBurstShotStats>
+        <beamWidth>6</beamWidth>
+        <ticksBetweenBurstShots>22</ticksBetweenBurstShots>
+        <beamDamageDef>GrendelBeamDamage</beamDamageDef>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <soundCastBeam>BeamGraser_Shooting</soundCastBeam>
+        <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+        <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+        <beamMaxDeviation>1.5</beamMaxDeviation>
+        <beamCurvature>0.6</beamCurvature>
+        <beamMoteDef>Mote_GraserBeamBase</beamMoteDef>
+        <beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
+        <beamChanceToStartFire>0.85</beamChanceToStartFire>
+        <beamChanceToAttachFire>0.85</beamChanceToAttachFire>
+        <beamFireSizeRange>0.55~0.85</beamFireSizeRange>
+        <beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+        <beamStartOffset>0.8</beamStartOffset>
+        <beamLineFleckChanceCurve>
+          <points>
+            <li>(0, 0)</li>
+            <li>(0.65, 0.4)</li>
+            <li>(1, 0.75)</li>
+          </points>
+        </beamLineFleckChanceCurve>
+      </li>
+    </verbs>
+    <weaponTags>
+      <li>pphhyy_GrendelBeam</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+<DamageDef ParentName="Beam">
+    <defName>GrendelBeamDamage</defName>
+    <label>grendel beam</label>
+    <defaultDamage>30</defaultDamage>
+    <defaultArmorPenetration>0.8</defaultArmorPenetration>
+  </DamageDef>
+
+
+</Defs>

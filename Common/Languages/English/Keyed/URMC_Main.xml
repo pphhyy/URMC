@@ -2,5 +2,7 @@
 <LanguageData>
 
 <URMC_MechDetonate>Detonate</URMC_MechDetonate>
+<URMC_CantEquipWeapon>Weapon requires the M57 harness and headset to be used.</URMC_CantEquipWeapon>
+
 
 </LanguageData>
