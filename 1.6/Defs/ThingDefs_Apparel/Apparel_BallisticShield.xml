@@ -15,6 +15,7 @@
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
             <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+            <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
         </graphicData>
         <equippedStatOffsets>
@@ -43,8 +44,8 @@
             <WorkToMake>6000</WorkToMake>
             <MarketValue>300</MarketValue>
             <Flammability>0.4</Flammability>
-            <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
             <EquipDelay>2</EquipDelay>
         </statBases>
         <apparel>
@@ -53,6 +54,9 @@
             </defaultOutfitTags>
             <bodyPartGroups>
                 <li>LeftHand</li>
+                <li>Torso</li>
+                <li>Legs</li>
+                <li>Arms</li>
             </bodyPartGroups>
             <layers>
                 <li>VFEC_OuterShell</li>
@@ -60,16 +64,41 @@
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
         </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(95, 99, 76, 255)</min>
+                    <max>(95, 99, 76, 255)</max>
+                </li>
+            </options>
+        </colorGenerator>
         <comps>
             <li Class="VEF.Apparels.CompProperties_Shield">
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
+                    <li>LeftHand</li>
+                    <li>Torso</li>
+                    <li>Legs</li>
                     <li>Arms</li>
                     <li>Hands</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
                     <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.8</drawSize>
                 </offHandGraphicData>
                 <offHandHoldOffset>
@@ -92,13 +121,6 @@
             </li>
         </comps>
         <equippedAngleOffset>0</equippedAngleOffset>
-        <modExtensions>
-            <li Class="VEF.Things.ThingDefExtension">
-                <useFactionColourForPawnKinds>
-
-                </useFactionColourForPawnKinds>
-            </li>
-        </modExtensions>
     </ThingDef>
 
 </Defs>

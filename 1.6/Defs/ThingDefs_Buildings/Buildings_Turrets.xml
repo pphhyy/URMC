@@ -265,7 +265,7 @@
 
  <ThingDef ParentName="AutocannonTurret">
     <defName>pphhyy_Base_IntelligentTurret</defName>
-    <label>UA13 INtelligent Firearm</label>
+    <label>UA13 INtelligent Turret</label>
     <description>Turret version of the M57 sporting all of its advantages but must be placed before a fight. Because of its advanced components it does not need to be manned; allowing it to track confirm and engage threats independently.</description>
     <uiIconPath>Building/Turrets/UA13IntelligentFirearm</uiIconPath>
     <statBases>
@@ -318,7 +318,7 @@
 
 <ThingDef ParentName="BaseWeaponTurret">
     <defName>pphhyy_Gun_IntelligentTurret</defName>
-    <label>UA13 INtelligent Firearm</label>
+    <label>UA13 Intelligent Turret</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>
     <graphicData>
       <texPath>Building/Turrets/UA13IntelligentFirearm</texPath>
@@ -343,7 +343,7 @@
         <range>32.9</range>
         <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
         <burstShotCount>12</burstShotCount>
-        <soundCast>Shot_Autocannon</soundCast>
+        <soundCast>pphhyy_PulseRifleSound</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>

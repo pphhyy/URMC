@@ -1000,7 +1000,7 @@ The S12 was created to give marines a competent weapon to break open insectoid s
   <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_IntelligentFirearm</defName>
     <label>intelligent firearm</label>
-    <description>M57 Intelligent Firearm is a legally distinct weapon. While not as long range as other LMGs it has perfect accuracy at all effective ranges and friendly fire is highly unlikely. Expensive to manufacture and needs a host of other equipment to wield properly it is still taken on close quarters missions by the URMC.
+    <description>M57 Intelligent Firearm is a legally distinct weapon, that requires the M57 Harness to be used. While not as long range as other LMGs it has perfect accuracy at all effective ranges and friendly fire is highly unlikely. Expensive to manufacture and needs a host of other equipment to wield properly it is still taken on close quarters missions by the URMC.
 The M57 earned its reputation during many bug nest clearing; emptying nest after nest with unending pulse fire.</description>
     <graphicData>
       <texPath>Weapon/M57IntelligentFirearm</texPath>
@@ -1022,7 +1022,7 @@ The M57 earned its reputation during many bug nest clearing; emptying nest after
     </thingSetMakerTags>
     <statBases>
       <WorkToMake>40000</WorkToMake>
-      <Mass>3.5</Mass>
+      <Mass>5.5</Mass>
       <AccuracyTouch>1</AccuracyTouch>
       <AccuracyShort>1</AccuracyShort>
       <AccuracyMedium>1</AccuracyMedium>
@@ -1073,6 +1073,13 @@ The M57 earned its reputation during many bug nest clearing; emptying nest after
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <comps>
+      <li Class="WeaponRequirement.CompProperties_WeaponRequirement">
+        <requiredApparels>
+          <li>pphhyy_M57Harness</li>
+        </requiredApparels>
+      </li>
+    </comps>
     <modExtensions>
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalshThree</def>
@@ -1081,14 +1088,6 @@ The M57 earned its reputation during many bug nest clearing; emptying nest after
         <offsets>
           <li>(0.75,0.04)</li>
         </offsets>
-      </li>
-      <li Class="VEF.Weapons.HeavyWeapon">
-        <weaponHitPointsDeductionOnShot>1</weaponHitPointsDeductionOnShot>
-        <isHeavy>true</isHeavy>
-        <supportedArmors>
-          <li>pphhyy_M57Harness</li>
-        </supportedArmors>
-        <disableOptionLabelKey>URMC_CantEquipWeapon</disableOptionLabelKey>
       </li>
     </modExtensions>
   </ThingDef>

@@ -65,7 +65,7 @@
     </apparelRequired>
     <factionLeader>true</factionLeader>
     <apparelTags>
-      <li>URMC_OfficerBeret</li>
+      <li>URMC_OfficerBeretNot</li>
       <li>URMC_OfficerHelmet</li>
     </apparelTags>
     <weaponTags>
@@ -110,7 +110,7 @@
     </apparelRequired>
     <apparelTags>
       <li>URMC_MarineHelmet</li>
-      <li>URMC_ColonialBeret</li>
+      <li>URMC_ColonialBeretNot</li>
     </apparelTags>
     <weaponTags>
       <li>pphhyy_M47PulseSMG</li>
@@ -130,7 +130,7 @@
       <li>pphhyy_ColonialFatigue</li>
     </apparelRequired>
     <apparelTags>
-      <li>URMC_ColonialBeret</li>
+      <li>URMC_ColonialBeretNot</li>
       <li>URMC_VeteranHelmet</li>
     </apparelTags>
     <weaponTags>
@@ -166,7 +166,7 @@
     <label>marine specialist</label>
     <combatPower>110</combatPower>
     <apparelTags>
-      <li>URMC_ColonialBeret</li>
+      <li>URMC_ColonialBeretNot</li>
       <li>URMC_MarineHelmet</li>
     </apparelTags>
     <apparelRequired>
@@ -188,7 +188,7 @@
     <label>marine cadet</label>
     <combatPower>50</combatPower>
     <apparelTags>
-      <li>URMC_UtilityCover</li>
+      <li>URMC_UtilityCoverNot</li>
       <li>URMC_M3SLight</li>
     </apparelTags>
     <apparelRequired>
@@ -211,7 +211,7 @@
     <label>marine scout</label>
     <combatPower>60</combatPower>
     <apparelTags>
-      <li>URMC_UtilityCover</li>
+      <li>URMC_UtilityCoverNot</li>
       <li>URMC_M3SHelmet</li>
     </apparelTags>
     <apparelRequired>
@@ -259,7 +259,7 @@
     </apparelRequired>
     <weaponMoney>900~1500</weaponMoney>
     <apparelTags>
-      <li>URMC_UtilityCover</li>
+      <li>URMC_UtilityCoverNot</li>
       <li>URMC_Bandana</li>
     </apparelTags>
     <weaponTags>
@@ -309,9 +309,9 @@
     <invNutrition>10.0</invNutrition>
     <gearHealthRange>1~1</gearHealthRange>
     <itemQuality>Good</itemQuality>
-    <weaponMoney>500~1500</weaponMoney>
+    <weaponMoney>900~1500</weaponMoney>
     <weaponTags>
-      <li>pphhyy_M45PulseLMG</li>
+      <li>pphhyy_IntelligentFirearm</li>
     </weaponTags>
     <apparelRequired>
       <li>pphhyy_M3Veteran</li>
@@ -364,14 +364,14 @@
     <invNutrition>10.0</invNutrition>
     <gearHealthRange>1~1</gearHealthRange>
     <itemQuality>Good</itemQuality>
-    <weaponMoney>500~1500</weaponMoney>
+    <weaponMoney>900~1500</weaponMoney>
     <weaponTags>
-      <li>pphhyy_M45PulseLMG</li>
+      <li>pphhyy_IntelligentFirearm</li>
     </weaponTags>
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Veteran</li>
-      <li>pphhyy_UtilityCover</li>
+      <li>pphhyy_UtilityCoverNot</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>pphhyy_FavColor</favoriteColor>
@@ -426,7 +426,7 @@
     <apparelRequired>
       <li>pphhyy_ColonialFatigue</li>
       <li>pphhyy_M3Veteran</li>
-      <li>pphhyy_UtilityCover</li>
+      <li>pphhyy_UtilityCoverNot</li>
     </apparelRequired>
     <ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
     <favoriteColor>pphhyy_FavColor</favoriteColor>
