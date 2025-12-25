@@ -29,6 +29,7 @@
         <graphicData>
           <texPath>Gear/URMCCombatRucksackV1/URMCCombatRucksackV1</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.5</drawSize>
         </graphicData>
         <tickerType>Normal</tickerType>
         <statBases>
@@ -87,6 +88,27 @@
         <equippedStatOffsets>
             <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
+        <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
       </ThingDef>
 
       <ThingDef ParentName="MechanitorPackBase">
@@ -116,6 +138,7 @@
         <graphicData>
           <texPath>Gear/URMCCombatRucksackV2/URMCCombatRucksackV2</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>1.5</drawSize>
         </graphicData>
         <tickerType>Normal</tickerType>
         <statBases>
@@ -174,6 +197,27 @@
         <equippedStatOffsets>
             <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
+        <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
       </ThingDef> 
 
 </Defs>

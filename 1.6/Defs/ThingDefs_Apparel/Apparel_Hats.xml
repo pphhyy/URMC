@@ -50,7 +50,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
+     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
@@ -76,6 +76,77 @@
     </tradeTags>
   </ThingDef>
 
+<!-- Colonial Beret (not stuffable)-->
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>pphhyy_ColonialBeretNot</defName>
+    <label>colonial beret</label>
+    <description>The comfort wear of the corps, is what the officers would tell you. When not murdering bugs or other less then friendly aliens the Marines wear these during down time.</description>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>HelmetsAndHats/ColonialBeret/ColonialBeret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>25</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>HelmetsAndHats/ColonialBeret/ColonialBeret</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>URMC_ColonialBeretNot</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+     <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
 
   <!-- Officer Beret -->
 
@@ -125,7 +196,79 @@
       </defaultOutfitTags>
       <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
+     <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+<!-- Officer Beret (not stuffable)-->
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>pphhyy_OfficerBeretNot</defName>
+    <label>officer beret</label>
+    <description>The comfort wear of the corps, is what the officers would tell you. When not murdering bugs or other less then friendly aliens the Marines wear these during down time. This Beret is meant for the officers.</description>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>HelmetsAndHats/OfficerBeret/OfficerBeret</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>25</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>HelmetsAndHats/OfficerBeret/OfficerBeret</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>URMC_OfficerBeretNot</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
@@ -160,6 +303,7 @@
     <possessionCount>1</possessionCount>
     <recipeMaker>
       <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+      <useIngredientsForColor>false</useIngredientsForColor>
     </recipeMaker>
     <graphicData>
       <texPath>HelmetsAndHats/UtilityCover/UtilityCover</texPath>
@@ -176,9 +320,6 @@
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>1800</WorkToMake>
       <Mass>0.14</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>3</EquipDelay>
     </statBases>
     <apparel>
@@ -199,7 +340,77 @@
       </defaultOutfitTags>
       <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
+   <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(95, 99, 76, 255)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(95, 99, 76, 255)</min>
+          <max>(95, 99, 76, 255)</max>
+        </li>
+      </options>
+    </colorGenerator>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+<!-- Utility Cover (not stuffable)-->
+
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>pphhyy_UtilityCoverNot</defName>
+    <label>utility cover</label>
+    <description>The comfort wear of the corps, is what the officers would tell you. When not murdering bugs or other less then friendly aliens the Marines wear these during down time. The Utility Cover is good for keeping rain off your pants.</description>
+    <possessionCount>1</possessionCount>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+      <useIngredientsForColor>false</useIngredientsForColor>
+    </recipeMaker>
+    <graphicData>
+      <texPath>HelmetsAndHats/UtilityCover/UtilityCover</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <costList>
+      <Cloth>25</Cloth>
+    </costList>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <EquipDelay>3</EquipDelay>
+    </statBases>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>HelmetsAndHats/UtilityCover/UtilityCover</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>URMC_UtilityCoverNot</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+   <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
           <weight>10</weight>
@@ -278,22 +489,6 @@
       </defaultOutfitTags>
       <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.9,0.54,0.15,1)</only>
-        </li>
-        <li>
-          <weight>15</weight>
-          <only>(0.9,0.6,0.18,1)</only>
-        </li>
-        <li>
-          <weight>20</weight>
-          <only>(0.9,0.42,0.23,1)</only>
-        </li>
-      </options>
-    </colorGenerator>
     <tradeTags>
       <li>BasicClothing</li>
     </tradeTags>
