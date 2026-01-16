@@ -2,7 +2,7 @@
 
 <Defs>
 
-  <ThingDef ParentName="MechanitorPackBase">
+  <ThingDef ParentName="ApparelMakeableBase">
         <defName>pphhyy_CombatRucksackMkI</defName>
         <label>combat rucksack mkI</label>
         <description>Standard issue for all Ammo Bearers. Made of a thick polyester substitute to prevent tearing and increase sturdiness. The combat rucksack comes in MK1 and MK2 with varying weight thresholds.</description>
@@ -111,7 +111,7 @@
     </colorGenerator>
       </ThingDef>
 
-      <ThingDef ParentName="MechanitorPackBase">
+      <ThingDef ParentName="ApparelMakeableBase">
         <defName>pphhyy_CombatRucksackMkII</defName>
         <label>combat rucksack mkII</label>
         <description>Standard issue for all Ammo Bearers. Made of a thick polyester substitute to prevent tearing and increase sturdiness. The combat rucksack comes in MK1 and MK2 with varying weight thresholds.</description>

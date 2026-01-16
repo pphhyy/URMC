@@ -2,7 +2,7 @@
 
 
 <Defs>
-<!-- 
+
   <RecipeDef>
     <defName>pphhyy_SmeltForScrap</defName>
     <label>smelt to get scrap</label>
@@ -45,9 +45,9 @@
       <li>AllowNonBurnableApparel</li>
     </forceHiddenSpecialFilters>
     <products>
-      <Chemfuel>1</Chemfuel>
+      <pphhyy_Scrap>1</pphhyy_Scrap>
     </products>
-  </RecipeDef> -->
+  </RecipeDef> 
 
 
 
