@@ -2,6 +2,8 @@
 
 <Defs>
 
+<!-- Ballistic Shield -->
+
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>pphhyy_URMCB2Shield</defName>
         <label>URMC B2 Shield</label>
@@ -46,6 +48,374 @@
             <Flammability>0.4</Flammability>
             <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <bodyPartGroups>
+                <li>LeftHand</li>
+                <li>Torso</li>
+                <li>Legs</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>VFEC_OuterShell</li>
+            </layers>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(95, 99, 76, 255)</min>
+                    <max>(95, 99, 76, 255)</max>
+                </li>
+            </options>
+        </colorGenerator>
+        <comps>
+            <li Class="VEF.Apparels.CompProperties_Shield">
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>LeftHand</li>
+                    <li>Torso</li>
+                    <li>Legs</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.8</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(-0.2, 0, 0)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(0, 0, 0)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0.25, -0.047, 0)</offset>
+                    </south>
+                    <west>
+                        <offset>(0, -0.05, 0)</offset>
+                        <behind>true</behind>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <equippedAngleOffset>0</equippedAngleOffset>
+    </ThingDef>
+
+<!-- Barricade MKI -->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>pphhyy_BarricadeMKI</defName>
+        <label>Barricade MKI</label>
+        <description>PLACEHOLDER</description>
+        <burnableByRecipe>true</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit= "false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <pphhyy_Scrap>1</pphhyy_Scrap>
+        </costList>
+        <equipmentType>None</equipmentType>
+        <thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+        <weaponTags>
+            <li>pphhyy_URMCB2Shield</li>
+        </weaponTags>
+        <statBases>
+            <Mass>3</Mass>
+            <WorkToMake>6000</WorkToMake>
+            <MarketValue>300</MarketValue>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <bodyPartGroups>
+                <li>LeftHand</li>
+                <li>Torso</li>
+                <li>Legs</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>VFEC_OuterShell</li>
+            </layers>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(95, 99, 76, 255)</min>
+                    <max>(95, 99, 76, 255)</max>
+                </li>
+            </options>
+        </colorGenerator>
+        <comps>
+            <li Class="VEF.Apparels.CompProperties_Shield">
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>LeftHand</li>
+                    <li>Torso</li>
+                    <li>Legs</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.8</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(-0.2, 0, 0)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(0, 0, 0)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0.25, -0.047, 0)</offset>
+                    </south>
+                    <west>
+                        <offset>(0, -0.05, 0)</offset>
+                        <behind>true</behind>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <equippedAngleOffset>0</equippedAngleOffset>
+    </ThingDef>
+
+<!-- Barricade MKII -->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>pphhyy_BarricadeMKII</defName>
+        <label>Barricade MKII</label>
+        <description>PLACEHOLDER</description>
+        <burnableByRecipe>true</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit= "false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <pphhyy_Scrap>2</pphhyy_Scrap>
+            <pphhyy_BarricadeMKI>4</pphhyy_BarricadeMKI>
+        </costList>
+        <equipmentType>None</equipmentType>
+        <thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+        <weaponTags>
+            <li>pphhyy_URMCB2Shield</li>
+        </weaponTags>
+        <statBases>
+            <Mass>3</Mass>
+            <WorkToMake>6000</WorkToMake>
+            <MarketValue>300</MarketValue>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <bodyPartGroups>
+                <li>LeftHand</li>
+                <li>Torso</li>
+                <li>Legs</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <layers>
+                <li>VFEC_OuterShell</li>
+            </layers>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(95, 99, 76, 255)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(95, 99, 76, 255)</min>
+                    <max>(95, 99, 76, 255)</max>
+                </li>
+            </options>
+        </colorGenerator>
+        <comps>
+            <li Class="VEF.Apparels.CompProperties_Shield">
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>LeftHand</li>
+                    <li>Torso</li>
+                    <li>Legs</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.8</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(-0.2, 0, 0)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(0, 0, 0)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(0.25, -0.047, 0)</offset>
+                    </south>
+                    <west>
+                        <offset>(0, -0.05, 0)</offset>
+                        <behind>true</behind>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+        <equippedAngleOffset>0</equippedAngleOffset>
+    </ThingDef>
+
+<!-- Barricade MKIII -->
+
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>pphhyy_BarricadeMKIII</defName>
+        <label>Barricade MKIII</label>
+        <description>PLACEHOLDER</description>
+        <burnableByRecipe>true</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>pphhyy_URMCBasic</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit= "false">
+                <li>TableMachining</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <pphhyy_Scrap>4</pphhyy_Scrap>
+            <pphhyy_BarricadeMKII>4</pphhyy_BarricadeMKII>
+        </costList>
+        <equipmentType>None</equipmentType>
+        <thingClass>VEF.Apparels.Apparel_Shield</thingClass>
+        <weaponTags>
+            <li>pphhyy_URMCB2Shield</li>
+        </weaponTags>
+        <statBases>
+            <Mass>3</Mass>
+            <WorkToMake>6000</WorkToMake>
+            <MarketValue>300</MarketValue>
+            <Flammability>0.4</Flammability>
+            <ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.8</ArmorRating_Blunt>
             <EquipDelay>2</EquipDelay>
         </statBases>
         <apparel>

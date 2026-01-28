@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>pphhyy_Scrap</defName>
+        <label>scrap</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+          <texPath>Resources/Grenade</texPath>
+          <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <smeltable>false</smeltable>
+        <stackLimit>75</stackLimit>
+        <intricate>true</intricate>
+        <tickerType>Normal</tickerType>
+        <uiIconScale>1.3</uiIconScale>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+          <Mass>1</Mass>
+          <WorkToMake>100</WorkToMake>
+        </statBases>
+        <thingCategories>
+          <li>Grenades</li>
+        </thingCategories>
+      </ThingDef>
+
+</Defs>

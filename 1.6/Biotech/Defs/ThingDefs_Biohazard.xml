@@ -1667,4 +1667,84 @@ This turret has been outfitted with a Tox receiver for chemical warfare.</descri
         <researchViewY>1.25</researchViewY>
     </ResearchProjectDef>
 
+<!-- Nuclear Hammer -->
+
+<ThingDef ParentName="BaseMeleeWeapon_Blunt">
+    <defName>pphhyy_NuclearHammer</defName>
+    <label>Nuclear Hammer</label>
+    <description>PLACEHOLDER</description>
+    <graphicData>
+      <texPath>Weapon/NuclearWinter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Spacer</techLevel>
+    <weaponTags>
+      <li>pphhyy_NuclearHammer</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedAngleOffset>-90</equippedAngleOffset>
+    <costList>
+      <pphhyy_Scrap>8</pphhyy_Scrap>
+      <pphhyy_BreakerMKIII>1</pphhyy_BreakerMKIII>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+    </recipeMaker>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>pphhyy_ToxBlunt</li>
+        </capacities>
+        <power>31</power>
+        <cooldownTime>3</cooldownTime>
+      </li>
+    </tools>
+    <modExtensions>
+      <li Class="VEF.Things.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <usableWithShields>true</usableWithShields>
+        <weaponDraftedDrawOffsets>
+          <north>
+            <drawOffset>(0.05,0.0,0)</drawOffset>
+            <angleOffset>25</angleOffset>
+          </north>
+          <east>
+            <drawOffset>(0.10,0.2,0.10)</drawOffset>
+            <angleOffset>20</angleOffset>
+          </east>
+          <south>
+            <drawOffset>(0.1,0.00,0.15)</drawOffset>            <!-- -Left/+Right, -Back/+Front, -Down/+Up -->
+            <angleOffset>15</angleOffset>
+          </south>
+          <west>
+            <drawOffset>(-0.20,0.0,0.10)</drawOffset>
+            <angleOffset>-15</angleOffset>
+          </west>
+        </weaponDraftedDrawOffsets>
+      </li>
+    </modExtensions>
+  </ThingDef>  
+
 </Defs>
