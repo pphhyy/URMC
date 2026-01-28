@@ -1,55 +1,202 @@
-<?xml version="1.0" encoding="UTF-8"?>  
-
-
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-<!-- 
-  <RecipeDef>
-    <defName>pphhyy_SmeltForScrap</defName>
-    <label>smelt to get scrap</label>
-    <description>PLACEHOLDER</description>
-    <jobString>Smelting.</jobString>
-    <workAmount>1600</workAmount>
-    <workSpeedStat>SmeltingSpeed</workSpeedStat>
-    <effectWorking>Smelt</effectWorking>
-    <soundWorking>Recipe_Smelt</soundWorking>
-    <recipeUsers>
-      <li>ElectricSmelter</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <categories>
-            <li>Apparel</li>
-            <li>Weapons</li>
-          </categories>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <categories>
-        <li>Apparel</li>
-        <li>Weapons</li>
-      </categories>
-      <specialFiltersToDisallow>
-        <li>AllowNonSmeltableApparel</li>
-        <li>AllowNonSmeltableWeapons</li>
-      </specialFiltersToDisallow>
-    </fixedIngredientFilter>
-    <forceHiddenSpecialFilters>
-      <li>AllowSmeltable</li>
-      <li>AllowBurnableWeapons</li>
-      <li>AllowNonBurnableWeapons</li>
-      <li>AllowSmeltableApparel</li>
-      <li>AllowBurnableApparel</li>
-      <li>AllowNonBurnableApparel</li>
-    </forceHiddenSpecialFilters>
-    <products>
-      <Chemfuel>1</Chemfuel>
-    </products>
-  </RecipeDef> -->
 
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>pphhyy_BerserkImplant</defName>
+		<label>berserk implant</label>
+		<labelNoun>a berserk implant</labelNoun>
+		<description>An installed berserk implant, causes the user to be in constant pain but grants increased fighting capabilities when hurt.</description>
+		<descriptionHyperlinks><ThingDef>pphhyy_BerserkImplant</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>BionicEye</spawnThingOnRemoved>
+		<hediffClass>HediffWithComps</hediffClass>
+		<comps>
+			<li Class="URMC.HediffCompProperties_BerserkImplant">
+				<forceBerserkMentalState>false</forceBerserkMentalState>
+				<berserkHediff>pphhyy_BerserkFromImplant</berserkHediff>
+				<cooldownTicks>60000</cooldownTicks><!-- One RW Day -->
+				<minDamageToTrigger>3</minDamageToTrigger>
+				<severityPerDamage>0.05</severityPerDamage>
+				<minSeverity>0.1</minSeverity>
+				<maxSeverity>1</maxSeverity>
+			
+			</li>
+		</comps>
+	</HediffDef>
 
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>pphhyy_BerserkImplant</defName>
+		<label>berserk implant</label>
+		<description>A berserk implant, causes the user to be in constant pain but grants increased fighting capabilities when hurt.</description>
+		<descriptionHyperlinks><RecipeDef>pphhyy_InstallBerserkImplant</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<statBases>
+			<Mass>0.3</Mass>
+		</statBases>
+	</ThingDef>
 
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>pphhyy_InstallBerserkImplant</defName>
+		<label>install berserk implant</label>
+		<description>Install a berserk implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>pphhyy_BerserkImplant</ThingDef>
+			<HediffDef>pphhyy_BerserkImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing berserk implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>pphhyy_BerserkImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>pphhyy_BerserkImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>pphhyy_BerserkImplant</addsHediff>
+	</RecipeDef>
+	
+	<HediffDef>
+		<defName>pphhyy_BerserkFromImplant</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>bloodrage</label>
+		<description>Berserk Implant has triggered a rage in the bloodstream. It supercharges combat-related abilities.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<painFactor>0.9</painFactor>
+				<socialFightChanceFactor>3</socialFightChanceFactor>
+				<statOffsets>
+					<MeleeDamageFactor>0.10</MeleeDamageFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.35</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<painFactor>0.85</painFactor>
+				<socialFightChanceFactor>3.5</socialFightChanceFactor>
+				<statOffsets>
+					<MeleeDamageFactor>0.20</MeleeDamageFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.35</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.50</minSeverity>
+				<painFactor>0.8</painFactor>
+				<socialFightChanceFactor>4</socialFightChanceFactor>
+				<statOffsets>
+					<MeleeDamageFactor>0.30</MeleeDamageFactor>
+					<MeleeCooldownFactor>-0.10</MeleeCooldownFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.35</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<painFactor>0.75</painFactor>
+				<socialFightChanceFactor>5</socialFightChanceFactor>
+				<statOffsets>
+					<MeleeDamageFactor>0.50</MeleeDamageFactor>
+					<MeleeCooldownFactor>-0.25</MeleeCooldownFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.35</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.90</minSeverity>
+				<painFactor>0.60</painFactor>
+				<socialFightChanceFactor>10</socialFightChanceFactor>
+				<statOffsets>
+					<MeleeDamageFactor>0.60</MeleeDamageFactor>
+					<MeleeCooldownFactor>-0.30</MeleeCooldownFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.20</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.35</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.50</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 
 </Defs>
