@@ -4,7 +4,6 @@
   <URMC.CharacterDef>
         <defName>pphhyy_Character_PvtJenetteVasquez</defName>
         <pawnKind>pphhyy_PvtJenetteVasquez</pawnKind>
-        <xenotype>Baseliner</xenotype>
         <definitions>
             <!-- Bio -->
             <li Class="URMC.CharacterStoryDefinition">
@@ -29,7 +28,6 @@
 	<URMC.CharacterDef>
         <defName>pphhyy_Character_MarkDrake</defName>
         <pawnKind>pphhyy_MarkDrake</pawnKind>
-        <xenotype>Baseliner</xenotype>
         <definitions>
             <!-- Bio -->
             <li Class="URMC.CharacterStoryDefinition">
@@ -54,7 +52,6 @@
 	<URMC.CharacterDef>
         <defName>pphhyy_Character_AlApone</defName>
         <pawnKind>pphhyy_AlApone</pawnKind>
-        <xenotype>Baseliner</xenotype>
         <definitions>
             <!-- Bio -->
             <li Class="URMC.CharacterStoryDefinition">
@@ -79,7 +76,6 @@
 	<URMC.CharacterDef>
         <defName>pphhyy_Character_WilliamHudson</defName>
         <pawnKind>pphhyy_WilliamHudson</pawnKind>
-        <xenotype>Baseliner</xenotype>
         <definitions>
             <!-- Bio -->
             <li Class="URMC.CharacterStoryDefinition">
@@ -104,7 +100,6 @@
 	<URMC.CharacterDef>
         <defName>pphhyy_Character_DwayneHicks</defName>
         <pawnKind>pphhyy_DwayneHicks</pawnKind>
-        <xenotype>Baseliner</xenotype>
         <definitions>
             <!-- Bio -->
             <li Class="URMC.CharacterStoryDefinition">

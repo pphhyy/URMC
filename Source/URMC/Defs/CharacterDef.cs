@@ -14,7 +14,6 @@ namespace URMC
     public class CharacterDef : Def
     {
         public PawnKindDef pawnKind;
-        public XenotypeDef xenotype;
         [UsedImplicitly] public List<CharacterBaseDefinition> definitions = [];
 
     }
