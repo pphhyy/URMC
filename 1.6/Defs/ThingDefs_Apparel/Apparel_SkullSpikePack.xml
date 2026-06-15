@@ -30,6 +30,7 @@ This one is a backpack.</description>
         <graphicData>
           <texPath>Gear/SkullSpikes/FirstBloodSpike</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
           <drawSize>1.5</drawSize>
         </graphicData>
         <tickerType>Normal</tickerType>
@@ -58,22 +59,22 @@ This one is a backpack.</description>
           <wornGraphicData>
             <renderUtilityAsPack>true</renderUtilityAsPack>
             <north>
-              <offset>(0,-0.15)</offset>
+              <offset>(0,0.5)</offset>
             </north>
             <south>
-              <offset>(0,-0.15)</offset>
+              <offset>(0,0.5)</offset>
             </south>
             <east>
-              <offset>(-0.35,-0.1)</offset>
-              <thin><offset>(0.05,0)</offset></thin>
-              <hulk><offset>(-0.15,0)</offset></hulk>
-              <fat> <offset>(-0.20,0)</offset></fat>
+              <offset>(-0.35,0.5)</offset>
+              <thin><offset>(0.05,0.5)</offset></thin>
+              <hulk><offset>(-0.15,0.5)</offset></hulk>
+              <fat> <offset>(-0.20,0.5)</offset></fat>
             </east>
             <west>
-              <offset>(0.35,-0.1)</offset>
-              <thin><offset>(-0.05,0)</offset></thin>
-              <hulk><offset>(0.15,0)</offset></hulk>
-              <fat> <offset>(0.20,0)</offset></fat>
+              <offset>(0.35,0.5)</offset>
+              <thin><offset>(-0.05,0.5)</offset></thin>
+              <hulk><offset>(0.15,0.5)</offset></hulk>
+              <fat> <offset>(0.20,0.5)</offset></fat>
             </west>
             <male>  <scale>(0.75,0.75)</scale></male>
             <female><scale>(0.75,0.75)</scale></female>
@@ -90,27 +91,6 @@ This one is a backpack.</description>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.25</SlaveSuppressionOffset>
             <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
-        <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <min>(95, 99, 76, 255)</min>
-          <max>(95, 99, 76, 255)</max>
-        </li>
-      </options>
-    </colorGenerator>
       </ThingDef>
 
     <ThingDef ParentName="ApparelMakeableBase">
@@ -141,6 +121,7 @@ This one is a backpack.</description>
         <graphicData>
           <texPath>Gear/SkullSpikes/DoubleKillSpike</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
           <drawSize>1.5</drawSize>
         </graphicData>
         <tickerType>Normal</tickerType>
@@ -169,22 +150,22 @@ This one is a backpack.</description>
           <wornGraphicData>
             <renderUtilityAsPack>true</renderUtilityAsPack>
             <north>
-              <offset>(0,-0.15)</offset>
+              <offset>(0,0.5)</offset>
             </north>
             <south>
-              <offset>(0,-0.15)</offset>
+              <offset>(0,0.5)</offset>
             </south>
             <east>
-              <offset>(-0.35,-0.1)</offset>
-              <thin><offset>(0.05,0)</offset></thin>
-              <hulk><offset>(-0.15,0)</offset></hulk>
-              <fat> <offset>(-0.20,0)</offset></fat>
+              <offset>(-0.35,0.5)</offset>
+              <thin><offset>(0.05,0.5)</offset></thin>
+              <hulk><offset>(-0.15,0.5)</offset></hulk>
+              <fat> <offset>(-0.20,0.5)</offset></fat>
             </east>
             <west>
-              <offset>(0.35,-0.1)</offset>
-              <thin><offset>(-0.05,0)</offset></thin>
-              <hulk><offset>(0.15,0)</offset></hulk>
-              <fat> <offset>(0.20,0)</offset></fat>
+              <offset>(0.35,0.5)</offset>
+              <thin><offset>(-0.05,0.5)</offset></thin>
+              <hulk><offset>(0.15,0.5)</offset></hulk>
+              <fat> <offset>(0.20,0.5)</offset></fat>
             </west>
             <male>  <scale>(0.75,0.75)</scale></male>
             <female><scale>(0.75,0.75)</scale></female>
@@ -201,27 +182,6 @@ This one is a backpack.</description>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.35</SlaveSuppressionOffset>
             <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
-        <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <min>(95, 99, 76, 255)</min>
-          <max>(95, 99, 76, 255)</max>
-        </li>
-      </options>
-    </colorGenerator>
       </ThingDef>
 
     <ThingDef ParentName="ApparelMakeableBase">
@@ -253,6 +213,7 @@ This one is a backpack.</description>
         <graphicData>
           <texPath>Gear/SkullSpikes/DoubleKillSpike</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
           <drawSize>1.5</drawSize>
         </graphicData>
         <tickerType>Normal</tickerType>
@@ -281,22 +242,22 @@ This one is a backpack.</description>
           <wornGraphicData>
             <renderUtilityAsPack>true</renderUtilityAsPack>
             <north>
-              <offset>(0,-0.15)</offset>
+              <offset>(0,0.5)</offset>
             </north>
             <south>
-              <offset>(0,-0.15)</offset>
+              <offset>(0,0.5)</offset>
             </south>
             <east>
-              <offset>(-0.35,-0.1)</offset>
-              <thin><offset>(0.05,0)</offset></thin>
-              <hulk><offset>(-0.15,0)</offset></hulk>
-              <fat> <offset>(-0.20,0)</offset></fat>
+              <offset>(-0.35,0.5)</offset>
+              <thin><offset>(0.05,0.5)</offset></thin>
+              <hulk><offset>(-0.15,0.5)</offset></hulk>
+              <fat> <offset>(-0.20,0.5)</offset></fat>
             </east>
             <west>
-              <offset>(0.35,-0.1)</offset>
-              <thin><offset>(-0.05,0)</offset></thin>
-              <hulk><offset>(0.15,0)</offset></hulk>
-              <fat> <offset>(0.20,0)</offset></fat>
+              <offset>(0.35,0.5)</offset>
+              <thin><offset>(-0.05,0.5)</offset></thin>
+              <hulk><offset>(0.15,0.5)</offset></hulk>
+              <fat> <offset>(0.20,0.5)</offset></fat>
             </west>
             <male>  <scale>(0.75,0.75)</scale></male>
             <female><scale>(0.75,0.75)</scale></female>
@@ -313,27 +274,6 @@ This one is a backpack.</description>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.45</SlaveSuppressionOffset>
             <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
-        <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <min>(95, 99, 76, 255)</min>
-          <max>(95, 99, 76, 255)</max>
-        </li>
-      </options>
-    </colorGenerator>
       </ThingDef>
 
     <ThingDef ParentName="ApparelMakeableBase">
@@ -364,6 +304,7 @@ This one is a backpack.</description>
         <graphicData>
           <texPath>Gear/SkullSpikes/DoubleKillSpike</texPath>
           <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutComplex</shaderType>
           <drawSize>1.5</drawSize>
         </graphicData>
         <tickerType>Normal</tickerType>
@@ -392,22 +333,22 @@ This one is a backpack.</description>
           <wornGraphicData>
             <renderUtilityAsPack>true</renderUtilityAsPack>
             <north>
-              <offset>(0,-0.15)</offset>
+              <offset>(0,0.5)</offset>
             </north>
             <south>
-              <offset>(0,-0.15)</offset>
+              <offset>(0,0.5)</offset>
             </south>
             <east>
-              <offset>(-0.35,-0.1)</offset>
-              <thin><offset>(0.05,0)</offset></thin>
-              <hulk><offset>(-0.15,0)</offset></hulk>
-              <fat> <offset>(-0.20,0)</offset></fat>
+              <offset>(-0.35,0.5)</offset>
+              <thin><offset>(0.05,0.5)</offset></thin>
+              <hulk><offset>(-0.15,0.5)</offset></hulk>
+              <fat> <offset>(-0.20,0.5)</offset></fat>
             </east>
             <west>
-              <offset>(0.35,-0.1)</offset>
-              <thin><offset>(-0.05,0)</offset></thin>
-              <hulk><offset>(0.15,0)</offset></hulk>
-              <fat> <offset>(0.20,0)</offset></fat>
+              <offset>(0.35,0.5)</offset>
+              <thin><offset>(-0.05,0.5)</offset></thin>
+              <hulk><offset>(0.15,0.5)</offset></hulk>
+              <fat> <offset>(0.20,0.5)</offset></fat>
             </west>
             <male>  <scale>(0.75,0.75)</scale></male>
             <female><scale>(0.75,0.75)</scale></female>
@@ -424,27 +365,6 @@ This one is a backpack.</description>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.55</SlaveSuppressionOffset>
             <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
-        <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>10</weight>
-          <only>(95, 99, 76, 255)</only>
-        </li>
-        <li>
-          <weight>6</weight>
-          <min>(95, 99, 76, 255)</min>
-          <max>(95, 99, 76, 255)</max>
-        </li>
-      </options>
-    </colorGenerator>
       </ThingDef>
 
 </Defs>

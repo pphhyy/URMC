@@ -93,7 +93,7 @@
             <li>Machining</li>
         </prerequisites>
         <researchViewX>0</researchViewX>
-        <researchViewY>2.0</researchViewY>
+        <researchViewY>3.0</researchViewY>
     </ResearchProjectDef>
 
 </Defs>

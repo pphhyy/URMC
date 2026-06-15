@@ -322,18 +322,13 @@
 
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>pphhyy_M50XReconRifle</thingDef>
-        </li>
-
-        <li Class="ScenPart_StartingThing_Defined">
-          <def>StartingThing_Defined</def>
           <thingDef>pphhyy_ScrapperArmor</thingDef>
           <count>3</count>
         </li>
 
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>pphhyy_ScrapperArmor</thingDef>
+          <thingDef>pphhyy_ScrapperHelmet</thingDef>
           <count>3</count>
         </li>
 

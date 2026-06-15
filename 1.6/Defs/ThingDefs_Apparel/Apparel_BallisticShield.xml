@@ -139,7 +139,7 @@
         </thingCategories>
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
-            <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+            <texPath>Gear/BarricadeMKI/BarricadeMKI</texPath>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
         </graphicData>
@@ -220,7 +220,7 @@
                     <li>Hands</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+                    <texPath>Gear/BarricadeMKI/BarricadeMKI</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.8</drawSize>
@@ -261,7 +261,7 @@
         </thingCategories>
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
-            <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+            <texPath>Gear/BarricadeMKII/BarricadeMKII</texPath>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
         </graphicData>
@@ -343,7 +343,7 @@
                     <li>Hands</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+                    <texPath>Gear/BarricadeMKII/BarricadeMKII</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.8</drawSize>
@@ -384,7 +384,7 @@
         </thingCategories>
         <graphicData>
             <graphicClass>Graphic_Multi</graphicClass>
-            <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+            <texPath>Gear/BarricadeMKIII/BarricadeMKIII</texPath>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>1.5</drawSize>
         </graphicData>
@@ -466,7 +466,7 @@
                     <li>Hands</li>
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
-                    <texPath>Gear/URMCB2Shield/URMCB2Shield</texPath>
+                    <texPath>Gear/BarricadeMKIII/BarricadeMKIII</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.8</drawSize>

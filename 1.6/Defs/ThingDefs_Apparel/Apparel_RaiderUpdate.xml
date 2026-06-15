@@ -6,6 +6,11 @@
   <ThingDef Name= "pphhyy_MarauderArmors" ParentName= "ArmorMachineableBase" Abstract= "true">
     <techLevel>Spacer</techLevel>
     <apparel>
+      <drawData>
+        <dataSouth>
+          <layer>30</layer>
+        </dataSouth>
+      </drawData>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Neck</li>
@@ -196,7 +201,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/ReaverArmor/ReaverArmor</texPath>
+      <texPath>Armor/TorchRatArmor/RaiderArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -229,7 +234,7 @@
       <pphhyy_Scrap>4</pphhyy_Scrap>
     </costList>
     <apparel>
-      <wornGraphicPath>Armor/ReaverArmor/ReaverArmor</wornGraphicPath>
+      <wornGraphicPath>Armor/ReaverArmor/RaiderArmor</wornGraphicPath>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
@@ -641,7 +646,7 @@
 
   <ThingDef ParentName="pphhyy_MarauderArmors">
     <defName>pphhyy_MarauderArmor</defName>
-    <label>M3 pattern personal armor</label>
+    <label>marauder armor</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -768,7 +773,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Armor/Marauder/MarauderArmor</texPath>
+      <texPath>Armor/Scorcher/ScorcherArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>1.5</drawSize>
@@ -823,7 +828,7 @@
       <pphhyy_Scrap>8</pphhyy_Scrap>
     </costList>
     <apparel>
-      <wornGraphicPath>Armor/Marauder/MarauderArmor</wornGraphicPath>
+      <wornGraphicPath>Armor/Scorcher/ScorcherArmor</wornGraphicPath>
     </apparel>
     <colorGenerator Class="ColorGenerator_Options">
       <options>

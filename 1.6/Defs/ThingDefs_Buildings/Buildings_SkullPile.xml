@@ -16,13 +16,13 @@ This one is proper art that gets placed.</description>
 		<pathCost>14</pathCost>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<designationCategory>Furniture</designationCategory>
-		<rotatable>true</rotatable>
+		<rotatable>false</rotatable>
 		<size>(1,1)</size>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/FirstSkullPile</texPath>
-			<drawSize>(2.9,2.9)</drawSize>
-			<drawOffset>(0,0,0.7)</drawOffset>
+			<drawSize>(2.5,2.5)</drawSize>
+			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -59,13 +59,12 @@ This one is proper art that gets placed.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<designationCategory>Furniture</designationCategory>
 		<rotatable>false</rotatable>
-        <defaultPlacingRot>South</defaultPlacingRot>
 		<size>(1,1)</size>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/DoublekillPile</texPath>
-			<drawSize>(2.9,2.9)</drawSize>
-			<drawOffset>(0,0,0.7)</drawOffset>
+			<drawSize>(2.5,2.5)</drawSize>
+			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -102,13 +101,12 @@ This one is proper art that gets placed.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<designationCategory>Furniture</designationCategory>
 		<rotatable>false</rotatable>
-        <defaultPlacingRot>South</defaultPlacingRot>
 		<size>(1,1)</size>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/OverkillPile</texPath>
-			<drawSize>(2.9,2.9)</drawSize>
-			<drawOffset>(0,0,0.7)</drawOffset>
+			<drawSize>(2.5,2.5)</drawSize>
+			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -146,13 +144,12 @@ This one is proper art that gets placed.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<designationCategory>Furniture</designationCategory>
 		<rotatable>false</rotatable>
-        <defaultPlacingRot>South</defaultPlacingRot>
 		<size>(1,1)</size>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/KilltrocityPile</texPath>
-			<drawSize>(2.9,2.9)</drawSize>
-			<drawOffset>(0,0,0.7)</drawOffset>
+			<drawSize>(2.5,2.5)</drawSize>
+			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -190,13 +187,12 @@ This one is proper art that gets placed.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<designationCategory>Furniture</designationCategory>
 		<rotatable>false</rotatable>
-        <defaultPlacingRot>South</defaultPlacingRot>
 		<size>(1,1)</size>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/KillimanjaroPile</texPath>
-			<drawSize>(2.9,2.9)</drawSize>
-			<drawOffset>(0,0,0.7)</drawOffset>
+			<drawSize>(2.5,2.5)</drawSize>
+			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -233,13 +229,12 @@ This one is proper art that gets placed.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<designationCategory>Furniture</designationCategory>
 		<rotatable>false</rotatable>
-        <defaultPlacingRot>South</defaultPlacingRot>
 		<size>(1,1)</size>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/KilltastrophePile</texPath>
-			<drawSize>(2.9,2.9)</drawSize>
-			<drawOffset>(0,0,0.7)</drawOffset>
+			<drawSize>(2.5,2.5)</drawSize>
+			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -276,13 +271,12 @@ This one is proper art that gets placed.</description>
 		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<designationCategory>Furniture</designationCategory>
 		<rotatable>false</rotatable>
-        <defaultPlacingRot>South</defaultPlacingRot>
 		<size>(1,1)</size>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/KillpocalypsePile</texPath>
-			<drawSize>(2.9,2.9)</drawSize>
-			<drawOffset>(0,0,0.7)</drawOffset>
+			<drawSize>(2.5,2.5)</drawSize>
+			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>

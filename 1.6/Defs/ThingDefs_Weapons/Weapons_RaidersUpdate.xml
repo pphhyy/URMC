@@ -16,6 +16,7 @@
     <graphicData>
       <texPath>Weapon/HewerMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.6</uiIconScale>
     <weaponTags>
@@ -103,6 +104,7 @@
     <graphicData>
       <texPath>Weapon/HewerMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.6</uiIconScale>
     <weaponTags>
@@ -191,6 +193,7 @@
     <graphicData>
       <texPath>Weapon/HewerMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.6</uiIconScale>
     <weaponTags>
@@ -279,6 +282,7 @@
     <graphicData>
       <texPath>Weapon/Arcstrike</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.6</uiIconScale>
     <weaponTags>
@@ -383,6 +387,7 @@
     <graphicData>
       <texPath>Weapon/ChopperMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.6</uiIconScale>
     <weaponTags>
@@ -470,6 +475,7 @@
     <graphicData>
       <texPath>Weapon/ChopperMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.6</uiIconScale>
     <weaponTags>
@@ -558,6 +564,7 @@
     <graphicData>
       <texPath>Weapon/ChopperMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.6</uiIconScale>
     <weaponTags>
@@ -646,6 +653,7 @@
     <graphicData>
       <texPath>Weapon/Hellraiser</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.6</uiIconScale>
     <weaponTags>
@@ -749,6 +757,7 @@
     <graphicData>
       <texPath>Weapon/ChuckerMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Interact_BeatFire</soundInteract>
     <costList>
@@ -834,6 +843,7 @@
     <graphicData>
       <texPath>Weapon/ChuckerMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Interact_BeatFire</soundInteract>
     <costList>
@@ -920,6 +930,7 @@
     <graphicData>
       <texPath>Weapon/ChuckerMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Interact_BeatFire</soundInteract>
     <costList>
@@ -1006,6 +1017,7 @@
     <graphicData>
       <texPath>Weapon/Boomlance</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Interact_BeatFire</soundInteract>
     <costList>
@@ -1041,8 +1053,9 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>pphhyy_ChuckerMKIProjectile</defaultProjectile>
+        <defaultProjectile>pphhyy_BoomlanceProjectile</defaultProjectile>
         <warmupTime>4</warmupTime>
+        <forcedMissRadius>0.9</forcedMissRadius>
         <range>18.9</range>
         <soundCast>Interact_BeatFire</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
@@ -1074,8 +1087,10 @@
       <texPath>Things/Projectile/Pilum</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
+      <explosionRadius>2.5</explosionRadius>
       <damageAmountBase>40</damageAmountBase>
       <stoppingPower>2.5</stoppingPower>
       <armorPenetrationBase>0.10</armorPenetrationBase>
@@ -1092,6 +1107,7 @@
     <graphicData>
       <texPath>Weapon/StickChuckerMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Bow_Recurve</soundInteract>
     <costList>
@@ -1172,6 +1188,7 @@
     <graphicData>
       <texPath>Weapon/StickChuckerMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Bow_Recurve</soundInteract>
     <costList>
@@ -1269,6 +1286,7 @@
     <graphicData>
       <texPath>Weapon/StickChuckerMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Bow_Recurve</soundInteract>
     <costList>
@@ -1366,6 +1384,7 @@
     <graphicData>
       <texPath>Weapon/BoomChuckerMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Bow_Recurve</soundInteract>
     <costList>
@@ -1405,6 +1424,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>pphhyy_BoomChuckerMKIProjectile</defaultProjectile>
         <warmupTime>1.35</warmupTime>
+        <forcedMissRadius>0.9</forcedMissRadius>
         <range>25.9</range>
         <soundCast>Bow_Recurve</soundCast>
       </li>
@@ -1428,8 +1448,10 @@
       <texPath>Things/Projectile/Arrow_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
+      <explosionRadius>1.5</explosionRadius>
       <damageAmountBase>10</damageAmountBase>
       <stoppingPower>1.2</stoppingPower>
       <armorPenetrationBase>0.1</armorPenetrationBase>
@@ -1446,6 +1468,7 @@
     <graphicData>
       <texPath>Weapon/BoomChuckerMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Bow_Recurve</soundInteract>
     <costList>
@@ -1486,6 +1509,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>pphhyy_BoomChuckerMKIIProjectile</defaultProjectile>
         <warmupTime>1.35</warmupTime>
+        <forcedMissRadius>0.9</forcedMissRadius>
         <range>25.9</range>
         <soundCast>Bow_Recurve</soundCast>
       </li>
@@ -1525,8 +1549,10 @@
       <texPath>Things/Projectile/Arrow_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
+      <explosionRadius>1.5</explosionRadius>
       <damageAmountBase>20</damageAmountBase>
       <stoppingPower>1.2</stoppingPower>
       <armorPenetrationBase>0.1</armorPenetrationBase>
@@ -1543,6 +1569,7 @@
     <graphicData>
       <texPath>Weapon/BoomChuckerMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Bow_Recurve</soundInteract>
     <costList>
@@ -1583,6 +1610,7 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>pphhyy_BoomChuckerMKIIIProjectile</defaultProjectile>
         <warmupTime>1.35</warmupTime>
+        <forcedMissRadius>0.9</forcedMissRadius>
         <range>25.9</range>
         <soundCast>Bow_Recurve</soundCast>
       </li>
@@ -1622,8 +1650,10 @@
       <texPath>Things/Projectile/Arrow_Small</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
+      <explosionRadius>1.5</explosionRadius>
       <damageAmountBase>30</damageAmountBase>
       <stoppingPower>1.2</stoppingPower>
       <armorPenetrationBase>0.1</armorPenetrationBase>
@@ -1640,7 +1670,7 @@
     <graphicData>
       <texPath>Weapon/TorchSpikeMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.4</drawSize>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>
@@ -1717,7 +1747,7 @@
     <graphicData>
       <texPath>Weapon/TorchSpikeMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.4</drawSize>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>
@@ -1811,7 +1841,7 @@
     <graphicData>
       <texPath>Weapon/TorchSpikeMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.4</drawSize>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
     <weaponClasses>
@@ -1905,6 +1935,7 @@
     <graphicData>
       <texPath>Weapon/BreakerMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.1</uiIconScale>
     <techLevel>Spacer</techLevel>
@@ -1984,6 +2015,7 @@
     <graphicData>
       <texPath>Weapon/BreakerMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.1</uiIconScale>
     <techLevel>Spacer</techLevel>
@@ -2064,6 +2096,7 @@
     <graphicData>
       <texPath>Weapon/BreakerMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.5</drawSize>
     </graphicData>
     <uiIconScale>1.1</uiIconScale>
     <techLevel>Spacer</techLevel>
