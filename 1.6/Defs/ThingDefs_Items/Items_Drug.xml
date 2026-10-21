@@ -3,10 +3,11 @@
 
 <Defs>
 
-<!-- <ThingDef ParentName="DrugBase">
+<!--<ThingDef ParentName="DrugBase">
     <defName>pphhyy_ChemDrug</defName>
     <label>Chem Drug</label>
-    <description>Placeholder</description>
+    <description>Not to be confused with the abomination G fuel (for legal Reasons); and its also way healthier to inhale chem fuel directly into your lungs! 
+Turns a normal marine into a rage induced melee nightmare. Side effects include dying younger and like addiction or whatever. DO NOT use responsibly.</description>
     <possessionCount>6</possessionCount>
     <graphicData>
       <texPath>Things/Item/Drug/Beer</texPath>
