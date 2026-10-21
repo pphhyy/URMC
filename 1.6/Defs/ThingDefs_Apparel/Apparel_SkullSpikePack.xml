@@ -11,7 +11,7 @@ This one is a backpack.</description>
         <thingClass>Apparel</thingClass>
         <recipeMaker>
           <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-          <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+          <researchPrerequisite>pphhyy_MarineRaidersTrophies</researchPrerequisite>
           <recipeUsers>
             <li>TableMachining</li>
           </recipeUsers>
@@ -102,7 +102,7 @@ This one is a backpack.</description>
         <thingClass>Apparel</thingClass>
         <recipeMaker>
           <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-          <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+          <researchPrerequisite>pphhyy_MarineRaidersTrophies</researchPrerequisite>
           <recipeUsers>
             <li>TableMachining</li>
           </recipeUsers>
@@ -193,7 +193,7 @@ This one is a backpack.</description>
         <thingClass>Apparel</thingClass>
         <recipeMaker>
           <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-          <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+          <researchPrerequisite>pphhyy_MarineRaidersTrophies</researchPrerequisite>
           <recipeUsers>
             <li>TableMachining</li>
           </recipeUsers>
@@ -285,7 +285,7 @@ This one is a backpack.</description>
         <thingClass>Apparel</thingClass>
         <recipeMaker>
           <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-          <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+          <researchPrerequisite>pphhyy_MarineRaidersTrophies</researchPrerequisite>
           <recipeUsers>
             <li>TableMachining</li>
           </recipeUsers>

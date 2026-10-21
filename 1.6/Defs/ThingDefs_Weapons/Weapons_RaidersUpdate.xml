@@ -342,7 +342,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_DaBestStuffs</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -713,7 +713,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_DaBestStuffs</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -1041,7 +1041,7 @@
       <li>Ranged</li>
     </weaponClasses>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_DaBestStuffs</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -1313,7 +1313,7 @@
       <li>RangedHeavy</li>
     </weaponClasses>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_DaBestStuffs</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -1410,7 +1410,7 @@
       <li>RangedHeavy</li>
     </weaponClasses>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_PyroRaiders</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -1495,7 +1495,7 @@
       <li>RangedHeavy</li>
     </weaponClasses>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_PyroRaiders</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -1596,7 +1596,7 @@
       <li>RangedHeavy</li>
     </weaponClasses>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_PyroRaiders</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -1680,7 +1680,7 @@
       <li>pphhyy_TorchSpikeMKI</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_PyroRaiders</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -1757,7 +1757,7 @@
       <li>pphhyy_TorchSpikeMKII</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_PyroRaiders</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -1851,7 +1851,7 @@
       <li>pphhyy_TorchSpikeMKIII</li>
     </weaponTags>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_PyroRaiders</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>

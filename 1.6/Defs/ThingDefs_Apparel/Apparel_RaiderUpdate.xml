@@ -192,7 +192,7 @@
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_PyroRaiders</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>
@@ -538,7 +538,7 @@
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_DaBestStuffs</researchPrerequisite>
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
@@ -650,7 +650,7 @@
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_DaBestStuffs</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -764,7 +764,7 @@
     <description>PLACEHOLDER</description>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_PyroRaiders</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>

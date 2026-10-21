@@ -1696,7 +1696,7 @@ This turret has been outfitted with a Tox receiver for chemical warfare.</descri
       <pphhyy_BreakerMKIII>1</pphhyy_BreakerMKIII>
     </costList>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_URMCRecon</researchPrerequisite>
+      <researchPrerequisite>pphhyy_DaBestStuffs</researchPrerequisite>
       <skillRequirements>
         <Crafting>6</Crafting>
       </skillRequirements>

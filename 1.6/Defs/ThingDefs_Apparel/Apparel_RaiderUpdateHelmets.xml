@@ -142,7 +142,7 @@
     <label>torch rat helmet</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_PyroRaiders</researchPrerequisite>
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
@@ -357,7 +357,7 @@
     <label>tyrant helmet</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_DaBestStuffs</researchPrerequisite>
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
@@ -415,7 +415,7 @@
     <label>marauder helmet</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_DaBestStuffs</researchPrerequisite>
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
@@ -474,7 +474,7 @@
     <label>scorcher helmet</label>
     <description>PLACEHOLDER</description>
     <recipeMaker>
-      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <researchPrerequisite>pphhyy_PyroRaiders</researchPrerequisite>
       <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>

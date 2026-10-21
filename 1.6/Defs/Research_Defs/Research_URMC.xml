@@ -9,7 +9,7 @@
         <generalDescription>Everything the URMC needs to spread peace and prosperity to the galaxy is in this research tab.</generalDescription>
     </ResearchTabDef>
 
-<!-- Base Mod Research -->
+    <!-- Base Mod Research -->
 
     <ResearchProjectDef>
         <defName>pphhyy_URMCBasic</defName>
@@ -79,10 +79,10 @@
         </prerequisites>
         <tab>pphhyy_URMC</tab>
         <researchViewX>1.50</researchViewX>
-        <researchViewY>4.00</researchViewY>
+        <researchViewY>5.00</researchViewY>
     </ResearchProjectDef>
-    
-<ResearchProjectDef>
+
+    <ResearchProjectDef>
         <defName>pphhyy_RaiderTech</defName>
         <label>raider tech</label>
         <description>The crude Tech of the Marine Marauders.</description>
@@ -94,6 +94,48 @@
         </prerequisites>
         <researchViewX>0</researchViewX>
         <researchViewY>3.0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>pphhyy_PyroRaiders</defName>
+        <label>pyro raiders</label>
+        <description>Basic cobbled together ways to light others and yourselves on fire!</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>pphhyy_URMC</tab>
+        <prerequisites>
+            <li>pphhyy_RaiderTech</li>
+        </prerequisites>
+        <researchViewX>1.5</researchViewX>
+        <researchViewY>1.5</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>pphhyy_DaBestStuffs</defName>
+        <label>da best stuffs</label>
+        <description>Required for the Raiders best gear to terrorize the rim with.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>pphhyy_URMC</tab>
+        <prerequisites>
+            <li>pphhyy_RaiderTech</li>
+        </prerequisites>
+        <researchViewX>1.5</researchViewX>
+        <researchViewY>3.0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>pphhyy_MarineRaidersTrophies</defName>
+        <label>marine raiders trophies</label>
+        <description>Trophies earned by the raiders through mass killing.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <tab>pphhyy_URMC</tab>
+        <prerequisites>
+            <li>pphhyy_RaiderTech</li>
+        </prerequisites>
+        <researchViewX>1.5</researchViewX>
+        <researchViewY>4.5</researchViewY>
     </ResearchProjectDef>
 
 </Defs>
