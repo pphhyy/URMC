@@ -59,28 +59,28 @@ This version is a backpack.</description>
           <wornGraphicData>
             <renderUtilityAsPack>true</renderUtilityAsPack>
             <north>
-              <offset>(0,0.5)</offset>
+              <offset>(0,0.7)</offset>
             </north>
             <south>
-              <offset>(0,0.5)</offset>
+              <offset>(0,0.7)</offset>
             </south>
             <east>
-              <offset>(-0.35,0.5)</offset>
-              <thin><offset>(0.05,0.5)</offset></thin>
-              <hulk><offset>(-0.15,0.5)</offset></hulk>
-              <fat> <offset>(-0.20,0.5)</offset></fat>
+              <offset>(-0.35,0.7)</offset>
+              <thin><offset>(0.05,0.2)</offset></thin>
+              <hulk><offset>(-0.15,0.2)</offset></hulk>
+              <fat> <offset>(-0.20,0.2)</offset></fat>
             </east>
             <west>
-              <offset>(0.35,0.5)</offset>
-              <thin><offset>(-0.05,0.5)</offset></thin>
-              <hulk><offset>(0.15,0.5)</offset></hulk>
-              <fat> <offset>(0.20,0.5)</offset></fat>
+              <offset>(0.35,0.7)</offset>
+              <thin><offset>(-0.05,0.2)</offset></thin>
+              <hulk><offset>(0.15,0.2)</offset></hulk>
+              <fat> <offset>(0.20,0.2)</offset></fat>
             </west>
-            <male>  <scale>(0.75,0.75)</scale></male>
-            <female><scale>(0.75,0.75)</scale></female>
-            <thin>  <scale>(0.7,0.7)</scale></thin>
-            <hulk>  <scale>(0.9,0.9)</scale></hulk>
-            <fat>   <scale>(0.9,0.9)</scale></fat>
+            <male>  <scale>(1.2,1.2)</scale></male>
+            <female><scale>(1.2,1.2)</scale></female>
+            <thin>  <scale>(1.2,1.2)</scale></thin>
+            <hulk>  <scale>(1.2,1.2)</scale></hulk>
+            <fat>   <scale>(1.2,1.2)</scale></fat>
           </wornGraphicData>
         </apparel>
         <tradeTags>
