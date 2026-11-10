@@ -5,7 +5,8 @@
   <ThingDef ParentName="ApparelBase">
     <defName>Apparel_ScrapperJumpPack</defName>
     <label>scrapper jump pack</label>
-    <description>LITERALLY just a jetpack.</description>
+    <description>Whats more scary then a druged up marine suffering from space PTSD charging you with a rusty metal blade? Thats right! the same guy flying through the air on a jetpack! Which at best is a shitty jetpack and at worst an IED vest with propellent!
+Each upgrade allows for extra jumps but must be refueled with chemfuel, duh.</description>
     <techLevel>Industrial</techLevel>
     <comps>
       <li Class="CompProperties_ApparelReloadable">
@@ -124,7 +125,8 @@
 <ThingDef ParentName="ApparelBase">
     <defName>Apparel_ReaverJumpPack</defName>
     <label>reaver jump pack</label>
-    <description>LITERALLY just a jetpack.</description>
+    <description>Whats more scary then a druged up marine suffering from space PTSD charging you with a rusty metal blade? Thats right! the same guy flying through the air on a jetpack! Which at best is a shitty jetpack and at worst an IED vest with propellent!
+Each upgrade allows for extra jumps but must be refueled with chemfuel, duh.</description>
     <techLevel>Industrial</techLevel>
     <comps>
       <li Class="CompProperties_ApparelReloadable">
@@ -244,7 +246,8 @@
 <ThingDef ParentName="ApparelBase">
     <defName>Apparel_RaiderJumpPack</defName>
     <label>raider jump pack</label>
-    <description>LITERALLY just a jetpack.</description>
+    <description>Whats more scary then a druged up marine suffering from space PTSD charging you with a rusty metal blade? Thats right! the same guy flying through the air on a jetpack! Which at best is a shitty jetpack and at worst an IED vest with propellent!
+Each upgrade allows for extra jumps but must be refueled with chemfuel, duh.</description>
     <techLevel>Industrial</techLevel>
     <comps>
       <li Class="CompProperties_ApparelReloadable">

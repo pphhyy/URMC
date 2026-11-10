@@ -1672,7 +1672,7 @@ This turret has been outfitted with a Tox receiver for chemical warfare.</descri
 <ThingDef ParentName="BaseMeleeWeapon_Blunt">
     <defName>pphhyy_NuclearHammer</defName>
     <label>Nuclear Hammer</label>
-    <description>PLACEHOLDER</description>
+    <description>Unlike most of the other weapons within the Marine Raiders, the Breaker smashes things. Once upgraded it gives off hints of radioactive hell with each hit.</description>
     <graphicData>
       <texPath>Weapon/NuclearWinter</texPath>
       <graphicClass>Graphic_Single</graphicClass>

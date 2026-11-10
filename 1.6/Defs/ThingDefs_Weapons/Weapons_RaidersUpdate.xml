@@ -12,7 +12,7 @@
     <defName>pphhyy_HewerMKI</defName>
     <label>Hewer MK I</label>
     <techLevel>Spacer</techLevel>
-    <description>PLACEHOLDER</description>
+    <description>A jagged axe cobbled together from rusted scrap metal, its blade lashed to a battered pipe. Heavy and poorly balanced but is great for hewing limbs.The final form is the Arcstrike capable of stunning and ripping apart mechs with ease.</description>
     <graphicData>
       <texPath>Weapon/HewerMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -100,7 +100,7 @@
     <defName>pphhyy_HewerMKII</defName>
     <label>Hewer MK II</label>
     <techLevel>Spacer</techLevel>
-    <description>PLACEHOLDER</description>
+    <description>A jagged axe cobbled together from rusted scrap metal, its blade lashed to a battered pipe. Heavy and poorly balanced but is great for hewing limbs.The final form is the Arcstrike capable of stunning and ripping apart mechs with ease.</description>
     <graphicData>
       <texPath>Weapon/HewerMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -189,7 +189,7 @@
     <defName>pphhyy_HewerMKIII</defName>
     <label>Hewer MK III</label>
     <techLevel>Spacer</techLevel>
-    <description>PLACEHOLDER</description>
+    <description>A jagged axe cobbled together from rusted scrap metal, its blade lashed to a battered pipe. Heavy and poorly balanced but is great for hewing limbs.The final form is the Arcstrike capable of stunning and ripping apart mechs with ease.</description>
     <graphicData>
       <texPath>Weapon/HewerMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -278,7 +278,7 @@
     <defName>pphhyy_Arcstrike</defName>
     <label>Arcstrike</label>
     <techLevel>Spacer</techLevel>
-    <description>PLACEHOLDER</description>
+    <description>A jagged axe cobbled together from rusted scrap metal, its blade lashed to a battered pipe. Heavy and poorly balanced but is great for hewing limbs.The final form is the Arcstrike capable of stunning and ripping apart mechs with ease.</description>
     <graphicData>
       <texPath>Weapon/Arcstrike</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -383,7 +383,7 @@
     <defName>pphhyy_ChopperMKI</defName>
     <label>Chopper MK I</label>
     <techLevel>Spacer</techLevel>
-    <description>PLACEHOLDER</description>
+    <description>A length of salvaged steel hammered into a crude sword. The uneven edge snags and tears with every cut.Once its upgraded to a Hellraiser it lights enemies on fire!</description>
     <graphicData>
       <texPath>Weapon/ChopperMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -471,7 +471,7 @@
     <defName>pphhyy_ChopperMKII</defName>
     <label>Chopper MK II</label>
     <techLevel>Spacer</techLevel>
-    <description>PLACEHOLDER</description>
+    <description>A length of salvaged steel hammered into a crude sword. The uneven edge snags and tears with every cut.Once its upgraded to a Hellraiser it lights enemies on fire!</description>
     <graphicData>
       <texPath>Weapon/ChopperMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -560,7 +560,7 @@
     <defName>pphhyy_ChopperMKIII</defName>
     <label>Chopper MK III</label>
     <techLevel>Spacer</techLevel>
-    <description>PLACEHOLDER</description>
+    <description>A length of salvaged steel hammered into a crude sword. The uneven edge snags and tears with every cut.Once its upgraded to a Hellraiser it lights enemies on fire!</description>
     <graphicData>
       <texPath>Weapon/ChopperMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -649,7 +649,7 @@
     <defName>pphhyy_Hellraiser</defName>
     <label>Hellraiser</label>
     <techLevel>Spacer</techLevel>
-    <description>PLACEHOLDER</description>
+    <description>A length of salvaged steel hammered into a crude sword. The uneven edge snags and tears with every cut.Once its upgraded to a Hellraiser it lights enemies on fire!</description>
     <graphicData>
       <texPath>Weapon/Hellraiser</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -753,7 +753,7 @@
 <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_ChuckerMKI</defName>
     <label>Chucker MKI</label>
-    <description>PLACEHOLDER</description>
+    <description>Part spear and part scrap. It can be thrown or used to stab.Once it becomes a Boomlance it will EXPLODE when thrown; just as the founding fathers intended.</description>
     <graphicData>
       <texPath>Weapon/ChuckerMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -839,7 +839,7 @@
 <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_ChuckerMKII</defName>
     <label>Chucker MKII</label>
-    <description>PLACEHOLDER</description>
+    <description>Part spear and part scrap. It can be thrown or used to stab.Once it becomes a Boomlance it will EXPLODE when thrown; just as the founding fathers intended.</description>
     <graphicData>
       <texPath>Weapon/ChuckerMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -926,7 +926,7 @@
 <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_ChuckerMKIII</defName>
     <label>Chucker MKIII</label>
-    <description>PLACEHOLDER</description>
+    <description>Part spear and part scrap. It can be thrown or used to stab.Once it becomes a Boomlance it will EXPLODE when thrown; just as the founding fathers intended.</description>
     <graphicData>
       <texPath>Weapon/ChuckerMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1013,7 +1013,7 @@
 <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_Boomlance</defName>
     <label>Boomlance</label>
-    <description>PLACEHOLDER</description>
+    <description>Part spear and part scrap. It can be thrown or used to stab.Once it becomes a Boomlance it will EXPLODE when thrown; just as the founding fathers intended.</description>
     <graphicData>
       <texPath>Weapon/Boomlance</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1103,7 +1103,7 @@
 <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_StickChuckerMKI</defName>
     <label>Stick Chucker MKI</label>
-    <description>PLACEHOLDER</description>
+    <description>UNLIKE those other rimworld cowards who use ranged weapons, this is a elegant weapon from a more civilized time that requires skill and patience; most marines dont have the patience part. Once upgraded it comes with a blade attachment so you can stab or slash enemies damn enough to get close.</description>
     <graphicData>
       <texPath>Weapon/StickChuckerMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1184,7 +1184,7 @@
 <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_StickChuckerMKII</defName>
     <label>Stick Chucker MKII</label>
-    <description>PLACEHOLDER</description>
+    <description>UNLIKE those other rimworld cowards who use ranged weapons, this is a elegant weapon from a more civilized time that requires skill and patience; most marines dont have the patience part. Once upgraded it comes with a blade attachment so you can stab or slash enemies damn enough to get close.</description>
     <graphicData>
       <texPath>Weapon/StickChuckerMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1282,7 +1282,7 @@
 <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_StickChuckerMKIII</defName>
     <label>Stick Chucker MKIII</label>
-    <description>PLACEHOLDER</description>
+    <description>UNLIKE those other rimworld cowards who use ranged weapons, this is a elegant weapon from a more civilized time that requires skill and patience; most marines dont have the patience part. Once upgraded it comes with a blade attachment so you can stab or slash enemies damn enough to get close.</description>
     <graphicData>
       <texPath>Weapon/StickChuckerMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1380,7 +1380,7 @@
 <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_BoomChuckerMKI</defName>
     <label>Boom Chucker MKI</label>
-    <description>PLACEHOLDER</description>
+    <description>If getting the perfect hit from afar wasn't enough how about if it exploded when the bolt got to its target. Well then the Boom Chucker is what your looking for. Also comes with a blade once upgraded.</description>
     <graphicData>
       <texPath>Weapon/BoomChuckerMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1464,7 +1464,7 @@
 <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_BoomChuckerMKII</defName>
     <label>Boom Chucker MKII</label>
-    <description>PLACEHOLDER</description>
+    <description>If getting the perfect hit from afar wasn't enough how about if it exploded when the bolt got to its target. Well then the Boom Chucker is what your looking for. Also comes with a blade once upgraded.</description>
     <graphicData>
       <texPath>Weapon/BoomChuckerMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1565,7 +1565,7 @@
 <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_BoomChuckerMKIII</defName>
     <label>Boom Chucker MKIII</label>
-    <description>PLACEHOLDER</description>
+    <description>If getting the perfect hit from afar wasn't enough how about if it exploded when the bolt got to its target. Well then the Boom Chucker is what your looking for. Also comes with a blade once upgraded.</description>
     <graphicData>
       <texPath>Weapon/BoomChuckerMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1666,7 +1666,7 @@
   <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_TorchSpikeMKI</defName>
     <label>Torch Spike MKI</label>
-    <description>PLACEHOLDER</description>
+    <description>A scrapped version of the URMC flamer but once upgraded can stab enemies after they have been lit on fire.</description>
     <graphicData>
       <texPath>Weapon/TorchSpikeMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1743,7 +1743,7 @@
   <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_TorchSpikeMKII</defName>
     <label>Torch Spike MKII</label>
-    <description>PLACEHOLDER</description>
+    <description>A scrapped version of the URMC flamer but once upgraded can stab enemies after they have been lit on fire.</description>
     <graphicData>
       <texPath>Weapon/TorchSpikeMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1837,7 +1837,7 @@
   <ThingDef ParentName="pphhyy_RangedWeapons">
     <defName>pphhyy_TorchSpikeMKIII</defName>
     <label>Torch Spike MKIII</label>
-    <description>PLACEHOLDER</description>
+    <description>A scrapped version of the URMC flamer but once upgraded can stab enemies after they have been lit on fire.</description>
     <graphicData>
       <texPath>Weapon/TorchSpikeMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1931,7 +1931,7 @@
 <ThingDef ParentName="BaseMeleeWeapon_Blunt">
     <defName>pphhyy_BreakerMKI</defName>
     <label>Breaker MKI</label>
-    <description>PLACEHOLDER</description>
+    <description>Unlike most of the other weapons within the Marine Raiders, the Breaker smashes things. Once upgraded it gives off hints of radioactive hell with each hit.</description>
     <graphicData>
       <texPath>Weapon/BreakerMKI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -2011,7 +2011,7 @@
 <ThingDef ParentName="BaseMeleeWeapon_Blunt">
     <defName>pphhyy_BreakerMKII</defName>
     <label>Breaker MKII</label>
-    <description>PLACEHOLDER</description>
+    <description>Unlike most of the other weapons within the Marine Raiders, the Breaker smashes things. Once upgraded it gives off hints of radioactive hell with each hit.</description>
     <graphicData>
       <texPath>Weapon/BreakerMKII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -2092,7 +2092,7 @@
 <ThingDef ParentName="BaseMeleeWeapon_Blunt">
     <defName>pphhyy_BreakerMKIII</defName>
     <label>Breaker MKIII</label>
-    <description>PLACEHOLDER</description>
+    <description>Unlike most of the other weapons within the Marine Raiders, the Breaker smashes things. Once upgraded it gives off hints of radioactive hell with each hit.</description>
     <graphicData>
       <texPath>Weapon/BreakerMKIII</texPath>
       <graphicClass>Graphic_Single</graphicClass>
