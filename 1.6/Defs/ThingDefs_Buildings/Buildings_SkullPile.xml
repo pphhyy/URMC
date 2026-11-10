@@ -21,7 +21,7 @@ This one is proper art that gets placed on the ground.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/FirstSkullPile</texPath>
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawSize>(2.4,2.4)</drawSize>
 			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -63,7 +63,7 @@ This one is proper art that gets placed on the ground.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/DoublekillPile</texPath>
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawSize>(2.4,2.4)</drawSize>
 			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -105,7 +105,7 @@ This one is proper art that gets placed on the ground.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/OverkillPile</texPath>
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawSize>(2.4,2.4)</drawSize>
 			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -148,7 +148,7 @@ This one is proper art that gets placed on the ground.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/KilltrocityPile</texPath>
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawSize>(2.4,2.4)</drawSize>
 			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -191,7 +191,7 @@ This one is proper art that gets placed on the ground.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/KillimanjaroPile</texPath>
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawSize>(2.4,2.4)</drawSize>
 			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -233,7 +233,7 @@ This one is proper art that gets placed on the ground.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/KilltastrophePile</texPath>
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawSize>(2.4,2.4)</drawSize>
 			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
@@ -275,7 +275,7 @@ This one is proper art that gets placed on the ground.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Building/SkullPiles/KillpocalypsePile</texPath>
-			<drawSize>(2.5,2.5)</drawSize>
+			<drawSize>(2.4,2.4)</drawSize>
 			<drawOffset>(0,0,0.4)</drawOffset>
 		</graphicData>
 		<minifiedDef>MinifiedThing</minifiedDef>
