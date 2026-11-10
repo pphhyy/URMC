@@ -33,7 +33,7 @@
         <canSiege>true</canSiege>
         <canStageAttacks>true</canStageAttacks>
         <leaderTitle>officer</leaderTitle>
-        <factionIconPath>UI/URMCFactionIcon</factionIconPath>
+        <factionIconPath>UI/RaiderIcon</factionIconPath>
         <techLevel>Spacer</techLevel>
         <fixedName>URMC</fixedName>
         <settlementNameMaker>NamerSettlementEmpire</settlementNameMaker>

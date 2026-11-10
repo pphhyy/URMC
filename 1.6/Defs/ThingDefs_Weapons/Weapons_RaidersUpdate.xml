@@ -793,7 +793,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>pphhyy_ChuckerMKIProjectile</defaultProjectile>
-        <warmupTime>4</warmupTime>
+        <warmupTime>2.5</warmupTime>
         <range>18.9</range>
         <soundCast>Interact_BeatFire</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
@@ -822,7 +822,7 @@
     <defName>pphhyy_ChuckerMKIProjectile</defName>
     <label>Chucker MKI Projectile</label>
     <graphicData>
-      <texPath>Things/Projectile/Pilum</texPath>
+      <texPath>Weapon/ChuckerMKIThrown</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -880,7 +880,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>pphhyy_ChuckerMKIIProjectile</defaultProjectile>
-        <warmupTime>4</warmupTime>
+        <warmupTime>2.5</warmupTime>
         <range>18.9</range>
         <soundCast>Interact_BeatFire</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
@@ -909,7 +909,7 @@
     <defName>pphhyy_ChuckerMKIIProjectile</defName>
     <label>Chucker MKII Projectile</label>
     <graphicData>
-      <texPath>Things/Projectile/Pilum</texPath>
+      <texPath>Weapon/ChuckerMKIIThrown</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -967,7 +967,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>pphhyy_ChuckerMKIIIProjectile</defaultProjectile>
-        <warmupTime>4</warmupTime>
+        <warmupTime>2.5</warmupTime>
         <range>18.9</range>
         <soundCast>Interact_BeatFire</soundCast>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
@@ -996,7 +996,7 @@
     <defName>pphhyy_ChuckerMKIIIProjectile</defName>
     <label>Chucker MKIII Projectile</label>
     <graphicData>
-      <texPath>Things/Projectile/Pilum</texPath>
+      <texPath>Weapon/ChuckerMKIIIThrown</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
@@ -1054,7 +1054,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>pphhyy_BoomlanceProjectile</defaultProjectile>
-        <warmupTime>4</warmupTime>
+        <warmupTime>3</warmupTime>
         <forcedMissRadius>0.9</forcedMissRadius>
         <range>18.9</range>
         <soundCast>Interact_BeatFire</soundCast>
@@ -1084,7 +1084,7 @@
     <defName>pphhyy_BoomlanceProjectile</defName>
     <label>Boomlance Projectile</label>
     <graphicData>
-      <texPath>Things/Projectile/Pilum</texPath>
+      <texPath>Weapon/BoomlanceThrown</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <thingClass>Projectile_Explosive</thingClass>
