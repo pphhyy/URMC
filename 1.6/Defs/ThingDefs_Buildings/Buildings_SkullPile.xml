@@ -7,8 +7,8 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_SkullPileI</defName>
 		<label>First Skull Pile</label>
-		<description>An art piece that can keep being remade to add more skulls.
-This one is proper art that gets placed.</description>
+		<description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This one is proper art that gets placed on the ground.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
@@ -32,7 +32,7 @@ This one is proper art that gets placed.</description>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 			<Mass>3</Mass>
-            <TerrorSource>25</TerrorSource>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">25</TerrorSource>
 		</statBases>
 		<researchPrerequisites>
 			<li>pphhyy_MarineRaidersTrophies</li>
@@ -49,8 +49,8 @@ This one is proper art that gets placed.</description>
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_SkullPileII</defName>
 		<label>Double Kill Pile</label>
-		<description>An art piece that can keep being remade to add more skulls.
-This one is proper art that gets placed.</description>
+		<description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This one is proper art that gets placed on the ground.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
@@ -74,7 +74,7 @@ This one is proper art that gets placed.</description>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 			<Mass>3</Mass>
-            <TerrorSource>35</TerrorSource>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">35</TerrorSource>
 		</statBases>
 		<researchPrerequisites>
 			<li>pphhyy_MarineRaidersTrophies</li>
@@ -91,8 +91,8 @@ This one is proper art that gets placed.</description>
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_SkullPileIII</defName>
 		<label>Overkill Pile</label>
-		<description>An art piece that can keep being remade to add more skulls.
-This one is proper art that gets placed.</description>
+		<description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This one is proper art that gets placed on the ground.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
@@ -116,7 +116,7 @@ This one is proper art that gets placed.</description>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 			<Mass>3</Mass>
-            <TerrorSource>45</TerrorSource>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">45</TerrorSource>
 		</statBases>
 		<researchPrerequisites>
 			<li>pphhyy_MarineRaidersTrophies</li>
@@ -134,8 +134,8 @@ This one is proper art that gets placed.</description>
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_SkullPileIV</defName>
 		<label>Killtrocity Pile</label>
-		<description>An art piece that can keep being remade to add more skulls.
-This one is proper art that gets placed.</description>
+		<description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This one is proper art that gets placed on the ground.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
@@ -159,7 +159,7 @@ This one is proper art that gets placed.</description>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 			<Mass>3</Mass>
-            <TerrorSource>55</TerrorSource>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">55</TerrorSource>
 		</statBases>
 		<researchPrerequisites>
 			<li>pphhyy_MarineRaidersTrophies</li>
@@ -177,8 +177,8 @@ This one is proper art that gets placed.</description>
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_SkullPileV</defName>
 		<label>Killimanjaro Pile</label>
-		<description>An art piece that can keep being remade to add more skulls.
-This one is proper art that gets placed.</description>
+		<description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This one is proper art that gets placed on the ground.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
@@ -202,7 +202,7 @@ This one is proper art that gets placed.</description>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 			<Mass>3</Mass>
-            <TerrorSource>65</TerrorSource>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">65</TerrorSource>
 		</statBases>
 		<researchPrerequisites>
 			<li>pphhyy_MarineRaidersTrophies</li>
@@ -219,8 +219,8 @@ This one is proper art that gets placed.</description>
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_SkullPileVI</defName>
 		<label>Killtastrophe Pile</label>
-		<description>An art piece that can keep being remade to add more skulls.
-This one is proper art that gets placed.</description>
+		<description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This one is proper art that gets placed on the ground.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
@@ -244,7 +244,7 @@ This one is proper art that gets placed.</description>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 			<Mass>3</Mass>
-            <TerrorSource>75</TerrorSource>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">75</TerrorSource>
 		</statBases>
 		<researchPrerequisites>
 			<li>pphhyy_MarineRaidersTrophies</li>
@@ -261,8 +261,8 @@ This one is proper art that gets placed.</description>
 	<ThingDef ParentName="BuildingBase">
 		<defName>pphhyy_SkullPileVII</defName>
 		<label>Killpocalypse Pile</label>
-		<description>An art piece that can keep being remade to add more skulls.
-This one is proper art that gets placed.</description>
+		<description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This one is proper art that gets placed on the ground.</description>
 		<altitudeLayer>BuildingOnTop</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<selectable>true</selectable>
@@ -286,7 +286,7 @@ This one is proper art that gets placed.</description>
 			<MaxHitPoints>50</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 			<Mass>3</Mass>
-            <TerrorSource>115</TerrorSource>
+            <TerrorSource MayRequire="Ludeon.RimWorld.Ideology">115</TerrorSource>
 		</statBases>
 		<researchPrerequisites>
 			<li>pphhyy_MarineRaidersTrophies</li>

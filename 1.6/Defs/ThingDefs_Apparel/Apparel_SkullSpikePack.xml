@@ -5,8 +5,8 @@
   <ThingDef ParentName="ApparelMakeableBase">
         <defName>pphhyy_FirstBloodSpike</defName>
         <label>first blood spike</label>
-        <description>An art piece that can keep being remade to add more skulls.
-This one is a backpack.</description>
+        <description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This version is a backpack.</description>
         <techLevel>Spacer</techLevel>
         <thingClass>Apparel</thingClass>
         <recipeMaker>
@@ -96,8 +96,8 @@ This one is a backpack.</description>
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>pphhyy_DoubleKillSpike</defName>
         <label>double kill spike</label>
-        <description>An art piece that can keep being remade to add more skulls.
-This one is a backpack.</description>
+        <description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This version is a backpack.</description>
         <techLevel>Spacer</techLevel>
         <thingClass>Apparel</thingClass>
         <recipeMaker>
@@ -187,8 +187,8 @@ This one is a backpack.</description>
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>pphhyy_OverkillSpike</defName>
         <label>overkill spike</label>
-        <description>An art piece that can keep being remade to add more skulls.
-This one is a backpack.</description>
+        <description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This version is a backpack.</description>
         <techLevel>Spacer</techLevel>
         <thingClass>Apparel</thingClass>
         <recipeMaker>
@@ -211,7 +211,7 @@ This one is a backpack.</description>
           <pphhyy_FirstBloodSpike>1</pphhyy_FirstBloodSpike>
         </costList>
         <graphicData>
-          <texPath>Gear/SkullSpikes/DoubleKillSpike</texPath>
+          <texPath>Gear/SkullSpikes/OverkillSpike</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
           <drawSize>1.5</drawSize>
@@ -238,7 +238,7 @@ This one is a backpack.</description>
           <layers>
             <li>Belt</li>
           </layers>
-          <wornGraphicPath>Gear/SkullSpikes/DoubleKillSpike</wornGraphicPath>
+          <wornGraphicPath>Gear/SkullSpikes/OverkillSpike</wornGraphicPath>
           <wornGraphicData>
             <renderUtilityAsPack>true</renderUtilityAsPack>
             <north>
@@ -279,8 +279,8 @@ This one is a backpack.</description>
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>pphhyy_KilltrocitySpike</defName>
         <label>killtrocity spike</label>
-        <description>An art piece that can keep being remade to add more skulls.
-This one is a backpack.</description>
+        <description>An art piece that can keep being remade to add more skulls. Based off of a wonderful old earth game with kill streaks that evil CEOs ruined. Also helps keep slaves inline; of which there are a higher then normal amount of ceos slaves on Raider Ships. Which is nice of the marines.
+This version is a backpack.</description>
         <techLevel>Spacer</techLevel>
         <thingClass>Apparel</thingClass>
         <recipeMaker>
@@ -302,7 +302,7 @@ This one is a backpack.</description>
           <pphhyy_OverkillSpike>1</pphhyy_OverkillSpike>
         </costList>
         <graphicData>
-          <texPath>Gear/SkullSpikes/DoubleKillSpike</texPath>
+          <texPath>Gear/SkullSpikes/KilltrocitySpike</texPath>
           <graphicClass>Graphic_Single</graphicClass>
           <shaderType>CutoutComplex</shaderType>
           <drawSize>1.5</drawSize>
@@ -329,7 +329,7 @@ This one is a backpack.</description>
           <layers>
             <li>Belt</li>
           </layers>
-          <wornGraphicPath>Gear/SkullSpikes/DoubleKillSpike</wornGraphicPath>
+          <wornGraphicPath>Gear/SkullSpikes/KilltrocitySpike</wornGraphicPath>
           <wornGraphicData>
             <renderUtilityAsPack>true</renderUtilityAsPack>
             <north>

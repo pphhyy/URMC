@@ -364,7 +364,7 @@
   <FactionDef ParentName="PlayerFactionBase">
     <defName>pphhyy_MarauderStart</defName>
     <label>Marauders</label>
-    <description>PLACEHOLDER</description>
+    <description>Abandoned on a far rimworld these marines had to resort to piracy and raiding to survive. Having to scavenge for gear has made most of their armaments crude but bitchin.</description>
     <isPlayer>true</isPlayer>
     <basicMemberKind>Colonist</basicMemberKind>
     <pawnSingular>marauder</pawnSingular>

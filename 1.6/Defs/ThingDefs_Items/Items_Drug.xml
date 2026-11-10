@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>  
+<?xml version="1.0" encoding="UTF-8"?>
 
 
 <Defs>
 
-<!--<ThingDef ParentName="DrugBase">
+  <ThingDef ParentName="DrugBase">
     <defName>pphhyy_ChemDrug</defName>
-    <label>Chem Drug</label>
+    <label>C Fuel Inhaler</label>
     <description>Not to be confused with the abomination G fuel (for legal Reasons); and its also way healthier to inhale chem fuel directly into your lungs! 
 Turns a normal marine into a rage induced melee nightmare. Side effects include dying younger and like addiction or whatever. DO NOT use responsibly.</description>
-    <possessionCount>6</possessionCount>
+    <possessionCount>5</possessionCount>
     <graphicData>
-      <texPath>Things/Item/Drug/Beer</texPath>
+      <texPath>Resources/CFuelInhaler</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <equippedAngleOffset>-150</equippedAngleOffset>
@@ -23,44 +23,48 @@ Turns a normal marine into a rage induced melee nightmare. Side effects include 
       <Flammability>0.5</Flammability>
       <Nutrition>0.08</Nutrition>
     </statBases>
+    <recipeMaker>
+      <researchPrerequisite>pphhyy_RaiderTech</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <displayPriority>1500</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Chemfuel>25</Chemfuel>
+      <Neutroamine>1</Neutroamine>
+    </costList>
     <ingestible>
-      <foodType>Fluid, Processed, Liquor</foodType>
+      <foodType>Processed</foodType>
       <joyKind>Chemical</joyKind>
-      <joy>0.17</joy>
+      <joy>0.15</joy>
       <nurseable>true</nurseable>
-      <drugCategory>Social</drugCategory>
-      <ingestSound>Ingest_Beer</ingestSound>
+      <drugCategory>Hard</drugCategory>
+      <ingestSound>Ingest_Snort</ingestSound>
       <ingestHoldOffsetStanding>
         <northDefault>
           <offset>(0.18,0,0)</offset>
         </northDefault>
       </ingestHoldOffsetStanding>
-      <ingestCommandString>Drink {0}</ingestCommandString>
-      <ingestReportString>Drinking {0}.</ingestReportString>
+      <ingestCommandString>Snort {0}</ingestCommandString>
+      <ingestReportString>Snorting {0}.</ingestReportString>
       <chairSearchRadius>25</chairSearchRadius>
       <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
       <tableDesired>false</tableDesired>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>AlcoholHigh</hediffDef>
-          <severity>0.15</severity>
+          <hediffDef>CFuelHigh</hediffDef>
+          <severity>0.25</severity>
           <toleranceChemical>Alcohol</toleranceChemical>
-        </li>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>AlcoholTolerance</hediffDef>
-          <toleranceChemical>Alcohol</toleranceChemical>
-          <severity>0.016</severity>
-          <divideByBodySize>true</divideByBodySize>
-          <multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
         </li>
       </outcomeDoers>
     </ingestible>
-    <equipmentType>Primary</equipmentType>
     <techLevel>Spacer</techLevel>
     <comps>
       <li Class="CompProperties_Drug">
-        <chemical>Alcohol</chemical>
-        <addictiveness>0.010</addictiveness>
+        <chemical>CFuel</chemical>
+        <addictiveness>0.005</addictiveness>
         <minToleranceToAddict>0.25</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
         <needLevelOffset>0.9</needLevelOffset>
@@ -70,8 +74,122 @@ Turns a normal marine into a rage induced melee nightmare. Side effects include 
         <compClass>CompEquippable</compClass>
       </li>
     </comps>
-  </ThingDef>-->
+  </ThingDef>
 
+<ChemicalDef>
+    <defName>CFuel</defName>
+    <label>C Fuel</label>
+    <addictionHediff>CFuelAddiction</addictionHediff>
+    <geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
+    <geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
+  </ChemicalDef>
+  
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_CFuel</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>C Fuel</label>
+    <description>Because of a C Fuel addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <fallPerDay>0.333</fallPerDay>
+    <listPriority>45</listPriority>
+  </NeedDef>
 
+  <HediffDef ParentName="AddictionBase">
+    <defName>CFuelAddiction</defName>
+    <label>C fuel addiction</label>
+    <description>A chemical addiction to C fuel. Long-term presence of C Fuel has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of C fuel, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <chemicalNeed>Chemical_CFuel</chemicalNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.045</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+        <painFactor>3</painFactor>
+        <statFactors>
+          <LifespanFactor>0.50</LifespanFactor>
+        </statFactors>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>BloodPumping</capacity>
+            <offset>-0.20</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+            <mentalState>Binging_DrugExtreme</mentalState>
+            <mtbDays>40</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <defName>CFuelHigh</defName>
+    <label>c fuel high</label>
+    <labelNoun>hooked on c fuel</labelNoun>
+    <description>C Fuel in your system, it makes you stronger, but also shortens your life.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <minSeverity>0.25</minSeverity>
+        <label>hooked</label>
+        <statFactors>
+          <MeleeCooldownFactor>-0.25</MeleeCooldownFactor>
+          <MeleeDamageFactor>1.25</MeleeDamageFactor>
+          <LifespanFactor>0.80</LifespanFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.50</minSeverity>
+        <label>very hooked</label>
+        <statFactors>
+          <MeleeCooldownFactor>-0.50</MeleeCooldownFactor>
+          <MeleeDamageFactor>1.50</MeleeDamageFactor>
+          <LifespanFactor>0.60</LifespanFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.75</minSeverity>
+        <label>extremely hooked</label>
+        <statFactors>
+          <MeleeCooldownFactor>-0.75</MeleeCooldownFactor>
+          <MeleeDamageFactor>1.75</MeleeDamageFactor>
+          <LifespanFactor>0.40</LifespanFactor>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>0.99</minSeverity>
+        <label>practically dead</label>
+        <statFactors>
+          <MeleeCooldownFactor>-1</MeleeCooldownFactor>
+          <MeleeDamageFactor>2</MeleeDamageFactor>
+          <LifespanFactor>0.10</LifespanFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
 
 </Defs>

@@ -130,7 +130,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>pphhyy_BarricadeMKI</defName>
         <label>Barricade MKI</label>
-        <description>PLACEHOLDER</description>
+        <description>A heavy hunk of scrap patched together to protect for ranged cowards! Part of it used to be a ballistic shield before it was wrecked.</description>
         <burnableByRecipe>true</burnableByRecipe>
         <smeltable>false</smeltable>
         <techLevel>Spacer</techLevel>
@@ -252,7 +252,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>pphhyy_BarricadeMKII</defName>
         <label>Barricade MKII</label>
-        <description>PLACEHOLDER</description>
+        <description>A heavy hunk of scrap patched together to protect for ranged cowards! Part of it used to be a ballistic shield before it was wrecked.</description>
         <burnableByRecipe>true</burnableByRecipe>
         <smeltable>false</smeltable>
         <techLevel>Spacer</techLevel>
@@ -375,7 +375,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>pphhyy_BarricadeMKIII</defName>
         <label>Barricade MKIII</label>
-        <description>PLACEHOLDER</description>
+        <description>A heavy hunk of scrap patched together to protect for ranged cowards! Part of it used to be a ballistic shield before it was wrecked.</description>
         <burnableByRecipe>true</burnableByRecipe>
         <smeltable>false</smeltable>
         <techLevel>Spacer</techLevel>

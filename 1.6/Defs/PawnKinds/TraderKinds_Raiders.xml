@@ -5,7 +5,7 @@
 <!-- Base Raider Trader -->
 
 <TraderKindDef>
-    <defName>Base_Raider_Trader</defName>
+    <defName>Base_Raider_Standard</defName>
     <label>base raider trader</label>
     <commonalityMultFromPopulationIntent>
       <points>
@@ -111,10 +111,6 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>pphhyy_BreakerMKIII</thingDef>
-        <countRange>1</countRange>
-      </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>pphhyy_NuclearHammer</thingDef>
         <countRange>1</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -297,7 +293,7 @@
   </TraderKindDef>
 
  <TraderKindDef>
-    <defName>Caravan_Raider_Trader</defName>
+    <defName>Caravan_Raider_Standard</defName>
     <label>Caravan raider trader</label>
     <commonalityMultFromPopulationIntent>
       <points>
@@ -403,10 +399,6 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>pphhyy_BreakerMKIII</thingDef>
-        <countRange>1</countRange>
-      </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>pphhyy_NuclearHammer</thingDef>
         <countRange>1</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -591,7 +583,7 @@
   <!-- Visitor Trader -->
 
  <TraderKindDef>
-    <defName>Visitor_Raider_Trader</defName>
+    <defName>Visitor_Raider_Standard</defName>
     <label>visitor raider trader</label>
     <commonalityMultFromPopulationIntent>
       <points>
@@ -697,10 +689,6 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>pphhyy_BreakerMKIII</thingDef>
-        <countRange>1</countRange>
-      </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>pphhyy_NuclearHammer</thingDef>
         <countRange>1</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
