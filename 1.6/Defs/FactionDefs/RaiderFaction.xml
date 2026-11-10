@@ -18,7 +18,8 @@
         <royalTitleInheritanceRelations>
         </royalTitleInheritanceRelations> -->
         <colorSpectrum>
-            <li>(1, 1, 1)</li>
+            <li>(0.812, 0, 0)</li>
+            <li>(0, 0, 0.871)</li>
         </colorSpectrum>
         <fixedLeaderKinds>
 			<li>pphhyy_Tyrant</li>
