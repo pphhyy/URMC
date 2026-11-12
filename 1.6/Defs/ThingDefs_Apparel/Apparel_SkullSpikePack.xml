@@ -89,7 +89,6 @@ This version is a backpack.</description>
         </tradeTags>
         <equippedStatOffsets>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.25</SlaveSuppressionOffset>
-            <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
       </ThingDef>
 
@@ -180,7 +179,6 @@ This version is a backpack.</description>
         </tradeTags>
         <equippedStatOffsets>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.35</SlaveSuppressionOffset>
-            <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
       </ThingDef>
 
@@ -272,7 +270,6 @@ This version is a backpack.</description>
         </tradeTags>
         <equippedStatOffsets>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.45</SlaveSuppressionOffset>
-            <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
       </ThingDef>
 
@@ -363,7 +360,6 @@ This version is a backpack.</description>
         </tradeTags>
         <equippedStatOffsets>
             <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.55</SlaveSuppressionOffset>
-            <CarryingCapacity>25</CarryingCapacity>
         </equippedStatOffsets>
       </ThingDef>
 

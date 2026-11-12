@@ -208,7 +208,7 @@
     </graphicData>
     <equippedStatOffsets>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.1</SlaveSuppressionOffset>
-      <Flammability>-1</Flammability>
+      <Flammability>-0.5</Flammability>
     </equippedStatOffsets>
     <tradeTags>
       <li>HiTechArmor</li>
