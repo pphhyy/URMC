@@ -202,14 +202,14 @@
  <RecipeDef>
     <defName>pphhyy_SmeltForScrap</defName>
     <label>smelt to get scrap</label>
-    <description>PLACEHOLDER</description>
+    <description>Smelts things into usable scrap, cuz the original stuff was clearly useless junk.</description>
     <jobString>Smelting.</jobString>
     <workAmount>1600</workAmount>
     <workSpeedStat>SmeltingSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
     <recipeUsers>
-      <li>ElectricSmelter</li>
+      <li>TableMachining</li>
     </recipeUsers>
     <ingredients>
       <li>
@@ -241,7 +241,7 @@
       <li>AllowNonBurnableApparel</li>
     </forceHiddenSpecialFilters>
     <products>
-      <Chemfuel>1</Chemfuel>
+      <pphhyy_Scrap>1</pphhyy_Scrap>
     </products>
   </RecipeDef> 
 
